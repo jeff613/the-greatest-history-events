@@ -162,3 +162,21 @@ button:hover {
 .playhead circle {
   fill: #e0564a;
 }
+
+.map,
+.map-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.map {
+  background: #0e1a26;
+}
+
+.map-fallback {
+  max-width: 32ch;
+  margin: 20vh auto 0;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.5;
+}
