@@ -6,6 +6,9 @@ import { advancePlayback, playbackStart } from './playback';
 import { useLatest } from './useLatest';
 import { parseUrlState, serializeUrlState } from './urlState';
 
+// Safari throws SecurityError past 100 replaceState calls per 30 s, so writes are debounced.
+const URL_WRITE_DELAY_MS = 250;
+
 export interface TimeStore {
   year: number;
   view: View;
@@ -38,7 +41,11 @@ export function useTimeState(): TimeStore {
 
   useEffect(() => {
     const query = serializeUrlState({ year, view, selectedEventId });
-    window.history.replaceState(null, '', `${window.location.pathname}${query}`);
+    const id = window.setTimeout(
+      () => window.history.replaceState(null, '', `${window.location.pathname}${query}`),
+      URL_WRITE_DELAY_MS,
+    );
+    return () => window.clearTimeout(id);
   }, [year, view, selectedEventId]);
 
   useEffect(() => {

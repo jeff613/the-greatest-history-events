@@ -7,6 +7,6 @@ export function playbackStart(u: number): number {
 }
 
 export function advancePlayback(u: number, dtSec: number, zoom: number): { u: number; done: boolean } {
-  const next = Math.min(1, u + (Math.min(dtSec, MAX_FRAME_SEC) * PLAY_RATE) / zoom);
+  const next = Math.min(1, u + (Math.min(Math.max(dtSec, 0), MAX_FRAME_SEC) * PLAY_RATE) / zoom);
   return { u: next, done: next >= 1 };
 }

@@ -26,11 +26,17 @@ for (const [name, source] of Object.entries(layers)) {
   console.log(`basemap ${name}`);
 }
 
-// Latin, Latin-1, Latin Extended and combining marks cover the polity names in the border data.
+// Covers Latin, Latin-1, Latin Extended and combining marks (0-2047), plus Latin Extended Additional
+// (7680-7935) and General Punctuation (8192-8447). Rarer scripts in the data fall back to missing glyphs.
+const EXTRA_RANGES = ['7680-7935', '8192-8447'];
 const glyphDir = join(PUBLIC, 'glyphs', FONT_STACK);
 mkdirSync(glyphDir, { recursive: true });
 for (let start = 0; start < 2048; start += 256) {
   const range = `${start}-${start + 255}`;
+  const res = await get(`${FONTS_BASE}/${range}.pbf`);
+  writeFileSync(join(glyphDir, `${range}.pbf`), Buffer.from(await res.arrayBuffer()));
+}
+for (const range of EXTRA_RANGES) {
   const res = await get(`${FONTS_BASE}/${range}.pbf`);
   writeFileSync(join(glyphDir, `${range}.pbf`), Buffer.from(await res.arrayBuffer()));
 }

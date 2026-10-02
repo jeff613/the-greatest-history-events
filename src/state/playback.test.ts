@@ -13,6 +13,9 @@ describe('playback', () => {
   it('ignores long frames such as a backgrounded tab', () => {
     expect(advancePlayback(0.5, 10, 1).u).toBeCloseTo(0.5 + 0.1 * PLAY_RATE);
   });
+  it('ignores a negative frame delta', () => {
+    expect(advancePlayback(0, -0.01, 1)).toEqual({ u: 0, done: false });
+  });
   it('stops exactly at the end', () => {
     expect(advancePlayback(0.999, 0.1, 1)).toEqual({ u: 1, done: true });
     expect(advancePlayback(0.5, 0.05, 1).done).toBe(false);
