@@ -1,7 +1,8 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent } from 'react';
 import { ERAS } from '../data';
+import type { Era } from '../data/schema';
 import { packEras } from '../lib/packEras';
-import { FULL_VIEW, panBy, pxToYear, ticks, yearToPx, zoomAt, type View } from '../lib/timeScale';
+import { FULL_VIEW, panBy, pxToYear, ticks, yearToPx, yearToU, zoomAt, type View } from '../lib/timeScale';
 import { formatSpan, formatYear } from '../lib/years';
 import { useLatest } from '../state/useLatest';
 import { REGION_COLORS, REGION_SHORT_LABELS } from '../theme';
@@ -11,6 +12,13 @@ const AXIS_H = 24;
 const LANE_GAP = 4;
 const ROW_H = 10;
 const ZOOM_STEP = 1.5;
+/** A press that moves less than this is a click, not a drag. */
+const CLICK_SLOP_PX = 4;
+
+/** Scrub moves the playhead (axis row, playhead); pan moves the view (lanes) or, if it never moves, is a click. */
+type Drag =
+  | { kind: 'scrub'; pointerId: number }
+  | { kind: 'pan'; pointerId: number; startX: number; startY: number; startView: View; era: Era | null; moved: boolean };
 
 interface Props {
   year: number;
@@ -25,7 +33,7 @@ export function TimelineStrip({ year, view, playing, onYear, onView, onTogglePla
   const stripRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
   const lanesRef = useRef<HTMLDivElement>(null);
-  const dragging = useRef(false);
+  const drag = useRef<Drag | null>(null);
   const [width, setWidth] = useState(0);
   const lanes = useMemo(() => packEras(ERAS), []);
 
@@ -79,19 +87,58 @@ export function TimelineStrip({ year, view, playing, onYear, onView, onTogglePla
     return () => canvas.removeEventListener('wheel', onWheel);
   }, [latest]);
 
-  const yearAt = (clientX: number) =>
-    pxToYear(clientX - canvasRef.current!.getBoundingClientRect().left - GUTTER, view, trackW);
+  const yearAt = (clientX: number) => {
+    const px = clientX - canvasRef.current!.getBoundingClientRect().left - GUTTER;
+    return pxToYear(Math.min(trackW, Math.max(0, px)), view, trackW);
+  };
+  const selectEra = (era: Era) => {
+    onYear(era.start);
+    const px = yearToPx(era.start, view, trackW);
+    if (px < 0 || px > trackW) onView({ zoom: view.zoom, center: yearToU(era.start) });
+  };
   const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
-    if ((e.target as Element).closest('[data-era]')) return;
-    dragging.current = true;
+    if (!e.isPrimary || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    const target = e.target as Element;
     e.currentTarget.setPointerCapture(e.pointerId);
-    onYear(yearAt(e.clientX));
+    if (target.closest('.playhead')) {
+      drag.current = { kind: 'scrub', pointerId: e.pointerId };
+    } else if (target.closest('.strip-axis')) {
+      drag.current = { kind: 'scrub', pointerId: e.pointerId };
+      onYear(yearAt(e.clientX));
+    } else {
+      const eraId = target.closest('[data-era]')?.getAttribute('data-era');
+      drag.current = {
+        kind: 'pan',
+        pointerId: e.pointerId,
+        startX: e.clientX,
+        startY: e.clientY,
+        startView: view,
+        era: ERAS.find((era) => era.id === eraId) ?? null,
+        moved: false,
+      };
+    }
   };
   const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
-    if (dragging.current) onYear(yearAt(e.clientX));
+    const d = drag.current;
+    if (!d || d.pointerId !== e.pointerId) return;
+    if (d.kind === 'scrub') {
+      onYear(yearAt(e.clientX));
+      return;
+    }
+    if (!d.moved && Math.hypot(e.clientX - d.startX, e.clientY - d.startY) < CLICK_SLOP_PX) return;
+    d.moved = true;
+    onView(panBy(d.startView, e.clientX - d.startX, trackW));
   };
-  const endDrag = () => {
-    dragging.current = false;
+  const onPointerUp = (e: PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    if (!d || d.pointerId !== e.pointerId) return;
+    drag.current = null;
+    if (d.kind !== 'pan' || d.moved) return;
+    if (d.era) selectEra(d.era);
+    else if (e.clientX - canvasRef.current!.getBoundingClientRect().left >= GUTTER) onYear(yearAt(e.clientX));
+  };
+  const cancelDrag = () => {
+    drag.current = null;
   };
   const zoomAroundPlayhead = (factor: number) => onView(zoomAt(view, factor, yearToPx(year, view, trackW), trackW));
 
@@ -121,8 +168,8 @@ export function TimelineStrip({ year, view, playing, onYear, onView, onTogglePla
         ref={canvasRef}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
-        onPointerUp={endDrag}
-        onPointerCancel={endDrag}
+        onPointerUp={onPointerUp}
+        onPointerCancel={cancelDrag}
       >
         <svg className="strip-axis" width={width} height={AXIS_H}>
           <rect data-testid="timeline-axis" className="axis-bg" x={GUTTER} y={0} width={trackW} height={AXIS_H} />
@@ -155,7 +202,7 @@ export function TimelineStrip({ year, view, playing, onYear, onView, onTogglePla
                       const y = top + rowIndex * ROW_H;
                       const showLabel = x1 - x0 > era.name.length * 5 + 8;
                       return (
-                        <g key={era.id} data-era={era.id} className="era" onClick={() => onYear(era.start)}>
+                        <g key={era.id} data-era={era.id} className="era">
                           <title>{`${era.name} (${formatSpan(era.start, era.end)})`}</title>
                           <rect
                             x={x0}
@@ -180,7 +227,7 @@ export function TimelineStrip({ year, view, playing, onYear, onView, onTogglePla
           </svg>
         </div>
         {playheadVisible && (
-          <div className="playhead" style={{ left: playheadX }}>
+          <div className="playhead" data-testid="playhead" style={{ left: playheadX }}>
             <span className="playhead-knob" style={{ top: AXIS_H / 2 }} />
           </div>
         )}

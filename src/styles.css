@@ -131,6 +131,9 @@ button:hover {
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  /* Horizontal drags pan the timeline; vertical swipes still scroll the lanes. */
+  touch-action: pan-y;
+  cursor: grab;
 }
 
 .axis-bg {
@@ -177,7 +180,8 @@ button:hover {
   bottom: 0;
   width: 12px;
   margin-left: -6px;
-  pointer-events: none;
+  touch-action: none;
+  cursor: ew-resize;
 }
 
 .playhead::before {
