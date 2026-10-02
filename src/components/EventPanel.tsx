@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { HistoryEvent, Region } from '../data/schema';
 import type { RegionGroup } from '../lib/selectEvents';
 import { formatSpan, formatYear } from '../lib/years';
+import { useLatest } from '../state/useLatest';
 import { CATEGORY_COLORS, CATEGORY_LABELS, REGION_LABELS } from '../theme';
 
 export const REGION_CAP = 5;
@@ -25,7 +26,7 @@ export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEven
 
   // Expansions apply to one window only; the 5-per-region cap returns when the window changes.
   useEffect(() => {
-    setExpanded(new Set());
+    setExpanded((s) => (s.size ? new Set() : s));
   }, [year, halfWidth]);
 
   // On phones, choosing an event (for example from a map pin) opens the sheet.
@@ -118,16 +119,32 @@ function EventRow({
   onSelect(id: string): void;
 }) {
   const ref = useRef<HTMLButtonElement>(null);
+  /** Whether this row's mouse-over set the shared hover, so it is cleared if the row goes away. */
+  const ownsHover = useRef(false);
+  const latestOnHover = useLatest(onHover);
   useEffect(() => {
     if (hovered) ref.current?.scrollIntoView({ block: 'nearest' });
   }, [hovered]);
+  useEffect(
+    () => () => {
+      if (ownsHover.current) latestOnHover.current(null);
+    },
+    [latestOnHover],
+  );
+  const setHover = (on: boolean) => {
+    ownsHover.current = on;
+    onHover(on ? event.id : null);
+  };
   return (
     <button
       ref={ref}
       className={`event-row${hovered ? ' is-hovered' : ''}`}
-      onMouseEnter={() => onHover(event.id)}
-      onMouseLeave={() => onHover(null)}
-      onClick={() => onSelect(event.id)}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      onClick={() => {
+        setHover(false);
+        onSelect(event.id);
+      }}
     >
       <span className="dot" style={{ background: CATEGORY_COLORS[event.category] }} aria-hidden />
       <span className="event-title">{event.title}</span>

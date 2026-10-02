@@ -40,3 +40,17 @@ test('bad URL values fall back safely', async ({ page }) => {
   await page.goto('/?year=99999');
   await expect(panel).toContainText('Around 2000');
 });
+
+test('selecting a hovered row does not leave it stuck as hovered', async ({ page }) => {
+  await page.goto('/?year=-44');
+  const panel = page.getByTestId('event-panel');
+  const row = panel.getByRole('button', { name: /^Julius Caesar assassinated/ });
+  await row.hover();
+  await expect(row).toHaveClass(/is-hovered/);
+  await row.click();
+  await page.mouse.move(5, 5);
+  await panel.getByRole('button', { name: /All events/ }).focus();
+  await page.keyboard.press('Enter');
+  await expect(panel).toContainText('Around 44 BC');
+  await expect(panel.locator('.event-row.is-hovered')).toHaveCount(0);
+});

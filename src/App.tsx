@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { About } from './components/About';
 import { MapView } from './components/MapView';
 import { TimelineStrip } from './components/TimelineStrip';
 import { EVENTS, EVENTS_BY_ID } from './data';
+import type { HistoryEvent } from './data/schema';
 import { EventPanel } from './components/EventPanel';
 import {
   eventsInWindow,
@@ -27,12 +28,19 @@ export default function App() {
   const selectedEvent = t.selectedEventId
     ? (EVENTS_BY_ID.get(t.selectedEventId) ?? null)
     : null;
+  // Kept referentially stable while the pinned set is unchanged, so playback does not make
+  // MapLibre re-parse the pins source on every frame.
+  const pinsRef = useRef<HistoryEvent[]>([]);
   const pins = useMemo(() => {
     const base = pinnedEvents(inWindow, halfWidth);
     // The selected event keeps its pin even when it is outside the window or below the pin threshold.
-    return selectedEvent && !base.includes(selectedEvent)
+    const next = selectedEvent && !base.includes(selectedEvent)
       ? [...base, selectedEvent]
       : base;
+    const prev = pinsRef.current;
+    const same = next.length === prev.length && next.every((e, i) => e.id === prev[i].id);
+    if (!same) pinsRef.current = next;
+    return pinsRef.current;
   }, [inWindow, halfWidth, selectedEvent]);
 
   return (
