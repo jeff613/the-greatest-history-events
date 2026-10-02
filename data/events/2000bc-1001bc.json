@@ -10,8 +10,8 @@
     "location": { "name": "Sintashta", "lat": 52.47, "lng": 60.2 },
     "importance": 3,
     "summary": "Herders of the Sintashta culture, in the steppes east of the southern Ural Mountains, bury their dead with light two-wheeled vehicles whose wheels have spokes instead of solid wooden discs. These are the earliest known true chariots: fast, horse-drawn and light enough to carry a driver and a warrior.",
-    "significance": "Within a few centuries the chariot spread from the steppe to Mesopotamia, Egypt, Greece, India and China, transforming warfare and the prestige of elites across Eurasia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Chariot"
+    "significance": "Within a few centuries the chariot spread, possibly from the steppe, to Mesopotamia, Egypt, Greece, India and China, transforming warfare and the prestige of elites across Eurasia.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sintashta_culture"
   },
   {
     "id": "assyrian-trade-kanesh",
@@ -93,7 +93,7 @@
     "category": "politics",
     "location": { "name": "Kerma", "lat": 19.6, "lng": 30.41 },
     "importance": 2,
-    "summary": "The Nubian kingdom centered on Kerma, in what is now northern Sudan, controls much of the Nile valley south of Egypt. Its capital has a huge mud-brick temple, the Western Deffufa, and its kings are buried in enormous mounds. While Egypt is divided, Kerma's armies raid deep into Egyptian territory.",
+    "summary": "The Nubian kingdom centered on Kerma, in what is now northern Sudan, controls much of the Nile valley south of Egypt. Its capital has a huge mud-brick temple, the Western Deffufa, and its kings are buried in enormous mounds. While Egypt is divided, Kerma's armies push north into Upper Egypt.",
     "significance": "Kerma was the first great kingdom in Africa south of Egypt, and it showed that Nubia was a power in its own right rather than a mere frontier of Egypt.",
     "wikipedia": "https://en.wikipedia.org/wiki/Kerma_culture"
   },
@@ -261,7 +261,7 @@
     "category": "trade",
     "location": { "name": "Mussau Island, Bismarck Archipelago", "lat": -1.43, "lng": 149.63 },
     "importance": 3,
-    "summary": "A seafaring people known for pottery decorated with stamped patterns, called Lapita by archaeologists, appear in the islands northeast of New Guinea. Over the next few centuries, in outrigger canoes, they sail thousands of kilometers east to Vanuatu, New Caledonia, Fiji, Tonga and Samoa, islands no human had reached before.",
+    "summary": "A seafaring people known for pottery decorated with stamped patterns, called Lapita by archaeologists, appear in the islands northeast of New Guinea. Over the next several centuries, in outrigger canoes, they sail thousands of kilometers east to Vanuatu, New Caledonia, Fiji, Tonga and Samoa, islands no human had reached before.",
     "significance": "Lapita voyagers were the ancestors of the Polynesians, beginning the settlement of the remote Pacific, the last major region of the world to be reached by people.",
     "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
   },
@@ -284,13 +284,13 @@
     "title": "Hatshepsut becomes pharaoh",
     "year": -1479,
     "endYear": null,
-    "dateLabel": "c. 1479 BC",
+    "dateLabel": "c. 1479 BC (regent); crowned c. 1473 BC",
     "region": "mena",
     "category": "politics",
     "location": { "name": "Deir el-Bahari, Thebes", "lat": 25.74, "lng": 32.61 },
     "importance": 2,
-    "summary": "When the young Thutmose III comes to the throne, his stepmother Hatshepsut rules for him as regent, and within a few years she is crowned pharaoh in her own right. She reigns for about two decades, sponsoring trade expeditions and great buildings such as her temple at Deir el-Bahari.",
-    "significance": "Hatshepsut was one of the few women to rule Egypt as pharaoh, and her peaceful, prosperous reign is one of the best documented of any ancient female ruler.",
+    "summary": "When the young Thutmose III comes to the throne in 1479 BC, his stepmother Hatshepsut rules for him as regent, and a few years later (c. 1473 BC) she is crowned pharaoh in her own right. She reigns for about two decades, sponsoring trade expeditions and great buildings such as her temple at Deir el-Bahari.",
+    "significance": "Hatshepsut was one of the few women to rule Egypt as pharaoh, and her mostly peaceful, prosperous reign is one of the best documented of any ancient female ruler.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hatshepsut"
   },
   {
@@ -331,7 +331,7 @@
     "category": "religion",
     "location": { "name": "Amarna", "lat": 27.65, "lng": 30.9 },
     "importance": 2,
-    "summary": "Pharaoh Amenhotep IV renames himself Akhenaten and promotes the worship of the Aten, the disc of the Sun, above all other gods, closing temples of the old gods and building a new capital at Amarna. His art style is unusually naturalistic. After his death, Egypt returns to its traditional religion and his name is erased from monuments.",
+    "summary": "Pharaoh Amenhotep IV renames himself Akhenaten and promotes the worship of the Aten, the disc of the Sun, above all other gods, neglecting or closing temples of Amun and other gods and building a new capital at Amarna. His art style is unusually naturalistic. After his death, Egypt returns to its traditional religion and his name is erased from monuments.",
     "significance": "Akhenaten's cult is often called one of the earliest steps toward monotheism, though scholars debate how far it really went, and the Amarna letters found at his capital reveal the diplomacy of the age.",
     "wikipedia": "https://en.wikipedia.org/wiki/Atenism"
   },
@@ -346,7 +346,7 @@
     "location": { "name": "Valley of the Kings", "lat": 25.74, "lng": 32.6 },
     "importance": 1,
     "summary": "The young pharaoh Tutankhamun, who restored Egypt's traditional gods after Akhenaten, dies at about 19 and is buried in a small tomb in the Valley of the Kings packed with treasures, including a solid gold coffin and a gold mask. The tomb is hidden and largely forgotten until Howard Carter finds it nearly intact in 1922.",
-    "significance": "As the only royal tomb of its era found largely intact, it is the richest window into ancient Egyptian royal burial and made Tutankhamun the most famous pharaoh in the modern world.",
+    "significance": "As one of the very few royal tombs found almost intact, it is the richest window into ancient Egyptian royal burial and made Tutankhamun the most famous pharaoh in the modern world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun"
   },
   {
@@ -401,9 +401,9 @@
     "category": "science",
     "location": { "name": "Eastern Mediterranean (Levant)", "lat": 33.5, "lng": 35.8 },
     "importance": 3,
-    "summary": "Iron had been smelted in small amounts for centuries, but around 1200 BC smiths in Anatolia, the Levant and Cyprus begin making it in quantity for tools and weapons. Iron ore is far more common than the copper and tin needed for bronze, which had become harder to obtain as trade broke down.",
+    "summary": "Iron had been smelted in small amounts for centuries, but around 1200 BC smiths in the Levant, Cyprus and nearby regions begin making it in quantity for tools and weapons. Iron ore is far more common than the copper and tin needed for bronze; one common explanation for the shift is that tin became harder to obtain as long-distance trade broke down.",
     "significance": "Cheaper metal tools and weapons spread over the following centuries across Europe, Asia and Africa, giving the Iron Age its name.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Iron_Age"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ferrous_metallurgy"
   },
   {
     "id": "late-bronze-age-collapse",
@@ -416,7 +416,7 @@
     "location": { "name": "Ugarit", "lat": 35.6, "lng": 35.78 },
     "importance": 3,
     "summary": "Within a few decades, the interconnected kingdoms of the eastern Mediterranean fall apart. The Hittite Empire disintegrates, Mycenaean palaces in Greece are destroyed, trading cities such as Ugarit are burned, and Egypt is weakened. Historians debate the causes, which likely combined drought, earthquakes, raids by the Sea Peoples, rebellions and the breakdown of trade.",
-    "significance": "It ended the Bronze Age world of palace kingdoms and opened a darker period from which new societies emerged, including the Phoenician cities, Israel and later Greek city-states.",
+    "significance": "It ended the Bronze Age world of palace kingdoms and opened a darker period from which new peoples and states emerged.",
     "wikipedia": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse"
   },
   {
@@ -441,7 +441,7 @@
     "dateLabel": "c. 1500-1000 BC (disputed)",
     "region": "central-asia",
     "category": "religion",
-    "location": { "name": "Bactria (Balkh)", "lat": 36.76, "lng": 66.9 },
+    "location": { "name": "Bactria (traditional, uncertain)", "lat": 36.76, "lng": 66.9 },
     "importance": 2,
     "summary": "The prophet Zoroaster (Zarathustra) teaches that the world is a struggle between truth and goodness, led by the wise god Ahura Mazda, and the forces of the lie, and that each person must choose a side. His hymns, the Gathas, are in an ancient eastern Iranian language. His dates and homeland are uncertain: many scholars place him between about 1500 and 1000 BC, while others argue for the 6th century BC.",
     "significance": "Zoroastrianism became the main religion of the Persian empires, and its ideas of a final judgment, heaven and hell and a cosmic battle of good and evil may have influenced Judaism, Christianity and Islam.",
