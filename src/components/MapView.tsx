@@ -183,6 +183,8 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
   const loader = useRef(createLatestLoader<FeatureCollection>((file) => fetchJson(asset(`borders/${file}`))));
   const activeSlot = useRef<Slot>('a');
   const shownFile = useRef<string | null>(null);
+  /** Bumped for every new border target, so a slower earlier swap never fades in after a newer one. */
+  const swapSeq = useRef(0);
   const highlight = useRef<{ hover: string | null; selected: string | null }>({ hover: null, selected: null });
 
   useEffect(() => {
@@ -226,6 +228,10 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
       map.remove();
       mapRef.current = null;
       setReady(false);
+      shownFile.current = null;
+      activeSlot.current = 'a';
+      highlight.current = { hover: null, selected: null };
+      setShownSnapshot(null);
     };
   }, [callbacks]);
 
@@ -235,16 +241,19 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
     const map = mapRef.current;
     if (!ready || !map || !snapshotFile) return;
     for (const s of neighborSnapshots(index, year)) loader.current.prefetch(s.file);
+    const swap = ++swapSeq.current;
     if (snapshotFile === shownFile.current) {
       loader.current.invalidate();
       return;
     }
     loader.current
       .load(snapshotFile)
-      .then((data) => {
+      .then(async (data) => {
         if (!data || mapRef.current !== map) return;
         const next: Slot = activeSlot.current === 'a' ? 'b' : 'a';
-        (map.getSource(`borders-${next}`) as GeoJSONSource).setData(data);
+        // setData parses in a worker; fade only once the new borders are actually in the source.
+        await (map.getSource(`borders-${next}`) as GeoJSONSource).setData(data);
+        if (swap !== swapSeq.current || mapRef.current !== map) return;
         setSlotOpacity(map, next, true);
         setSlotOpacity(map, activeSlot.current, false);
         activeSlot.current = next;
