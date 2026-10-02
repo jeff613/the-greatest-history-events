@@ -6,7 +6,8 @@
   --muted: #9aa7b4;
   --accent: #e0b45a;
   --line: #22303e;
-  --strip-h: max(160px, 30vh);
+  /* Set from TimelineStrip to its measured height; this is only the pre-measure fallback. */
+  --strip-h: 160px;
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -26,7 +27,7 @@ body,
 .app {
   display: grid;
   grid-template-columns: 1fr 360px;
-  grid-template-rows: auto 1fr var(--strip-h);
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header header'
     'map panel'
@@ -80,7 +81,9 @@ button:hover {
   grid-area: strip;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   min-height: 0;
+  max-height: max(160px, 45vh);
   background: var(--panel);
   border-top: 1px solid var(--line);
 }
@@ -104,6 +107,9 @@ button:hover {
 }
 
 .strip-canvas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 0;
   overflow: hidden;
@@ -111,9 +117,20 @@ button:hover {
 
 .strip-canvas svg {
   display: block;
-  touch-action: none;
+  flex: none;
   user-select: none;
+}
+
+.strip-axis {
+  touch-action: none;
   cursor: ew-resize;
+}
+
+.strip-lanes {
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .axis-bg {
@@ -150,17 +167,37 @@ button:hover {
 
 .era-label {
   fill: var(--text);
-  font-size: 10px;
+  font-size: 9px;
   pointer-events: none;
 }
 
-.playhead line {
-  stroke: #e0564a;
-  stroke-width: 2;
+.playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  margin-left: -6px;
+  pointer-events: none;
 }
 
-.playhead circle {
-  fill: #e0564a;
+.playhead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  width: 2px;
+  background: #e0564a;
+}
+
+.playhead-knob {
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: #e0564a;
 }
 
 .map,
