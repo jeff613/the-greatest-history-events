@@ -38,7 +38,7 @@
     "location": { "name": "Jerusalem", "lat": 31.78, "lng": 35.24 },
     "importance": 2,
     "summary": "According to the Hebrew Bible, King Solomon builds a temple to the God of Israel on a hill in Jerusalem to house the Ark of the Covenant. No remains of the building have been securely identified, and archaeologists debate both its date and how large and powerful Solomon's kingdom really was.",
-    "significance": "The Temple became the center of Israelite worship until the Babylonians destroyed it in 587 or 586 BC, and the Temple Mount remains sacred to Jews, Christians and Muslims.",
+    "significance": "The Temple became the center of Israelite worship until the Babylonians destroyed it in 587 or 586 BC, and the Temple Mount is venerated by Jews, Christians and Muslims.",
     "wikipedia": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
   },
   {
@@ -78,7 +78,7 @@
     "category": "trade",
     "location": { "name": "Nukuleka, Tongatapu", "lat": -21.13, "lng": -175.11 },
     "importance": 2,
-    "summary": "Seafarers of the Lapita culture, known for their finely stamped pottery, sail east from Fiji and settle the uninhabited islands of Tonga, and soon afterward Samoa. One of the earliest known settlement sites is Nukuleka on Tonga's main island, Tongatapu.",
+    "summary": "Seafarers of the Lapita culture, known for their finely stamped pottery, sail east from the Fiji region and settle the uninhabited islands of Tonga, and soon afterward Samoa. One of the earliest known settlement sites is Nukuleka on Tonga's main island, Tongatapu.",
     "significance": "Tonga and Samoa became the homeland where Polynesian culture took shape, before later voyagers set out from the region to settle the rest of the Pacific, from Hawaii to New Zealand.",
     "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
   },
@@ -196,14 +196,14 @@
   {
     "id": "kush-conquers-egypt",
     "title": "Kush conquers Egypt",
-    "year": -744,
+    "year": -728,
     "endYear": null,
-    "dateLabel": "c. 744-728 BC",
+    "dateLabel": "c. 728 BC",
     "region": "sub-saharan-africa",
     "category": "politics",
     "location": { "name": "Napata (Jebel Barkal)", "lat": 18.54, "lng": 31.83 },
     "importance": 2,
-    "summary": "King Piye of Kush, who comes to the throne around 744 BC and rules from Napata in what is now Sudan, extends his power into a divided Egypt and, around 728 BC, marches north to defeat its rival rulers. He and his successors rule Egypt as its 25th Dynasty until Assyrian invasions push them back to Nubia in the mid-7th century BC.",
+    "summary": "King Piye of Kush, ruling from Napata in what is now Sudan, marches north into a divided Egypt and defeats its rival rulers around 728 BC. He and his successors rule Egypt as its 25th Dynasty until Assyrian invasions push them back to Nubia in the mid-7th century BC.",
     "significance": "For several decades a Nubian kingdom ruled Egypt and revived old Egyptian traditions such as pyramid building, which Kush continued at home for centuries afterward.",
     "wikipedia": "https://en.wikipedia.org/wiki/Piye"
   },
@@ -232,7 +232,7 @@
     "location": { "name": "Sardis", "lat": 38.49, "lng": 28.04 },
     "importance": 3,
     "summary": "In the kingdom of Lydia in western Anatolia, lumps of electrum, a natural mix of gold and silver, are stamped with marks guaranteeing their weight and value. These are among the earliest known coins; some of the oldest were found buried at the temple of Artemis at Ephesus.",
-    "significance": "Coinage spread quickly to the Greek cities and Persia, making trade and taxation easier; coins also appeared in India and China around the same period, probably independently.",
+    "significance": "Coinage spread quickly to the Greek cities and Persia, making trade and taxation easier; coins also appeared in India and China within a few centuries, probably independently.",
     "wikipedia": "https://en.wikipedia.org/wiki/History_of_coins"
   },
   {
@@ -301,7 +301,7 @@
     "location": { "name": "Pasargadae", "lat": 30.2, "lng": 53.18 },
     "importance": 3,
     "summary": "Cyrus II, king of the Persians in what is now southwestern Iran, overthrows his overlord Astyages, king of the Medes. He then conquers Lydia and the Greek cities of Anatolia, building what becomes the Achaemenid Persian Empire.",
-    "significance": "Within a generation it was the largest empire the world had yet seen, stretching from Egypt and the Aegean to the Indus, held together by roads, governors and a general tolerance of local customs and religions.",
+    "significance": "Within about thirty years, under Cyrus and his successors, it stretched from Egypt and the Aegean to the Indus, often described as the largest empire yet seen, held together by roads, governors and a general tolerance of local customs and religions.",
     "wikipedia": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
   },
   {
@@ -315,7 +315,7 @@
     "location": { "name": "Babylon", "lat": 32.54, "lng": 44.42 },
     "importance": 2,
     "summary": "Persian forces under Cyrus take Babylon, the greatest city of Mesopotamia, apparently with little fighting. Cyrus presents himself as a restorer of local gods, and according to the Bible he lets the exiled Judeans return home and rebuild their temple.",
-    "significance": "It ended the last native Mesopotamian empire and put the whole Near East under Persian rule; the Cyrus Cylinder recording his conquest is sometimes cited, with some exaggeration, as an early charter of rights.",
+    "significance": "It ended the last native Mesopotamian empire and put Mesopotamia and the Levant under Persian rule; the Cyrus Cylinder recording his conquest is sometimes cited, with some exaggeration, as an early charter of rights.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
   },
   {
@@ -453,7 +453,7 @@
     "category": "politics",
     "location": { "name": "Strait of Salamis", "lat": 37.95, "lng": 23.57 },
     "importance": 2,
-    "summary": "King Xerxes of Persia leads a huge invasion of Greece. A small force under King Leonidas of Sparta holds the pass of Thermopylae for three days before being destroyed, and weeks later the Greek fleet, mostly Athenian ships, defeats the Persian navy in the narrow strait off the island of Salamis.",
+    "summary": "King Xerxes of Persia leads a huge invasion of Greece. A Greek army holds the pass of Thermopylae for three days; when it is outflanked, most of it withdraws while a rearguard of King Leonidas's 300 Spartans and their allies fights to the end, and weeks later the Greek fleet, mostly Athenian ships, defeats the Persian navy in the narrow strait off the island of Salamis.",
     "significance": "Together with the land victory at Plataea the next year, Salamis ended Persia's attempts to conquer mainland Greece and opened the way for Athens' golden age.",
     "wikipedia": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece"
   },
@@ -529,6 +529,7 @@
     "title": "Aristotle founds the Lyceum",
     "year": -335,
     "endYear": null,
+    "dateLabel": "c. 335 BC",
     "region": "europe",
     "category": "science",
     "location": { "name": "Lyceum, Athens", "lat": 37.97, "lng": 23.74 },
@@ -730,7 +731,7 @@
   },
   {
     "id": "great-wall-qin",
-    "title": "Qin builds the first Great Wall",
+    "title": "Qin links walls into the Great Wall",
     "year": -214,
     "endYear": null,
     "dateLabel": "c. 215-210 BC",
@@ -738,7 +739,7 @@
     "category": "science",
     "location": { "name": "Jiuyuan (near Baotou), northern frontier", "lat": 40.65, "lng": 109.84 },
     "importance": 2,
-    "summary": "After unifying China, the First Emperor sends his general Meng Tian north to drive back the Xiongnu nomads and to join and extend walls that earlier northern states had built. Made mostly of rammed earth and built by huge numbers of conscripted laborers, the wall runs along much of China's northern frontier.",
+    "summary": "After unifying China, the First Emperor sends his general Meng Tian north to drive back the Xiongnu nomads. Meng Tian joins and extends the walls that earlier northern states had built into one long frontier wall, made mostly of rammed earth and built by huge numbers of conscripted laborers.",
     "significance": "It began the idea of one long wall guarding China's northern border, which later dynasties rebuilt; most of the stone Great Wall seen today was built by the Ming dynasty, more than 1,500 years later.",
     "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_Great_Wall_of_China"
   },
@@ -774,12 +775,12 @@
     "title": "Rome destroys Carthage and Corinth",
     "year": -146,
     "endYear": null,
-    "region": "europe",
+    "region": "mena",
     "category": "politics",
     "location": { "name": "Carthage", "lat": 36.85, "lng": 10.32 },
     "importance": 2,
     "summary": "After a three-year siege, Roman soldiers storm Carthage, kill or enslave its people and raze the city. In the same year another Roman army sacks the Greek city of Corinth after a revolt by the Achaean League. The story that Rome sowed salt on Carthage's fields is a later legend.",
-    "significance": "Rome now controlled the Mediterranean from Spain to Greece, and Carthage's lands became the Roman province of Africa.",
+    "significance": "Rome now dominated the western and central Mediterranean, and Carthage's lands became the Roman province of Africa.",
     "wikipedia": "https://en.wikipedia.org/wiki/Third_Punic_War"
   },
   {
@@ -802,9 +803,9 @@
     "endYear": null,
     "region": "southeast-asia-oceania",
     "category": "politics",
-    "location": { "name": "Panyu (Guangzhou)", "lat": 23.13, "lng": 113.26 },
+    "location": { "name": "Jiaozhi (Red River Delta)", "lat": 21.03, "lng": 105.85 },
     "importance": 1,
-    "summary": "Emperor Wu of Han sends armies south to conquer Nanyue, a kingdom founded by a former Qin general that ruled what are now southern China and northern Vietnam from its capital at Panyu, modern Guangzhou. The Han divide its lands into commanderies, including Jiaozhi in the Red River delta.",
+    "summary": "Emperor Wu of Han sends armies south to conquer Nanyue, a kingdom founded by a former Qin general that ruled what are now southern China and northern Vietnam from its capital at Panyu, modern Guangzhou. The Han divide its lands into commanderies, extending Han control over northern Vietnam through the commandery of Jiaozhi in the Red River delta.",
     "significance": "It began roughly a thousand years of Chinese rule over northern Vietnam, which ended with Vietnamese independence in the 10th century and left deep marks on Vietnamese culture and language.",
     "wikipedia": "https://en.wikipedia.org/wiki/Han_conquest_of_Nanyue"
   },
@@ -855,11 +856,12 @@
     "title": "Julian calendar introduced",
     "year": -46,
     "endYear": null,
+    "dateLabel": "46 BC (took effect 1 January 45 BC)",
     "region": "europe",
     "category": "science",
     "location": { "name": "Rome", "lat": 41.89, "lng": 12.48 },
     "importance": 2,
-    "summary": "Julius Caesar, advised by the astronomer Sosigenes of Alexandria, replaces Rome's confused lunar calendar with a solar year of 365 days and a leap day every fourth year. To realign the seasons, the year 46 BC is stretched to 445 days, and the new calendar takes effect on 1 January 45 BC.",
+    "summary": "Julius Caesar, advised by the astronomer Sosigenes of Alexandria, replaces Rome's lunisolar calendar, which had been kept in step with the seasons by irregular, often politically motivated extra months, with a solar year of 365 days and a leap day every fourth year. To realign the seasons, the year 46 BC is stretched to 445 days, and the new calendar takes effect on 1 January 45 BC.",
     "significance": "With a small correction made under Pope Gregory XIII in 1582, it became the calendar used around the world today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Julian_calendar"
   },
