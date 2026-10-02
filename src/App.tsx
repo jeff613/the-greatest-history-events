@@ -1,4 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import { About } from './components/About';
 import { MapView } from './components/MapView';
 import { TimelineStrip } from './components/TimelineStrip';
 import { EVENTS, EVENTS_BY_ID } from './data';
@@ -7,6 +8,7 @@ import { eventsInWindow, groupByRegion, pinnedEvents, windowHalfWidth } from './
 import { useTimeState } from './state/useTimeState';
 
 export default function App() {
+  const [aboutOpen, setAboutOpen] = useState(false);
   const t = useTimeState();
   const halfWidth = windowHalfWidth(t.view.zoom);
   const inWindow = useMemo(() => eventsInWindow(EVENTS, t.year, halfWidth), [t.year, halfWidth]);
@@ -22,6 +24,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <h1>The Greatest History</h1>
+        <button onClick={() => setAboutOpen(true)}>About</button>
       </header>
       <main className="map-area">
         <MapView
@@ -52,6 +55,7 @@ export default function App() {
         onView={t.setView}
         onTogglePlay={t.togglePlaying}
       />
+      {aboutOpen && <About onClose={() => setAboutOpen(false)} />}
     </div>
   );
 }
