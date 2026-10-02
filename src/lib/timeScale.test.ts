@@ -102,9 +102,9 @@ describe('ticks', () => {
       });
     });
   }
-  it('start at 2000 BC and use round centuries on the full view', () => {
+  it('start at 2000 BC and use round 50-year multiples on the full view', () => {
     const t = ticks(FULL_VIEW, 1200, 70);
     expect(t[0]).toBe(-2000);
-    for (const year of t) expect(year % 100 === 0 || year === 1).toBe(true);
+    for (const year of t) expect(year % 50 === 0 || year === 1).toBe(true);
   });
 });
