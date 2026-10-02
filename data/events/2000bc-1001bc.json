@@ -1,0 +1,30 @@
+[
+  {
+    "id": "code-of-hammurabi",
+    "title": "Code of Hammurabi",
+    "year": -1754,
+    "endYear": null,
+    "dateLabel": "c. 1754 BC",
+    "region": "mena",
+    "category": "politics",
+    "location": { "name": "Babylon", "lat": 32.54, "lng": 44.42 },
+    "importance": 3,
+    "summary": "King Hammurabi of Babylon has 282 laws carved on stone pillars set up across his kingdom. The laws cover trade, property, family and crime, with punishments that often depend on the social rank of the people involved.",
+    "significance": "One of the earliest and most complete written law codes, it established the idea that a ruler publishes fixed laws that apply across a whole state.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+  },
+  {
+    "id": "shang-dynasty-founded",
+    "title": "Shang dynasty founded",
+    "year": -1600,
+    "endYear": null,
+    "dateLabel": "c. 1600 BC",
+    "region": "east-asia",
+    "category": "politics",
+    "location": { "name": "Zhengzhou", "lat": 34.75, "lng": 113.65 },
+    "importance": 3,
+    "summary": "According to tradition, Tang of Shang overthrows the last Xia king and founds a dynasty that rules the Yellow River valley for about 500 years. The Shang build walled cities, cast elaborate bronze vessels and consult their ancestors with oracle bones.",
+    "significance": "The Shang is the earliest Chinese dynasty confirmed by archaeology and its own writing, and that script is the direct ancestor of modern Chinese characters.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty"
+  }
+]

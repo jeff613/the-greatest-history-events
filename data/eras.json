@@ -1,0 +1,8 @@
+[
+  { "id": "old-babylonian-period", "name": "Old Babylonian period", "start": -1894, "end": -1595, "region": "mena" },
+  { "id": "shang", "name": "Shang dynasty", "start": -1600, "end": -1046, "region": "east-asia" },
+  { "id": "roman-republic", "name": "Roman Republic", "start": -509, "end": -27, "region": "europe" },
+  { "id": "han", "name": "Han dynasty", "start": -206, "end": 220, "region": "east-asia" },
+  { "id": "roman-empire", "name": "Roman Empire", "start": -27, "end": 476, "region": "europe" },
+  { "id": "tang", "name": "Tang dynasty", "start": 618, "end": 907, "region": "east-asia" }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "qin-unifies-china",
+    "title": "Qin unifies China",
+    "year": -221,
+    "endYear": null,
+    "region": "east-asia",
+    "category": "politics",
+    "location": { "name": "Xianyang", "lat": 34.33, "lng": 108.71 },
+    "importance": 3,
+    "summary": "King Ying Zheng of Qin conquers the last of the rival Warring States and takes the title Qin Shi Huang, the First Emperor. His government standardizes writing, coins, weights, measures and even cart axle widths across the empire.",
+    "significance": "It created the first unified Chinese empire and the model of a centralized imperial state that lasted, through many dynasties, until 1912.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+  },
+  {
+    "id": "caesar-assassination",
+    "title": "Julius Caesar assassinated",
+    "year": -44,
+    "endYear": null,
+    "dateLabel": "15 March 44 BC",
+    "region": "europe",
+    "category": "politics",
+    "location": { "name": "Rome", "lat": 41.8955, "lng": 12.4769 },
+    "importance": 3,
+    "summary": "On the Ides of March, a group of Roman senators led by Brutus and Cassius stab Julius Caesar to death at a meeting of the Senate. They claim to be saving the Republic from a man who had just been named dictator for life.",
+    "significance": "Instead of restoring the Republic, the murder sets off new civil wars that end with Caesar's heir Octavian becoming Rome's first emperor.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+  }
+]

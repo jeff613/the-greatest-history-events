@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fall-of-western-roman-empire",
+    "title": "Fall of the Western Roman Empire",
+    "year": 476,
+    "endYear": null,
+    "region": "europe",
+    "category": "politics",
+    "location": { "name": "Ravenna", "lat": 44.42, "lng": 12.2 },
+    "importance": 3,
+    "summary": "The Germanic general Odoacer deposes Romulus Augustulus, the last Western Roman emperor, and rules Italy as king without naming a new emperor. By then the Western Empire had already lost most of its provinces to Germanic kingdoms.",
+    "significance": "The date is the traditional end of the ancient world in Western Europe, while the Eastern Roman (Byzantine) Empire carries on for nearly another thousand years.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+  },
+  {
+    "id": "tang-dynasty-founded",
+    "title": "Tang dynasty founded",
+    "year": 618,
+    "endYear": null,
+    "region": "east-asia",
+    "category": "politics",
+    "location": { "name": "Chang'an", "lat": 34.27, "lng": 108.95 },
+    "importance": 3,
+    "summary": "Li Yuan, a general of the collapsing Sui dynasty, seizes power and founds the Tang with its capital at Chang'an. The city grows into one of the largest and most cosmopolitan in the world, at the eastern end of the Silk Road.",
+    "significance": "The Tang is remembered as a golden age of Chinese poetry, art and trade, and its culture and institutions shaped Korea, Japan and Vietnam.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty"
+  }
+]

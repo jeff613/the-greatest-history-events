@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gutenberg-printing-press",
+    "title": "Gutenberg's printing press",
+    "year": 1440,
+    "endYear": null,
+    "dateLabel": "c. 1440",
+    "region": "europe",
+    "category": "science",
+    "location": { "name": "Mainz", "lat": 50.0, "lng": 8.27 },
+    "importance": 3,
+    "summary": "Johannes Gutenberg develops a printing press that combines movable metal type, oil-based ink and a screw press. His Bible, finished around 1455, is the first major book printed this way in Europe.",
+    "significance": "Cheap printed books spread literacy and new ideas across Europe, helping drive the Reformation, the Scientific Revolution and the Enlightenment.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Printing_press"
+  },
+  {
+    "id": "apollo-11-moon-landing",
+    "title": "Apollo 11 Moon landing",
+    "year": 1969,
+    "endYear": null,
+    "dateLabel": "20 July 1969",
+    "region": "americas",
+    "category": "science",
+    "location": { "name": "Kennedy Space Center", "lat": 28.57, "lng": -80.65 },
+    "importance": 3,
+    "summary": "NASA's Apollo 11 mission lands Neil Armstrong and Buzz Aldrin on the Moon while Michael Collins orbits above. The two astronauts spend about two and a half hours walking on the lunar surface before returning safely to Earth.",
+    "significance": "It was the first time humans set foot on another world, and the high point of the Cold War space race between the United States and the Soviet Union.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Apollo_11"
+  }
+]
