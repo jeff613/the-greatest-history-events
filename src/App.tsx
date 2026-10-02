@@ -2,13 +2,15 @@ import { useMemo } from 'react';
 import { MapView } from './components/MapView';
 import { TimelineStrip } from './components/TimelineStrip';
 import { EVENTS, EVENTS_BY_ID } from './data';
-import { eventsInWindow, pinnedEvents, windowHalfWidth } from './lib/selectEvents';
+import { EventPanel } from './components/EventPanel';
+import { eventsInWindow, groupByRegion, pinnedEvents, windowHalfWidth } from './lib/selectEvents';
 import { useTimeState } from './state/useTimeState';
 
 export default function App() {
   const t = useTimeState();
   const halfWidth = windowHalfWidth(t.view.zoom);
   const inWindow = useMemo(() => eventsInWindow(EVENTS, t.year, halfWidth), [t.year, halfWidth]);
+  const groups = useMemo(() => groupByRegion(inWindow, t.year), [inWindow, t.year]);
   const selectedEvent = t.selectedEventId ? (EVENTS_BY_ID.get(t.selectedEventId) ?? null) : null;
   const pins = useMemo(() => {
     const base = pinnedEvents(inWindow, halfWidth);
@@ -31,7 +33,17 @@ export default function App() {
           onSelect={t.selectEvent}
         />
       </main>
-      <aside className="panel-area" />
+      <div className="panel-area">
+        <EventPanel
+          year={t.year}
+          halfWidth={halfWidth}
+          groups={groups}
+          selectedEvent={selectedEvent}
+          hoveredEventId={t.hoveredEventId}
+          onHover={t.hoverEvent}
+          onSelect={t.selectEvent}
+        />
+      </div>
       <TimelineStrip
         year={t.year}
         view={t.view}
