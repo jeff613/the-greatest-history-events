@@ -102,6 +102,16 @@ describe('ticks', () => {
       });
     });
   }
+  it('cover the whole window on a narrow strip', () => {
+    const width = 318;
+    const t = ticks(FULL_VIEW, width, 72);
+    expect(t.length).toBeGreaterThan(2);
+    expect(yearToPx(t[t.length - 1], FULL_VIEW, width)).toBeGreaterThanOrEqual((width * 2) / 3);
+    t.forEach((year, i) => {
+      expect(year).not.toBe(0);
+      if (i > 0) expect(year).toBeGreaterThan(t[i - 1]);
+    });
+  });
   it('start at 2000 BC and use round 50-year multiples on the full view', () => {
     const t = ticks(FULL_VIEW, 1200, 70);
     expect(t[0]).toBe(-2000);

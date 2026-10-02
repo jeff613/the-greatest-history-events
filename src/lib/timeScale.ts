@@ -63,7 +63,8 @@ export function panBy(v: View, dxPx: number, width: number): View {
   return clampView({ zoom: v.zoom, center: v.center - dxPx / (v.zoom * width) });
 }
 
-const NICE_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
+const NICE_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000];
+const LARGEST_STEP = NICE_STEPS[NICE_STEPS.length - 1];
 
 /** Smallest multiple of `step` strictly after `year`; year 0 does not exist, so it becomes AD 1. */
 function nextMultiple(year: number, step: number): number {
@@ -73,21 +74,22 @@ function nextMultiple(year: number, step: number): number {
 
 /**
  * Tick years for the visible window. The step adapts to the local density of the
- * compressed axis, so ticks stay at least `minGapPx` apart everywhere.
+ * compressed axis, so ticks stay at least `minGapPx` apart wherever a nice step allows.
+ * Where even the largest step is closer than that (very narrow strips), the largest step
+ * is used anyway so the ticks still run across the whole window.
  */
 export function ticks(v: View, width: number, minGapPx = 72): number[] {
   const px = (year: number) => yearToPx(year, v, width);
   const first = pxToYear(0, v, width);
   const last = pxToYear(width, v, width);
-  const firstStep = NICE_STEPS.find((s) => px(addYears(first, s)) - px(first) >= minGapPx) ?? 1000;
+  const firstStep = NICE_STEPS.find((s) => px(addYears(first, s)) - px(first) >= minGapPx) ?? LARGEST_STEP;
   const out: number[] = [];
   let t = first % firstStep === 0 ? first : nextMultiple(first, firstStep);
   while (t <= last) {
     out.push(t);
     const tPx = px(t);
-    const next = NICE_STEPS.map((s) => nextMultiple(t, s)).find((c) => px(c) - tPx >= minGapPx);
-    if (next === undefined) break;
-    t = next;
+    t =
+      NICE_STEPS.map((s) => nextMultiple(t, s)).find((c) => px(c) - tPx >= minGapPx) ?? nextMultiple(t, LARGEST_STEP);
   }
   return out;
 }
