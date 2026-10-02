@@ -22,3 +22,143 @@ body,
   height: 100%;
   margin: 0;
 }
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  grid-template-rows: auto 1fr var(--strip-h);
+  grid-template-areas:
+    'header header'
+    'map panel'
+    'strip strip';
+  height: 100%;
+}
+
+.app-header {
+  grid-area: header;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.map-area {
+  grid-area: map;
+  position: relative;
+  min-height: 0;
+}
+
+.panel-area {
+  grid-area: panel;
+  min-height: 0;
+}
+
+button {
+  font: inherit;
+  color: var(--text);
+  background: var(--panel-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+.strip {
+  grid-area: strip;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+}
+
+.strip-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+}
+
+.strip-year {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-size: 20px;
+  color: var(--accent);
+  min-width: 7ch;
+}
+
+.strip-spacer {
+  flex: 1;
+}
+
+.strip-canvas {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.strip-canvas svg {
+  display: block;
+  touch-action: none;
+  user-select: none;
+  cursor: ew-resize;
+}
+
+.axis-bg {
+  fill: transparent;
+}
+
+.tick-line {
+  stroke: var(--line);
+}
+
+.tick-label {
+  fill: var(--muted);
+  font-size: 11px;
+}
+
+.lane-label {
+  fill: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.era {
+  cursor: pointer;
+}
+
+.era rect {
+  opacity: 0.85;
+}
+
+.era:hover rect {
+  opacity: 1;
+}
+
+.era-label {
+  fill: var(--text);
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.playhead line {
+  stroke: #e0564a;
+  stroke-width: 2;
+}
+
+.playhead circle {
+  fill: #e0564a;
+}
