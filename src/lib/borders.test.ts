@@ -92,6 +92,32 @@ describe('createLatestLoader', () => {
     expect(fetcher).toHaveBeenCalledTimes(2);
   });
 
+  it('keeps only the 6 most recently used snapshots', async () => {
+    const fetcher = vi.fn((key: string) => Promise.resolve(key.toUpperCase()));
+    const loader = createLatestLoader(fetcher);
+    for (const key of ['a', 'b', 'c', 'd', 'e', 'f']) await loader.load(key);
+    await loader.load('a'); // a becomes the most recently used, so b is now the oldest
+    await loader.load('g');
+    expect(fetcher).toHaveBeenCalledTimes(7);
+    expect(await loader.load('a')).toBe('A');
+    expect(fetcher).toHaveBeenCalledTimes(7);
+    expect(await loader.load('b')).toBe('B');
+    expect(fetcher).toHaveBeenCalledTimes(8);
+    expect(fetcher).toHaveBeenLastCalledWith('b');
+  });
+
+  it('never evicts the pending load of the latest request', async () => {
+    const d = deferred<string>();
+    const fetcher = vi.fn((key: string) => (key === 'x' ? d.promise : Promise.resolve(key)));
+    const loader = createLatestLoader(fetcher);
+    const pending = loader.load('x');
+    for (const key of ['a', 'b', 'c', 'd', 'e', 'f']) loader.prefetch(key);
+    d.resolve('X');
+    expect(await pending).toBe('X');
+    expect(await loader.load('x')).toBe('X');
+    expect(fetcher.mock.calls.filter(([key]) => key === 'x')).toHaveLength(1);
+  });
+
   it('a superseded failure resolves to null instead of throwing', async () => {
     const d = deferred<string>();
     const loader = createLatestLoader((key) => (key === 'x' ? d.promise : Promise.resolve('Y')));

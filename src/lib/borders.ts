@@ -48,20 +48,35 @@ export function polityColor(key: string): string {
   return POLITY_PALETTE[(hash >>> 0) % POLITY_PALETTE.length];
 }
 
+/** Snapshots kept in memory: the current one, its prefetched neighbors, and a few recent ones. */
+const CACHE_SIZE = 6;
+
 /**
  * Caching loader where only the most recent `load` call wins: earlier calls resolve to
  * null once a newer one (or `invalidate`) has happened, so out-of-order responses are ignored.
+ * The cache keeps the CACHE_SIZE most recently used keys, but never drops the latest load's key.
  */
 export function createLatestLoader<T>(fetcher: (key: string) => Promise<T>) {
+  /** In least-recently-used-first order: a hit is moved to the end. */
   const cache = new Map<string, Promise<T>>();
   let token = 0;
+  let latestKey: string | null = null;
 
   const get = (key: string): Promise<T> => {
     let promise = cache.get(key);
-    if (!promise) {
-      promise = fetcher(key);
-      cache.set(key, promise);
-      promise.catch(() => cache.delete(key));
+    if (promise) {
+      cache.delete(key);
+    } else {
+      const fetched = fetcher(key);
+      promise = fetched;
+      fetched.catch(() => {
+        if (cache.get(key) === fetched) cache.delete(key);
+      });
+    }
+    cache.set(key, promise);
+    for (const old of cache.keys()) {
+      if (cache.size <= CACHE_SIZE) break;
+      if (old !== latestKey) cache.delete(old);
     }
     return promise;
   };
@@ -69,6 +84,7 @@ export function createLatestLoader<T>(fetcher: (key: string) => Promise<T>) {
   return {
     async load(key: string): Promise<T | null> {
       const mine = ++token;
+      latestKey = key;
       try {
         const value = await get(key);
         return mine === token ? value : null;
@@ -79,6 +95,7 @@ export function createLatestLoader<T>(fetcher: (key: string) => Promise<T>) {
     },
     invalidate(): void {
       token++;
+      latestKey = null;
     },
     prefetch(key: string): void {
       get(key).catch(() => {});
