@@ -1,16 +1,16 @@
-import { useMemo, useState } from "react";
-import { About } from "./components/About";
-import { MapView } from "./components/MapView";
-import { TimelineStrip } from "./components/TimelineStrip";
-import { EVENTS, EVENTS_BY_ID } from "./data";
-import { EventPanel } from "./components/EventPanel";
+import { useMemo, useState } from 'react';
+import { About } from './components/About';
+import { MapView } from './components/MapView';
+import { TimelineStrip } from './components/TimelineStrip';
+import { EVENTS, EVENTS_BY_ID } from './data';
+import { EventPanel } from './components/EventPanel';
 import {
   eventsInWindow,
   groupByRegion,
   pinnedEvents,
   windowHalfWidth,
-} from "./lib/selectEvents";
-import { useTimeState } from "./state/useTimeState";
+} from './lib/selectEvents';
+import { useTimeState } from './state/useTimeState';
 
 export default function App() {
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -37,12 +37,12 @@ export default function App() {
 
   return (
     <>
-      <div className="app" inert={aboutOpen}>
-        <header className="app-header">
+      <div className='app' inert={aboutOpen}>
+        <header className='app-header'>
           <h1>The Greatest History</h1>
           <button onClick={() => setAboutOpen(true)}>About</button>
         </header>
-        <main className="map-area">
+        <main className='map-area'>
           <MapView
             year={t.year}
             pins={pins}
@@ -52,7 +52,7 @@ export default function App() {
             onSelect={t.selectEvent}
           />
         </main>
-        <div className="panel-area">
+        <div className='panel-area'>
           <EventPanel
             year={t.year}
             halfWidth={halfWidth}
