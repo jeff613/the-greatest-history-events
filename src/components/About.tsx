@@ -1,6 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export function About({ onClose }: { onClose(): void }) {
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+    return () => previous?.focus();
+  }, []);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -46,7 +54,9 @@ export function About({ onClose }: { onClose(): void }) {
           <li>Map labels: Open Sans (Apache License 2.0). Map rendering: MapLibre GL JS.</li>
           <li>Event descriptions link to Wikipedia for further reading.</li>
         </ul>
-        <button onClick={onClose}>Close</button>
+        <button ref={closeRef} onClick={onClose}>
+          Close
+        </button>
       </div>
     </div>
   );

@@ -190,6 +190,7 @@ button:hover {
 }
 
 .sheet-handle {
+  touch-action: none;
   display: none;
 }
 

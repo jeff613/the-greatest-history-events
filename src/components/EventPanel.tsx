@@ -23,6 +23,11 @@ export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEven
   const swipeStart = useRef<number | null>(null);
   const swiped = useRef(false);
 
+  // Expansions apply to one window only; the 5-per-region cap returns when the window changes.
+  useEffect(() => {
+    setExpanded(new Set());
+  }, [year, halfWidth]);
+
   // On phones, choosing an event (for example from a map pin) opens the sheet.
   useEffect(() => {
     if (selectedEvent) setSheetOpen(true);
@@ -34,7 +39,11 @@ export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEven
         className="sheet-handle"
         aria-label={sheetOpen ? 'Collapse events' : 'Expand events'}
         onPointerDown={(e) => {
+          e.currentTarget.setPointerCapture(e.pointerId);
           swipeStart.current = e.clientY;
+        }}
+        onPointerCancel={() => {
+          swipeStart.current = null;
         }}
         onPointerUp={(e) => {
           const start = swipeStart.current;
