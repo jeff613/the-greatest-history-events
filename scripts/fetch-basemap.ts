@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const NE_SHA = 'ca96624a56bd078437bca8184e78163e5039ad19';
@@ -26,18 +26,32 @@ for (const [name, source] of Object.entries(layers)) {
   console.log(`basemap ${name}`);
 }
 
-// Covers Latin, Latin-1, Latin Extended and combining marks (0-2047), plus Latin Extended Additional
-// (7680-7935) and General Punctuation (8192-8447). Rarer scripts in the data fall back to missing glyphs.
-const EXTRA_RANGES = ['7680-7935', '8192-8447'];
+// Glyph ranges are derived from the border labels (fetch-borders runs first): every 256-codepoint block
+// used by a NAME in any snapshot, plus 0-255. Blocks the font lacks upstream get an empty placeholder
+// so the dev/preview server never answers them with index.html.
+const bordersDir = join(PUBLIC, 'borders');
+const snapshots = JSON.parse(readFileSync(join(bordersDir, 'index.json'), 'utf8')) as { file: string }[];
+const blockStarts = new Set<number>([0]);
+for (const { file } of snapshots) {
+  const collection = JSON.parse(readFileSync(join(bordersDir, file), 'utf8')) as {
+    features: { properties: { NAME: string | null } }[];
+  };
+  for (const feature of collection.features) {
+    for (const char of feature.properties.NAME ?? '') blockStarts.add(Math.floor(char.codePointAt(0)! / 256) * 256);
+  }
+}
 const glyphDir = join(PUBLIC, 'glyphs', FONT_STACK);
 mkdirSync(glyphDir, { recursive: true });
-for (let start = 0; start < 2048; start += 256) {
+for (const start of [...blockStarts].sort((a, b) => a - b)) {
   const range = `${start}-${start + 255}`;
-  const res = await get(`${FONTS_BASE}/${range}.pbf`);
-  writeFileSync(join(glyphDir, `${range}.pbf`), Buffer.from(await res.arrayBuffer()));
-}
-for (const range of EXTRA_RANGES) {
-  const res = await get(`${FONTS_BASE}/${range}.pbf`);
+  const url = `${FONTS_BASE}/${range}.pbf`;
+  const res = await fetch(url);
+  if (res.status === 404) {
+    writeFileSync(join(glyphDir, `${range}.pbf`), new Uint8Array(0));
+    console.log(`no upstream glyphs for ${range}, wrote empty placeholder`);
+    continue;
+  }
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}: ${url}`);
   writeFileSync(join(glyphDir, `${range}.pbf`), Buffer.from(await res.arrayBuffer()));
 }
 writeFileSync(

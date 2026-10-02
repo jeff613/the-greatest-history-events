@@ -178,6 +178,7 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [index, setIndex] = useState<Snapshot[]>([]);
+  const [shownSnapshot, setShownSnapshot] = useState<string | null>(null);
   const callbacks = useLatest({ onHover, onSelect });
   const loader = useRef(createLatestLoader<FeatureCollection>((file) => fetchJson(asset(`borders/${file}`))));
   const activeSlot = useRef<Slot>('a');
@@ -248,6 +249,7 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
         setSlotOpacity(map, activeSlot.current, false);
         activeSlot.current = next;
         shownFile.current = snapshotFile;
+        setShownSnapshot(snapshotFile);
       })
       .catch((err) => console.warn(`Border snapshot ${snapshotFile} failed to load; keeping the previous one`, err));
     // `year` only matters through snapshotFile and the prefetch neighbors.
@@ -278,7 +280,7 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
   }, [ready, selectedEvent]);
 
   return (
-    <div className="map" data-testid="map">
+    <div className="map" data-testid="map" data-borders={shownSnapshot ?? undefined}>
       {failed ? (
         <p className="map-fallback">
           The map needs WebGL, which this browser could not start. The timeline and event list still work.

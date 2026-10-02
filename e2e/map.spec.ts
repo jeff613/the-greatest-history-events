@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test';
 test('the map renders a canvas', async ({ page }) => {
   await page.goto('/?year=-44');
   await expect(page.getByTestId('map').locator('canvas')).toBeVisible();
+  await expect(page.getByTestId('map')).toHaveAttribute('data-borders', 'world_bc100.geojson');
 });
 
 test('without WebGL the map shows a fallback and the timeline still works', async ({ page }) => {
