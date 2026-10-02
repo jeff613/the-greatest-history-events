@@ -159,7 +159,7 @@
     "location": { "name": "Delhi", "lat": 28.52, "lng": 77.19 },
     "importance": 2,
     "summary": "After the murder of Muhammad of Ghor, his Turkic slave general Qutb ud-Din Aibak takes power over the Ghurid conquests in northern India, ruling at first from Lahore. Under his successor Iltutmish, Delhi becomes the capital of a sultanate that, under a series of dynasties, is the main power in northern India for about three centuries.",
-    "significance": "The Delhi Sultanate brought much of the Indian subcontinent under Muslim rulers, held off Mongol invasions, and fostered an Indo-Islamic culture in architecture, language and the arts.",
+    "significance": "The Delhi Sultanate brought much of northern India under Muslim rulers, held off Mongol invasions, and fostered an Indo-Islamic culture in architecture, language and the arts.",
     "wikipedia": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
   },
   {
@@ -346,7 +346,7 @@
     "category": "trade",
     "location": { "name": "Nanjing (fleet base)", "lat": 32.03, "lng": 118.73 },
     "importance": 2,
-    "summary": "On the orders of the Yongle Emperor, the admiral Zheng He, a Muslim court eunuch, leads seven great voyages with fleets of dozens of ships and tens of thousands of men. They sail through Southeast Asia to India, Arabia and the coast of East Africa, collecting tribute and displaying Ming power; the size of the largest treasure ships is debated.",
+    "summary": "On the orders of the Yongle Emperor, the admiral Zheng He, a Muslim court eunuch, leads seven great voyages with fleets of hundreds of ships, including dozens of large treasure ships, and tens of thousands of men. They sail through Southeast Asia to India, Arabia and the coast of East Africa, collecting tribute and displaying Ming power; the size of the largest treasure ships is debated.",
     "significance": "The voyages showed that China had the ships and skill for long ocean voyages decades before the Portuguese reached the Indian Ocean, but the Ming court ended them and China did not follow them with overseas expansion.",
     "wikipedia": "https://en.wikipedia.org/wiki/Treasure_voyages"
   },
@@ -388,7 +388,7 @@
     "category": "politics",
     "location": { "name": "Constantinople (Istanbul)", "lat": 41.02, "lng": 28.94 },
     "importance": 3,
-    "summary": "After a siege of nearly two months, the 21-year-old Ottoman sultan Mehmed II captures Constantinople, using huge cannons to batter its ancient land walls. The last Byzantine emperor, Constantine XI, dies in the final assault.",
+    "summary": "After a siege of nearly two months, the 21-year-old Ottoman sultan Mehmed II captures Constantinople, using huge cannons to batter its ancient land walls. The last Byzantine emperor, Constantine XI, is believed to have died in the final assault.",
     "significance": "The fall ended the Byzantine Empire, the last remnant of the Roman Empire, and the city, later known as Istanbul, became the Ottoman capital; Greek scholars who fled west added to the Renaissance in Italy.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
   },
@@ -572,13 +572,13 @@
   {
     "id": "manila-galleons",
     "title": "Manila galleon trade begins",
-    "year": 1571,
+    "year": 1565,
     "endYear": null,
     "region": "southeast-asia-oceania",
     "category": "trade",
-    "location": { "name": "Manila", "lat": 14.59, "lng": 120.97 },
+    "location": { "name": "Cebu (first Spanish base; Manila became the hub from 1571)", "lat": 10.29, "lng": 123.9 },
     "importance": 2,
-    "summary": "The Spanish conquistador Miguel López de Legazpi makes Manila the capital of the Spanish Philippines, building on the return route across the Pacific to Mexico that Spanish sailors found in 1565. Soon galleons sail regularly between Manila and Acapulco, usually one or two a year, carrying American silver west and Chinese silk and porcelain east.",
+    "summary": "Sailing from Cebu, the first Spanish base in the Philippines, the navigator Andrés de Urdaneta finds a return route east across the Pacific to Acapulco, opening regular trade between Asia and Spanish Mexico. After Miguel López de Legazpi makes Manila the capital of the Spanish Philippines in 1571, it becomes the hub of the trade, and galleons, usually one or two a year, carry American silver west and Chinese silk and porcelain east.",
     "significance": "Lasting until 1815, the route was one of the first regular trade links across the Pacific and, with Atlantic shipping, tied the Americas, Asia and Europe into a global trading network.",
     "wikipedia": "https://en.wikipedia.org/wiki/Manila_galleon"
   },
@@ -899,7 +899,7 @@
     "category": "politics",
     "location": { "name": "Gettysburg (representative battlefield)", "lat": 39.81, "lng": -77.23 },
     "importance": 2,
-    "summary": "After Abraham Lincoln is elected president, eleven Southern slave states secede from the United States and form the Confederacy, and war begins when Confederate forces fire on Fort Sumter in April 1861. After four years of fighting, including the Battle of Gettysburg in 1863, the Union defeats the Confederacy in 1865.",
+    "summary": "After Abraham Lincoln is elected president, eleven Southern slave states secede from the United States and form the Confederacy, and war, fought mainly over slavery and its expansion, begins when Confederate forces fire on Fort Sumter in April 1861. After four years of fighting, including the Battle of Gettysburg in 1863, the Union defeats the Confederacy in 1865.",
     "significance": "The war preserved the Union and led to the end of slavery in the United States with the Thirteenth Amendment, at a cost of an estimated 620,000 to 750,000 soldiers' lives.",
     "wikipedia": "https://en.wikipedia.org/wiki/American_Civil_War"
   },
@@ -936,7 +936,7 @@
     "title": "Berlin Conference and the Scramble for Africa",
     "year": 1884,
     "endYear": null,
-    "dateLabel": "1884-1885",
+    "dateLabel": "1884 (Berlin Conference, 1884-1885)",
     "region": "sub-saharan-africa",
     "category": "politics",
     "location": { "name": "Congo basin, near Kinshasa (representative; the conference met in Berlin)", "lat": -4.32, "lng": 15.31 },
@@ -1132,7 +1132,7 @@
     "category": "politics",
     "location": { "name": "Tel Aviv", "lat": 32.07, "lng": 34.77 },
     "importance": 2,
-    "summary": "As the British Mandate for Palestine ends, Jewish leaders headed by David Ben-Gurion declare the State of Israel in Tel Aviv, following a 1947 UN plan to divide Palestine into Jewish and Arab states. Neighboring Arab states invade, and by the end of the war Israel holds more territory than the UN plan proposed, while about 700,000 Palestinian Arabs have fled or been expelled from their homes, an event Palestinians call the Nakba (catastrophe).",
+    "summary": "As the British Mandate for Palestine ends, Jewish leaders headed by David Ben-Gurion declare the State of Israel in Tel Aviv, following a 1947 UN plan to divide Palestine into Jewish and Arab states. After months of fighting between Jewish and Arab forces, neighboring Arab states send armies in, and by the end of the war Israel holds more territory than the UN plan proposed, while about 700,000 Palestinian Arabs have fled or been expelled from their homes, an event Palestinians call the Nakba (catastrophe).",
     "significance": "Israel became a refuge for Jews from Europe after the Holocaust and from across the Middle East, while the unresolved conflict between Israelis, Palestinians and Arab states has shaped the region's politics ever since.",
     "wikipedia": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence"
   },
@@ -1297,7 +1297,7 @@
     "location": { "name": "Moscow (the Kremlin)", "lat": 55.75, "lng": 37.62 },
     "importance": 3,
     "summary": "After a failed coup by communist hardliners in August 1991, the Soviet republics declare independence one after another. Mikhail Gorbachev resigns as Soviet president on 25 December, and the Soviet Union is formally dissolved the next day, splitting into fifteen independent countries, the largest of them Russia.",
-    "significance": "It ended the Cold War and left the United States as the sole superpower, while the former Soviet states went through hard economic and political transitions.",
+    "significance": "It marked the end of the Cold War and left the United States as the sole superpower, while the former Soviet states went through hard economic and political transitions.",
     "wikipedia": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
