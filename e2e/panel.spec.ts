@@ -35,7 +35,8 @@ test('bad URL values fall back safely', async ({ page }) => {
   await page.goto('/?year=0&event=nope&zoom=-3');
   const panel = page.getByTestId('event-panel');
   await expect(panel).toContainText('Around AD 1');
-  await expect(panel.getByRole('heading', { level: 2 })).toHaveCount(0);
+  await expect(panel.locator('article.card')).toHaveCount(0);
+  await expect(panel).not.toContainText('Why it mattered');
   await page.goto('/?year=99999');
   await expect(panel).toContainText('Around 2000');
 });

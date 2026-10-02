@@ -193,7 +193,7 @@ button:hover {
   display: none;
 }
 
-.panel-title {
+.panel-header h2 {
   margin: 0;
   font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
   font-size: 22px;

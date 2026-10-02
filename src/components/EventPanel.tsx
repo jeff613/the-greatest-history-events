@@ -57,7 +57,7 @@ export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEven
       ) : (
         <div className="panel-list">
           <header className="panel-header">
-            <p className="panel-title">Around {formatYear(year)}</p>
+            <h2>Around {formatYear(year)}</h2>
             <p className="panel-sub">Events within {halfWidth} years either side</p>
           </header>
           {groups.length === 0 && (
