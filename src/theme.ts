@@ -22,6 +22,18 @@ export const REGION_SHORT_LABELS: Record<Region, string> = {
   americas: 'Americas',
 };
 
+/** Where each region is on the map, as [west, south, east, north], for showing an entry that has no place of its own. */
+export const REGION_BOUNDS: Record<Region, [number, number, number, number]> = {
+  europe: [-11, 35, 42, 62],
+  mena: [-10, 12, 63, 42],
+  'sub-saharan-africa': [-18, -35, 52, 18],
+  'central-asia': [45, 32, 120, 56],
+  'south-asia': [60, 5, 98, 37],
+  'east-asia': [98, 20, 146, 50],
+  'southeast-asia-oceania': [92, -12, 142, 24],
+  americas: [-125, -55, -35, 60],
+};
+
 /** Era band colors on the timeline strip. */
 export const REGION_COLORS: Record<Region, string> = {
   europe: '#8c4a44',

@@ -7,12 +7,13 @@ import {
   pxToYear,
   ticks,
   uToYear,
+  viewSpanning,
   yearToPx,
   yearToU,
   zoomAt,
   type View,
 } from './timeScale';
-import { MAX_YEAR, MIN_YEAR } from './years';
+import { MAX_YEAR, MIN_YEAR, yearDiff } from './years';
 
 describe('yearToU and uToYear', () => {
   it('maps the range ends to 0 and 1', () => {
@@ -74,6 +75,24 @@ describe('views', () => {
     const v = clampView({ zoom: 2, center: 0.5 });
     expect(panBy(v, 100, 1000).center).toBeLessThan(0.5);
     expect(panBy(FULL_VIEW, 500, 1000)).toEqual(FULL_VIEW);
+  });
+  it('viewSpanning shows the requested number of years around any year', () => {
+    for (const year of [-1500, -500, 800, 1945]) {
+      const v = viewSpanning(year, 500);
+      const first = pxToYear(0, v, 1000);
+      const last = pxToYear(1000, v, 1000);
+      expect(Math.abs(yearDiff(first, last) - 500)).toBeLessThanOrEqual(1);
+      expect(first).toBeLessThan(year);
+      expect(last).toBeGreaterThan(year);
+    }
+  });
+  it('viewSpanning keeps the whole span inside the range at either end', () => {
+    const early = viewSpanning(MIN_YEAR, 500);
+    expect(pxToYear(0, early, 1000)).toBe(MIN_YEAR);
+    expect(pxToYear(1000, early, 1000)).toBe(-1500);
+    const late = viewSpanning(MAX_YEAR, 500);
+    expect(pxToYear(0, late, 1000)).toBe(1500);
+    expect(pxToYear(1000, late, 1000)).toBe(MAX_YEAR);
   });
 });
 

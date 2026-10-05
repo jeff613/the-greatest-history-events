@@ -2,7 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { MAX_ZOOM, yearToU } from '../lib/timeScale';
 import { DEFAULT_YEAR, parseUrlState, serializeUrlState } from './urlState';
 
-const known: Record<string, { year: number }> = { 'caesar-assassination': { year: -44 } };
+const known: Record<string, { id: string; start: number }> = {
+  'caesar-assassination': { id: 'caesar-assassination', start: -44 },
+  han: { id: 'han', start: -206 },
+  // A founding moment that was folded into its state resolves to the state.
+  'ming-dynasty-founded': { id: 'ming', start: 1368 },
+};
 const lookup = (id: string) => known[id];
 
 describe('parseUrlState', () => {
@@ -10,7 +15,7 @@ describe('parseUrlState', () => {
     expect(parseUrlState('', lookup)).toEqual({
       year: DEFAULT_YEAR,
       view: { zoom: 1, center: 0.5 },
-      selectedEventId: null,
+      selectedId: null,
     });
   });
 
@@ -32,35 +37,41 @@ describe('parseUrlState', () => {
     expect(parseUrlState('?zoom=1e9', lookup).view.zoom).toBe(MAX_ZOOM);
   });
 
-  it('ignores unknown events and shows the year', () => {
-    expect(parseUrlState('?year=300&event=nope', lookup)).toMatchObject({ year: 300, selectedEventId: null });
+  it('ignores unknown ids and shows the year', () => {
+    expect(parseUrlState('?year=300&item=nope', lookup)).toMatchObject({ year: 300, selectedId: null });
   });
 
-  it('opens a known event at its own year when no year is given', () => {
-    expect(parseUrlState('?event=caesar-assassination', lookup)).toMatchObject({
-      year: -44,
-      selectedEventId: 'caesar-assassination',
-    });
+  it('opens a known entry of any kind at its own start when no year is given', () => {
+    expect(parseUrlState('?item=caesar-assassination', lookup)).toMatchObject({ year: -44, selectedId: 'caesar-assassination' });
+    expect(parseUrlState('?item=han', lookup)).toMatchObject({ year: -206, selectedId: 'han' });
   });
 
-  it('lets an explicit year win over the event year', () => {
-    expect(parseUrlState('?year=-40&event=caesar-assassination', lookup).year).toBe(-40);
+  it('still reads links that use the older event parameter', () => {
+    expect(parseUrlState('?event=caesar-assassination', lookup).selectedId).toBe('caesar-assassination');
+  });
+
+  it('opens the state for a link to a founding moment that was folded into it', () => {
+    expect(parseUrlState('?event=ming-dynasty-founded', lookup)).toMatchObject({ year: 1368, selectedId: 'ming' });
+  });
+
+  it('lets an explicit year win over the entry start', () => {
+    expect(parseUrlState('?year=-40&item=caesar-assassination', lookup).year).toBe(-40);
   });
 });
 
 describe('serializeUrlState', () => {
-  it('omits default zoom and missing event', () => {
-    expect(serializeUrlState({ year: -44, view: { zoom: 1, center: 0.5 }, selectedEventId: null })).toBe(
+  it('omits default zoom and a missing selection', () => {
+    expect(serializeUrlState({ year: -44, view: { zoom: 1, center: 0.5 }, selectedId: null })).toBe(
       '?year=-44',
     );
   });
-  it('writes zoom compactly and the event', () => {
+  it('writes zoom compactly and the selection', () => {
     expect(
-      serializeUrlState({ year: -44, view: { zoom: 2.5, center: 0.4 }, selectedEventId: 'caesar-assassination' }),
-    ).toBe('?year=-44&zoom=2.5&event=caesar-assassination');
+      serializeUrlState({ year: -44, view: { zoom: 2.5, center: 0.4 }, selectedId: 'caesar-assassination' }),
+    ).toBe('?year=-44&zoom=2.5&item=caesar-assassination');
   });
   it('round-trips through parse', () => {
-    const state = parseUrlState('?year=1066&zoom=3&event=caesar-assassination', lookup);
+    const state = parseUrlState('?year=1066&zoom=3&item=caesar-assassination', lookup);
     expect(parseUrlState(serializeUrlState(state), lookup)).toEqual(state);
   });
 });

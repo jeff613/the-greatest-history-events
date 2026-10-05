@@ -1,13 +1,17 @@
 import { describe, expect, it } from 'vitest';
-import type { Era } from '../data/schema';
+import type { Bar } from '../data/schema';
 import { packEras } from './packEras';
 
-const era = (id: string, start: number, end: number, region: Era['region'] = 'europe'): Era => ({
+const era = (id: string, start: number, end: number, region: Bar['region'] = 'europe'): Bar => ({
   id,
-  name: id,
+  kind: 'state',
+  title: id,
   start,
   end,
   region,
+  summary: 's',
+  significance: 's',
+  wikipedia: 'https://en.wikipedia.org/wiki/X',
 });
 
 describe('packEras', () => {

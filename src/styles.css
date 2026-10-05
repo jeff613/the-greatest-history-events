@@ -420,3 +420,118 @@ button:hover {
 .about a {
   color: var(--accent);
 }
+
+/* Atlas layout: quiet cartography, generous type, and readable era bands. */
+:root {
+  --bg: #101c24;
+  --panel: #14232d;
+  --panel-raised: #1d303b;
+  --text: #f3ecdc;
+  --muted: #a9b8bd;
+  --accent: #e6bd78;
+  --line: #30414a;
+}
+
+.app { grid-template-columns: minmax(0, 1fr) 350px; }
+.app-header { align-items: center; padding: 18px 24px; gap: 20px; background: #14232d; }
+.app-header h1 { font-size: 29px; letter-spacing: -0.025em; }
+.eyebrow { display: block; font-size: 10px; letter-spacing: 0.16em; color: var(--accent); margin-bottom: 5px; }
+.header-focus { margin-left: auto; font-size: 13px; color: var(--accent); }
+.header-focus span { display: block; color: var(--muted); margin-top: 4px; font-size: 11px; }
+button { padding: 7px 12px; transition: background 150ms, border-color 150ms; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.map-caption { position: absolute; top: 20px; left: 64px; z-index: 1; pointer-events: none; padding: 12px 18px; border: 1px solid var(--line); border-radius: 8px; background: rgb(20 35 45 / 0.92); }
+.map-caption strong { display: block; font: 32px Georgia, serif; }
+.map-caption > span:last-child { display: block; margin-top: 7px; font-size: 11px; color: var(--muted); }
+.map-context { position: absolute; bottom: 16px; left: 20px; z-index: 1; max-width: calc(100% - 40px); padding: 10px 14px; background: rgb(20 35 45 / 0.94); border: 1px solid var(--line); border-radius: 8px; }
+.map-context button { font-size: 11px; }
+.map-context p { margin: 6px 0 0; font-size: 11px; color: var(--muted); }
+.panel { padding: 22px 20px; }
+.panel-header { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.panel-header h2 { font-size: 27px; }
+.region h3 { margin-top: 22px; color: var(--accent); }
+.event-row { padding: 12px 8px; border-bottom-color: var(--line); border-radius: 0; gap: 9px; }
+.event-title { font-size: 13px; line-height: 1.5; }
+.event-date { font-size: 11px; }
+.strip { height: 36vh; min-height: 240px; max-height: 42vh; box-shadow: 0 -8px 30px rgb(0 0 0 / 0.12); }
+.strip-controls { padding: 12px 20px; gap: 10px; border-bottom: 1px solid var(--line); }
+.strip-year { font-size: 26px; }
+.strip-hint { color: var(--muted); font-size: 11px; margin-left: 12px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.strip-controls button { flex: none; white-space: nowrap; }
+.tick-label { font-size: 11px; }
+.lane-label { font-size: 10px; fill: var(--text); dominant-baseline: central; }
+.era-label { font-size: 12px; fill: #fff5e4; }
+.era rect { opacity: 1; stroke: rgb(255 255 255 / 0.12); }
+.era:hover rect { filter: brightness(1.25); }
+.tick-line { stroke-opacity: 0.5; }
+.strip-lanes { scrollbar-color: var(--line) var(--panel); }
+
+@media (max-width: 720px) {
+  .app { grid-template-columns: 1fr; }
+  .app-header { padding: 12px 16px; gap: 10px; }
+  /* The collapsed sheet is 56px tall: the handle, then the "Around ..." heading, uncut. */
+  .panel { padding: 0 16px 24px; }
+  .panel-header h2 { font-size: 22px; }
+  .app-header h1 { font-size: 23px; }
+  .brand .eyebrow { font-size: 8px; letter-spacing: 0.08em; }
+  .header-focus, .strip-hint { display: none; }
+  .strip { height: 32vh; min-height: 220px; }
+  .strip-controls { padding: 10px; gap: 6px; }
+  .strip-year { font-size: 22px; }
+  .strip-controls button { padding: 7px 7px; font-size: 11px; }
+  .map-caption { top: 12px; left: 52px; padding: 8px 12px; }
+  .map-caption strong { font-size: 24px; }
+  .map-context { bottom: 66px; left: 10px; max-width: calc(100% - 20px); padding: 8px 10px; }
+  .map-context p { font-size: 10px; }
+}
+
+.timeline-regions { display: flex; gap: 6px; padding: 7px 20px; overflow-x: auto; flex-shrink: 0; border-bottom: 1px solid var(--line); }
+.timeline-regions button { font-size: 11px; white-space: nowrap; padding: 5px 10px; }
+.era.is-selected rect { stroke: var(--accent); stroke-width: 2; filter: brightness(1.35); }
+.era:focus-visible rect { stroke: #fff; stroke-width: 2; }
+.map-context .territory-caption { color: var(--accent); }
+@media (max-width: 720px) {
+  .timeline-regions { padding: 6px 10px; }
+}
+
+.territory-popup .maplibregl-popup-content { background: var(--panel); color: var(--text); border: 1px solid var(--accent); border-radius: 6px; padding: 9px 13px; font: 13px system-ui, sans-serif; pointer-events: none; }
+.territory-popup { pointer-events: none; }
+.territory-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--panel); }
+.territory-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--panel); }
+
+.territory-caption button { margin-left: 8px; padding: 1px 6px; }
+
+
+.era-period rect { fill-opacity: 0.55; stroke: var(--accent); stroke-dasharray: 4 2; }
+.era-hitbox { pointer-events: all; }
+.timeline-legend { align-self: center; color: var(--muted); font-size: 10px; white-space: nowrap; }
+
+
+.timeline-regions button[aria-pressed='true'] { border-color: var(--accent); background: #354135; color: var(--text); }
+.timeline-regions button[aria-pressed='false'] { color: var(--muted); background: transparent; }
+.timeline-empty { margin: 20px; color: var(--muted); font-size: 13px; }
+
+/* Unified timeline: moments on the strip, bars and moments in the pane, one card for every kind. */
+/* The playhead is grabbed on the axis row only, so bars and markers under its line stay clickable. */
+.playhead { pointer-events: none; }
+.playhead-grip { position: absolute; top: 0; left: 0; width: 12px; pointer-events: auto; cursor: ew-resize; touch-action: none; }
+.strip-resize { flex: none; position: relative; height: 9px; cursor: ns-resize; touch-action: none; }
+.strip-resize::after { content: ''; position: absolute; left: 50%; top: 3px; width: 44px; height: 3px; margin-left: -22px; border-radius: 2px; background: var(--line); }
+.strip-resize:hover::after { background: var(--accent); }
+.marker { cursor: pointer; }
+.marker-shape { stroke: #fff; stroke-width: 0.8; }
+.marker-label { fill: var(--text); font-size: 11px; }
+.marker-label.is-forced { paint-order: stroke; stroke: var(--panel); stroke-width: 4px; }
+.marker.is-hovered .marker-shape, .marker:focus-visible .marker-shape { stroke: var(--accent); stroke-width: 2; }
+.marker.is-selected .marker-shape { stroke: var(--accent); stroke-width: 2.5; }
+.marker.is-hovered .marker-label, .marker.is-selected .marker-label { fill: var(--accent); }
+.marker:focus { outline: none; }
+.era.is-hovered rect { filter: brightness(1.25); }
+.bar-glyph { display: inline-block; width: 10px; height: 9px; border-radius: 2px; }
+.bar-glyph.is-period { outline: 1px dashed var(--accent); outline-offset: 1px; opacity: 0.75; }
+.in-progress { margin-bottom: 6px !important; padding-bottom: 6px !important; border-bottom: 1px solid var(--line); }
+.in-progress .event-row { padding-top: 7px; padding-bottom: 7px; border-bottom-color: transparent; }
+.panel-elsewhere { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.card-context ul { list-style: none; margin: 0; padding: 0; }
+.card-context .event-row { padding: 8px 0; }
+.card-context + a, .card > a { display: inline-block; margin-top: 18px; }

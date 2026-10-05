@@ -1,8 +1,7 @@
 import { loadDataFiles } from './loadDataFiles';
 
 const CONCURRENCY = 4;
-const { eventFiles } = loadDataFiles();
-const events = eventFiles.flatMap((f) => f.records as { id: string; wikipedia: string }[]);
+const events = loadDataFiles().flatMap((f) => f.records as { id: string; wikipedia: string }[]);
 
 const problems: string[] = [];
 let next = 0;

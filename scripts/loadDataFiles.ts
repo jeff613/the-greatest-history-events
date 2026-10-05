@@ -13,10 +13,9 @@ function readJson(relative: string): DataFile {
   }
 }
 
-export function loadDataFiles(): { eventFiles: DataFile[]; erasFile: DataFile } {
-  const eventFiles = readdirSync(join(DATA_DIR, 'events'))
+export function loadDataFiles(): DataFile[] {
+  return readdirSync(join(DATA_DIR, 'timeline'))
     .filter((f) => f.endsWith('.json'))
     .sort()
-    .map((f) => readJson(`events/${f}`));
-  return { eventFiles, erasFile: readJson('eras.json') };
+    .map((f) => readJson(`timeline/${f}`));
 }

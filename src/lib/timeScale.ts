@@ -63,6 +63,16 @@ export function panBy(v: View, dxPx: number, width: number): View {
   return clampView({ zoom: v.zoom, center: v.center - dxPx / (v.zoom * width) });
 }
 
+/** The view that shows `spanYears` years around `year`, shifted where needed to stay inside the range. */
+export function viewSpanning(year: number, spanYears: number): View {
+  const earliest = toAstronomical(MIN_YEAR);
+  const latest = toAstronomical(MAX_YEAR) - spanYears;
+  const start = Math.min(latest, Math.max(earliest, toAstronomical(year) - spanYears / 2));
+  const u0 = yearToU(fromAstronomical(start));
+  const u1 = yearToU(fromAstronomical(start + spanYears));
+  return clampView({ zoom: 1 / (u1 - u0), center: (u0 + u1) / 2 });
+}
+
 const NICE_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000];
 const LARGEST_STEP = NICE_STEPS[NICE_STEPS.length - 1];
 

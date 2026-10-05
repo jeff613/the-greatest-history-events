@@ -1,41 +1,55 @@
-import { useEffect, useRef, useState } from 'react';
-import type { HistoryEvent, Region } from '../data/schema';
-import type { RegionGroup } from '../lib/selectEvents';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { BARS, ENTRIES, hasPlace } from '../data';
+import type { Entry, Region } from '../data/schema';
+import { keyMoments, partOf } from '../lib/context';
+import type { Slice } from '../lib/slice';
 import { formatSpan, formatYear } from '../lib/years';
 import { useLatest } from '../state/useLatest';
-import { CATEGORY_COLORS, CATEGORY_LABELS, REGION_LABELS } from '../theme';
+import { CATEGORY_COLORS, CATEGORY_LABELS, REGION_COLORS, REGION_LABELS } from '../theme';
 
-export const REGION_CAP = 5;
+export const LIST_CAP = 5;
 const SWIPE_PX = 30;
 
 interface Props {
   year: number;
   halfWidth: number;
-  groups: RegionGroup[];
-  selectedEvent: HistoryEvent | null;
-  hoveredEventId: string | null;
+  slice: Slice;
+  selected: Entry | null;
+  hoveredId: string | null;
   onHover(id: string | null): void;
   onSelect(id: string | null): void;
+  onShowAllRegions(): void;
 }
 
-export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEventId, onHover, onSelect }: Props) {
-  const [expanded, setExpanded] = useState<Set<Region>>(new Set());
+export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHover, onSelect, onShowAllRegions }: Props) {
+  // Expansions apply to one window only; the 5-per-region cap returns when the window changes.
+  const windowKey = `${year}:${halfWidth}`;
+  const [expansion, setExpansion] = useState<{ windowKey: string; regions: Region[] }>({ windowKey, regions: [] });
+  const expanded = expansion.windowKey === windowKey ? expansion.regions : [];
   const [sheetOpen, setSheetOpen] = useState(false);
+  const paneRef = useRef<HTMLElement>(null);
   const swipeStart = useRef<number | null>(null);
   const swiped = useRef(false);
 
-  // Expansions apply to one window only; the 5-per-region cap returns when the window changes.
-  useEffect(() => {
-    setExpanded((s) => (s.size ? new Set() : s));
-  }, [year, halfWidth]);
+  // The pane is one scroll container for the list and every card, so it would otherwise keep
+  // its scroll position when what it shows changes.
+  useLayoutEffect(() => {
+    paneRef.current!.scrollTop = 0;
+  }, [selected?.id]);
 
-  // On phones, choosing an event (for example from a map pin) opens the sheet.
+  // On phones, choosing an entry (for example from a map pin) opens the sheet.
   useEffect(() => {
-    if (selectedEvent) setSheetOpen(true);
-  }, [selectedEvent]);
+    if (selected) setSheetOpen(true);
+  }, [selected]);
+
+  const row = (entry: Entry) => (
+    <li key={entry.id}>
+      <EntryRow entry={entry} hovered={entry.id === hoveredId} onHover={onHover} onSelect={onSelect} />
+    </li>
+  );
 
   return (
-    <aside className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
+    <aside ref={paneRef} className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
       <button
         className="sheet-handle"
         aria-label={sheetOpen ? 'Collapse events' : 'Expand events'}
@@ -62,58 +76,54 @@ export function EventPanel({ year, halfWidth, groups, selectedEvent, hoveredEven
           setSheetOpen((open) => !open);
         }}
       />
-      {selectedEvent ? (
-        <EventCard event={selectedEvent} onBack={() => onSelect(null)} />
+      {selected ? (
+        <EntryCard key={selected.id} entry={selected} hoveredId={hoveredId} onHover={onHover} onSelect={onSelect} />
       ) : (
         <div className="panel-list">
           <header className="panel-header">
             <h2>Around {formatYear(year)}</h2>
-            <p className="panel-sub">Events within {halfWidth} years either side</p>
+            <p className="panel-sub">What was in progress, and events within {halfWidth} years either side</p>
           </header>
-          {groups.length === 0 && (
+          {slice.groups.length === 0 && (
             <p className="panel-empty">
-              No recorded events in this window. Zoom out the timeline or move the playhead.
+              Nothing recorded here for the regions shown. Zoom out the timeline, move the playhead or switch on more regions.
             </p>
           )}
-          {groups.map((group) => {
-            const shown = expanded.has(group.region) ? group.events : group.events.slice(0, REGION_CAP);
-            const more = group.events.length - shown.length;
+          {slice.groups.map((group) => {
+            const shown = expanded.includes(group.region) ? group.moments : group.moments.slice(0, LIST_CAP);
+            const more = group.moments.length - shown.length;
             return (
               <section key={group.region} className="region">
                 <h3>{REGION_LABELS[group.region]}</h3>
-                <ul>
-                  {shown.map((event) => (
-                    <li key={event.id}>
-                      <EventRow
-                        event={event}
-                        hovered={event.id === hoveredEventId}
-                        onHover={onHover}
-                        onSelect={onSelect}
-                      />
-                    </li>
-                  ))}
-                </ul>
+                {group.inProgress.length > 0 && <ul className="in-progress" aria-label={`In progress in ${REGION_LABELS[group.region]}`}>{group.inProgress.map(row)}</ul>}
+                <ul>{shown.map(row)}</ul>
                 {more > 0 && (
-                  <button className="more" onClick={() => setExpanded((s) => new Set(s).add(group.region))}>
+                  <button className="more" onClick={() => setExpansion({ windowKey, regions: [...expanded, group.region] })}>
                     +{more} more
                   </button>
                 )}
               </section>
             );
           })}
+          {slice.elsewhere > 0 && (
+            <p className="panel-elsewhere">
+              {slice.elsewhere} more {slice.elsewhere === 1 ? 'event' : 'events'} around this time in regions that are switched off.{' '}
+              <button className="more" onClick={onShowAllRegions}>Show all regions</button>
+            </p>
+          )}
         </div>
       )}
     </aside>
   );
 }
 
-function EventRow({
-  event,
+function EntryRow({
+  entry,
   hovered,
   onHover,
   onSelect,
 }: {
-  event: HistoryEvent;
+  entry: Entry;
   hovered: boolean;
   onHover(id: string | null): void;
   onSelect(id: string): void;
@@ -133,45 +143,92 @@ function EventRow({
   );
   const setHover = (on: boolean) => {
     ownsHover.current = on;
-    onHover(on ? event.id : null);
+    onHover(on ? entry.id : null);
   };
   return (
     <button
       ref={ref}
       className={`event-row${hovered ? ' is-hovered' : ''}`}
+      data-kind={entry.kind}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {
         setHover(false);
-        onSelect(event.id);
+        onSelect(entry.id);
       }}
     >
-      <span className="dot" style={{ background: CATEGORY_COLORS[event.category] }} aria-hidden />
-      <span className="event-title">{event.title}</span>
-      <span className="event-date">{formatSpan(event.year, event.endYear)}</span>
+      {entry.kind === 'moment' ? (
+        <span className="dot" style={{ background: CATEGORY_COLORS[entry.category] }} aria-hidden />
+      ) : (
+        <span className={`bar-glyph${entry.kind === 'period' ? ' is-period' : ''}`} style={{ background: REGION_COLORS[entry.region] }} aria-hidden />
+      )}
+      <span className="event-title">{entry.title}</span>
+      <span className="event-date">{formatSpan(entry.start, entry.end)}</span>
     </button>
   );
 }
 
-function EventCard({ event, onBack }: { event: HistoryEvent; onBack(): void }) {
+const KIND_LABELS = { state: 'Historical state', period: 'Historical period' } as const;
+
+function EntryCard({
+  entry,
+  hoveredId,
+  onHover,
+  onSelect,
+}: {
+  entry: Entry;
+  hoveredId: string | null;
+  onHover(id: string | null): void;
+  onSelect(id: string | null): void;
+}) {
+  const [allMoments, setAllMoments] = useState(false);
+  const parents = entry.kind === 'state' ? [] : partOf(entry, BARS);
+  const moments = entry.kind === 'moment' ? [] : keyMoments(entry, ENTRIES);
+  const shownMoments = allMoments ? moments : moments.slice(0, LIST_CAP);
+  const row = (other: Entry) => (
+    <li key={other.id}>
+      <EntryRow entry={other} hovered={other.id === hoveredId} onHover={onHover} onSelect={onSelect} />
+    </li>
+  );
   return (
-    <article className="card">
-      <button className="back" onClick={onBack}>
-        ← All events
+    <article className="card" data-testid="entry-card" data-kind={entry.kind}>
+      <button className="back" onClick={() => onSelect(null)}>
+        ← Around this time
       </button>
       <p className="card-category">
-        <span className="dot" style={{ background: CATEGORY_COLORS[event.category] }} aria-hidden />
-        {CATEGORY_LABELS[event.category]}
+        {entry.kind !== 'state' && entry.category && (
+          <span className="dot" style={{ background: CATEGORY_COLORS[entry.category] }} aria-hidden />
+        )}
+        {entry.kind === 'moment'
+          ? CATEGORY_LABELS[entry.category]
+          : `${KIND_LABELS[entry.kind]}${entry.kind === 'period' && entry.category ? ` · ${CATEGORY_LABELS[entry.category]}` : ''}`}
       </p>
-      <h2>{event.title}</h2>
+      <h2>{entry.title}</h2>
       <p className="card-meta">
-        {event.dateLabel ?? formatSpan(event.year, event.endYear)} · {event.location.name},{' '}
-        {REGION_LABELS[event.region]}
+        {entry.dateLabel ?? formatSpan(entry.start, entry.end)} · {hasPlace(entry) ? `${entry.location.name}, ` : ''}
+        {REGION_LABELS[entry.region]}
       </p>
-      <p>{event.summary}</p>
+      <p>{entry.summary}</p>
       <h3>Why it mattered</h3>
-      <p>{event.significance}</p>
-      <a href={event.wikipedia} target="_blank" rel="noreferrer">
+      <p>{entry.significance}</p>
+      {parents.length > 0 && (
+        <section className="card-context">
+          <h3>Part of</h3>
+          <ul>{parents.map(row)}</ul>
+        </section>
+      )}
+      {moments.length > 0 && (
+        <section className="card-context">
+          <h3>Key moments</h3>
+          <ul>{shownMoments.map(row)}</ul>
+          {moments.length > shownMoments.length && (
+            <button className="more" onClick={() => setAllMoments(true)}>
+              +{moments.length - shownMoments.length} more
+            </button>
+          )}
+        </section>
+      )}
+      <a href={entry.wikipedia} target="_blank" rel="noreferrer">
         Read more on Wikipedia
       </a>
     </article>

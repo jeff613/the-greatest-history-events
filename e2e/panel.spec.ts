@@ -23,12 +23,12 @@ test('selecting an event opens its card, updates the URL and survives reload', a
   await panel.getByRole('button', { name: /^Julius Caesar assassinated/ }).click();
   await expect(panel.getByRole('heading', { level: 2, name: 'Julius Caesar assassinated' })).toBeVisible();
   await expect(panel).toContainText('Why it mattered');
-  await expect(page).toHaveURL(/event=caesar-assassination/);
+  await expect(page).toHaveURL(/item=caesar-assassination/);
   await page.reload();
   await expect(panel.getByRole('heading', { level: 2, name: 'Julius Caesar assassinated' })).toBeVisible();
-  await panel.getByRole('button', { name: /All events/ }).click();
+  await panel.getByRole('button', { name: /Around this time/ }).click();
   await expect(panel).toContainText('Around 44 BC');
-  await expect(page).not.toHaveURL(/event=/);
+  await expect(page).not.toHaveURL(/item=/);
 });
 
 test('bad URL values fall back safely', async ({ page }) => {
@@ -49,7 +49,7 @@ test('selecting a hovered row does not leave it stuck as hovered', async ({ page
   await expect(row).toHaveClass(/is-hovered/);
   await row.click();
   await page.mouse.move(5, 5);
-  await panel.getByRole('button', { name: /All events/ }).focus();
+  await panel.getByRole('button', { name: /Around this time/ }).focus();
   await page.keyboard.press('Enter');
   await expect(panel).toContainText('Around 44 BC');
   await expect(panel.locator('.event-row.is-hovered')).toHaveCount(0);

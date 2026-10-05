@@ -5,21 +5,29 @@ import {
   type MapLayerMouseEvent,
   MapLibreMap,
   NavigationControl,
+  Popup,
   setWorkerUrl,
   type StyleSpecification,
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
-import type { HistoryEvent } from '../data/schema';
-import { createLatestLoader, neighborSnapshots, snapshotFor, type Snapshot } from '../lib/borders';
+import type { Bar, Placed } from '../data/schema';
+import { createLatestLoader, neighborSnapshots, snapshotFor, territoryName, type Snapshot } from '../lib/borders';
+import { territoryFor } from '../lib/eraTerritory';
+import { formatYear } from '../lib/years';
+import type { TerritorySelection } from '../state/useTimeState';
 import { useLatest } from '../state/useLatest';
-import { CATEGORY_COLORS, MAP_COLORS } from '../theme';
+import { CATEGORY_COLORS, MAP_COLORS, REGION_BOUNDS } from '../theme';
 
 // MapLibre 6 looks for its worker next to its own module, which bundling breaks; let Vite build and serve it.
 setWorkerUrl(mapWorkerUrl);
 
 const FADE_MS = 300;
+/** Close enough to see a place among its neighbors; selecting an entry zooms in at least this far. */
+const SPOT_ZOOM = 4;
+/** A state's territory fills the map up to this zoom, so that a small one is still seen in context. */
+const TERRITORY_MAX_ZOOM = 5;
 const BORDER_FILL_OPACITY = 0.5;
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 type Slot = 'a' | 'b';
@@ -49,7 +57,8 @@ function borderLayers(slot: Slot): { fills: LayerSpecification[]; label: LayerSp
         source: `borders-${slot}`,
         paint: {
           'line-color': MAP_COLORS.border,
-          'line-width': 0.6,
+          'line-width': ['match', ['get', 'BORDERPRECISION'], 3, 1, 2, 0.7, 0.5],
+          'line-blur': ['match', ['get', 'BORDERPRECISION'], 3, 0, 2, 0.5, 1.5],
           'line-opacity': 0,
           'line-opacity-transition': fade,
         },
@@ -60,7 +69,10 @@ function borderLayers(slot: Slot): { fills: LayerSpecification[]; label: LayerSp
       type: 'symbol',
       source: `borders-${slot}`,
       layout: {
+        visibility: 'none',
         'text-field': ['get', 'NAME'],
+        'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
+        'text-radial-offset': 0.5,
         'text-font': ['Open Sans Italic'],
         'text-size': ['interpolate', ['linear'], ['zoom'], 1, 10, 5, 15],
         'text-max-width': 8,
@@ -86,7 +98,7 @@ function buildStyle(): StyleSpecification {
   ];
   return {
     version: 8,
-    projection: { type: 'globe' },
+    projection: { type: 'mercator' },
     glyphs: `${asset('glyphs/')}{fontstack}/{range}.pbf`,
     sources: {
       land: { type: 'geojson', data: asset('basemap/land.geojson') },
@@ -94,6 +106,7 @@ function buildStyle(): StyleSpecification {
       rivers: { type: 'geojson', data: asset('basemap/rivers.geojson') },
       'borders-a': { type: 'geojson', data: EMPTY },
       'borders-b': { type: 'geojson', data: EMPTY },
+      territory: { type: 'geojson', data: EMPTY },
       events: { type: 'geojson', data: EMPTY, promoteId: 'id' },
     },
     layers: [
@@ -111,12 +124,20 @@ function buildStyle(): StyleSpecification {
           'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.4, 6, 1.5],
         },
       },
+      { id: 'territory-fill', type: 'fill', source: 'territory', paint: {
+        'fill-color': '#f1c56e', 'fill-opacity': 0.55,
+      } },
+      { id: 'territory-outline', type: 'line', source: 'territory', paint: {
+        'line-color': '#ffe6a6', 'line-width': 2.5,
+      } },
       a.label,
       b.label,
       {
         id: 'pins',
         type: 'circle',
         source: 'events',
+        // Where events share a place, the most important one is drawn on top and gets the click.
+        layout: { 'circle-sort-key': ['get', 'importance'] },
         paint: {
           'circle-radius': [
             '+',
@@ -149,15 +170,16 @@ function buildStyle(): StyleSpecification {
 function setSlotOpacity(map: MapLibreMap, slot: Slot, visible: boolean): void {
   map.setPaintProperty(`borders-${slot}-fill`, 'fill-opacity', visible ? BORDER_FILL_OPACITY : 0);
   map.setPaintProperty(`borders-${slot}-line`, 'line-opacity', visible ? 0.8 : 0);
+  map.setLayoutProperty(`borders-${slot}-label`, 'visibility', visible ? 'visible' : 'none');
   map.setPaintProperty(`borders-${slot}-label`, 'text-opacity', visible ? 1 : 0);
 }
 
-function pinsToGeoJson(pins: HistoryEvent[]): FeatureCollection<Point> {
+function pinsToGeoJson(pins: Placed[]): FeatureCollection<Point> {
   return {
     type: 'FeatureCollection',
     features: pins.map((e) => ({
       type: 'Feature',
-      properties: { id: e.id, category: e.category, importance: e.importance },
+      properties: { id: e.id, title: e.title, category: e.category, importance: e.importance },
       geometry: { type: 'Point', coordinates: [e.location.lng, e.location.lat] },
     })),
   };
@@ -165,23 +187,36 @@ function pinsToGeoJson(pins: HistoryEvent[]): FeatureCollection<Point> {
 
 interface Props {
   year: number;
-  pins: HistoryEvent[];
-  selectedEvent: HistoryEvent | null;
-  hoveredEventId: string | null;
+  /** The selected state or period; a state has its territory highlighted. */
+  selectedBar: Bar | null;
+  selectedTerritory: TerritorySelection | null;
+  onSelectTerritory(territory: TerritorySelection | null): void;
+  pins: Placed[];
+  selectedPlaced: Placed | null;
+  hoveredId: string | null;
   onHover(id: string | null): void;
   onSelect(id: string): void;
 }
 
-export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, onSelect }: Props) {
+export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritory, pins, selectedPlaced, hoveredId, onHover, onSelect }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
+  const territoryPopupRef = useRef<Popup | null>(null);
+  const [showBorders, setShowBorders] = useState(true);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [index, setIndex] = useState<Snapshot[]>([]);
+  const [highlightedRegion, setHighlightedRegion] = useState<string | null>(null);
+  const [territoryStatus, setTerritoryStatus] = useState<{ eraId: string; year?: number; status: 'loading' | 'shown' | 'missing' | 'failed' } | null>(null);
+  const territoryLoader = useRef(createLatestLoader<FeatureCollection>((file) => fetchJson(asset(`borders/${file}`))));
   const [shownSnapshot, setShownSnapshot] = useState<string | null>(null);
-  const callbacks = useLatest({ onHover, onSelect });
+  /** Center and zoom after the last move, published on the element like the other map state. */
+  const [settledView, setSettledView] = useState<string | null>(null);
+  const callbacks = useLatest({ onHover, onSelect, onSelectTerritory });
   const loader = useRef(createLatestLoader<FeatureCollection>((file) => fetchJson(asset(`borders/${file}`))));
   const activeSlot = useRef<Slot>('a');
+  const barSelection = useLatest(selectedBar);
+  const bordersVisible = useLatest(showBorders);
   const shownFile = useRef<string | null>(null);
   /** Bumped for every new border target, so a slower earlier swap never fades in after a newer one. */
   const swapSeq = useRef(0);
@@ -194,7 +229,11 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
         container: containerRef.current!,
         style: buildStyle(),
         center: [45, 30],
-        zoom: 1.6,
+        zoom: 1.8,
+        renderWorldCopies: false,
+        maxPitch: 0,
+        dragRotate: false,
+        pitchWithRotate: false,
         attributionControl: false,
       });
     } catch (err) {
@@ -205,6 +244,40 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
     mapRef.current = map;
     map.addControl(new NavigationControl({ showCompass: false }), 'top-left');
     map.on('load', () => setReady(true));
+    map.on('moveend', () => {
+      const { lng, lat } = map.getCenter();
+      setSettledView(`${lng.toFixed(1)},${lat.toFixed(1)},${map.getZoom().toFixed(1)}`);
+    });
+    const territoryPopup = new Popup({ closeButton: false, closeOnClick: false, offset: 12, className: 'territory-popup' });
+    territoryPopupRef.current = territoryPopup;
+    map.on('movestart', () => territoryPopup.remove());
+    const inspectTerritory = (event: { point: { x: number; y: number }; lngLat: { lng: number; lat: number } }) => {
+      if (!map.isStyleLoaded()) return;
+      const layers = ['pins', ...(bordersVisible.current || barSelection.current ? ['territory-fill'] : []), ...(bordersVisible.current ? [`borders-${activeSlot.current}-fill`] : [])];
+      const features = map.queryRenderedFeatures([event.point.x, event.point.y], { layers });
+      map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+      if (!features.length) {
+        territoryPopup.remove();
+        return;
+      }
+      const { layer, properties } = features[0];
+      territoryPopup.setLngLat(event.lngLat).setText(layer.id === 'pins' ? properties.title : territoryName(properties)).addTo(map);
+    };
+    map.on('mousemove', inspectTerritory);
+    map.on('click', (event) => {
+      inspectTerritory(event);
+      if (!map.isStyleLoaded()) return;
+      const features = map.queryRenderedFeatures(event.point, { layers: ['pins', 'territory-fill',
+        ...(bordersVisible.current ? [`borders-${activeSlot.current}-fill`] : [])] });
+      if (features[0]?.layer.id === 'pins') return;
+      // Timeline empire selections already have a complete highlighted territory.
+      if (features[0]?.layer.id === 'territory-fill' && barSelection.current) return;
+      const feature = bordersVisible.current ? features[0] : undefined;
+      callbacks.current.onSelectTerritory(feature && shownFile.current
+        ? { name: territoryName(feature.properties), snapshotFile: shownFile.current } : null);
+    });
+    map.getCanvas().addEventListener('mouseleave', () => territoryPopup.remove());
+
     const pinId = (e: MapLayerMouseEvent) => {
       const id = e.features?.[0]?.properties?.id;
       return typeof id === 'string' ? id : null;
@@ -225,6 +298,8 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
       .then(setIndex)
       .catch((err) => console.warn('Border index unavailable; showing the base map only', err));
     return () => {
+      territoryPopup.remove();
+      territoryPopupRef.current = null;
       map.remove();
       mapRef.current = null;
       setReady(false);
@@ -234,6 +309,20 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
       setShownSnapshot(null);
     };
   }, [callbacks]);
+
+  useEffect(() => {
+    if (ready && mapRef.current) setSlotOpacity(mapRef.current, activeSlot.current, showBorders);
+  }, [ready, showBorders]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
+    const visible = !selectedTerritory || showBorders;
+    map.setPaintProperty('territory-fill', 'fill-opacity', visible ? 0.55 : 0);
+    map.setPaintProperty('territory-outline', 'line-opacity', visible ? 1 : 0);
+  }, [ready, selectedTerritory, showBorders]);
+
+  useEffect(() => { territoryPopupRef.current?.remove(); }, [year, showBorders, selectedBar, shownSnapshot]);
 
   const snapshotFile = snapshotFor(index, year)?.file ?? null;
 
@@ -252,9 +341,14 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
         if (!data || mapRef.current !== map) return;
         const next: Slot = activeSlot.current === 'a' ? 'b' : 'a';
         // setData parses in a worker; fade only once the new borders are actually in the source.
-        await (map.getSource(`borders-${next}`) as GeoJSONSource).setData(data);
+        await (map.getSource(`borders-${next}`) as GeoJSONSource).setData({
+          ...data,
+          features: data.features.map((feature) => ({
+            ...feature, properties: { ...feature.properties, NAME: territoryName(feature.properties ?? {}) },
+          })),
+        });
         if (swap !== swapSeq.current || mapRef.current !== map) return;
-        setSlotOpacity(map, next, true);
+        setSlotOpacity(map, next, bordersVisible.current);
         setSlotOpacity(map, activeSlot.current, false);
         activeSlot.current = next;
         shownFile.current = snapshotFile;
@@ -276,20 +370,127 @@ export function MapView({ year, pins, selectedEvent, hoveredEventId, onHover, on
     const prev = highlight.current;
     if (prev.hover) map.setFeatureState({ source: 'events', id: prev.hover }, { hover: false });
     if (prev.selected) map.setFeatureState({ source: 'events', id: prev.selected }, { selected: false });
-    if (hoveredEventId) map.setFeatureState({ source: 'events', id: hoveredEventId }, { hover: true });
-    if (selectedEvent) map.setFeatureState({ source: 'events', id: selectedEvent.id }, { selected: true });
-    highlight.current = { hover: hoveredEventId, selected: selectedEvent?.id ?? null };
-  }, [ready, pins, hoveredEventId, selectedEvent]);
+    if (hoveredId) map.setFeatureState({ source: 'events', id: hoveredId }, { hover: true });
+    if (selectedPlaced) map.setFeatureState({ source: 'events', id: selectedPlaced.id }, { selected: true });
+    highlight.current = { hover: hoveredId, selected: selectedPlaced?.id ?? null };
+  }, [ready, pins, hoveredId, selectedPlaced]);
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!ready || !map || !selectedEvent) return;
-    const point: [number, number] = [selectedEvent.location.lng, selectedEvent.location.lat];
-    if (!map.getBounds().contains(point)) map.easeTo({ center: point, duration: 800 });
-  }, [ready, selectedEvent]);
+    if (!ready || !map || !selectedPlaced) return;
+    const point: [number, number] = [selectedPlaced.location.lng, selectedPlaced.location.lat];
+    map.easeTo({ center: point, zoom: Math.max(map.getZoom(), SPOT_ZOOM), duration: 800 });
+  }, [ready, selectedPlaced]);
+
+  // A period with no place of its own belongs to its region as a whole.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map || selectedBar?.kind !== 'period' || selectedPlaced) return;
+    map.fitBounds(REGION_BOUNDS[selectedBar.region], { padding: 40, duration: 700 });
+  }, [ready, selectedBar, selectedPlaced]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
+    let cancelled = false;
+    const source = map.getSource('territory') as GeoJSONSource;
+    source.setData(EMPTY);
+    setHighlightedRegion(null);
+    if (selectedTerritory) {
+      setTerritoryStatus(null);
+      territoryLoader.current.load(selectedTerritory.snapshotFile).then(async (geo) => {
+        if (cancelled || !geo || mapRef.current !== map) return;
+        await source.setData({ ...geo, features: geo.features.filter((feature) =>
+          territoryName(feature.properties ?? {}) === selectedTerritory.name) });
+        if (!cancelled && mapRef.current === map) setHighlightedRegion(selectedTerritory.name);
+      }).catch((err) => {
+        if (!cancelled) console.warn('Selected map territory failed to load', err);
+      });
+      return () => { cancelled = true; territoryLoader.current.invalidate(); };
+    }
+    if (!selectedBar || selectedBar.kind === 'period') {
+      territoryLoader.current.invalidate();
+      setTerritoryStatus(null);
+      return;
+    }
+    setTerritoryStatus({ eraId: selectedBar.id, status: 'loading' });
+    if (!index.length) return;
+    // Never highlight a predecessor state from before the era. Selecting an era moves the playhead to
+    // its start, so try the snapshots within the empire's lifespan from the earliest on.
+    const candidates = index.filter((snapshot) => snapshot.year >= selectedBar.start && snapshot.year <= selectedBar.end);
+    async function showTerritory() {
+      for (const snapshot of candidates) {
+        const geo = await territoryLoader.current.load(snapshot.file);
+        if (cancelled || !geo || mapRef.current !== map) return;
+        const territory = territoryFor(geo, selectedBar!);
+        if (!territory.features.length) continue;
+        await source.setData(territory);
+        if (cancelled || mapRef.current !== map) return;
+        const coordinates: number[][] = [];
+        const visit = (value: unknown): void => {
+          if (!Array.isArray(value)) return;
+          if (typeof value[0] === 'number' && typeof value[1] === 'number') coordinates.push(value as number[]);
+          else value.forEach(visit);
+        };
+        for (const feature of territory.features) {
+          if (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon') visit(feature.geometry.coordinates);
+        }
+        if (coordinates.length) {
+          const lngs = coordinates.map((point) => point[0]);
+          const lats = coordinates.map((point) => point[1]);
+          map!.fitBounds([[Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]],
+            { padding: 60, maxZoom: TERRITORY_MAX_ZOOM, duration: 700 });
+        }
+        setTerritoryStatus({ eraId: selectedBar!.id, year: snapshot.year, status: 'shown' });
+        return;
+      }
+      if (cancelled) return;
+      // With no territory to show, the state's region is the closest the map can get.
+      map!.fitBounds(REGION_BOUNDS[selectedBar!.region], { padding: 40, duration: 700 });
+      setTerritoryStatus({ eraId: selectedBar!.id, status: 'missing' });
+    }
+    showTerritory().catch((err) => {
+      if (!cancelled) {
+        console.warn('Empire territory failed to load', err);
+        setTerritoryStatus({ eraId: selectedBar.id, status: 'failed' });
+      }
+    });
+    return () => { cancelled = true; territoryLoader.current.invalidate(); };
+  }, [ready, selectedBar, selectedTerritory, index]);
+
+  const shownYear = index.find((snapshot) => snapshot.file === shownSnapshot)?.year;
 
   return (
-    <div className="map" data-testid="map" data-borders={shownSnapshot ?? undefined}>
+    <div className="map" data-testid="map" data-borders={shownSnapshot ?? undefined}
+      data-view={settledView ?? undefined}
+      data-region={highlightedRegion ?? undefined}
+      data-territory={territoryStatus?.status === 'shown' ? territoryStatus.eraId : undefined}>
+      <div className="map-caption">
+        <span className="eyebrow">THE WORLD AROUND</span>
+        <strong>{formatYear(year)}</strong>
+        <span>{pins.length} events on the map</span>
+      </div>
+      {!failed && <div className="map-context">
+        <button aria-pressed={showBorders} onClick={() => setShowBorders((shown) => !shown)}>
+          {showBorders ? 'Historical borders' : 'Geography only'}
+        </button>
+        {selectedTerritory && <p className="territory-caption">
+          <strong>{selectedTerritory.name}</strong> · Selected territory
+          <button aria-label="Clear territory selection" onClick={() => onSelectTerritory(null)}>×</button>
+        </p>}
+        {selectedBar && <p className="territory-caption">
+          <strong>{selectedBar.title}</strong>{' · '}
+          {selectedBar.kind === 'period' ? 'Historical period'
+            : territoryStatus?.eraId !== selectedBar.id || territoryStatus.status === 'loading' ? 'Loading territory...'
+            : territoryStatus.status === 'shown' ? `Highlighted territory: ${formatYear(territoryStatus.year!)}`
+            : territoryStatus.status === 'failed' ? 'Territory could not load. Select the era again to retry.'
+            : 'No matching territory in the available snapshots.'}
+        </p>}
+        <p>{showBorders
+          ? shownYear !== undefined ? `Border snapshot: ${formatYear(shownYear)}. Approximate areas of influence.` : 'Loading historical borders...'
+          : 'Physical geography without political boundaries.'}</p>
+        {showBorders && shownYear !== undefined && shownYear !== year && <p>Boundaries between snapshots are not reconstructed.</p>}
+      </div>}
       {failed ? (
         <p className="map-fallback">
           The map needs WebGL, which this browser could not start. The timeline and event list still work.
