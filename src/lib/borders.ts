@@ -34,6 +34,11 @@ export const POLITY_PALETTE = [
   '#a3865c',
 ] as const;
 
+/** Some source names contain only spaces; preserve the recorded ruling polity as a fallback. */
+export function territoryName(props: { NAME?: string | null; SUBJECTO?: string | null }): string {
+  return props.NAME?.trim() || props.SUBJECTO?.trim() || 'Name unavailable';
+}
+
 export function polityKey(props: { NAME: string | null; SUBJECTO: string | null }): string {
   return props.SUBJECTO || props.NAME || '';
 }

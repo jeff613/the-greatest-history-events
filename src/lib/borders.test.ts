@@ -6,6 +6,7 @@ import {
   polityColor,
   polityKey,
   snapshotFor,
+  territoryName,
   type Snapshot,
 } from './borders';
 
@@ -125,5 +126,15 @@ describe('createLatestLoader', () => {
     await loader.load('y');
     d.reject(new Error('late failure'));
     expect(await first).toBeNull();
+  });
+});
+
+
+describe('territory names', () => {
+  it('trims source labels and falls back to the ruling polity for blank names', () => {
+    expect(territoryName({ NAME: ' Han Empire ', SUBJECTO: 'Han' })).toBe('Han Empire');
+    expect(territoryName({ NAME: '       ', SUBJECTO: 'United Kingdom of Netherlands' })).toBe('United Kingdom of Netherlands');
+    expect(territoryName({ NAME: null, SUBJECTO: 'Bega' })).toBe('Bega');
+    expect(territoryName({ NAME: ' ', SUBJECTO: null })).toBe('Name unavailable');
   });
 });
