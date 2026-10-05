@@ -1,5 +1,7 @@
+import type { FeatureCollection, MultiPolygon, Polygon } from 'geojson';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { withoutStraightEdgePoints } from './straightEdges';
 
 const NE_SHA = 'ca96624a56bd078437bca8184e78163e5039ad19';
 const NE_BASE = `https://raw.githubusercontent.com/nvkelso/natural-earth-vector/${NE_SHA}/geojson`;
@@ -22,7 +24,16 @@ const layers: Record<string, string> = {
   rivers: 'ne_50m_rivers_lake_centerlines',
 };
 for (const [name, source] of Object.entries(layers)) {
-  writeFileSync(join(basemapDir, `${name}.geojson`), await (await get(`${NE_BASE}/${source}.geojson`)).text());
+  let text = await (await get(`${NE_BASE}/${source}.geojson`)).text();
+  if (name === 'land') {
+    const land = JSON.parse(text) as FeatureCollection<Polygon | MultiPolygon>;
+    for (const { geometry } of land.features) {
+      if (geometry.type === 'Polygon') geometry.coordinates = geometry.coordinates.map(withoutStraightEdgePoints);
+      else geometry.coordinates = geometry.coordinates.map((polygon) => polygon.map(withoutStraightEdgePoints));
+    }
+    text = JSON.stringify(land);
+  }
+  writeFileSync(join(basemapDir, `${name}.geojson`), text);
   console.log(`basemap ${name}`);
 }
 
