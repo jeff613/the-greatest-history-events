@@ -29,5 +29,10 @@
   "safavid-empire": "safavid",
   "tokugawa-shogunate": "tokugawa",
   "qing-conquest": "qing",
-  "kofun-japan": "yamato"
+  "kofun-japan": "yamato",
+  "carthage-founded": "carthage",
+  "fatimid-caliphate": "fatimid",
+  "turkish-republic": "republic-of-turkey",
+  "israel-founded": "israel",
+  "kanem-empire": "kanem-bornu"
 }

@@ -10,6 +10,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Jerusalem", "lat": 31.78, "lng": 35.23 },
+    "partOf": ["roman-empire", "life-of-jesus"],
     "summary": "Jesus of Nazareth, a Jewish preacher from Galilee who teaches about the coming kingdom of God, is arrested in Jerusalem and executed by crucifixion on the orders of the Roman governor Pontius Pilate. His followers soon proclaim that he has risen from the dead. Most historians accept that he existed and was crucified, but the exact year is uncertain, with AD 30 and 33 the most often proposed.",
     "significance": "His followers' belief in his resurrection became the center of Christianity, which spread across the Roman world and is today the world's largest religion.",
     "wikipedia": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus"
@@ -35,6 +36,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Richborough (probable landing site)", "lat": 51.29, "lng": 1.33 },
+    "partOf": ["roman-empire"],
     "summary": "Emperor Claudius sends an army of some 40,000 men across the Channel, probably landing at Richborough in Kent, and takes the British tribal center of Camulodunum (Colchester). Conquest of the rest of the island is slow and contested, including the revolt of Queen Boudica around AD 60, and Rome never permanently holds the far north of Scotland.",
     "significance": "Britain remained a Roman province for nearly four centuries, gaining towns such as London, roads and Hadrian's Wall before Roman rule ended in the early 400s.",
     "wikipedia": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain"
@@ -61,6 +63,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "White Horse Temple, Luoyang (traditional)", "lat": 34.72, "lng": 112.6 },
+    "partOf": ["han"],
     "summary": "According to tradition, Emperor Ming of the Han dynasty dreams of a golden figure, sends envoys west, and in AD 68 founds the White Horse Temple at Luoyang for two Indian monks who arrive with Buddhist scriptures. The story is legendary in its details; Buddhism probably reached China gradually with merchants and missionaries along the Silk Road, and a Han prince is already recorded supporting Buddhist monks a few years earlier.",
     "significance": "Buddhism became one of China's major religions, and from China it spread to Korea, Japan and Vietnam.",
     "wikipedia": "https://en.wikipedia.org/wiki/White_Horse_Temple"
@@ -75,6 +78,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Jerusalem", "lat": 31.78, "lng": 35.24 },
+    "partOf": ["roman-empire"],
     "summary": "During a great Jewish revolt against Roman rule, a Roman army under Titus, son of the emperor Vespasian, besieges Jerusalem for months, then storms the city and burns the Temple. Much of the city is destroyed, and many of its people are killed or enslaved.",
     "significance": "Without the Temple and its sacrifices, Judaism re-centered on synagogues, prayer and the study of scripture led by rabbis, while the Arch of Titus in Rome still shows the Temple's treasures carried off in triumph.",
     "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)"
@@ -89,6 +93,7 @@
     "category": "culture",
     "importance": 1,
     "location": { "name": "Pompeii", "lat": 40.75, "lng": 14.49 },
+    "partOf": ["roman-empire"],
     "summary": "Mount Vesuvius, near the Bay of Naples, erupts violently and buries the Roman towns of Pompeii and Herculaneum under ash, pumice and searing flows of hot gas and rock. Thousands die. The traditional date is 24 August, but some evidence suggests the eruption came a few weeks later, in October.",
     "significance": "Rediscovered from the 1700s, the buried towns preserve houses, paintings, shops and graffiti that give an unusually detailed picture of everyday Roman life.",
     "wikipedia": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
@@ -115,6 +120,7 @@
     "category": "trade",
     "importance": 2,
     "location": { "name": "Oc Eo, Mekong Delta (Funan port)", "lat": 10.24, "lng": 105.15 },
+    "partOf": ["funan"],
     "summary": "In the lower Mekong region of what is now southern Vietnam and Cambodia, the kingdom known by its Chinese name, Funan, grows rich on sea trade between India and China. At its port of Oc Eo, archaeologists have found Roman coins, Indian beads and Chinese goods. Much of what is known about Funan comes from Chinese records, and its beginnings are uncertain.",
     "significance": "Funan is often seen as one of the earliest states of Southeast Asia, and it helped bring Indian ideas about kingship, religion and writing into the region.",
     "wikipedia": "https://en.wikipedia.org/wiki/Funan"
@@ -155,6 +161,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Luoyang (Han capital)", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["han"],
     "summary": "Cai Lun, an official at the Han court in Luoyang, presents the emperor with paper made from tree bark, hemp, old rags and fishing nets. Simpler kinds of paper already existed in China, but his method made a cheaper, better writing material, and Chinese tradition credits him as the inventor of paper.",
     "significance": "Paper gradually replaced bamboo strips and silk in China, then spread to Korea, Japan, the Islamic world and Europe, and later helped make printing and wider literacy possible.",
     "wikipedia": "https://en.wikipedia.org/wiki/Cai_Lun"
@@ -169,6 +176,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Rome", "lat": 41.89, "lng": 12.48 },
+    "partOf": ["roman-empire"],
     "summary": "When Emperor Trajan dies in 117, his conquests of Dacia (in today's Romania) and, briefly, Armenia and Mesopotamia have stretched Roman rule from Britain to the Persian Gulf. His successor Hadrian soon gives up the eastern conquests and turns to defending the borders.",
     "significance": "This marked the peak of Roman territorial expansion; afterward the empire mostly defended what it held, a shift symbolized by Hadrian's Wall in Britain.",
     "wikipedia": "https://en.wikipedia.org/wiki/Trajan"
@@ -184,6 +192,7 @@
     "category": "science",
     "importance": 2,
     "location": { "name": "Alexandria", "lat": 31.2, "lng": 29.92 },
+    "partOf": ["roman-empire"],
     "summary": "Claudius Ptolemy, a Greek scholar working in Roman Egypt, writes a great treatise on astronomy, later known by its Arabic name, the Almagest. It describes an Earth-centered universe in which the Sun, Moon and planets move on combinations of circles, with tables for predicting their positions.",
     "significance": "Translated into Arabic and later Latin, it remained the standard work of astronomy in the Islamic world and Europe for some 1,400 years, until Copernicus and Kepler replaced its Earth-centered model.",
     "wikipedia": "https://en.wikipedia.org/wiki/Almagest"
@@ -198,9 +207,21 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Julu, Hebei (Zhang Jue's base)", "lat": 37.22, "lng": 115.04 },
+    "partOf": ["han"],
     "summary": "Zhang Jue, leader of a Taoist-inspired healing movement, launches a vast peasant uprising across northern and eastern China, his followers wearing yellow headscarves. The Han government crushes the main revolt within a year, but only by relying on regional generals and their private armies.",
     "significance": "Those generals became warlords who fought over the weakened Han court, a struggle that ended the dynasty in 220 and led to the Three Kingdoms.",
     "wikipedia": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion"
+  },
+  {
+    "id": "champa",
+    "kind": "state",
+    "title": "Champa",
+    "start": 192,
+    "end": 1832,
+    "region": "southeast-asia-oceania",
+    "summary": "Champa was a group of kingdoms of the Cham people along the coast of what is now central and southern Vietnam. Seafarers and traders, they adopted Hinduism and built brick temple towers, and fought long wars with the Khmer and the Vietnamese. Dai Viet took their capital in 1471, and the last Cham territory was annexed in 1832.",
+    "significance": "Champa was a major station on the sea route between China and India for more than a thousand years.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Champa"
   },
   {
     "id": "teotihuacan-pyramid-sun",
@@ -213,6 +234,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Teotihuacan", "lat": 19.69, "lng": -98.84 },
+    "partOf": ["teotihuacan"],
     "summary": "In the Valley of Mexico, the people of Teotihuacan complete the Pyramid of the Sun, one of the largest structures in the ancient Americas, along the city's great central avenue, later called the Avenue of the Dead. The city is already home to tens of thousands of people, later growing toward 100,000 or more. Its builders' language and name for the city are unknown; 'Teotihuacan' is the name later given by the Aztecs.",
     "significance": "Teotihuacan was one of the largest cities in the world at its height, and its trade, art and influence reached as far as the Maya region.",
     "wikipedia": "https://en.wikipedia.org/wiki/Pyramid_of_the_Sun"
@@ -228,6 +250,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Chibi, on the Yangtze (location debated)", "lat": 29.87, "lng": 113.62 },
+    "partOf": ["han"],
     "summary": "The warlord Cao Cao, master of northern China, leads a large army and fleet south to finish off his rivals. The allied forces of Sun Quan and Liu Bei, far fewer in number, set his chained ships on fire on the Yangtze and force him to retreat north.",
     "significance": "The defeat ended Cao Cao's hope of reuniting China and fixed the three-way division that became the Three Kingdoms; it is one of the most retold battles in Chinese literature.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs"
@@ -291,6 +314,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Tikal (representative)", "lat": 17.22, "lng": -89.62 },
+    "partOf": ["classic-maya"],
     "summary": "In the rainforests of what are now southern Mexico, Guatemala and Belize, Maya city-states such as Tikal, Calakmul, Palenque and Copan flourish under divine kings. They build stone temples and palaces, and record royal history on carved monuments in a hieroglyphic script, using an advanced calendar and a counting system that includes zero.",
     "significance": "The Classic Maya created the most fully developed writing system known from the ancient Americas, along with remarkable achievements in astronomy, mathematics and art.",
     "wikipedia": "https://en.wikipedia.org/wiki/Maya_civilization"
@@ -339,6 +363,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Milan", "lat": 45.46, "lng": 9.19 },
+    "partOf": ["roman-empire"],
     "summary": "Meeting in Milan, the Roman emperors Constantine and Licinius agree to give all people, including Christians, the freedom to worship as they choose, and to return property taken from Christians. It follows the last and harshest persecution of Christians, which an edict of 311 had already ended in part; historians debate whether a formal 'edict' was ever issued in Milan.",
     "significance": "With Constantine's backing, Christianity grew from a persecuted minority into the favored religion of the empire, and by 380 its official religion.",
     "wikipedia": "https://en.wikipedia.org/wiki/Edict_of_Milan"
@@ -365,6 +390,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Pataliputra", "lat": 25.61, "lng": 85.14 },
+    "partOf": ["gupta"],
     "summary": "Chandragupta I, a king in the Ganges valley, takes the title 'great king of kings' and begins the Gupta era. His successors Samudragupta and Chandragupta II expand the empire across much of northern India.",
     "significance": "The Gupta age is often called a classical or golden age of India, with advances in mathematics and astronomy, Sanskrit literature such as Kalidasa's plays, and Hindu and Buddhist art.",
     "wikipedia": "https://en.wikipedia.org/wiki/Gupta_Empire"
@@ -379,6 +405,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Nicaea (Iznik)", "lat": 40.43, "lng": 29.72 },
+    "partOf": ["roman-empire"],
     "summary": "Emperor Constantine calls Christian bishops from across the empire to Nicaea, in northwestern Anatolia, to settle a bitter dispute over the teachings of Arius, a priest of Alexandria who says Christ the Son was created by God the Father. The council rejects Arius's view and issues a statement of belief, the original Nicene Creed.",
     "significance": "It was the first council claiming to speak for the whole church, and the Nicene Creed, in a version expanded in 381, is still recited by most Christian churches.",
     "wikipedia": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea"
@@ -394,6 +421,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Aksum", "lat": 14.13, "lng": 38.72 },
+    "partOf": ["aksum"],
     "summary": "King Ezana of Aksum converts to Christianity, influenced by Frumentius, a Syrian Christian who had been brought to the royal court as a captive and later became the kingdom's first bishop. Aksum's coins begin to show the cross instead of pagan symbols. The exact date of the conversion is uncertain.",
     "significance": "Aksum was among the earliest states to adopt Christianity officially, and the Ethiopian and Eritrean Orthodox churches trace their origins to this conversion.",
     "wikipedia": "https://en.wikipedia.org/wiki/Ezana_of_Axum"
@@ -420,6 +448,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Constantinople (Istanbul)", "lat": 41.01, "lng": 28.98 },
+    "partOf": ["roman-empire", "byzantine"],
     "summary": "Emperor Constantine dedicates the old Greek city of Byzantium, rebuilt and greatly enlarged, as a new imperial capital named Constantinople. It controls the strait of the Bosporus between Europe and Asia and between the Black Sea and the Mediterranean.",
     "significance": "Constantinople was the capital of the Eastern Roman (Byzantine) Empire for over a thousand years, then of the Ottoman Empire, and as Istanbul remains one of the world's great cities.",
     "wikipedia": "https://en.wikipedia.org/wiki/Constantinople"
@@ -461,9 +490,21 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Rome", "lat": 41.9, "lng": 12.49 },
+    "partOf": ["roman-empire"],
     "summary": "The Visigoths, led by their king Alaric, enter Rome and plunder it for three days after the Western Roman government, based at Ravenna, refuses their demands. It is the first time in about 800 years that the city has fallen to a foreign enemy.",
     "significance": "The sack shocked the Roman world and prompted Augustine of Hippo to write The City of God, a defense of Christianity that shaped Western thought for centuries.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)"
+  },
+  {
+    "id": "visigothic-kingdom",
+    "kind": "state",
+    "title": "Visigothic Kingdom",
+    "start": 418,
+    "end": 711,
+    "region": "europe",
+    "summary": "The Visigoths, a Germanic people who had sacked Rome in 410, were settled in southern Gaul by the Romans and built a kingdom there. Driven out of most of Gaul by the Franks in 507, they ruled Spain from Toledo and converted from Arian to Catholic Christianity in 589. The kingdom fell to the Umayyad invasion of 711.",
+    "significance": "It was one of the main successor states of the western Roman Empire, and its law code shaped medieval Spanish law.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Visigothic_Kingdom"
   },
   {
     "id": "northern-and-southern-dynasties",
@@ -487,6 +528,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Nalanda", "lat": 25.14, "lng": 85.44 },
+    "partOf": ["gupta"],
     "summary": "A great Buddhist monastery and center of learning is founded at Nalanda in eastern India, traditionally under the Gupta king Kumaragupta I. It grows into a large residential community of monks and students who study Buddhist philosophy, logic, grammar and medicine. Calling it a 'university' is a modern comparison, and its founding date is approximate.",
     "significance": "Nalanda drew scholars from as far as China, Korea and Central Asia, including the Chinese pilgrim Xuanzang, and remained a major center of Buddhist learning until its decline around 1200.",
     "wikipedia": "https://en.wikipedia.org/wiki/Nalanda_mahavihara"
@@ -502,6 +544,7 @@
     "category": "religion",
     "importance": 1,
     "location": { "name": "Yungang, near Datong", "lat": 40.11, "lng": 113.13 },
+    "partOf": ["northern-wei", "northern-and-southern-dynasties"],
     "summary": "Near their capital at Pingcheng, modern Datong, the Northern Wei emperors have Buddhist cave temples cut into a sandstone cliff under the direction of the monk Tanyao. Over the following decades sculptors carve more than 50,000 figures, from tiny reliefs to seated Buddhas about 17 meters high.",
     "significance": "The caves are the first great monument of Buddhist art in China, blending styles from India and Central Asia with Chinese ones.",
     "wikipedia": "https://en.wikipedia.org/wiki/Yungang_Grottoes"
@@ -516,9 +559,22 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Ravenna", "lat": 44.42, "lng": 12.2 },
+    "partOf": ["roman-empire"],
     "summary": "The Germanic general Odoacer deposes Romulus Augustulus, the last Western Roman emperor, and rules Italy as king without naming a new emperor. By then the Western Empire had already lost most of its provinces to Germanic kingdoms.",
     "significance": "The date is the traditional end of the ancient world in Western Europe, while the Eastern Roman (Byzantine) Empire carries on for nearly another thousand years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+  },
+  {
+    "id": "frankish-kingdom",
+    "kind": "state",
+    "title": "Frankish Kingdom",
+    "start": 481,
+    "end": 800,
+    "dateLabel": "481-800 (then the Carolingian Empire)",
+    "region": "europe",
+    "summary": "Clovis united the Franks, conquered most of Roman Gaul and accepted Catholic Christianity around 500. His Merovingian descendants reigned for two and a half centuries while real power passed to their chief officials, the mayors of the palace, one of whom, Pippin, took the crown in 751. His son Charlemagne turned the kingdom into an empire.",
+    "significance": "The Frankish kingdom was the most lasting state to follow Rome in the West, and both France and Germany descend from it.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Francia"
   },
   {
     "id": "aryabhata",
@@ -530,6 +586,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Kusumapura (probably Pataliputra)", "lat": 25.61, "lng": 85.14 },
+    "partOf": ["gupta"],
     "summary": "The Indian astronomer Aryabhata, aged 23 by his own account, completes the Aryabhatiya, a short work in verse on mathematics and astronomy. It works with a place-value number system and gives a value of pi of about 3.1416, early sine tables, and the idea that the Earth spins on its axis.",
     "significance": "His work shaped Indian astronomy for centuries and, through Arabic translations, influenced mathematics and astronomy in the Islamic world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Aryabhata"
@@ -544,6 +601,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Constantinople", "lat": 41.01, "lng": 28.98 },
+    "partOf": ["byzantine"],
     "summary": "Emperor Justinian I issues the first version of a new code that gathers and simplifies centuries of Roman imperial laws. Over the next few years his commission, led by the jurist Tribonian, adds a digest of Roman legal writings and a textbook for students, the whole later called the Corpus Juris Civilis.",
     "significance": "Rediscovered in Italy in the 11th century, it became the foundation of the civil law systems used across much of continental Europe, Latin America and beyond.",
     "wikipedia": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis"
@@ -559,6 +617,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Hagia Sophia, Constantinople", "lat": 41.01, "lng": 28.98 },
+    "partOf": ["byzantine"],
     "summary": "After a riot destroys the previous church, Emperor Justinian has the architects Anthemius of Tralles and Isidore of Miletus build a new Hagia Sophia ('Holy Wisdom') in Constantinople in under six years. Its enormous dome seems to float above a ring of windows.",
     "significance": "For centuries it was the largest church in the Christian world; after 1453 it became a mosque whose design inspired Ottoman architects, and it remains a landmark of world architecture.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hagia_Sophia"
@@ -573,6 +632,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Constantinople", "lat": 41.01, "lng": 28.98 },
+    "partOf": ["byzantine"],
     "summary": "Bubonic plague appears at Pelusium in Egypt in 541 and reaches Constantinople the next year, where contemporaries report thousands of deaths a day. DNA from victims' remains confirms it was caused by the same bacterium as the later Black Death. The plague keeps returning for some two centuries, and how many people it killed is still debated.",
     "significance": "It is the first well-documented outbreak of bubonic plague, and it may have weakened the Byzantine Empire just as Justinian tried to win back the West.",
     "wikipedia": "https://en.wikipedia.org/wiki/Plague_of_Justinian"
@@ -588,6 +648,7 @@
     "category": "religion",
     "importance": 1,
     "location": { "name": "Asuka (Yamato court)", "lat": 34.47, "lng": 135.82 },
+    "partOf": ["yamato", "baekje"],
     "summary": "According to the Nihon Shoki, an early Japanese chronicle, King Seong of the Korean kingdom of Baekje sends a Buddhist statue and scriptures to the Japanese court. Other sources give the date as 538. The new religion is opposed by some powerful clans but supported by the Soga clan, and later by Prince Shotoku.",
     "significance": "Buddhism became, alongside Shinto, one of Japan's two main religious traditions, bringing temples such as Horyu-ji, art and learning from the Asian mainland.",
     "wikipedia": "https://en.wikipedia.org/wiki/Buddhism_in_Japan"
@@ -648,6 +709,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Luoyang (Sui capital)", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["sui"],
     "summary": "The Sui dynasty begins selecting some officials through written examinations open to candidates recommended from across the empire, rather than by birth alone. The Tang expand the system, and under the Song it becomes the main route into government, testing knowledge of the Confucian classics.",
     "significance": "For 1,300 years, until 1905, the examinations shaped Chinese education and society around the ideal of rule by scholars, and they inspired civil service examinations elsewhere.",
     "wikipedia": "https://en.wikipedia.org/wiki/Imperial_examination"
@@ -662,6 +724,7 @@
     "category": "science",
     "importance": 2,
     "location": { "name": "Luoyang (hub of the Sui canal network)", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["sui"],
     "summary": "Emperor Yang of the Sui dynasty orders millions of laborers to dig and link canals joining the Yellow River and the Yangtze, connecting the rich farmlands of the south with the political centers of the north. Parts of the system already existed, and most of the work is finished within a few years.",
     "significance": "Expanded by later dynasties, the Grand Canal became the longest artificial waterway in the world and a lifeline of China's economy, though its huge cost in forced labor helped bring down the Sui in 618.",
     "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(China)"
@@ -691,6 +754,7 @@
     "category": "religion",
     "importance": 1,
     "location": { "name": "Ikaruga, near Nara", "lat": 34.61, "lng": 135.73 },
+    "partOf": ["yamato"],
     "summary": "Prince Shotoku, regent of Japan and a devoted patron of Buddhism, founds the temple of Horyu-ji near his palace at Ikaruga. The original buildings burn in 670 and are rebuilt over the following decades.",
     "significance": "Its pagoda and main hall are the oldest wooden buildings still standing in the world, and they preserve the architecture of 7th-century China and Korea.",
     "wikipedia": "https://en.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji"
@@ -706,6 +770,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Cave of Hira, near Mecca", "lat": 21.46, "lng": 39.86 },
+    "partOf": ["life-of-muhammad"],
     "summary": "According to Islamic tradition, Muhammad, a merchant of Mecca aged about 40, is meditating in a cave on Mount Hira when the angel Gabriel appears and commands him to 'Recite!'. These words begin the revelations that Muslims believe continue for the rest of his life and are collected in the Quran.",
     "significance": "It marks the beginning of Islam, which grew into one of the world's largest religions, with nearly two billion followers today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Muhammad%27s_first_revelation"
@@ -731,9 +796,21 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Chang'an", "lat": 34.27, "lng": 108.95 },
+    "partOf": ["tang"],
     "summary": "Li Yuan, a general of the collapsing Sui dynasty, seizes power and founds the Tang with its capital at Chang'an. The city grows into one of the largest and most cosmopolitan in the world, at the eastern end of the Silk Road.",
     "significance": "The Tang is remembered as a golden age of Chinese poetry, art and trade, and its culture and institutions shaped Korea, Japan and Vietnam.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty"
+  },
+  {
+    "id": "tibetan-empire",
+    "kind": "state",
+    "title": "Tibetan Empire",
+    "start": 618,
+    "end": 842,
+    "region": "central-asia",
+    "summary": "Songtsen Gampo united the Tibetan plateau, founded Lhasa and married princesses from China and Nepal, who by tradition brought Buddhism with them. His successors fought Tang China for control of the Silk Road oases and briefly occupied the Tang capital in 763. The empire broke apart after the assassination of its last king in 842.",
+    "significance": "At its height Tibet was one of the great powers of Asia, and in these centuries it adopted the Buddhism and the script that define its culture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Empire"
   },
   {
     "id": "hijra",
@@ -745,6 +822,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Medina", "lat": 24.47, "lng": 39.61 },
+    "partOf": ["life-of-muhammad"],
     "summary": "Facing growing hostility in Mecca, Muhammad's followers move in small groups to the oasis town of Yathrib, later called Medina, and in 622, according to tradition, Muhammad slips out of Mecca secretly with his companion Abu Bakr to join them. In Medina he becomes the town's leader, and an agreement traditionally called the Constitution of Medina sets out the rights and duties of its Muslim, Jewish and other communities.",
     "significance": "The Islamic calendar counts its years from the Hijra, which marks the start of Islam as a political as well as religious community.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hijrah"
@@ -759,6 +837,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Chang'an (start and end of the journey)", "lat": 34.27, "lng": 108.95 },
+    "partOf": ["tang"],
     "summary": "The Chinese monk Xuanzang slips out of Tang China without permission and travels across the deserts and mountains of Central Asia to India in search of authentic Buddhist scriptures. He studies for years at the monastery of Nalanda and returns with more than 600 texts, which he spends the rest of his life translating.",
     "significance": "His translations shaped East Asian Buddhism, and his detailed account of the lands he crossed is a prime source for the history of India and Central Asia; it also inspired the novel Journey to the West.",
     "wikipedia": "https://en.wikipedia.org/wiki/Xuanzang"
@@ -773,6 +852,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Medina (capital of the early caliphate)", "lat": 24.47, "lng": 39.61 },
+    "partOf": ["rashidun"],
     "summary": "After Muhammad's death, the first caliphs unite Arabia and send armies against the Byzantine and Sasanian empires, both worn out by decades of war with each other. Within about thirty years the Arabs take Syria, Iraq, Egypt and most of Iran, bringing the Sasanian Empire to an end. Most people in the conquered lands convert to Islam only gradually, over the following centuries.",
     "significance": "The conquests created a new empire stretching from North Africa to Iran, in which Arabic and Islam spread and lasting borders between the Muslim and Christian worlds took shape.",
     "wikipedia": "https://en.wikipedia.org/wiki/Early_Muslim_conquests"
@@ -798,9 +878,21 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Naniwa (present-day Osaka)", "lat": 34.68, "lng": 135.52 },
+    "partOf": ["yamato"],
     "summary": "Prince Naka no Oe and Nakatomi no Kamatari overthrow the powerful Soga clan in a palace coup and launch reforms to build a centralized state on the Chinese Tang model, with land owned by the throne, a census and taxes collected by officials. How much of the reform edict recorded in the Nihon Shoki dates from this time is debated.",
     "significance": "The reforms helped turn the Yamato kingdom into a centralized imperial state ruled by law codes, and Kamatari's descendants, the Fujiwara clan, dominated the Japanese court for centuries.",
     "wikipedia": "https://en.wikipedia.org/wiki/Taika_Reform"
+  },
+  {
+    "id": "khazar-khaganate",
+    "kind": "state",
+    "title": "Khazar Khaganate",
+    "start": 650,
+    "end": 969,
+    "region": "central-asia",
+    "summary": "The Khazars, a Turkic people, ruled the steppe between the Black and Caspian seas and taxed the trade that crossed it. They stopped the Arab advance north of the Caucasus, and their ruling class adopted Judaism in the 8th or 9th century. The Rus prince Sviatoslav destroyed their capital in the 960s.",
+    "significance": "The Khazars shielded eastern Europe from the Arab conquests, and their choice of Judaism is unique among steppe empires.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khazars"
   },
   {
     "id": "srivijaya",
@@ -835,6 +927,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Gyeongju (Silla capital)", "lat": 35.84, "lng": 129.21 },
+    "partOf": ["silla", "goguryeo"],
     "summary": "In alliance with Tang China, the kingdom of Silla destroys Baekje in 660 and Goguryeo in 668. When the Tang try to keep the conquered lands for themselves, Silla fights its former ally and by 676 has driven the Tang armies north of the Taedong River.",
     "significance": "Most of the Korean Peninsula came under a single ruler for the first time, while the northern lands of Goguryeo passed to the new kingdom of Balhae.",
     "wikipedia": "https://en.wikipedia.org/wiki/Unified_Silla"
@@ -850,9 +943,22 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Luoyang", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["tang"],
     "summary": "Wu Zetian, who has governed Tang China for decades as empress consort and then as regent for her sons, sets them aside and takes the throne herself, proclaiming a new Zhou dynasty. She rules until a palace coup removes her in 705, shortly before her death.",
     "significance": "She is the only woman to have ruled China as emperor in her own name; her reign widened the examination system and promoted officials from outside the old aristocracy.",
     "wikipedia": "https://en.wikipedia.org/wiki/Wu_Zetian"
+  },
+  {
+    "id": "republic-of-venice",
+    "kind": "state",
+    "title": "Republic of Venice",
+    "start": 697,
+    "end": 1797,
+    "dateLabel": "697 (traditional) - 1797",
+    "region": "europe",
+    "summary": "Venice grew from a refuge in a lagoon into a republic governed by an elected doge and a closed circle of merchant families. Its galleys carried the trade between Europe and the eastern Mediterranean, and it held an empire of ports and islands from the Adriatic to Cyprus. Napoleon ended the republic in 1797.",
+    "significance": "For centuries Venice was the richest trading city in Europe and its main link to the Byzantine and Islamic worlds.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Republic_of_Venice"
   },
   {
     "id": "balhae",
@@ -866,19 +972,16 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Balhae"
   },
   {
-    "id": "kanem-empire",
-    "kind": "moment",
-    "title": "Kanem Empire",
+    "id": "kanem-bornu",
+    "kind": "state",
+    "title": "Kanem-Bornu",
     "start": 700,
-    "end": null,
-    "dateLabel": "c. AD 700",
+    "end": 1893,
+    "dateLabel": "c. 700-1893",
     "region": "sub-saharan-africa",
-    "category": "trade",
-    "importance": 1,
-    "location": { "name": "Kanem, northeast of Lake Chad (capital Njimi, location uncertain)", "lat": 14.2, "lng": 15.3 },
-    "summary": "Northeast of Lake Chad, nomadic peoples found the kingdom of Kanem, which grows by controlling trade routes across the Sahara to the Fezzan in today's Libya. Its early history is known mostly from later chronicles and Arab writers, and its founding date is uncertain.",
-    "significance": "Kanem and its successor Bornu lasted, under one dynasty or another, for about a thousand years, making it one of Africa's longest-lived states; its rulers adopted Islam in the 11th century.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kanem_Empire"
+    "summary": "The kingdom of Kanem grew up northeast of Lake Chad, at the southern end of a trade route across the Sahara, and its rulers adopted Islam in the 11th century. Driven from Kanem in the 14th century, the dynasty rebuilt its state in Bornu, west of the lake, where it reached its height under Idris Alooma around 1600.",
+    "significance": "A single dynasty, the Sayfawa, ruled it for most of that time, one of the longest reigns of any ruling house in history.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kanem%E2%80%93Bornu_Empire"
   },
   {
     "id": "nara-period",
@@ -901,6 +1004,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Gibraltar (landing point)", "lat": 36.14, "lng": -5.35 },
+    "partOf": ["visigothic-kingdom", "umayyad"],
     "summary": "Tariq ibn Ziyad, a Berber commander serving the Umayyad caliphate, crosses from North Africa at Gibraltar, which is named after him (Jabal Tariq, 'Tariq's mountain'). He defeats the Visigothic king Roderic, and within a few years Muslim forces control most of the Iberian Peninsula.",
     "significance": "Muslim-ruled al-Andalus, centered on Cordoba, became a meeting place of Islamic, Jewish and Christian culture, until the Christian kingdoms of the north completed their reconquest in 1492.",
     "wikipedia": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
@@ -915,6 +1019,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Debal, near present-day Karachi (location uncertain)", "lat": 24.75, "lng": 67.52 },
+    "partOf": ["umayyad"],
     "summary": "Muhammad ibn al-Qasim, a young Umayyad general, captures the port of Debal near the mouth of the Indus, defeats King Dahir of Sindh and takes control of Sindh and southern Punjab, in today's Pakistan. Most of the detailed story comes from the Chach Nama, a Persian chronicle written some five centuries later, whose reliability historians debate.",
     "significance": "Sindh became the first lasting foothold of Muslim rule in South Asia, linking the Indus region to the trade and scholarship of the Islamic world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Arab_conquest_of_Sindh"
@@ -930,9 +1035,21 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Between Tours and Poitiers (exact site uncertain)", "lat": 46.73, "lng": 0.53 },
+    "partOf": ["frankish-kingdom", "umayyad"],
     "summary": "Frankish forces under Charles Martel defeat an Umayyad army from al-Andalus led by Abd al-Rahman al-Ghafiqi, who is killed in the battle, somewhere between Poitiers and Tours in western France. Some historians date the battle to 733.",
     "significance": "Later writers often hailed it as saving Christian Europe from Islamic conquest, a view many historians now consider exaggerated, but it strengthened Charles Martel's family, the Carolingians.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+  },
+  {
+    "id": "uyghur-khaganate",
+    "kind": "state",
+    "title": "Uyghur Khaganate",
+    "start": 744,
+    "end": 840,
+    "region": "central-asia",
+    "summary": "The Uyghurs overthrew the Gokturks and ruled Mongolia for a century from their capital on the Orkhon River. They helped the Tang dynasty put down the An Lushan Rebellion in return for a lucrative trade of horses for silk, and their rulers adopted Manichaeism. The Kyrgyz destroyed the khaganate in 840, and the Uyghurs moved south to the oases of the Tarim Basin.",
+    "significance": "It was the first steppe empire to build cities and adopt a world religion, and its heirs gave the Mongols their script.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
   },
   {
     "id": "abbasid",
@@ -955,6 +1072,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Kufa (where the first Abbasid caliph was proclaimed)", "lat": 32.03, "lng": 44.4 },
+    "partOf": ["abbasid"],
     "summary": "A revolt that began in Khorasan, in eastern Iran, defeats the last Umayyad caliph at the Battle of the Zab in northern Iraq. Abu al-Abbas al-Saffah, a descendant of Muhammad's uncle Abbas, had already been proclaimed caliph at Kufa, and now founds the Abbasid dynasty. Many members of the Umayyad family are massacred, though one, Abd al-Rahman, escapes to Spain.",
     "significance": "The Abbasids moved the center of the Islamic world east to Iraq, and under later caliphs their capital Baghdad became the heart of a golden age of trade, science and scholarship.",
     "wikipedia": "https://en.wikipedia.org/wiki/Abbasid_revolution"
@@ -967,6 +1085,7 @@
     "end": 1258,
     "dateLabel": "c. AD 750-1258; boundaries vary",
     "region": "mena",
+    "partOf": ["abbasid"],
     "summary": "Scholars across the Islamic world advanced mathematics, medicine, astronomy, philosophy, and literature, drawing on and extending earlier traditions. This band uses the Abbasid-era convention; cultural activity extended beyond these dates and across several regions.",
     "significance": "Its scholars preserved and extended ancient learning and made original advances, such as algebra and clinical medicine, that later passed to Europe.",
     "wikipedia": "https://en.wikipedia.org/wiki/Islamic_Golden_Age"
@@ -982,6 +1101,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Chang'an", "lat": 34.27, "lng": 108.95 },
+    "partOf": ["tang"],
     "summary": "In the middle of the 8th century, Li Bai and Du Fu, later judged the two greatest poets in the Chinese language, are both writing, alongside Wang Wei and many others. Skill in verse is tested in the civil service examinations and expected of every educated person; some 49,000 poems from the Tang survive.",
     "significance": "Tang poems have been memorized by Chinese schoolchildren ever since and set the standard for poetry across East Asia.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tang_poetry"
@@ -996,6 +1116,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Near Taraz (Talas River)", "lat": 42.9, "lng": 71.37 },
+    "partOf": ["tang", "abbasid"],
     "summary": "An Abbasid army defeats Tang Chinese forces near the Talas River, in today's Kazakhstan and Kyrgyzstan, reportedly after the Tang army's Karluk Turk allies change sides. A famous story says Chinese prisoners taken here taught papermaking in Samarkand, but historians think paper had probably reached Central Asia earlier.",
     "significance": "It marked the westernmost reach of Tang China, which soon lost its hold on Central Asia during the An Lushan Rebellion, leaving the region open to Islamic and Turkic influence.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Talas"
@@ -1011,6 +1132,7 @@
     "category": "religion",
     "importance": 1,
     "location": { "name": "Mount Toham, Gyeongju", "lat": 35.79, "lng": 129.33 },
+    "partOf": ["silla"],
     "summary": "Kim Daeseong, chief minister of Silla, begins the temple of Bulguksa and, on the mountain above it, the Seokguram grotto, a domed chamber of fitted granite blocks around a seated Buddha who faces the sunrise over the East Sea.",
     "significance": "The two are the masterpieces of Buddhist art and architecture from Silla and remain among Korea's most treasured monuments.",
     "wikipedia": "https://en.wikipedia.org/wiki/Bulguksa"
@@ -1026,6 +1148,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Todai-ji, Nara", "lat": 34.69, "lng": 135.84 },
+    "partOf": ["nara-period"],
     "summary": "Emperor Shomu, hoping to protect Japan from epidemics and unrest, has a bronze Buddha about 15 meters high cast at the temple of Todai-ji in Nara, using much of the country's copper. An Indian monk paints in the statue's eyes at a ceremony attended by thousands of monks and envoys from abroad.",
     "significance": "The project made Buddhism a religion of the Japanese state; the hall that houses the statue is still one of the largest wooden buildings in the world.",
     "wikipedia": "https://en.wikipedia.org/wiki/T%C5%8Ddai-ji"
@@ -1040,9 +1163,32 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Fanyang, near present-day Beijing (An Lushan's base)", "lat": 39.9, "lng": 116.4 },
+    "partOf": ["tang"],
     "summary": "An Lushan, a powerful Tang general of Sogdian and Turkic descent, rebels from his base in the northeast and captures both Tang capitals, Luoyang and Chang'an. The war lasts until 763. Census figures fall dramatically, but historians think this partly reflects the collapse of record-keeping as well as mass deaths.",
     "significance": "The Tang survived, but much weakened: regional governors gained lasting power, and China lost control of Central Asia.",
     "wikipedia": "https://en.wikipedia.org/wiki/An_Lushan_rebellion"
+  },
+  {
+    "id": "al-andalus",
+    "kind": "state",
+    "title": "Al-Andalus (Umayyad Córdoba)",
+    "start": 756,
+    "end": 1031,
+    "region": "europe",
+    "summary": "A prince of the Umayyad family who escaped the Abbasid takeover founded an independent emirate at Córdoba in 756, and in 929 his descendant took the title of caliph. Under them Córdoba became one of the largest cities in Europe, known for its great mosque, libraries and scholars. The caliphate broke up into small rival kingdoms after 1031.",
+    "significance": "Muslim Spain passed Arabic science, philosophy and much of the learning of ancient Greece on to Latin Europe.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Al-Andalus"
+  },
+  {
+    "id": "papal-states",
+    "kind": "state",
+    "title": "Papal States",
+    "start": 756,
+    "end": 1870,
+    "region": "europe",
+    "summary": "The Frankish king Pippin gave the pope the lands around Rome and Ravenna in 756, and for eleven centuries the popes ruled a band of central Italy as princes as well as heads of the Church. The Kingdom of Italy took most of it in 1860 and Rome itself in 1870.",
+    "significance": "Their own territory made the popes a political power in Europe, and its loss left the question of the pope's status open until the creation of Vatican City in 1929.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Papal_States"
   },
   {
     "id": "baghdad-founded",
@@ -1054,6 +1200,7 @@
     "category": "trade",
     "importance": 2,
     "location": { "name": "Baghdad", "lat": 33.34, "lng": 44.38 },
+    "partOf": ["abbasid", "islamic-golden-age"],
     "summary": "The Abbasid caliph al-Mansur founds a new capital on the Tigris River, close to where it nears the Euphrates, built as a great round city with the caliph's palace and mosque at its center. Its location on river and caravan routes draws merchants from across Asia.",
     "significance": "Baghdad grew into one of the largest and richest cities in the world and a center of scholarship where Greek, Persian and Indian learning was translated into Arabic.",
     "wikipedia": "https://en.wikipedia.org/wiki/Round_City_of_Baghdad"
@@ -1069,6 +1216,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Lindisfarne", "lat": 55.67, "lng": -1.8 },
+    "partOf": ["viking-age"],
     "summary": "Raiders from Scandinavia attack the monastery on the island of Lindisfarne, off the coast of Northumbria in northeastern England, killing monks and carrying off treasures and captives. The scholar Alcuin writes that such terror had never before appeared in Britain.",
     "significance": "The raid is traditionally seen as the start of the Viking Age, when Norse raiders, traders and settlers reached from North America to the Caspian Sea.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Lindisfarne"
@@ -1133,6 +1281,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Old St. Peter's Basilica, Rome", "lat": 41.9, "lng": 12.45 },
+    "partOf": ["frankish-kingdom", "carolingian"],
     "summary": "On Christmas Day, Pope Leo III crowns Charlemagne, king of the Franks and Lombards, as emperor in Rome. Charlemagne already rules much of western and central Europe, from the Pyrenees to the Elbe.",
     "significance": "It revived the title of emperor in the West for the first time since 476 and tied together the papacy, the Frankish monarchy and the Roman imperial idea, laying foundations for medieval Europe and the later Holy Roman Empire.",
     "wikipedia": "https://en.wikipedia.org/wiki/Charlemagne"
@@ -1159,6 +1308,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Baghdad", "lat": 33.34, "lng": 44.38 },
+    "partOf": ["abbasid", "islamic-golden-age"],
     "summary": "In Baghdad, the Persian scholar Muhammad ibn Musa al-Khwarizmi writes a book on solving equations by 'completion and balancing', in Arabic al-jabr. He also writes on the Indian system of numerals, including zero, a work known mainly from later Latin translations.",
     "significance": "The word 'algebra' comes from his book's title and 'algorithm' from his name, and Latin translations of his works helped bring algebra and Hindu-Arabic numerals to Europe.",
     "wikipedia": "https://en.wikipedia.org/wiki/Al-Jabr"
@@ -1173,6 +1323,17 @@
     "summary": "The Chola kings of the Tamil country conquered southern India and Sri Lanka, and under Rajaraja I and Rajendra I sent fleets across the Bay of Bengal as far as Srivijaya. They built great temples such as the Brihadisvara at Thanjavur and commissioned fine bronze sculpture.",
     "significance": "The Cholas were one of the few Indian powers to project force overseas, and they carried Tamil trade and culture to Southeast Asia.",
     "wikipedia": "https://en.wikipedia.org/wiki/Chola_Empire"
+  },
+  {
+    "id": "pagan",
+    "kind": "state",
+    "title": "Pagan Kingdom",
+    "start": 849,
+    "end": 1297,
+    "region": "southeast-asia-oceania",
+    "summary": "From the city of Pagan on the Irrawaddy, King Anawrahta united the valley in the 11th century, the first state to rule most of what is now Myanmar. Its kings and people adopted Theravada Buddhism and built more than ten thousand temples on the plain around the capital. The kingdom collapsed after Mongol invasions in the 1280s.",
+    "significance": "Pagan established the Burmese language, script and Theravada Buddhism as the basis of Burmese culture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pagan_Kingdom"
   },
   {
     "id": "chaco-canyon",
@@ -1200,6 +1361,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Tang China (representative point at Chang'an)", "lat": 34.27, "lng": 108.95 },
+    "partOf": ["tang"],
     "summary": "Chinese Taoist alchemists, possibly searching for an elixir of immortality, find that mixing saltpeter, sulfur and charcoal makes a mixture that burns fiercely. A text often dated to the mid-9th century warns that such mixtures can burn the hands and face, but the date of the discovery is uncertain.",
     "significance": "By the 10th century gunpowder was used in Chinese warfare; it later spread across Asia and to Europe, where guns and cannons transformed war and the power of states.",
     "wikipedia": "https://en.wikipedia.org/wiki/History_of_gunpowder"
@@ -1214,23 +1376,20 @@
     "category": "science",
     "importance": 2,
     "location": { "name": "Mogao Caves, Dunhuang (where it was found)", "lat": 40.04, "lng": 94.8 },
+    "partOf": ["tang"],
     "summary": "A Chinese copy of the Diamond Sutra, a Buddhist scripture, is printed from carved wooden blocks onto a paper scroll about 5 meters long. A note at its end says a man named Wang Jie had it made for his parents in the year corresponding to 868. Sealed in a cave at Dunhuang, it was found in 1900.",
     "significance": "It is the oldest known printed book with a date, showing that woodblock printing was already a mature craft in Tang China.",
     "wikipedia": "https://en.wikipedia.org/wiki/Diamond_Sutra"
   },
   {
     "id": "kievan-rus",
-    "kind": "moment",
-    "title": "Kievan Rus founded",
+    "kind": "state",
+    "title": "Kievan Rus",
     "start": 882,
-    "end": null,
-    "dateLabel": "AD 882 (traditional)",
+    "end": 1240,
     "region": "europe",
-    "category": "politics",
-    "importance": 2,
-    "location": { "name": "Kiev (Kyiv)", "lat": 50.45, "lng": 30.52 },
-    "summary": "According to the Primary Chronicle, written over two centuries later, Oleg, a leader of the Varangians (Scandinavian traders and warriors), seizes Kiev on the Dnieper River and makes it the center of a realm stretching north to Novgorod. The account is partly legendary.",
-    "significance": "Kievan Rus became a large state on the trade route from the Baltic to Byzantium, adopted Orthodox Christianity in 988, and is claimed as a common ancestor by Ukraine, Belarus and Russia.",
+    "summary": "According to the Primary Chronicle, the Varangian prince Oleg seized Kiev in 882 and joined it to Novgorod, uniting the East Slavic lands along the river routes between the Baltic and Byzantium. Prince Vladimir adopted Orthodox Christianity from Constantinople in 988. The state later split into rival principalities, and the Mongols destroyed Kiev in 1240.",
+    "significance": "Kievan Rus is the common ancestor of Russia, Ukraine and Belarus, and its choice of Orthodoxy tied the East Slavs to the Byzantine world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Kievan_Rus%27"
   },
   {
@@ -1244,6 +1403,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Tikal (representative)", "lat": 17.22, "lng": -89.62 },
+    "partOf": ["classic-maya"],
     "summary": "Over the 8th and 9th centuries, the great Maya cities of the southern lowlands, such as Tikal, Copan and Palenque, stop raising dated monuments, their kings disappear and most of their people move away. The causes are debated; leading explanations include severe droughts, endless warfare and overuse of the land.",
     "significance": "Maya civilization did not end: cities in the northern Yucatan such as Chichen Itza flourished afterward, and millions of Maya people live in the region today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Classic_Maya_collapse"
@@ -1260,18 +1420,14 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
   },
   {
-    "id": "fatimid-caliphate",
-    "kind": "moment",
-    "title": "Fatimid Caliphate founded",
+    "id": "fatimid",
+    "kind": "state",
+    "title": "Fatimid Caliphate",
     "start": 909,
-    "end": null,
-    "dateLabel": "AD 909-910",
+    "end": 1171,
     "region": "mena",
-    "category": "politics",
-    "importance": 1,
-    "location": { "name": "Raqqada, near Kairouan", "lat": 35.59, "lng": 10.05 },
-    "summary": "Kutama Berber forces, won over by an Ismaili Shia missionary, overthrow the Aghlabid rulers of Ifriqiya (today's Tunisia). Their leader Abdallah al-Mahdi, who claims descent from Muhammad's daughter Fatima, is proclaimed caliph early in 910, challenging the Abbasid caliphs in Baghdad.",
-    "significance": "The Fatimids later conquered Egypt and founded Cairo, and for two centuries their rival Shia caliphate was a major power in the Mediterranean world.",
+    "summary": "The Fatimids, a Shia dynasty claiming descent from the Prophet's daughter Fatima, took power in what is now Tunisia in 909 and conquered Egypt in 969, where they founded Cairo as their capital. At their height they ruled North Africa, Sicily, Syria and the holy cities of Arabia. Saladin abolished the caliphate in 1171.",
+    "significance": "The Fatimids were the only major Shia caliphate, and they made Cairo, with its Al-Azhar mosque and school, a center of the Islamic world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
   },
   {
@@ -1297,6 +1453,17 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Goryeo"
   },
   {
+    "id": "kingdom-of-england",
+    "kind": "state",
+    "title": "Kingdom of England",
+    "start": 927,
+    "end": 1707,
+    "region": "europe",
+    "summary": "Athelstan brought the Anglo-Saxon kingdoms under one crown in 927. The Normans conquered the kingdom in 1066, and over the following centuries its kings were forced to share power with Parliament, a process settled by civil war and the revolution of 1688. In 1707 England united with Scotland as Great Britain.",
+    "significance": "England's common law and parliamentary government were carried around the world by the empire that grew out of it.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_England"
+  },
+  {
     "id": "song",
     "kind": "state",
     "title": "Song dynasty",
@@ -1319,6 +1486,28 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
   },
   {
+    "id": "dai-viet",
+    "kind": "state",
+    "title": "Dai Viet",
+    "start": 968,
+    "end": 1804,
+    "region": "southeast-asia-oceania",
+    "summary": "After a thousand years of Chinese rule, the Vietnamese of the Red River delta secured their independence in the 10th century. Under the Ly, Tran and Le dynasties the kingdom repelled Song, Mongol and Ming invasions, governed through Confucian examinations, and expanded steadily southward at the expense of Champa. It was renamed Vietnam in 1804.",
+    "significance": "Dai Viet kept Vietnam independent of China while adopting much of its statecraft, and gave the country its present shape.",
+    "wikipedia": "https://en.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t"
+  },
+  {
+    "id": "ghaznavid",
+    "kind": "state",
+    "title": "Ghaznavid Empire",
+    "start": 977,
+    "end": 1186,
+    "region": "central-asia",
+    "summary": "The Ghaznavids were a dynasty of Turkic slave soldiers who made themselves rulers at Ghazni in what is now Afghanistan. Under Mahmud, who raided northern India seventeen times, the empire stretched from Iran to the Punjab, and his court patronized the poet Ferdowsi and the scholar al-Biruni.",
+    "significance": "The Ghaznavids opened northern India to Muslim rule and set the pattern of Turkic armies ruling through Persian culture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghaznavids"
+  },
+  {
     "id": "rajaraja-chola",
     "kind": "moment",
     "title": "Rajaraja Chola expands the Chola Empire",
@@ -1328,9 +1517,33 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Thanjavur", "lat": 10.78, "lng": 79.13 },
+    "partOf": ["chola"],
     "summary": "Rajaraja I becomes king of the Cholas of Tamil Nadu and conquers neighboring kingdoms in southern India, northern Sri Lanka and the Maldives, using a strong navy. At his capital Thanjavur he builds the Brihadisvara Temple, completed around 1010.",
     "significance": "Under Rajaraja and his son Rajendra I, the Chola Empire became the leading power of southern India and the Bay of Bengal, spreading Tamil culture and trade across the sea to Southeast Asia.",
     "wikipedia": "https://en.wikipedia.org/wiki/Rajaraja_I"
+  },
+  {
+    "id": "kingdom-of-france",
+    "kind": "state",
+    "title": "Kingdom of France",
+    "start": 987,
+    "end": 1792,
+    "region": "europe",
+    "summary": "When Hugh Capet was elected king in 987 he controlled little beyond Paris. His descendants slowly brought the great duchies under the crown, drove the English out in the Hundred Years' War, and by the reign of Louis XIV had made France the strongest and most centralized monarchy in Europe. The Revolution abolished the monarchy in 1792.",
+    "significance": "France was the leading power of medieval and early modern Europe, and its language and court set the fashion for the continent.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_France"
+  },
+  {
+    "id": "kingdom-of-hungary",
+    "kind": "state",
+    "title": "Kingdom of Hungary",
+    "start": 1000,
+    "end": 1526,
+    "dateLabel": "1000-1526 (as an independent kingdom)",
+    "region": "europe",
+    "summary": "Stephen I, a descendant of the Magyar chiefs who had settled the Danube plain, was crowned a Christian king in 1000. The kingdom became one of the largest in medieval Europe, survived a Mongol invasion in 1241, and held the Ottoman advance for a century before its army was destroyed at Mohacs in 1526.",
+    "significance": "Hungary was the shield of central Europe against the Ottomans; after 1526 it was divided between them and the Habsburgs.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary"
   },
   {
     "id": "norse-vinland",
@@ -1343,6 +1556,7 @@
     "category": "trade",
     "importance": 2,
     "location": { "name": "L'Anse aux Meadows, Newfoundland", "lat": 51.59, "lng": -55.53 },
+    "partOf": ["viking-age"],
     "summary": "Norse sailors from the settlements in Greenland, led according to Icelandic sagas by Leif Erikson, reach a land they call Vinland on the coast of North America. At L'Anse aux Meadows, in Newfoundland, archaeologists have found a Norse camp, possibly the Vinland of the sagas, including wood cut with metal tools that a tree-ring study dates to 1021. They do not stay long.",
     "significance": "It was the first known European contact with the Americas, nearly five centuries before Columbus, though it left no lasting settlement.",
     "wikipedia": "https://en.wikipedia.org/wiki/Vinland"

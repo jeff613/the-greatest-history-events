@@ -65,6 +65,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Sintashta", "lat": 52.47, "lng": 60.2 },
+    "partOf": ["andronovo"],
     "summary": "Herders of the Sintashta culture, in the steppes east of the southern Ural Mountains, bury their dead with light two-wheeled vehicles whose wheels have spokes instead of solid wooden discs. These are the earliest known true chariots: fast, horse-drawn and light enough to carry a driver and a warrior.",
     "significance": "Within a few centuries the chariot spread, possibly from the steppe, to Mesopotamia, Egypt, Greece, India and China, transforming warfare and the prestige of elites across Eurasia.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sintashta_culture"
@@ -106,6 +107,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Mohenjo-daro", "lat": 27.33, "lng": 68.14 },
+    "partOf": ["late-harappan"],
     "summary": "The great planned cities of the Indus Valley, such as Mohenjo-daro and Harappa, are gradually abandoned and people move to smaller villages, many further east. Long-distance trade fades and the Indus script falls out of use. The causes are still debated; shifting monsoon rains and drying rivers are leading explanations, and the old idea of a sudden invasion is no longer accepted.",
     "significance": "South Asia's first urban civilization dissolved into rural cultures, and cities would not return to the region on a large scale until the Ganges valley urbanized centuries later.",
     "wikipedia": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
@@ -132,6 +134,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Uruk", "lat": 31.32, "lng": 45.64 },
+    "partOf": ["old-babylonian-period"],
     "summary": "Scribes in Babylonia combine older Sumerian poems about Gilgamesh, a legendary king of Uruk, into a single long epic in the Akkadian language. It follows Gilgamesh's friendship with the wild man Enkidu and his failed search for immortality. The best-known version is a later edition found in the library of the Assyrian king Ashurbanipal at Nineveh.",
     "significance": "Often called the oldest great work of literature to survive, it includes a flood story strikingly similar to the one in the Bible and still speaks to readers about friendship and death.",
     "wikipedia": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
@@ -147,6 +150,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Babylon", "lat": 32.54, "lng": 44.42 },
+    "partOf": ["old-babylonian-period"],
     "summary": "King Hammurabi of Babylon has 282 laws carved on stone pillars set up across his kingdom. The laws cover trade, property, family and crime, with punishments that often depend on the social rank of the people involved.",
     "significance": "One of the earliest and most complete written law codes, it established the idea that a ruler publishes fixed laws that apply across a whole state.",
     "wikipedia": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
@@ -162,6 +166,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Kerma", "lat": 19.6, "lng": 30.41 },
+    "partOf": ["kerma"],
     "summary": "The Nubian kingdom centered on Kerma, in what is now northern Sudan, controls much of the Nile valley south of Egypt. Its capital has a huge mud-brick temple, the Western Deffufa, and its kings are buried in enormous mounds. While Egypt is divided, Kerma's armies push north into Upper Egypt.",
     "significance": "Kerma was the first great kingdom in Africa south of Egypt, and it showed that Nubia was a power in its own right rather than a mere frontier of Egypt.",
     "wikipedia": "https://en.wikipedia.org/wiki/Kerma_culture"
@@ -177,6 +182,7 @@
     "category": "culture",
     "importance": 2,
     "location": { "name": "Knossos", "lat": 35.3, "lng": 25.16 },
+    "partOf": ["minoan"],
     "summary": "After an earthquake around 1700 BC, the Minoans of Crete rebuild their palaces on a grander scale. Knossos becomes a sprawling complex of courtyards, storerooms, staircases and colorful wall paintings at the center of a seafaring trade network. The Minoans write in a script called Linear A, which is still undeciphered.",
     "significance": "Minoan Crete was one of Europe's earliest advanced civilizations, and its art, palaces and writing strongly influenced the Mycenaean Greeks who followed.",
     "wikipedia": "https://en.wikipedia.org/wiki/Knossos"
@@ -266,6 +272,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Zhengzhou", "lat": 34.75, "lng": 113.65 },
+    "partOf": ["shang"],
     "summary": "According to tradition, Tang of Shang overthrows the last Xia king and founds a dynasty that rules the Yellow River valley for about 500 years. The Shang build walled cities, cast elaborate bronze vessels and consult their ancestors with oracle bones.",
     "significance": "The Shang is the earliest Chinese dynasty confirmed by archaeology and its own writing, and that script is the direct ancestor of modern Chinese characters.",
     "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty"
@@ -281,6 +288,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Babylon", "lat": 32.54, "lng": 44.42 },
+    "partOf": ["hittite-empire", "old-babylonian-period"],
     "summary": "The Hittite king Mursili I leads a long-distance raid from Anatolia down the Euphrates and sacks Babylon. The raid ends the dynasty of Hammurabi, but the Hittites do not stay. The exact year is uncertain because scholars use competing chronologies for this period.",
     "significance": "The power vacuum let the Kassites take over Babylonia and rule it for over four centuries, and the date of the sack anchors much of the chronology of the ancient Near East.",
     "wikipedia": "https://en.wikipedia.org/wiki/Mursili_I"
@@ -307,6 +315,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Kerma", "lat": 19.6, "lng": 30.41 },
+    "partOf": ["kerma", "egypt-new-kingdom"],
     "summary": "Pharaoh Thutmose I leads his army south into Nubia, defeats the Kingdom of Kerma and carves a boundary inscription beyond the Fourth Cataract of the Nile. His successors complete the conquest, and Egypt governs Nubia through a viceroy known as the King's Son of Kush.",
     "significance": "Egyptian rule lasted about four centuries and brought Egyptian gods, temples and writing deep into Nubia, shaping the later Kushite kingdoms that would one day conquer Egypt itself.",
     "wikipedia": "https://en.wikipedia.org/wiki/Thutmose_I"
@@ -337,6 +346,7 @@
     "category": "trade",
     "importance": 2,
     "location": { "name": "Swat Valley", "lat": 35.22, "lng": 72.43 },
+    "partOf": ["vedic-period"],
     "summary": "Groups speaking early Indo-Aryan languages, the ancestors of Sanskrit, move gradually from Central Asia into the northwest of the Indian subcontinent. Most scholars see this as a slow movement of herders over generations rather than an invasion, supported by evidence from languages and ancient DNA, although the idea remains politically contested in India.",
     "significance": "These migrants brought the language and religious traditions of the Vedas, which mixed with local cultures to shape Hinduism and the Indo-Aryan languages spoken by most of South Asia today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Indo-Aryan_migrations"
@@ -352,6 +362,7 @@
     "category": "trade",
     "importance": 3,
     "location": { "name": "Mussau Island, Bismarck Archipelago", "lat": -1.43, "lng": 149.63 },
+    "partOf": ["lapita"],
     "summary": "A seafaring people known for pottery decorated with stamped patterns, called Lapita by archaeologists, appear in the islands northeast of New Guinea. Over the next several centuries, in outrigger canoes, they sail thousands of kilometers east to Vanuatu, New Caledonia, Fiji, Tonga and Samoa, islands no human had reached before.",
     "significance": "Lapita voyagers were the ancestors of the Polynesians, beginning the settlement of the remote Pacific, the last major region of the world to be reached by people.",
     "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
@@ -367,6 +378,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Punjab region", "lat": 31, "lng": 73.5 },
+    "partOf": ["vedic-period"],
     "summary": "In the Punjab region, poet-priests compose the Rigveda, a collection of more than 1,000 hymns in early Sanskrit addressed to gods such as Indra, Agni and Varuna. The hymns are memorized and passed on orally with remarkable precision for many centuries before being written down.",
     "significance": "The Rigveda is the oldest text of Hinduism and one of the oldest surviving texts in any Indo-European language, and it is still recited in Hindu rituals today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Rigveda"
@@ -393,6 +405,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Deir el-Bahari, Thebes", "lat": 25.74, "lng": 32.61 },
+    "partOf": ["egypt-new-kingdom"],
     "summary": "When the young Thutmose III comes to the throne in 1479 BC, his stepmother Hatshepsut rules for him as regent, and a few years later (c. 1473 BC) she is crowned pharaoh in her own right. She reigns for about two decades, sponsoring trade expeditions and great buildings such as her temple at Deir el-Bahari.",
     "significance": "Hatshepsut was one of the few women to rule Egypt as pharaoh, and her mostly peaceful, prosperous reign is one of the best documented of any ancient female ruler.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hatshepsut"
@@ -408,6 +421,7 @@
     "category": "trade",
     "importance": 1,
     "location": { "name": "Eritrean coast (likely Punt)", "lat": 15.6, "lng": 39.45 },
+    "partOf": ["egypt-new-kingdom"],
     "summary": "Hatshepsut sends a fleet down the Red Sea to the Land of Punt, a trading partner most likely on the coast of the Horn of Africa. The ships return with myrrh and frankincense trees, ebony, ivory, gold and live baboons, and the voyage is celebrated in reliefs on her temple at Deir el-Bahari.",
     "significance": "The expedition is one of the best-recorded long-distance trading voyages of the ancient world and shows early links between Egypt and the Horn of Africa.",
     "wikipedia": "https://en.wikipedia.org/wiki/Land_of_Punt"
@@ -423,6 +437,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Megiddo", "lat": 32.58, "lng": 35.18 },
+    "partOf": ["egypt-new-kingdom"],
     "summary": "Pharaoh Thutmose III leads his army through a narrow mountain pass to surprise a coalition of Canaanite rulers at Megiddo, in what is now northern Israel. After a seven-month siege the city surrenders. Some scholars date the battle to 1482 BC instead.",
     "significance": "It is the first battle recorded in reliable detail, it made Egypt master of the Levant, and the name Megiddo later gave rise to the word Armageddon.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)"
@@ -438,6 +453,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Amarna", "lat": 27.65, "lng": 30.9 },
+    "partOf": ["egypt-new-kingdom"],
     "summary": "Pharaoh Amenhotep IV renames himself Akhenaten and promotes the worship of the Aten, the disc of the Sun, above all other gods, neglecting or closing temples of Amun and other gods and building a new capital at Amarna. His art style is unusually naturalistic. After his death, Egypt returns to its traditional religion and his name is erased from monuments.",
     "significance": "Akhenaten's cult is often called one of the earliest steps toward monotheism, though scholars debate how far it really went, and the Amarna letters found at his capital reveal the diplomacy of the age.",
     "wikipedia": "https://en.wikipedia.org/wiki/Atenism"
@@ -453,6 +469,7 @@
     "category": "culture",
     "importance": 1,
     "location": { "name": "Valley of the Kings", "lat": 25.74, "lng": 32.6 },
+    "partOf": ["egypt-new-kingdom"],
     "summary": "The young pharaoh Tutankhamun, who restored Egypt's traditional gods after Akhenaten, dies at about 19 and is buried in a small tomb in the Valley of the Kings packed with treasures, including a solid gold coffin and a gold mask. The tomb is hidden and largely forgotten until Howard Carter finds it nearly intact in 1922.",
     "significance": "As one of the very few royal tombs found almost intact, it is the richest window into ancient Egyptian royal burial and made Tutankhamun the most famous pharaoh in the modern world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun"
@@ -468,6 +485,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Kadesh", "lat": 34.56, "lng": 36.52 },
+    "partOf": ["egypt-new-kingdom", "hittite-empire"],
     "summary": "Pharaoh Ramesses II of Egypt and King Muwatalli II of the Hittites clash at Kadesh, on the Orontes River in Syria, in what may be the largest chariot battle ever fought, with thousands of chariots on each side. Ramesses is nearly caught in an ambush, and the result is a stalemate, although he celebrates it as a great victory on temple walls.",
     "significance": "Neither empire could defeat the other, which led them to make peace, and the battle is the best-documented of the ancient world thanks to records from both sides.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Kadesh"
@@ -483,6 +501,7 @@
     "category": "politics",
     "importance": 2,
     "location": { "name": "Pi-Ramesses", "lat": 30.8, "lng": 31.84 },
+    "partOf": ["egypt-new-kingdom", "hittite-empire"],
     "summary": "Ramesses II of Egypt and the Hittite king Hattusili III agree a formal treaty of peace, mutual defense and return of fugitives. Each side keeps its own version: the Egyptian text is carved on temple walls at Karnak, and the Hittite version survives on clay tablets from Hattusa.",
     "significance": "It is the oldest known peace treaty whose text survives from both sides, and it ended generations of war between the two greatest powers of the Near East.",
     "wikipedia": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty"
@@ -498,6 +517,7 @@
     "category": "culture",
     "importance": 3,
     "location": { "name": "Anyang (Yinxu)", "lat": 36.12, "lng": 114.31 },
+    "partOf": ["shang"],
     "summary": "At the late Shang capital near modern Anyang, diviners for King Wu Ding and his successors carve questions to the ancestors on turtle shells and cattle shoulder blades, then apply heat and read the cracks as answers. These inscriptions, rediscovered around 1899, are the earliest known Chinese writing.",
     "significance": "The oracle bone script is the direct ancestor of Chinese characters still in use today, giving Chinese one of the longest continuous writing traditions in the world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Oracle_bone_script"
@@ -554,6 +574,7 @@
     "category": "culture",
     "importance": 3,
     "location": { "name": "San Lorenzo", "lat": 17.75, "lng": -94.76 },
+    "partOf": ["olmec"],
     "summary": "On the Gulf Coast of Mexico, the Olmecs build San Lorenzo, Mesoamerica's first large ceremonial center, with earthen platforms, drainage systems and colossal stone heads that probably portray their rulers. They trade jade, obsidian and other goods across much of Mexico and Central America.",
     "significance": "The Olmecs are often seen as Mesoamerica's first civilization, and their art, ball game and religious ideas influenced later cultures such as the Maya and the peoples of central Mexico.",
     "wikipedia": "https://en.wikipedia.org/wiki/Olmecs"
@@ -584,6 +605,7 @@
     "category": "politics",
     "importance": 1,
     "location": { "name": "Nile Delta", "lat": 31.3, "lng": 31 },
+    "partOf": ["egypt-new-kingdom", "late-bronze-age-collapse"],
     "summary": "Pharaoh Ramesses III defeats a coalition of seaborne raiders, the Sea Peoples, in battles on land and at the mouths of the Nile. He records the victory in reliefs at his temple at Medinet Habu. The origins of the Sea Peoples are still uncertain; one group, the Peleset, is usually identified with the Philistines.",
     "significance": "Egypt survived the upheavals that destroyed its neighbors, but the cost weakened it, and defeated groups settled along the coast of Canaan.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Delta"
@@ -615,6 +637,18 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Phoenician_alphabet"
   },
   {
+    "id": "israel-and-judah",
+    "kind": "state",
+    "title": "Kingdoms of Israel and Judah",
+    "start": -1047,
+    "end": -586,
+    "dateLabel": "c. 1047-586 BC (early dates traditional)",
+    "region": "mena",
+    "summary": "According to the Hebrew Bible, the Israelite tribes were united under Saul, David and Solomon, then split into a northern kingdom, Israel, and a southern one, Judah, with its capital at Jerusalem. Assyria destroyed Israel in 722 BC and Babylon destroyed Judah and its temple in 586 BC. How large the early united kingdom really was is debated by archaeologists.",
+    "significance": "The religion and scriptures that took shape in these kingdoms became Judaism, the root of Christianity and Islam as well.",
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ancient_Israel_and_Judah"
+  },
+  {
     "id": "zhou",
     "kind": "state",
     "title": "Zhou dynasty",
@@ -636,6 +670,7 @@
     "category": "politics",
     "importance": 3,
     "location": { "name": "Muye", "lat": 35.3, "lng": 113.9 },
+    "partOf": ["zhou", "shang"],
     "summary": "King Wu of Zhou, from the Wei River valley in the west, defeats the last Shang king at the Battle of Muye, near the Shang capital. The Zhou justify their conquest with the idea that Heaven had withdrawn its mandate from the corrupt Shang. The date 1046 BC comes from a modern Chinese chronology project; other dates have been proposed.",
     "significance": "The Zhou became the longest-ruling dynasty in Chinese history, and the Mandate of Heaven became the standard way to explain the rise and fall of Chinese dynasties for 3,000 years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Muye"
