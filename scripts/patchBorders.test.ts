@@ -27,6 +27,22 @@ describe('applyPatch', () => {
     expect(() => applyPatch(source, { merge: { Italy: { from: ['Rome', 'Etruria'] } } }, noShapes)).toThrow(/Etruria/);
   });
 
+  it('relabels only the pieces of a polity that lie inside the box', () => {
+    const austria: MultiPolygon = { type: 'MultiPolygon', coordinates: [box(10, 44, 26, 50).coordinates, box(20, 53, 21, 54).coordinates] };
+    const stray = polity('Austria', box(20, 53, 21, 54));
+    const relabel = [{ polity: 'Austria', within: [19, 52, 22, 55] as [number, number, number, number], as: 'Warmia', ruler: 'Poland' }];
+    const out = applyPatch([polity('Austria', austria), stray, polity('Poland', box(14, 49, 24, 55))], { relabel }, noShapes);
+    expect(out.map((f) => [f.properties.NAME, f.properties.SUBJECTO])).toEqual(
+      [['Austria', null], ['Warmia', 'Poland'], ['Warmia', 'Poland'], ['Poland', null]]);
+    expect(out[0].geometry).toEqual(box(10, 44, 26, 50));
+    expect(out[1].geometry).toEqual(box(20, 53, 21, 54));
+  });
+
+  it('fails when the piece to relabel is not there', () => {
+    const relabel = [{ polity: 'Austria', within: [19, 52, 22, 55] as [number, number, number, number], as: 'Warmia' }];
+    expect(() => applyPatch([polity('Austria', box(10, 44, 26, 50))], { relabel }, noShapes)).toThrow(/Austria/);
+  });
+
   it('merges neighbors into one polity with no border between them', () => {
     const out = applyPatch(
       [polity('India', box(0, 0, 10, 10)), polity('Pakistan', box(-10, 0, 0, 10)), polity('Nepal', box(0, 10, 5, 12))],

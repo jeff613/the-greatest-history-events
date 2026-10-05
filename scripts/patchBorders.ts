@@ -15,6 +15,8 @@ export interface Patch {
   base?: number;
   /** Polities to drop. */
   remove?: string[];
+  /** Pieces the source drew under the wrong name: the parts of a polity that lie inside the box get the right one. */
+  relabel?: { polity: string; within: Box; as: string; ruler?: string }[];
   /** Polities to join into one, keyed by the name of the result. */
   merge?: Record<string, { from: string[]; ruler?: string }>;
   /** Shapes to bring in from Cliopatria for this year, keyed by its name for the polity, with the label to show. */
@@ -47,7 +49,7 @@ const polygons = (shape: Shape): PolygonCoords[] => (shape.type === 'Polygon' ? 
 const toShape = (parts: PolygonCoords[]): Shape =>
   parts.length === 1 ? { type: 'Polygon', coordinates: parts[0] } : { type: 'MultiPolygon', coordinates: parts };
 
-type Box = [west: number, south: number, east: number, north: number];
+export type Box = [west: number, south: number, east: number, north: number];
 function boxOf(shapes: Shape[]): Box {
   const box: Box = [Infinity, Infinity, -Infinity, -Infinity];
   for (const shape of shapes) {
@@ -91,6 +93,27 @@ export function applyPatch(source: SourceFeature[], patch: Patch, shapes: Map<st
   if (unknown.length) throw new Error(`patch names polities the source does not have: ${unknown.join(', ')}`);
 
   let features = source.filter((f) => !gone.includes(f.properties.NAME?.trim() ?? ''));
+  for (const { polity, within, as, ruler } of patch.relabel ?? []) {
+    let found = false;
+    features = features.flatMap((feature) => {
+      if (feature.properties.NAME?.trim() !== polity) return [feature];
+      const parts = polygons(feature.geometry);
+      const moved = parts.filter((part) => {
+        const [west, south, east, north] = boxOf([toShape([part])]);
+        return west >= within[0] && south >= within[1] && east <= within[2] && north <= within[3];
+      });
+      if (!moved.length) return [feature];
+      found = true;
+      const kept = parts.filter((part) => !moved.includes(part));
+      const piece: SourceFeature = {
+        type: 'Feature',
+        geometry: toShape(moved),
+        properties: { NAME: as, SUBJECTO: ruler ?? as, BORDERPRECISION: feature.properties.BORDERPRECISION },
+      };
+      return kept.length ? [{ ...feature, geometry: toShape(kept) }, piece] : [piece];
+    });
+    if (!found) throw new Error(`patch relabels a piece of ${polity} that the source does not have there`);
+  }
   for (const [name, { from, ruler }] of merges) {
     const [first, ...rest] = from.flatMap(named);
     const joined = union(clippable(first.geometry), ...rest.map((f) => clippable(f.geometry))) as PolygonCoords[];

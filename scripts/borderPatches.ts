@@ -1,4 +1,4 @@
-import type { Patch } from './patchBorders';
+import type { Box, Patch } from './patchBorders';
 
 /**
  * The source's Iron Age Near East, redrawn whole: its Assyria is a rump of the empire, and the
@@ -7,6 +7,11 @@ import type { Patch } from './patchBorders';
 const IRON_AGE_NEAR_EAST = ['Assyria', 'Babylonia', 'Kingdom of David and Solomon', 'Hittites', 'Phrygians'];
 /** The source keeps the Sasanians in Iran, and the caliphate west of it, half a century after the conquest. */
 const ARAB_CONQUEST = ['Umayyad Caliphate', 'Sasanian Empire', 'Sasanian dependencies'];
+
+/**
+ * The source draws Warmia, a Polish prince-bishopric on the Baltic coast, as a piece of the Austrian Empire.
+ */
+const WARMIA = { polity: 'Austrian Empire', within: [19, 53, 21.5, 55] as Box, as: 'Warmia', ruler: 'Polish–Lithuanian Commonwealth' };
 
 /**
  * Where historical-basemaps has the wrong shape for a snapshot, or no snapshot at all inside a
@@ -125,8 +130,10 @@ export const BORDER_PATCHES: Record<number, Patch> = {
   [1530]: { add: { 'Mongol Khanate': 'Northern Yuan' } },
   // Akbar's empire at its extent in 1600; the source shows less than half of it.
   [1600]: { remove: ['Mughal Empire'], add: { 'Mughal Empire': 'Mughal Empire' } },
+  [1650]: { relabel: [WARMIA] },
   // The last Ming loyalists were defeated by 1683, and the Khalkha Mongols submitted in 1691.
-  [1700]: { remove: ['Post-Ming Warlords', 'Manchu Empire'], add: { 'Qing Dynasty': 'Qing Empire' } },
+  [1700]: { relabel: [WARMIA], remove: ['Post-Ming Warlords', 'Manchu Empire'], add: { 'Qing Dynasty': 'Qing Empire' } },
+  [1715]: { relabel: [WARMIA] },
   // The source stretches the Marathas to Kashmir, over the Sikh and Durrani lands.
   [1815]: {
     remove: ['Maratha Confederacy', 'Afghanistan'],

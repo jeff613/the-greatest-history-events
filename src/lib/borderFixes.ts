@@ -62,7 +62,13 @@ export const LABEL_FIXES: Record<number, Record<string, Fix>> = {
   1500: { Castille: 'Castile', 'White Horde': 'Kazakh Khanate' },
   // The Wattasids fell in 1554.
   1600: { 'Watassid Morocco': 'Saadi Morocco' },
-  1700: HABSBURG,
+  // What the source calls the Austrian Empire here is only the Habsburg lands outside the Holy Roman Empire,
+  // which holds Austria and Bohemia. Naples and Sardinia were Spanish until the War of the Spanish Succession.
+  1700: {
+    'Austrian Empire': ['Habsburg Hungary', 'Habsburg Hungary'],
+    Naples: ['Naples', 'Spanish Habsburg'],
+    Sardinia: ['Sardinia', 'Spanish Habsburg'],
+  },
   1715: HABSBURG,
   1783: HABSBURG,
   1800: HABSBURG,
