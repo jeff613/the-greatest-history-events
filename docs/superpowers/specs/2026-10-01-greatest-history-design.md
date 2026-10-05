@@ -1,7 +1,7 @@
 # The Greatest History - Design
 
 Date: 2026-10-01
-Status: Draft, pending review
+Status: Built. Its data model, timeline bands and event panel are superseded by `2026-10-04-unified-timeline-design.md`.
 
 ## 1. Purpose
 
