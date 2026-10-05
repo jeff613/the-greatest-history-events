@@ -19,9 +19,6 @@ for (const period of [
     await expect(card.getByRole('link', { name: 'Read more on Wikipedia' })).toHaveAttribute('href', /en\.wikipedia\.org\/wiki\//);
     await expect(page.getByTestId('map')).not.toHaveAttribute('data-territory');
     await expect(page.getByText('Loading territory...')).toHaveCount(0);
-    if (period.id === 'french-revolution' || period.id === 'sengoku') {
-      await page.screenshot({ path: `/private/tmp/history-${period.id}.png` });
-    }
     await card.getByRole('button', { name: 'Around this time', exact: false }).click();
     await expect(card).toHaveCount(0);
     await expect(band).toHaveAttribute('aria-pressed', 'false');

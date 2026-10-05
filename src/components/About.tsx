@@ -30,7 +30,7 @@ export function About({ onClose }: { onClose(): void }) {
         <h2 id="about-title">About The Greatest History</h2>
         <p>
           A curated focus on Europe and Asia, with major turning points elsewhere, from 2000 BC to AD 2000 on one map, so you can see what was happening in
-          different parts of the world at the same time. The timeline shows three things together for each region: states as solid bars, periods such as wars, movements and influential lives as dashed bars, and single moments as diamonds above them. Select any of them to read what it was, why it mattered, what it was part of and what happened within it. Approximate or disputed dates are noted in those descriptions. Toggle the region buttons to choose which timelines to compare. Scroll vertically to browse their rows, drag the bands to move through time, use + and - to zoom, drag the top edge of the timeline to make it taller, or press play.
+          different parts of the world at the same time. The timeline shows three things together for each region: states as solid bars, periods such as wars, movements and influential lives as round-ended pills, and single moments as diamonds above them. Select any of them to read what it was, why it mattered, what it was part of and what happened within it. Approximate or disputed dates are noted in those descriptions. Toggle the region buttons to choose which timelines to compare. Scroll vertically to browse their rows, drag the bands to move through time, use + and - to zoom, drag the top edge of the timeline to make it taller, or press play.
         </p>
         <p>
           Borders are approximate. Before the modern era most states had no fixed frontiers, and many overlapped.
@@ -64,7 +64,7 @@ export function About({ onClose }: { onClose(): void }) {
             </a>{' '}
             (public domain).
           </li>
-          <li>Map labels: Open Sans (Apache License 2.0). Map rendering: MapLibre GL JS.</li>
+          <li>Type: Cinzel and Cormorant Garamond (SIL Open Font License), with Open Sans (Apache License 2.0) as the fallback for map labels. Map rendering: MapLibre GL JS.</li>
           <li>Event descriptions link to Wikipedia for further reading.</li>
         </ul>
         <button ref={closeRef} onClick={onClose}>

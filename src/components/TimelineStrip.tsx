@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState, type PointerEvent } from 'react';
+import { type CSSProperties, useLayoutEffect, useMemo, useRef, useState, type PointerEvent } from 'react';
 import { BARS, ENTRIES_BY_ID, MOMENTS } from '../data';
 import type { Entry, Moment, Period, Region } from '../data/schema';
 import { labelSpan, minImportance, placeLabels, type LabelSide, type Marker } from '../lib/momentLayout';
@@ -26,6 +26,8 @@ const BAR_CHAR_PX = 7;
 const MIN_BAR_LABEL_CHARS = 5;
 /** How many characters of its name a bar this wide has room for. */
 const barLabelChars = (widthPx: number) => Math.floor((widthPx - 12) / BAR_CHAR_PX);
+/** A pill's rounded ends leave this much less room for its name than a square bar has. */
+const PILL_INSET = 10;
 const LABEL_CHAR_PX = 6.2;
 /** Moments that share a year are drawn this far apart (twice the click radius), so each can be clicked. */
 const MARKER_HIT_RADIUS = 8;
@@ -123,13 +125,14 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
         if (center < 0 || center > trackW) return;
         markers.push({ id: m.id, entry: m, x: center, halfWidth: MARKER_SIZE[m.importance] * 0.75, label: m.title, importance: m.importance });
       });
-      // A period whose bar is too narrow to carry any of its name is named here instead.
+      // A period too short to carry any of its name is drawn here instead, as a small pill with the name beside it.
+      // Unlike moments these are never thinned out: a period is always drawn somewhere.
       for (const bar of lane.rows.flat()) {
         if (bar.kind !== 'period') continue;
         const importance = bar.importance ?? 2;
         const x0 = Math.max(0, px(bar.start));
         const x1 = Math.min(trackW, px(bar.end));
-        if (importance < least || x1 <= x0 || barLabelChars(x1 - x0) >= MIN_BAR_LABEL_CHARS) continue;
+        if (x1 <= x0 || barLabelChars(x1 - x0 - PILL_INSET) >= MIN_BAR_LABEL_CHARS) continue;
         const half = Math.max(3, (x1 - x0) / 2);
         markers.push({ id: bar.id, entry: bar, x: (x0 + x1) / 2, halfWidth: half, label: bar.title, importance });
       }
@@ -253,9 +256,10 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
         <button onClick={() => onView(FULL_VIEW)}>All years</button>
       </div>
       <nav className="timeline-regions" aria-label="Timeline regions">
-        <span className="timeline-legend">Solid: states · Dashed: periods · ◆ moments</span>
+        <span className="timeline-legend">Bars: states · Pills: periods · ◆ moments</span>
         {allLanes.map((lane) => <button key={lane.region}
           aria-pressed={visibleRegions.includes(lane.region)}
+          style={{ '--pigment': REGION_COLORS[lane.region] } as CSSProperties}
           onClick={() => onToggleRegion(lane.region)}>
           {lane.region === 'east-asia' ? 'China & East Asia' : REGION_SHORT_LABELS[lane.region]}
         </button>)}
@@ -288,8 +292,11 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
             {lanes.map((lane, laneIndex) => {
               const top = laneTops[laneIndex];
               const barsTop = top + MOMENTS_H;
+              // Each period is drawn once: in its row, or as a pill among the moments.
+              const pilled = new Set(laneMarkers[laneIndex].filter((m) => m.entry.kind === 'period').map((m) => m.id));
               return (
                 <g key={lane.region} data-region={lane.region}>
+                  {laneIndex > 0 && <line className="lane-rule" x1={0} x2={width} y1={top - LANE_GAP / 2} y2={top - LANE_GAP / 2} />}
                   <text className="lane-label" x={6} y={barsTop + (ROW_H - 4) / 2 + 0.5}>
                     {REGION_SHORT_LABELS[lane.region]}
                   </text>
@@ -297,9 +304,9 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                     row.map((era) => {
                       const x0 = Math.max(GUTTER, x(era.start));
                       const x1 = Math.min(width, x(era.end));
-                      if (x1 <= x0) return null;
+                      if (x1 <= x0 || pilled.has(era.id)) return null;
                       const y = barsTop + rowIndex * ROW_H;
-                      const labelChars = barLabelChars(x1 - x0);
+                      const labelChars = barLabelChars(x1 - x0 - (era.kind === 'period' ? PILL_INSET : 0));
                       const showLabel = labelChars >= MIN_BAR_LABEL_CHARS;
                       const label = era.title.length <= labelChars ? era.title : `${era.title.slice(0, labelChars - 1)}…`;
                       return (
@@ -311,11 +318,11 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                             y={y + 0.5}
                             width={Math.max(4, x1 - x0)}
                             height={ROW_H - 4}
-                            rx={5}
+                            rx={era.kind === 'period' ? (ROW_H - 4) / 2 : undefined}
                             fill={REGION_COLORS[lane.region]}
                           />
                           {showLabel && (
-                            <text className="era-label" x={x0 + 4} y={y + 18}>
+                            <text className="era-label" x={x0 + (era.kind === 'period' ? 9 : 4)} y={y + 18}>
                               {label}
                             </text>
                           )}
@@ -327,7 +334,8 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                     const cx = GUTTER + m.x;
                     const cy = top + MARKER_Y;
                     const entry = m.entry;
-                    const fill = entry.category ? CATEGORY_COLORS[entry.category] : REGION_COLORS[lane.region];
+                    // A period keeps its lane's pigment wherever it is drawn; a moment takes its category's.
+                    const fill = entry.kind === 'moment' ? CATEGORY_COLORS[entry.category] : REGION_COLORS[lane.region];
                     const size = MARKER_SIZE[m.importance];
                     // A marker that lost out on a label still shows its name while it is hovered or selected.
                     const active = selectedId === m.id || hoveredId === m.id;

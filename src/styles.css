@@ -1,14 +1,30 @@
+/* Ink and red ochre on papyrus. The timeline is a scroll unrolled across the foot of the page. */
 :root {
-  --bg: #0b141d;
-  --panel: #111c27;
-  --panel-raised: #172431;
-  --text: #efe6d2;
-  --muted: #9aa7b4;
-  --accent: #e0b45a;
-  --line: #22303e;
+  --bg: #dcc387;
+  --panel: #ecdcae;
+  --panel-raised: #dfca92;
+  --text: #24170a;
+  --muted: #5a4424;
+  --accent: #8f3417;
+  --rubric: #a8381a;
+  --line: #a48a55;
+  /* The whitened board the timeline's records are set out on: plain, so that small lettering stays clear. */
+  --board: #f8f1dc;
+  --display: 'Cinzel Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --body: 'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  /* Papyrus fibres: noise stretched into strands laid across, then along. The faint one sits behind reading text. */
+  --fibre: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.7' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.27  0 0 0 0 0.08  1.25 0 0 0 -0.45'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5 0.004' numOctaves='2' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.27  0 0 0 0 0.08  0.9 0 0 0 -0.36'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  --fibre-faint: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.7' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.27  0 0 0 0 0.08  0.65 0 0 0 -0.26'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5 0.004' numOctaves='2' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.27  0 0 0 0 0.08  0.45 0 0 0 -0.19'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  /* Room at each end of the timeline for the rolled-up scroll and the shadow it casts. */
+  --roll: 28px;
+  --roll-gap: 42px;
   /* Set from TimelineStrip to its measured height; this is only the pre-measure fallback. */
   --strip-h: 160px;
-  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-family: var(--body);
+  font-size: 17px;
+  font-weight: 500;
   color: var(--text);
   background: var(--bg);
 }
@@ -26,7 +42,7 @@ body,
 
 .app {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: minmax(0, 1fr) 350px;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header header'
@@ -37,19 +53,60 @@ body,
 
 .app-header {
   grid-area: header;
+  position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--line);
+  gap: 20px;
+  padding: 16px 24px 30px;
+  background: var(--fibre), var(--panel);
+}
+
+/* A Greek key band closes the header. */
+.app-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  border-top: 1.5px solid var(--text);
+  border-bottom: 2px solid var(--text);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11'%3E%3Cpath d='M1.5 11V2H11.5V7.5H6V4.5' fill='none' stroke='%2324170a' stroke-width='1.5'/%3E%3C/svg%3E") repeat-x left bottom;
 }
 
 .app-header h1 {
   margin: 0;
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+}
+
+.header-focus {
+  margin-left: auto;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.header-focus span {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 .map-area {
@@ -63,47 +120,232 @@ body,
   min-height: 0;
 }
 
+/* A button is a small tablet ruled twice in ink; it takes a wash of ochre under the hand. */
 button {
-  font: inherit;
+  font: 600 15px/1.2 var(--body);
   color: var(--text);
-  background: var(--panel-raised);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 4px 10px;
+  background: transparent;
+  border: 3px double var(--text);
+  border-radius: 0;
+  padding: 5px 12px;
   cursor: pointer;
+  transition: background 150ms, border-color 150ms, color 150ms;
 }
 
 button:hover {
+  background: rgb(168 56 26 / 0.12);
   border-color: var(--accent);
 }
 
+button:active {
+  background: rgb(168 56 26 / 0.22);
+}
+
+/* Small actions inside the text are written as links, not tablets. */
+.more,
+.back {
+  padding: 0;
+  border: none;
+  font-size: 15.5px;
+  font-style: italic;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.more:hover,
+.back:hover {
+  background: none;
+  color: var(--rubric);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Timeline strip: a scroll unrolled sideways, with a key-pattern border along its top and bottom edges. */
+
 .strip {
   grid-area: strip;
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  min-height: 0;
-  max-height: max(160px, 45vh);
-  background: var(--panel);
-  border-top: 1px solid var(--line);
+  height: 36vh;
+  min-height: 240px;
+  max-height: 42vh;
+  padding: 13px var(--roll-gap) 15px;
+  border-top: 1px solid var(--text);
+  /* The scroll lies on top of the page. */
+  box-shadow: 0 -6px 16px rgb(40 25 5 / 0.3);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13'%3E%3Cpath d='M1.5 11V2H11.5V7.5H6V4.5' fill='none' stroke='%23a8381a' stroke-width='1.5'/%3E%3Cpath d='M0 12H16' stroke='%2324170a' stroke-width='1.5'/%3E%3C/svg%3E") repeat-x left top,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13'%3E%3Cg transform='translate(0 13) scale(1 -1)'%3E%3Cpath d='M1.5 11V2H11.5V7.5H6V4.5' fill='none' stroke='%23a8381a' stroke-width='1.5'/%3E%3Cpath d='M0 12H16' stroke='%2324170a' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E") repeat-x left bottom,
+    /* the shadow each rolled end casts on the sheet */
+    linear-gradient(90deg, rgb(64 40 10 / 0.55) var(--roll), rgb(64 40 10 / 0.16) calc(var(--roll) + 7px), transparent calc(var(--roll) + 22px)),
+    linear-gradient(270deg, rgb(64 40 10 / 0.55) var(--roll), rgb(64 40 10 / 0.16) calc(var(--roll) + 7px), transparent calc(var(--roll) + 22px)),
+    /* the sheet curves away slightly at its top and bottom edges */
+    linear-gradient(180deg, rgb(120 90 40 / 0.14), transparent 16%, transparent 84%, rgb(120 90 40 / 0.16)),
+    var(--board);
+}
+
+/* Each end is still rolled up: wound paper seen from just above, with the turned knob of its rod standing out of it. */
+.strip::before,
+.strip::after {
+  content: '';
+  position: absolute;
+  top: -26px;
+  bottom: 0;
+  z-index: 4;
+  width: var(--roll);
+  pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='36'%3E%3Cdefs%3E%3ClinearGradient id='w' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%232a1909'/%3E%3Cstop offset='.4' stop-color='%238a6430'/%3E%3Cstop offset='.55' stop-color='%23b8935a'/%3E%3Cstop offset='1' stop-color='%232a1909'/%3E%3C/linearGradient%3E%3CradialGradient id='b' cx='.38' cy='.32' r='.8'%3E%3Cstop offset='0' stop-color='%23c9a56a'/%3E%3Cstop offset='.55' stop-color='%237a5626'/%3E%3Cstop offset='1' stop-color='%2324150a'/%3E%3C/radialGradient%3E%3ClinearGradient id='p' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%238f7846'/%3E%3Cstop offset='.24' stop-color='%23dccb99'/%3E%3Cstop offset='.48' stop-color='%23fbf4de'/%3E%3Cstop offset='.78' stop-color='%23d2be88'/%3E%3Cstop offset='1' stop-color='%237f6a3b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='.75' y='28' width='26.5' height='8' fill='url(%23p)'/%3E%3Cpath d='M.75 28V36M27.25 28V36' stroke='%2324170a' stroke-width='1.5'/%3E%3Cellipse cx='14' cy='28' rx='13.25' ry='5' fill='%23efe3c0' stroke='%2324170a' stroke-width='1.3'/%3E%3Cellipse cx='14' cy='28' rx='9' ry='3.3' fill='none' stroke='%238a7444' stroke-width='.8'/%3E%3Cellipse cx='14' cy='28' rx='5.5' ry='2' fill='none' stroke='%238a7444' stroke-width='.8'/%3E%3Cellipse cx='14' cy='28' rx='3.6' ry='1.4' fill='%2324150a'/%3E%3Crect x='11' y='8' width='6' height='20' fill='url(%23w)' stroke='%2324170a' stroke-width='.8'/%3E%3Cellipse cx='14' cy='19' rx='5' ry='2' fill='url(%23w)' stroke='%2324170a' stroke-width='.8'/%3E%3Ccircle cx='14' cy='7' r='6' fill='url(%23b)' stroke='%2324170a' stroke-width='.9'/%3E%3C/svg%3E") left top / 28px 36px no-repeat,
+    linear-gradient(var(--text), var(--text)) left 36px / 1.5px 100% no-repeat,
+    linear-gradient(var(--text), var(--text)) right 36px / 1.5px 100% no-repeat,
+    linear-gradient(90deg, #8f7846, #dccb99 24%, #fbf4de 48%, #d2be88 78%, #7f6a3b) left 36px / 100% 100% no-repeat;
+}
+
+.strip::before {
+  left: 0;
+}
+
+.strip::after {
+  right: 0;
+}
+
+/* The handle sits on the top border, where the edge is dragged. */
+.strip-resize {
+  flex: none;
+  position: relative;
+  height: 15px;
+  margin-top: -13px;
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+/* A small cartouche with two grip lines interrupts the border. */
+.strip-resize::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 64px;
+  height: 13px;
+  margin-left: -32px;
+  border: 1px solid var(--text);
+  border-top: none;
+  background:
+    linear-gradient(var(--text), var(--text)) center 3.5px / 28px 1px no-repeat,
+    linear-gradient(var(--text), var(--text)) center 7.5px / 28px 1px no-repeat,
+    var(--board);
+}
+
+.strip-resize:hover::after {
+  background-color: var(--panel-raised);
 }
 
 .strip-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 12px;
+  gap: 10px;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.strip-controls button {
+  flex: none;
+  white-space: nowrap;
 }
 
 .strip-year {
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  font-size: 20px;
+  font-family: var(--display);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--accent);
   min-width: 7ch;
 }
 
+.strip-hint {
+  min-width: 0;
+  margin-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14.5px;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .strip-spacer {
   flex: 1;
+}
+
+.strip-controls button[aria-label^='Zoom'] {
+  min-width: 34px;
+  font-size: 20px;
+  line-height: 0.9;
+}
+
+.timeline-regions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 6px;
+  padding: 7px 8px;
+  overflow-x: auto;
+}
+
+/* Each region button carries a swatch of its lane's pigment, and is washed with it while the lane is shown. */
+.timeline-regions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px 4px 8px;
+  border: 1px solid var(--text);
+  font-size: 14.5px;
+  white-space: nowrap;
+}
+
+.timeline-regions button::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--text);
+  background: var(--pigment);
+}
+
+.timeline-regions button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--pigment) 26%, transparent);
+}
+
+.timeline-regions button[aria-pressed='true']:hover {
+  background: color-mix(in srgb, var(--pigment) 40%, transparent);
+}
+
+.timeline-regions button[aria-pressed='false'] {
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+.timeline-regions button[aria-pressed='false']::before {
+  opacity: 0.4;
+}
+
+.timeline-legend {
+  align-self: center;
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.timeline-empty {
+  margin: 20px;
+  font-style: italic;
+  color: var(--muted);
 }
 
 .strip-canvas {
@@ -113,6 +355,7 @@ button:hover {
   flex: 1;
   min-height: 0;
   overflow: hidden;
+  border-top: 1px solid var(--line);
 }
 
 .strip-canvas svg {
@@ -124,6 +367,7 @@ button:hover {
 .strip-axis {
   touch-action: none;
   cursor: ew-resize;
+  box-shadow: 0 1px 0 var(--line);
 }
 
 .strip-lanes {
@@ -134,6 +378,7 @@ button:hover {
   /* Horizontal drags pan the timeline; vertical swipes still scroll the lanes. */
   touch-action: pan-y;
   cursor: grab;
+  scrollbar-color: var(--line) transparent;
 }
 
 .axis-bg {
@@ -142,46 +387,138 @@ button:hover {
 
 .tick-line {
   stroke: var(--line);
+  stroke-opacity: 0.6;
 }
 
 .tick-label {
   fill: var(--muted);
-  font-size: 11px;
+  font-family: var(--display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .lane-label {
-  fill: var(--muted);
+  fill: var(--accent);
+  font-family: var(--display);
   font-size: 10px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  dominant-baseline: central;
 }
 
 .era {
   cursor: pointer;
 }
 
+/* Bars are tinted like the map: a wash of the region's pigment inside a pen line, lettered in ink. */
 .era rect {
-  opacity: 0.85;
+  fill-opacity: 0.56;
+  stroke: var(--text);
+  stroke-width: 1;
+  transition: fill-opacity 120ms;
 }
 
-.era:hover rect {
-  opacity: 1;
+.era:hover rect,
+.era.is-hovered rect {
+  fill-opacity: 0.66;
+}
+
+.era.is-selected rect {
+  fill-opacity: 0.7;
+  stroke-width: 2.4;
+}
+
+.era:focus-visible rect {
+  stroke-width: 3;
 }
 
 .era-label {
   fill: var(--text);
-  font-size: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
   pointer-events: none;
 }
 
+.era.is-selected .era-label {
+  font-weight: 700;
+}
+
+/* A period is a pill, round-ended and paler than a state, in its row or small among the moments. */
+.era-period rect {
+  fill-opacity: 0.3;
+}
+
+.era-period:hover rect,
+.era-period.is-hovered rect {
+  fill-opacity: 0.44;
+}
+
+.era-period.is-selected rect {
+  fill-opacity: 0.5;
+}
+
+.marker-period .marker-shape {
+  fill-opacity: 0.6;
+}
+
+.lane-rule {
+  stroke: var(--line);
+  stroke-dasharray: 1 4;
+}
+
+.era-hitbox {
+  pointer-events: all;
+}
+
+.marker {
+  cursor: pointer;
+}
+
+.marker:focus {
+  outline: none;
+}
+
+.marker-shape {
+  stroke: var(--text);
+  stroke-width: 0.9;
+}
+
+.marker-label {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.marker-label.is-forced {
+  paint-order: stroke;
+  stroke: var(--board);
+  stroke-width: 4px;
+}
+
+.marker.is-hovered .marker-shape,
+.marker:focus-visible .marker-shape {
+  stroke-width: 2;
+}
+
+.marker.is-selected .marker-shape {
+  stroke-width: 2.6;
+}
+
+.marker.is-hovered .marker-label,
+.marker.is-selected .marker-label {
+  fill: var(--accent);
+}
+
+/* The playhead is grabbed on the axis row only, so bars and markers under its line stay clickable. */
 .playhead {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 12px;
   margin-left: -6px;
-  touch-action: none;
-  cursor: ew-resize;
+  pointer-events: none;
 }
 
 .playhead::before {
@@ -191,7 +528,17 @@ button:hover {
   bottom: 0;
   left: 5px;
   width: 2px;
-  background: #e0564a;
+  background: var(--rubric);
+}
+
+.playhead-grip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  pointer-events: auto;
+  cursor: ew-resize;
+  touch-action: none;
 }
 
 .playhead-knob {
@@ -200,9 +547,12 @@ button:hover {
   width: 12px;
   height: 12px;
   margin-top: -6px;
+  border: 1px solid var(--text);
   border-radius: 50%;
-  background: #e0564a;
+  background: var(--rubric);
 }
+
+/* Map */
 
 .map,
 .map-canvas {
@@ -211,23 +561,115 @@ button:hover {
 }
 
 .map {
-  background: #0e1a26;
+  background: #a9b79a;
 }
 
 .map-fallback {
   max-width: 32ch;
   margin: 20vh auto 0;
-  color: var(--muted);
+  color: var(--text);
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.4;
 }
+
+.map-caption,
+.map-context {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid var(--text);
+  background: var(--fibre-faint), rgb(236 220 174 / 0.95);
+}
+
+.map-caption {
+  top: 20px;
+  left: 64px;
+  padding: 10px 18px;
+  pointer-events: none;
+}
+
+.map-caption strong {
+  display: block;
+  font: 700 30px/1.1 var(--display);
+  letter-spacing: 0.04em;
+}
+
+.map-caption > span:last-child {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.map-context {
+  bottom: 16px;
+  left: 20px;
+  max-width: calc(100% - 40px);
+  padding: 10px 14px;
+}
+
+.map-context button {
+  font-size: 14px;
+}
+
+.map-context p {
+  margin: 6px 0 0;
+  font-size: 14.5px;
+  line-height: 1.3;
+  color: var(--muted);
+}
+
+.map-context .territory-caption {
+  color: var(--accent);
+}
+
+.territory-caption button {
+  margin-left: 8px;
+  padding: 1px 6px;
+}
+
+.territory-popup {
+  pointer-events: none;
+}
+
+.territory-popup .maplibregl-popup-content {
+  padding: 7px 12px;
+  border: 1.5px solid var(--text);
+  border-radius: 0;
+  background: var(--panel);
+  color: var(--text);
+  font: 600 16px var(--body);
+  pointer-events: none;
+}
+
+.territory-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: var(--text);
+}
+
+.territory-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+  border-bottom-color: var(--text);
+}
+
+.map .maplibregl-ctrl-group {
+  border: 1.5px solid var(--text);
+  border-radius: 0;
+  background: var(--panel);
+  box-shadow: none;
+}
+
+.map .maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--text);
+}
+
+/* Reading pane */
 
 .panel {
   height: 100%;
   overflow-y: auto;
-  background: var(--panel);
-  border-left: 1px solid var(--line);
-  padding: 12px 16px 24px;
+  padding: 22px 20px;
+  background: var(--fibre-faint), var(--panel);
+  border-left: 2px solid var(--text);
+  scrollbar-color: var(--line) transparent;
 }
 
 .sheet-handle {
@@ -235,30 +677,62 @@ button:hover {
   display: none;
 }
 
+.panel-header {
+  padding-bottom: 12px;
+  border-bottom: 3px double var(--text);
+}
+
 .panel-header h2 {
   margin: 0;
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .panel-sub,
 .panel-empty {
-  margin: 4px 0 12px;
+  margin: 4px 0 0;
+  font-size: 15.5px;
+  font-style: italic;
+  line-height: 1.3;
   color: var(--muted);
-  font-size: 13px;
+}
+
+.panel-empty {
+  margin-top: 14px;
+}
+
+/* A rubric: red capitals, then a rule drawn out to the margin. */
+.region h3,
+.card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--display);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.region h3::after,
+.card h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
 }
 
 .region h3 {
-  margin: 16px 0 6px;
-  color: var(--muted);
+  margin: 22px 0 6px;
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.14em;
 }
 
-.region ul {
+.region ul,
+.card-context ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -268,11 +742,13 @@ button:hover {
   display: grid;
   grid-template-columns: 10px 1fr auto;
   align-items: baseline;
-  gap: 8px;
+  gap: 9px;
   width: 100%;
-  padding: 6px 8px;
+  padding: 9px 8px;
   border: 1px solid transparent;
+  border-bottom: 1px dotted var(--line);
   background: transparent;
+  font-weight: 500;
   text-align: left;
 }
 
@@ -282,70 +758,222 @@ button:hover {
   border-color: var(--line);
 }
 
-.event-date {
-  color: var(--muted);
-  font-size: 12px;
-  white-space: nowrap;
+.event-title {
+  font-size: 16.5px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
+.event-date {
+  font-size: 14.5px;
+  font-style: italic;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+/* A moment is a lozenge here as on the timeline; a state or period is a bar. */
 .dot {
   display: inline-block;
-  width: 9px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--text);
+  transform: rotate(45deg);
+}
+
+.bar-glyph {
+  display: inline-block;
+  width: 10px;
   height: 9px;
-  border-radius: 50%;
+  border: 1px solid var(--text);
+}
+
+.bar-glyph.is-period {
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+.in-progress {
+  margin-bottom: 6px !important;
+  padding-bottom: 6px !important;
+  border-bottom: 1px solid var(--line);
+}
+
+.in-progress .event-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom-color: transparent;
 }
 
 .more {
-  margin-top: 4px;
-  padding: 2px 8px;
-  font-size: 12px;
+  margin-top: 8px;
+}
+
+.panel-elsewhere {
+  margin: 22px 0 0;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4;
   color: var(--muted);
 }
 
 .card h2 {
   margin: 4px 0;
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.card h3 {
-  margin: 18px 0 4px;
-  color: var(--accent);
-  font-size: 13px;
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
   letter-spacing: 0.04em;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
+.card h3 {
+  margin: 20px 0 4px;
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+}
+
 .card p {
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.38;
 }
 
 .card-category,
 .card-meta {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin: 12px 0 0;
+  gap: 8px;
+  margin: 14px 0 0;
   color: var(--muted);
-  font-size: 13px;
 }
 
-.card-meta {
-  margin: 0 0 12px;
-}
-
-.card a {
+.card p.card-category {
+  font-family: var(--display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--accent);
 }
 
+.card p.card-meta {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* The account opens with a rubricated initial. */
+.card-meta + p::first-letter {
+  float: left;
+  padding: 5px 8px 0 0;
+  font: 700 3.1em/0.8 var(--display);
+  color: var(--rubric);
+}
+
+.card-context .event-row {
+  padding: 7px 0;
+}
+
+/* The way out to Wikipedia closes the card like a colophon. */
+.card > a {
+  display: block;
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 3px double var(--text);
+  font: 700 11.5px var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.card > a::after {
+  content: ' \2192';
+}
+
+.card > a:hover {
+  color: var(--rubric);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* About */
+
+.about-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgb(36 23 10 / 0.6);
+}
+
+.about {
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px 26px;
+  background: var(--fibre-faint), var(--panel);
+  border: 3px double var(--text);
+  box-shadow: 0 14px 44px rgb(20 12 4 / 0.55);
+  line-height: 1.4;
+}
+
+.about h2 {
+  margin-top: 0;
+  font-family: var(--display);
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about h3 {
+  font-family: var(--display);
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.about a {
+  color: var(--accent);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+/* Phone: the pane becomes a sheet over the map, and the rolled ends of the timeline thin out. */
 @media (max-width: 720px) {
+  :root {
+    --roll: 10px;
+    --roll-gap: 15px;
+  }
+
   .app {
     grid-template-columns: 1fr;
     grid-template-areas:
       'header'
       'map'
       'strip';
+  }
+
+  .app-header {
+    gap: 10px;
+    padding: 10px 14px 24px;
+  }
+
+  .app-header h1 {
+    font-size: 19px;
+    letter-spacing: 0.05em;
+  }
+
+  .brand .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+
+  .header-focus,
+  .strip-hint {
+    display: none;
   }
 
   .panel-area {
@@ -358,15 +986,19 @@ button:hover {
     transition: height 200ms ease;
   }
 
-  .panel {
-    border-left: none;
-    border-top: 1px solid var(--line);
-    border-radius: 12px 12px 0 0;
-    padding-top: 0;
-  }
-
   .panel-area:has(.panel.is-open) {
     height: 60vh;
+  }
+
+  /* The collapsed sheet is 56px tall: the handle, then the "Around ..." heading, uncut. */
+  .panel {
+    padding: 0 16px 24px;
+    border-left: none;
+    border-top: 2px solid var(--text);
+  }
+
+  .panel-header h2 {
+    font-size: 20px;
   }
 
   .sheet-handle {
@@ -386,152 +1018,65 @@ button:hover {
     width: 40px;
     height: 4px;
     margin-left: -20px;
-    border-radius: 2px;
     background: var(--muted);
   }
+
+  .strip {
+    height: 32vh;
+    min-height: 220px;
+  }
+
+  /* The sheet rests on the top edge of the strip, so the rolled ends are plain cylinders with no knob. */
+  .strip::before,
+  .strip::after {
+    top: 0;
+    background:
+      linear-gradient(var(--text), var(--text)) left top / 1px 100% no-repeat,
+      linear-gradient(var(--text), var(--text)) right top / 1px 100% no-repeat,
+      linear-gradient(90deg, #8f7846, #dccb99 24%, #fbf4de 48%, #d2be88 78%, #7f6a3b);
+  }
+
+  .strip-controls {
+    gap: 4px;
+    padding: 8px 2px;
+  }
+
+  .strip-year {
+    min-width: 0;
+    margin: 0 2px;
+    font-size: 17px;
+  }
+
+  /* A single rule here: the doubled one makes the row too wide for a phone. */
+  .strip-controls button {
+    min-width: 0;
+    padding: 6px;
+    border: 1px solid var(--text);
+    font-size: 14px;
+  }
+
+  .timeline-regions {
+    padding: 6px 2px;
+  }
+
+  .map-caption {
+    top: 12px;
+    left: 52px;
+    padding: 6px 12px;
+  }
+
+  .map-caption strong {
+    font-size: 22px;
+  }
+
+  .map-context {
+    bottom: 66px;
+    left: 10px;
+    max-width: calc(100% - 20px);
+    padding: 8px 10px;
+  }
+
+  .map-context p {
+    font-size: 13.5px;
+  }
 }
-
-.about-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  display: grid;
-  place-items: center;
-  padding: 16px;
-  background: rgb(0 0 0 / 0.55);
-}
-
-.about {
-  max-width: 560px;
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 20px 24px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  line-height: 1.55;
-}
-
-.about h2 {
-  margin-top: 0;
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-}
-
-.about a {
-  color: var(--accent);
-}
-
-/* Atlas layout: quiet cartography, generous type, and readable era bands. */
-:root {
-  --bg: #101c24;
-  --panel: #14232d;
-  --panel-raised: #1d303b;
-  --text: #f3ecdc;
-  --muted: #a9b8bd;
-  --accent: #e6bd78;
-  --line: #30414a;
-}
-
-.app { grid-template-columns: minmax(0, 1fr) 350px; }
-.app-header { align-items: center; padding: 18px 24px; gap: 20px; background: #14232d; }
-.app-header h1 { font-size: 29px; letter-spacing: -0.025em; }
-.eyebrow { display: block; font-size: 10px; letter-spacing: 0.16em; color: var(--accent); margin-bottom: 5px; }
-.header-focus { margin-left: auto; font-size: 13px; color: var(--accent); }
-.header-focus span { display: block; color: var(--muted); margin-top: 4px; font-size: 11px; }
-button { padding: 7px 12px; transition: background 150ms, border-color 150ms; }
-button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.map-caption { position: absolute; top: 20px; left: 64px; z-index: 1; pointer-events: none; padding: 12px 18px; border: 1px solid var(--line); border-radius: 8px; background: rgb(20 35 45 / 0.92); }
-.map-caption strong { display: block; font: 32px Georgia, serif; }
-.map-caption > span:last-child { display: block; margin-top: 7px; font-size: 11px; color: var(--muted); }
-.map-context { position: absolute; bottom: 16px; left: 20px; z-index: 1; max-width: calc(100% - 40px); padding: 10px 14px; background: rgb(20 35 45 / 0.94); border: 1px solid var(--line); border-radius: 8px; }
-.map-context button { font-size: 11px; }
-.map-context p { margin: 6px 0 0; font-size: 11px; color: var(--muted); }
-.panel { padding: 22px 20px; }
-.panel-header { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-.panel-header h2 { font-size: 27px; }
-.region h3 { margin-top: 22px; color: var(--accent); }
-.event-row { padding: 12px 8px; border-bottom-color: var(--line); border-radius: 0; gap: 9px; }
-.event-title { font-size: 13px; line-height: 1.5; }
-.event-date { font-size: 11px; }
-.strip { height: 36vh; min-height: 240px; max-height: 42vh; box-shadow: 0 -8px 30px rgb(0 0 0 / 0.12); }
-.strip-controls { padding: 12px 20px; gap: 10px; border-bottom: 1px solid var(--line); }
-.strip-year { font-size: 26px; }
-.strip-hint { color: var(--muted); font-size: 11px; margin-left: 12px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.strip-controls button { flex: none; white-space: nowrap; }
-.tick-label { font-size: 11px; }
-.lane-label { font-size: 10px; fill: var(--text); dominant-baseline: central; }
-.era-label { font-size: 12px; fill: #fff5e4; }
-.era rect { opacity: 1; stroke: rgb(255 255 255 / 0.12); }
-.era:hover rect { filter: brightness(1.25); }
-.tick-line { stroke-opacity: 0.5; }
-.strip-lanes { scrollbar-color: var(--line) var(--panel); }
-
-@media (max-width: 720px) {
-  .app { grid-template-columns: 1fr; }
-  .app-header { padding: 12px 16px; gap: 10px; }
-  /* The collapsed sheet is 56px tall: the handle, then the "Around ..." heading, uncut. */
-  .panel { padding: 0 16px 24px; }
-  .panel-header h2 { font-size: 22px; }
-  .app-header h1 { font-size: 23px; }
-  .brand .eyebrow { font-size: 8px; letter-spacing: 0.08em; }
-  .header-focus, .strip-hint { display: none; }
-  .strip { height: 32vh; min-height: 220px; }
-  .strip-controls { padding: 10px; gap: 6px; }
-  .strip-year { font-size: 22px; }
-  .strip-controls button { padding: 7px 7px; font-size: 11px; }
-  .map-caption { top: 12px; left: 52px; padding: 8px 12px; }
-  .map-caption strong { font-size: 24px; }
-  .map-context { bottom: 66px; left: 10px; max-width: calc(100% - 20px); padding: 8px 10px; }
-  .map-context p { font-size: 10px; }
-}
-
-.timeline-regions { display: flex; gap: 6px; padding: 7px 20px; overflow-x: auto; flex-shrink: 0; border-bottom: 1px solid var(--line); }
-.timeline-regions button { font-size: 11px; white-space: nowrap; padding: 5px 10px; }
-.era.is-selected rect { stroke: var(--accent); stroke-width: 2; filter: brightness(1.35); }
-.era:focus-visible rect { stroke: #fff; stroke-width: 2; }
-.map-context .territory-caption { color: var(--accent); }
-@media (max-width: 720px) {
-  .timeline-regions { padding: 6px 10px; }
-}
-
-.territory-popup .maplibregl-popup-content { background: var(--panel); color: var(--text); border: 1px solid var(--accent); border-radius: 6px; padding: 9px 13px; font: 13px system-ui, sans-serif; pointer-events: none; }
-.territory-popup { pointer-events: none; }
-.territory-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--panel); }
-.territory-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--panel); }
-
-.territory-caption button { margin-left: 8px; padding: 1px 6px; }
-
-
-.era-period rect { fill-opacity: 0.55; stroke: var(--accent); stroke-dasharray: 4 2; }
-.era-hitbox { pointer-events: all; }
-.timeline-legend { align-self: center; color: var(--muted); font-size: 10px; white-space: nowrap; }
-
-
-.timeline-regions button[aria-pressed='true'] { border-color: var(--accent); background: #354135; color: var(--text); }
-.timeline-regions button[aria-pressed='false'] { color: var(--muted); background: transparent; }
-.timeline-empty { margin: 20px; color: var(--muted); font-size: 13px; }
-
-/* Unified timeline: moments on the strip, bars and moments in the pane, one card for every kind. */
-/* The playhead is grabbed on the axis row only, so bars and markers under its line stay clickable. */
-.playhead { pointer-events: none; }
-.playhead-grip { position: absolute; top: 0; left: 0; width: 12px; pointer-events: auto; cursor: ew-resize; touch-action: none; }
-.strip-resize { flex: none; position: relative; height: 9px; cursor: ns-resize; touch-action: none; }
-.strip-resize::after { content: ''; position: absolute; left: 50%; top: 3px; width: 44px; height: 3px; margin-left: -22px; border-radius: 2px; background: var(--line); }
-.strip-resize:hover::after { background: var(--accent); }
-.marker { cursor: pointer; }
-.marker-shape { stroke: #fff; stroke-width: 0.8; }
-.marker-label { fill: var(--text); font-size: 11px; }
-.marker-label.is-forced { paint-order: stroke; stroke: var(--panel); stroke-width: 4px; }
-.marker.is-hovered .marker-shape, .marker:focus-visible .marker-shape { stroke: var(--accent); stroke-width: 2; }
-.marker.is-selected .marker-shape { stroke: var(--accent); stroke-width: 2.5; }
-.marker.is-hovered .marker-label, .marker.is-selected .marker-label { fill: var(--accent); }
-.marker:focus { outline: none; }
-.era.is-hovered rect { filter: brightness(1.25); }
-.bar-glyph { display: inline-block; width: 10px; height: 9px; border-radius: 2px; }
-.bar-glyph.is-period { outline: 1px dashed var(--accent); outline-offset: 1px; opacity: 0.75; }
-.in-progress { margin-bottom: 6px !important; padding-bottom: 6px !important; border-bottom: 1px solid var(--line); }
-.in-progress .event-row { padding-top: 7px; padding-bottom: 7px; border-bottom-color: transparent; }
-.panel-elsewhere { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
-.card-context ul { list-style: none; margin: 0; padding: 0; }
-.card-context .event-row { padding: 8px 0; }
-.card-context + a, .card > a { display: inline-block; margin-top: 18px; }

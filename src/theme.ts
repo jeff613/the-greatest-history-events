@@ -34,16 +34,16 @@ export const REGION_BOUNDS: Record<Region, [number, number, number, number]> = {
   americas: [-125, -55, -35, 60],
 };
 
-/** Era band colors on the timeline strip. */
+/** Era band colors on the timeline strip: earth pigments, each dark enough to carry light lettering. */
 export const REGION_COLORS: Record<Region, string> = {
-  europe: '#8c4a44',
-  mena: '#94703a',
-  'sub-saharan-africa': '#7a6a33',
-  'central-asia': '#5e6a3a',
-  'south-asia': '#3f7354',
-  'east-asia': '#3c6280',
-  'southeast-asia-oceania': '#5b4f86',
-  americas: '#80466f',
+  europe: '#8f3f24',
+  mena: '#7d5a10',
+  'sub-saharan-africa': '#6b4a2a',
+  'central-asia': '#5d6b2e',
+  'south-asia': '#2f6b4f',
+  'east-asia': '#2f5577',
+  'southeast-asia-oceania': '#4a437a',
+  americas: '#7a2f45',
 };
 
 export const CATEGORY_LABELS: Record<Category, string> = {
@@ -56,18 +56,23 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 
 /** Event pin and dot colors. */
 export const CATEGORY_COLORS: Record<Category, string> = {
-  politics: '#e0645a',
-  religion: '#b48ce0',
-  science: '#4fb3d9',
-  culture: '#e6b84f',
-  trade: '#6cc28b',
+  politics: '#a8381a',
+  religion: '#6e3478',
+  science: '#2a6a94',
+  culture: '#c08a12',
+  trade: '#2f7a55',
 };
 
+/** The ink every line and label is drawn in; `--text` in styles.css. */
+export const INK = '#24170a';
+
 export const MAP_COLORS = {
-  ocean: '#0e1a26',
-  land: '#2b3440',
-  river: '#1d3346',
-  border: '#0e1a26',
-  label: '#f1e6cf',
-  labelHalo: '#0e1a26',
+  ocean: '#a9b79a',
+  land: '#ead6a2',
+  river: '#6d8777',
+  border: INK,
+  label: INK,
+  labelHalo: 'rgba(236, 219, 172, 0.85)',
+  /** The wash and outline of a selected territory. */
+  territory: '#a8381a',
 };

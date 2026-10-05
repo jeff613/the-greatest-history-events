@@ -11,9 +11,6 @@ test('the atlas exposes snapshot age and supports physical geography', async ({ 
   await page.getByRole('button', { name: 'Geography only', exact: true }).click();
   const band = await page.locator('[data-entry="han"] rect').boundingBox();
   expect(band!.height).toBeGreaterThanOrEqual(24);
-  await page.screenshot({ path: '/private/tmp/history-atlas-desktop.png' });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.screenshot({ path: '/private/tmp/history-atlas-mobile.png' });
 });
 
 

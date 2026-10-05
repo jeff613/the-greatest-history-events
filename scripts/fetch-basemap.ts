@@ -6,8 +6,11 @@ import { withoutStraightEdgePoints } from './straightEdges';
 const NE_SHA = 'ca96624a56bd078437bca8184e78163e5039ad19';
 const NE_BASE = `https://raw.githubusercontent.com/nvkelso/natural-earth-vector/${NE_SHA}/geojson`;
 const FONTS_SHA = '025ff2b2f84cc0fdf11f7b1d74b3a784595fe7a4';
-const FONT_STACK = 'Open Sans Italic';
-const FONTS_BASE = `https://raw.githubusercontent.com/openmaptiles/fonts/${FONTS_SHA}/${encodeURIComponent(FONT_STACK)}`;
+// The map draws its labels from the Cinzel font file. These glyphs are only the fallback for characters
+// Cinzel lacks, so they are saved under the name of the map's font stack.
+const FALLBACK_FONT = 'Open Sans Regular';
+const FONT_STACK = 'Cinzel';
+const FONTS_BASE = `https://raw.githubusercontent.com/openmaptiles/fonts/${FONTS_SHA}/${encodeURIComponent(FALLBACK_FONT)}`;
 const PUBLIC = join(import.meta.dirname, '..', 'public');
 
 async function get(url: string): Promise<Response> {
@@ -67,6 +70,6 @@ for (const start of [...blockStarts].sort((a, b) => a - b)) {
 }
 writeFileSync(
   join(PUBLIC, 'glyphs', 'README.txt'),
-  `${FONT_STACK} glyphs from openmaptiles/fonts @ ${FONTS_SHA}. Open Sans is licensed under the Apache License 2.0.\n`,
+  `${FALLBACK_FONT} glyphs from openmaptiles/fonts @ ${FONTS_SHA}, the fallback for map labels. Open Sans is licensed under the Apache License 2.0.\n`,
 );
 console.log('glyphs done');

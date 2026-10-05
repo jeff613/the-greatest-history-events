@@ -18,7 +18,9 @@ import { territoryFor } from '../lib/eraTerritory';
 import { formatYear } from '../lib/years';
 import type { TerritorySelection } from '../state/useTimeState';
 import { useLatest } from '../state/useLatest';
-import { CATEGORY_COLORS, MAP_COLORS, REGION_BOUNDS } from '../theme';
+import { CATEGORY_COLORS, INK, MAP_COLORS, REGION_BOUNDS } from '../theme';
+import cinzelLatinExt from '@fontsource-variable/cinzel/files/cinzel-latin-ext-wght-normal.woff2';
+import cinzelLatin from '@fontsource-variable/cinzel/files/cinzel-latin-wght-normal.woff2';
 
 // MapLibre 6 looks for its worker next to its own module, which bundling breaks; let Vite build and serve it.
 setWorkerUrl(mapWorkerUrl);
@@ -28,12 +30,13 @@ const FADE_MS = 300;
 const SPOT_ZOOM = 4;
 /** A state's territory fills the map up to this zoom, so that a small one is still seen in context. */
 const TERRITORY_MAX_ZOOM = 5;
-const BORDER_FILL_OPACITY = 0.5;
+const BORDER_FILL_OPACITY = 0.55;
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 type Slot = 'a' | 'b';
 
 /** MapLibre fetches from a worker, so asset URLs must be absolute. */
-const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}${path}`, window.location.href).href;
+const absolute = (url: string) => new URL(url, window.location.href).href;
+const asset = (path: string) => absolute(`${import.meta.env.BASE_URL}${path}`);
 
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
@@ -73,19 +76,40 @@ function borderLayers(slot: Slot): { fills: LayerSpecification[]; label: LayerSp
         'text-field': ['get', 'NAME'],
         'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
         'text-radial-offset': 0.5,
-        'text-font': ['Open Sans Italic'],
-        'text-size': ['interpolate', ['linear'], ['zoom'], 1, 10, 5, 15],
+        'text-font': ['Cinzel'],
+        'text-transform': 'uppercase',
+        'text-letter-spacing': 0.1,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 1, 9, 5, 13],
         'text-max-width': 8,
       },
       paint: {
         'text-color': MAP_COLORS.label,
         'text-halo-color': MAP_COLORS.labelHalo,
-        'text-halo-width': 1.2,
+        'text-halo-width': 1.4,
         'text-opacity': 0,
         'text-opacity-transition': fade,
       },
     },
   };
+}
+
+/** One tile of the sea: a wavy pen line on the wash, drawn at twice the size it is shown. */
+function wavePattern(): ImageData {
+  const canvas = document.createElement('canvas');
+  canvas.width = 96;
+  canvas.height = 40;
+  const ctx = canvas.getContext('2d')!;
+  ctx.fillStyle = MAP_COLORS.ocean;
+  ctx.fillRect(0, 0, 96, 40);
+  ctx.strokeStyle = INK;
+  ctx.globalAlpha = 0.28;
+  ctx.lineWidth = 1.4;
+  ctx.beginPath();
+  ctx.moveTo(0, 20);
+  ctx.quadraticCurveTo(24, 6, 48, 20);
+  ctx.quadraticCurveTo(72, 34, 96, 20);
+  ctx.stroke();
+  return ctx.getImageData(0, 0, 96, 40);
 }
 
 function buildStyle(): StyleSpecification {
@@ -99,6 +123,13 @@ function buildStyle(): StyleSpecification {
   return {
     version: 8,
     projection: { type: 'mercator' },
+    // Labels are drawn from the Cinzel files; the glyphs URL only serves characters those lack.
+    'font-faces': {
+      Cinzel: [
+        { url: absolute(cinzelLatin), 'unicode-range': ['U+0000-00FF', 'U+0131-0131', 'U+0152-0153', 'U+2000-206F'] },
+        { url: absolute(cinzelLatinExt), 'unicode-range': ['U+0100-0130', 'U+0132-0151', 'U+0154-02FF', 'U+1E00-1EFF'] },
+      ],
+    },
     glyphs: `${asset('glyphs/')}{fontstack}/{range}.pbf`,
     sources: {
       land: { type: 'geojson', data: asset('basemap/land.geojson') },
@@ -114,7 +145,13 @@ function buildStyle(): StyleSpecification {
       { id: 'land', type: 'fill', source: 'land', paint: { 'fill-color': MAP_COLORS.land } },
       ...a.fills,
       ...b.fills,
-      { id: 'lakes', type: 'fill', source: 'lakes', paint: { 'fill-color': MAP_COLORS.ocean } },
+      { id: 'lakes', type: 'fill', source: 'lakes', paint: { 'fill-color': MAP_COLORS.ocean, 'fill-outline-color': INK } },
+      {
+        id: 'coast',
+        type: 'line',
+        source: 'land',
+        paint: { 'line-color': INK, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.9, 6, 1.8] },
+      },
       {
         id: 'rivers',
         type: 'line',
@@ -125,10 +162,10 @@ function buildStyle(): StyleSpecification {
         },
       },
       { id: 'territory-fill', type: 'fill', source: 'territory', paint: {
-        'fill-color': '#f1c56e', 'fill-opacity': 0.55,
+        'fill-color': MAP_COLORS.territory, 'fill-opacity': 0.55,
       } },
       { id: 'territory-outline', type: 'line', source: 'territory', paint: {
-        'line-color': '#ffe6a6', 'line-width': 2.5,
+        'line-color': INK, 'line-width': 2.5,
       } },
       a.label,
       b.label,
@@ -159,7 +196,7 @@ function buildStyle(): StyleSpecification {
             CATEGORY_COLORS.trade,
             '#888888',
           ],
-          'circle-stroke-color': '#ffffff',
+          'circle-stroke-color': INK,
           'circle-stroke-width': ['case', highlighted, 2.5, 1],
         },
       },
@@ -243,7 +280,11 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     }
     mapRef.current = map;
     map.addControl(new NavigationControl({ showCompass: false }), 'top-left');
-    map.on('load', () => setReady(true));
+    map.on('load', () => {
+      map.addImage('waves', wavePattern(), { pixelRatio: 2 });
+      map.setPaintProperty('ocean', 'background-pattern', 'waves');
+      setReady(true);
+    });
     map.on('moveend', () => {
       const { lng, lat } = map.getCenter();
       setSettledView(`${lng.toFixed(1)},${lat.toFixed(1)},${map.getZoom().toFixed(1)}`);

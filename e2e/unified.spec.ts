@@ -66,6 +66,19 @@ test('older links keep working, including one to a founding that is now part of 
   await expect(page.getByTestId('strip-year')).toHaveText('1368');
 });
 
+test('a period is drawn once: a named pill in its row, or a small pill among the moments', async ({ page }) => {
+  await page.goto('/?year=1096');
+  await expect(page.locator('.marker-period').first()).toBeVisible();
+  const pills = await page.evaluate(() => {
+    const inRows = [...document.querySelectorAll<SVGGElement>('.era-period')];
+    return {
+      unnamed: inRows.filter((pill) => !pill.querySelector('.era-label')).length,
+      twice: inRows.filter((pill) => document.querySelector(`.marker[data-entry="${pill.dataset.entry}"]`)).length,
+    };
+  });
+  expect(pills).toEqual({ unnamed: 0, twice: 0 });
+});
+
 test('two moments in the same year can both be clicked', async ({ page }) => {
   await page.goto('/?year=1985&zoom=30');
   const ussr = page.locator('.marker[data-entry="dissolution-of-ussr"] .marker-shape');

@@ -18,20 +18,20 @@ export function neighborSnapshots(index: Snapshot[], year: number): Snapshot[] {
   return [index[i - 1], index[i + 1]].filter((s): s is Snapshot => s !== undefined);
 }
 
-/** Muted colors that read well at ~50% opacity on the dark base map. */
+/** Earth pigments that read well at ~55% opacity on the papyrus base map. */
 export const POLITY_PALETTE = [
-  '#c96f5b',
-  '#d6a35b',
-  '#b9b65a',
-  '#7fae6b',
-  '#5ea79a',
-  '#5c8fc0',
-  '#7f78c7',
-  '#b06fae',
-  '#c8758f',
-  '#9c8a6e',
-  '#6f9a7d',
-  '#a3865c',
+  '#a84a2a', // red ochre
+  '#c9962e', // yellow ochre
+  '#5f8f6a', // malachite
+  '#3f6f9a', // Egyptian blue
+  '#7a4f2a', // umber
+  '#8a3a52', // madder
+  '#6b5a8a', // orchil purple
+  '#7f8f3a', // green earth
+  '#c26a3a', // terracotta
+  '#4a8a8a', // verdigris
+  '#b08a5a', // raw sienna
+  '#5a5a4a', // charcoal
 ] as const;
 
 /** Some source names contain only spaces; preserve the recorded ruling polity as a fallback. */
