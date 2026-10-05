@@ -69,6 +69,21 @@ describe('validateData', () => {
     expect(errors.some((e) => e.includes('colour'))).toBe(true);
   });
 
+  it('accepts a link to a state or period the entry overlaps', () => {
+    const republic = { id: 'roman-republic', kind: 'state', title: 'Roman Republic', start: -509, end: -27, region: 'europe', ...text };
+    expect(errorsFor(republic, { ...moment, partOf: ['roman-republic'] }, { ...period, partOf: ['roman-republic'] })).toBe('');
+  });
+
+  it('rejects a link to a missing entry, a moment, itself, a repeat, or something from another time', () => {
+    expect(errorsFor({ ...moment, partOf: ['nowhere'] })).toMatch(/caesar-assassination partOf: no entry has the id "nowhere"/);
+    expect(errorsFor(moment, { ...period, partOf: ['caesar-assassination'] })).toMatch(/punic-war partOf: "caesar-assassination" is a moment/);
+    expect(errorsFor({ ...period, partOf: ['punic-war'] })).toMatch(/cannot be part of itself/);
+    expect(errorsFor(period, { ...moment, start: -250, partOf: ['punic-war', 'punic-war'] })).toMatch(/"punic-war" is listed twice/);
+    expect(errorsFor(period, { ...moment, partOf: ['punic-war'] })).toMatch(/do not overlap those of "punic-war" \(264 BC to 241 BC\)/);
+    expect(errorsFor({ ...moment, partOf: [] })).toMatch(/partOf/);
+    expect(errorsFor({ ...state, partOf: ['punic-war'] })).toMatch(/Unrecognized key/);
+  });
+
   it('rejects duplicate ids, across files and across kinds', () => {
     const errors = validateData([
       file('1000bc-1bc.json', moment, { ...state, id: 'caesar-assassination' }),

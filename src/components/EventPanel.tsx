@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { BARS, ENTRIES, hasPlace } from '../data';
+import { ENTRIES, ENTRIES_BY_ID, hasPlace } from '../data';
 import type { Entry, Region } from '../data/schema';
 import { keyMoments, partOf } from '../lib/context';
 import type { Slice } from '../lib/slice';
@@ -182,7 +182,7 @@ function EntryCard({
   onSelect(id: string | null): void;
 }) {
   const [allMoments, setAllMoments] = useState(false);
-  const parents = entry.kind === 'state' ? [] : partOf(entry, BARS);
+  const parents = entry.kind === 'state' ? [] : partOf(entry, ENTRIES_BY_ID);
   const moments = entry.kind === 'moment' ? [] : keyMoments(entry, ENTRIES);
   const shownMoments = allMoments ? moments : moments.slice(0, LIST_CAP);
   const row = (other: Entry) => (

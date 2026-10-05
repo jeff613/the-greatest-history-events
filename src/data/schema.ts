@@ -32,8 +32,12 @@ const location = z.strictObject({
 const category = z.enum(CATEGORIES);
 const importance = z.union([z.literal(1), z.literal(2), z.literal(3)]);
 
+const id = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'must be lowercase kebab-case');
+/** The ids of the states and periods an entry belongs to: the dynasty a battle was fought under, the war it was part of. */
+const partOf = z.array(id).min(1).optional();
+
 const common = {
-  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'must be lowercase kebab-case'),
+  id,
   title: text,
   start: year,
   dateLabel: text.optional(),
@@ -45,17 +49,18 @@ const common = {
 
 /** A polity with a territory: drawn as a solid bar. */
 const stateSchema = z.strictObject({ ...common, kind: z.literal('state'), end: year });
-/** Something that lasted years: a war, a movement, a life. Drawn as a dashed bar; pinned on the map if it has a place. */
+/** Something that lasted years: a war, a movement, a life. Drawn as a round-ended pill; pinned on the map if it has a place. */
 const periodSchema = z.strictObject({
   ...common,
   kind: z.literal('period'),
   end: year,
+  partOf,
   location: location.optional(),
   category: category.optional(),
   importance: importance.optional(),
 });
 /** Something that happened on one date: drawn as a marker and pinned on the map. */
-const momentSchema = z.strictObject({ ...common, kind: z.literal('moment'), end: z.null(), location, category, importance });
+const momentSchema = z.strictObject({ ...common, kind: z.literal('moment'), end: z.null(), partOf, location, category, importance });
 
 export const entrySchema = z
   .discriminatedUnion('kind', [stateSchema, periodSchema, momentSchema])
