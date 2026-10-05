@@ -195,13 +195,20 @@ Where the build differs from, or adds to, the sections above.
 
 - **Selecting moves the map.** A moment, or a period with a place, centers the map on it at zoom 4 or closer. A state fits its territory, up to zoom 5. A period without a place, or a state with no territory in the borders, fits its region (`REGION_BOUNDS` in `src/theme.ts`).
 - **A card opens at its top.** The pane is one scroll container for the list and every card, so it resets its scroll position whenever the selection changes.
-- **East Asia content.** 74 more entries for China, Korea and Japan (19 states, 19 periods, 36 moments), which takes the region from 59 to 132 entries. The collection now holds 240 moments, 71 periods and 108 states.
+- **Recorded relationships.** "Part of" and "Key moments" no longer match by region and date (section 4.2), which listed unrelated things: the Hundred Years' War appeared as part of the Byzantine Empire. A moment or period now names what it belongs to in an optional `partOf` list of state and period ids, and the two lists come only from those links. Links may cross regions. 249 of the 305 moments and periods have them; an entry with none shows neither list.
+- **Periods are pills.** A period is drawn as a round-ended pill in its lane's pigment, not a dashed bar (sections 2.1 and 3), because a dashed outline read as provisional. Each period is drawn once: in its row when its name fits, otherwise as a small labelled pill in the moments rows, with no empty bar left below.
+- **East Asia content.** 74 more entries for China, Korea and Japan (19 states, 19 periods, 36 moments), which takes the region from 59 to 132 entries.
+- **More states.** 55 major states that were missing, mostly in Europe and the Middle East (the kingdoms of France and England, the Russian line from Kievan Rus to the Russian Empire, the Spanish and Portuguese empires, Carthage, and others), each with a territory on the map. Six founding moments were folded into them. The collection now holds 234 moments, 71 periods and 163 states.
 
 ### 10.3 Known gaps
 
 - Summaries and significance text were written from general knowledge and have not been checked against sources. Only the Wikipedia links are verified (`npm run check-links`).
 - Lapita and Nok have no territory in either border dataset, so selecting them fits the region.
 - The East Asia lane is tall, because China, Korea and Japan share it.
-- Context ("Part of", "Key moments") matches by region only, as scoped in section 4.2.
+- 56 moments and periods have no `partOf` link, mostly because the state they belong to has no entry yet.
 - First load is slow in a very wide window (2560px). Not investigated.
+
+### 10.4 Look
+
+After the build the dark theme was replaced by an ancient-scroll look, chosen from three sketched directions (illuminated manuscript, engraved atlas, ancient scroll). It changes no behaviour or layout. `AGENTS.md` records its conventions under "Look".
 
