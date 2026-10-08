@@ -24,6 +24,8 @@ Use **100 years**, **500 years**, **All years**, or the **+ / -** buttons to cha
 
 Chinese states and periods occupy adjacent rows within East Asia, followed by Japanese and Korean groups. Rows are packed for the visible time window and selected types. Short periods appear once as labelled markers when their names cannot fit inside a bar. Scroll to browse regions, drag to move through time, and drag the timeline's upper edge to adjust its height.
 
+The shape filters form a compact ink-colored group, separate from the colored region buttons. Dates sit below titles in the reading pane. On phones, the pane's collapse handle stays reachable while scrolling, and collapsing returns to the heading. Entry descriptions use a decorative first character, with separate sizing for English and Chinese.
+
 ## Getting started
 
 Requires Node.js 20.11 or later.

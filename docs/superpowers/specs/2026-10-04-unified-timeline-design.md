@@ -212,3 +212,11 @@ Where the build differs from, or adds to, the sections above.
 
 After the build the dark theme was replaced by an ancient-scroll look, chosen from three sketched directions (illuminated manuscript, engraved atlas, ancient scroll). It changes no behaviour or layout. `AGENTS.md` records its conventions under "Look".
 
+### 10.5 Timeline and reading-pane polish (2026-10-08)
+
+- **Shape filters.** States, periods and moments have independent toggle buttons with square-bar, pill and diamond symbols. The controls share a rounded ink-colored group, visually distinct from the region color buttons. Turning all types off shows a prompt to select a type. Selecting an entry from the reading pane enables its type and region.
+- **Visible span.** The timeline offers 100-year, 500-year and full-history presets alongside zoom buttons. The group has a visible span label and explanatory tooltips in both languages, and occupies its own row on phones.
+- **Compact regions.** Only bars overlapping the visible time window participate in packing. Periods drawn among the markers reserve no bar row, and regions with no visible markers reserve no marker area. Region order stays fixed while rows repack on zoom, pan and type changes.
+- **Reading pane.** Dates appear below entry titles. The mobile collapse handle stays at the top while scrolling, reports its expanded state, and restores the heading when collapsed.
+- **Decorative initials.** English retains the original drop cap. Chinese uses a separate size and line height so the enlarged red first character fits alongside two opening lines.
+
