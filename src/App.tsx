@@ -6,9 +6,11 @@ import { TimelineStrip } from './components/TimelineStrip';
 import { ENTRIES, ENTRIES_BY_ID, PLACED, hasPlace } from './data';
 import type { Placed } from './data/schema';
 import { pinnedEntries, sliceAt, windowHalfWidth } from './lib/slice';
+import { useLocale } from './state/LocaleContext';
 import { useTimeState } from './state/useTimeState';
 
 export default function App() {
+  const { language, setLanguage, text } = useLocale();
   const [aboutOpen, setAboutOpen] = useState(false);
   const t = useTimeState();
   const halfWidth = windowHalfWidth(t.view.zoom);
@@ -37,9 +39,15 @@ export default function App() {
     <>
       <div className='app' inert={aboutOpen}>
         <header className='app-header'>
-          <div className="brand"><span className="eyebrow">AN INTERACTIVE ATLAS · 2000 BC - AD 2000</span><h1>The Greatest History</h1></div>
-          <span className="header-focus">History across the world <span>Explore regions. Compare eras.</span></span>
-          <button onClick={() => setAboutOpen(true)}>About</button>
+          <div className="brand"><span className="eyebrow">{text('AN INTERACTIVE ATLAS · 2000 BC - AD 2000', '互动历史地图集 · 公元前2000年 - 公元2000年')}</span><h1>{text('The Greatest History', '世界历史长卷')}</h1></div>
+          <span className="header-focus">{text('History across the world', '纵览世界历史')} <span>{text('Explore regions. Compare eras.', '探索各地，对照时代。')}</span></span>
+          <div className="header-actions">
+            <div className="language-toggle" role="group" aria-label={text('Language', '语言')}>
+              <button lang="en" aria-pressed={language === 'en'} onClick={() => setLanguage('en')}>English</button>
+              <button lang="zh-CN" aria-pressed={language === 'zh'} onClick={() => setLanguage('zh')}>中文</button>
+            </div>
+            <button onClick={() => setAboutOpen(true)}>{text('About', '关于')}</button>
+          </div>
         </header>
         <main className='map-area'>
           <MapView

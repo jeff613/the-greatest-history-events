@@ -4,8 +4,9 @@ import type { Entry, Moment, Period, Region } from '../data/schema';
 import { labelSpan, minImportance, placeLabels, type LabelSide, type Marker } from '../lib/momentLayout';
 import { packEras } from '../lib/packEras';
 import { FULL_VIEW, panBy, pxToYear, ticks, viewSpanning, yearToPx, yearToU, zoomAt, type View } from '../lib/timeScale';
-import { formatSpan, formatYear, yearDiff } from '../lib/years';
-import { CATEGORY_COLORS, REGION_COLORS, REGION_SHORT_LABELS } from '../theme';
+import { yearDiff } from '../lib/years';
+import { useLocale } from '../state/LocaleContext';
+import { CATEGORY_COLORS, REGION_COLORS } from '../theme';
 
 const GUTTER = 96;
 /** Room after the last year, so the playhead and the final tick label are not cut off at AD 2000. */
@@ -25,7 +26,7 @@ const CLICK_SLOP_PX = 4;
 const BAR_CHAR_PX = 7;
 const MIN_BAR_LABEL_CHARS = 5;
 /** How many characters of its name a bar this wide has room for. */
-const barLabelChars = (widthPx: number) => Math.floor((widthPx - 12) / BAR_CHAR_PX);
+const barLabelChars = (widthPx: number, charWidth = BAR_CHAR_PX) => Math.floor((widthPx - 12) / charWidth);
 /** A pill's rounded ends leave this much less room for its name than a square bar has. */
 const PILL_INSET = 10;
 const LABEL_CHAR_PX = 6.2;
@@ -63,6 +64,11 @@ interface Props {
 }
 
 export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, view, visibleRegions, onToggleRegion, playing, onYear, onView, onTogglePlay }: Props) {
+  const { language, text, localize, formatYear, formatSpan, regionShortLabels } = useLocale();
+  const bars = useMemo(() => BARS.map(localize), [localize]);
+  const moments = useMemo(() => MOMENTS.map(localize), [localize]);
+  const barCharWidth = language === 'zh' ? 14 : BAR_CHAR_PX;
+  const labelCharWidth = language === 'zh' ? 13 : LABEL_CHAR_PX;
   const stripRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
   const lanesRef = useRef<HTMLDivElement>(null);
@@ -70,7 +76,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
   const resize = useRef<{ pointerId: number; startY: number; startHeight: number } | null>(null);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState<number | null>(() => Number(sessionStorage.getItem(HEIGHT_KEY)) || null);
-  const allLanes = useMemo(() => packEras(BARS).sort((a, b) => LANE_ORDER.indexOf(a.region) - LANE_ORDER.indexOf(b.region)), []);
+  const allLanes = useMemo(() => packEras(bars).sort((a, b) => LANE_ORDER.indexOf(a.region) - LANE_ORDER.indexOf(b.region)), [bars]);
 
   const lanes = useMemo(() => allLanes.filter((lane) => visibleRegions.includes(lane.region)), [allLanes, visibleRegions]);
 
@@ -108,19 +114,19 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
     [],
   );
   const lanesH = lanes.length ? laneTops[lanes.length - 1] + MOMENTS_H + lanes[lanes.length - 1].rows.length * ROW_H + LANE_GAP : 0;
-  const tickYears = ticks(view, trackW);
+  const tickYears = ticks(view, trackW, language === 'zh' ? 96 : 72);
 
   // Markers and their labels depend on the view, not on the playhead, so they hold still while it moves.
   const laneMarkers = useMemo(() => {
     const px = (y: number) => yearToPx(y, view, trackW);
     const least = minImportance(yearDiff(pxToYear(0, view, trackW), pxToYear(trackW, view, trackW)));
     return lanes.map((lane): LaneMarker[] => {
-      const moments = MOMENTS.filter((m) => m.region === lane.region && m.importance >= least)
+      const laneMoments = moments.filter((m) => m.region === lane.region && m.importance >= least)
         .sort((a, b) => a.start - b.start || b.importance - a.importance);
       const markers: Omit<LaneMarker, 'side'>[] = [];
-      moments.forEach((m, i) => {
+      laneMoments.forEach((m, i) => {
         let fan = 0;
-        while (fan < i && moments[i - fan - 1].start === m.start) fan++;
+        while (fan < i && laneMoments[i - fan - 1].start === m.start) fan++;
         const center = px(m.start) + fan * SAME_YEAR_FAN_PX;
         if (center < 0 || center > trackW) return;
         markers.push({ id: m.id, entry: m, x: center, halfWidth: MARKER_SIZE[m.importance] * 0.75, label: m.title, importance: m.importance });
@@ -132,15 +138,15 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
         const importance = bar.importance ?? 2;
         const x0 = Math.max(0, px(bar.start));
         const x1 = Math.min(trackW, px(bar.end));
-        if (x1 <= x0 || barLabelChars(x1 - x0 - PILL_INSET) >= MIN_BAR_LABEL_CHARS) continue;
+        if (x1 <= x0 || barLabelChars(x1 - x0 - PILL_INSET, barCharWidth) >= MIN_BAR_LABEL_CHARS) continue;
         const half = Math.max(3, (x1 - x0) / 2);
         markers.push({ id: bar.id, entry: bar, x: (x0 + x1) / 2, halfWidth: half, label: bar.title, importance });
       }
-      const sides = placeLabels(markers, trackW, LABEL_CHAR_PX);
+      const sides = placeLabels(markers, trackW, labelCharWidth);
       // Drawn least important first, so the markers that matter most end up on top.
       return markers.map((m) => ({ ...m, side: sides.get(m.id) })).sort((a, b) => a.importance - b.importance);
     });
-  }, [lanes, view, trackW]);
+  }, [lanes, view, trackW, moments, barCharWidth, labelCharWidth]);
 
   const yearAt = (clientX: number) => {
     const px = clientX - canvasRef.current!.getBoundingClientRect().left - GUTTER;
@@ -234,34 +240,34 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
   const playheadVisible = width > 0 && playheadX >= GUTTER && playheadX <= GUTTER + trackW;
 
   return (
-    <section className="strip" aria-label="Timeline" ref={stripRef} style={height ? { height, maxHeight: '80vh' } : undefined}>
-      <div className="strip-resize" role="separator" aria-orientation="horizontal" aria-label="Resize timeline"
+    <section className="strip" aria-label={text('Timeline', '时间轴')} ref={stripRef} style={height ? { height, maxHeight: '80vh' } : undefined}>
+      <div className="strip-resize" role="separator" aria-orientation="horizontal" aria-label={text('Resize timeline', '调整时间轴高度')}
         onPointerDown={onResizeDown} onPointerMove={onResizeMove} onPointerUp={onResizeEnd} onPointerCancel={onResizeEnd} />
       <div className="strip-controls">
-        <button onClick={onTogglePlay} aria-label={playing ? 'Pause' : 'Play'}>
+        <button onClick={onTogglePlay} aria-label={playing ? text('Pause', '暂停') : text('Play', '播放')}>
           {playing ? '❚❚' : '▶'}
         </button>
         <span className="strip-year" data-testid="strip-year">
           {formatYear(year)}
         </span>
-        <span className="strip-hint">Scroll for regions · Drag through time · + / - to zoom</span>
+        <span className="strip-hint">{text('Scroll for regions · Drag through time · + / - to zoom', '滚动查看地区 · 拖动浏览年代 · + / - 缩放')}</span>
         <span className="strip-spacer" />
-        <button onClick={() => zoomAroundPlayhead(ZOOM_STEP)} aria-label="Zoom in">
+        <button onClick={() => zoomAroundPlayhead(ZOOM_STEP)} aria-label={text('Zoom in', '放大')}>
           +
         </button>
-        <button onClick={() => zoomAroundPlayhead(1 / ZOOM_STEP)} aria-label="Zoom out">
+        <button onClick={() => zoomAroundPlayhead(1 / ZOOM_STEP)} aria-label={text('Zoom out', '缩小')}>
           -
         </button>
-        <button onClick={() => onView(viewSpanning(year, 500))}>500 years</button>
-        <button onClick={() => onView(FULL_VIEW)}>All years</button>
+        <button onClick={() => onView(viewSpanning(year, 500))}>{text('500 years', '500年')}</button>
+        <button onClick={() => onView(FULL_VIEW)}>{text('All years', '全部年代')}</button>
       </div>
-      <nav className="timeline-regions" aria-label="Timeline regions">
-        <span className="timeline-legend">Bars: states · Pills: periods · ◆ moments</span>
+      <nav className="timeline-regions" aria-label={text('Timeline regions', '时间轴地区')}>
+        <span className="timeline-legend">{text('Bars: states · Pills: periods · ◆ moments', '方条：政权 · 圆条：时期 · ◆ 事件')}</span>
         {allLanes.map((lane) => <button key={lane.region}
           aria-pressed={visibleRegions.includes(lane.region)}
           style={{ '--pigment': REGION_COLORS[lane.region] } as CSSProperties}
           onClick={() => onToggleRegion(lane.region)}>
-          {lane.region === 'east-asia' ? 'China & East Asia' : REGION_SHORT_LABELS[lane.region]}
+          {lane.region === 'east-asia' ? text('China & East Asia', '中国与东亚') : regionShortLabels[lane.region]}
         </button>)}
       </nav>
       <div
@@ -284,7 +290,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
           ))}
         </svg>
         <div className="strip-lanes" ref={lanesRef}>
-          {!lanes.length && <p className="timeline-empty">Select a region above to show its timeline. Select several to compare.</p>}
+          {!lanes.length && <p className="timeline-empty">{text('Select a region above to show its timeline. Select several to compare.', '选择上方地区以显示时间轴，可多选以进行比较。')}</p>}
           <svg width={width} height={lanesH}>
             {tickYears.map((t) => (
               <line key={t} className="tick-line" x1={x(t)} x2={x(t)} y1={0} y2={lanesH} />
@@ -298,7 +304,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                 <g key={lane.region} data-region={lane.region}>
                   {laneIndex > 0 && <line className="lane-rule" x1={0} x2={width} y1={top - LANE_GAP / 2} y2={top - LANE_GAP / 2} />}
                   <text className="lane-label" x={6} y={barsTop + (ROW_H - 4) / 2 + 0.5}>
-                    {REGION_SHORT_LABELS[lane.region]}
+                    {regionShortLabels[lane.region]}
                   </text>
                   {lane.rows.map((row, rowIndex) =>
                     row.map((era) => {
@@ -306,7 +312,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                       const x1 = Math.min(width, x(era.end));
                       if (x1 <= x0 || pilled.has(era.id)) return null;
                       const y = barsTop + rowIndex * ROW_H;
-                      const labelChars = barLabelChars(x1 - x0 - (era.kind === 'period' ? PILL_INSET : 0));
+                      const labelChars = barLabelChars(x1 - x0 - (era.kind === 'period' ? PILL_INSET : 0), barCharWidth);
                       const showLabel = labelChars >= MIN_BAR_LABEL_CHARS;
                       const label = era.title.length <= labelChars ? era.title : `${era.title.slice(0, labelChars - 1)}…`;
                       return (
@@ -340,7 +346,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                     // A marker that lost out on a label still shows its name while it is hovered or selected.
                     const active = selectedId === m.id || hoveredId === m.id;
                     const side = m.side ?? (active ? 'top' : undefined);
-                    const span = side && labelSpan(m, side, trackW, LABEL_CHAR_PX);
+                    const span = side && labelSpan(m, side, trackW, labelCharWidth);
                     return (
                       <g key={m.id} className={`marker${entry.kind === 'period' ? ' marker-period' : ''}${stateClass(entry)}`} {...entryProps(entry)}>
                         <title>{`${entry.title} (${entry.dateLabel ?? formatSpan(entry.start, entry.end)})`}</title>

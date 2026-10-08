@@ -44,6 +44,13 @@ const common = {
   region: z.enum(REGIONS),
   summary: text,
   significance: text,
+  zh: z.strictObject({
+    title: text,
+    summary: text,
+    significance: text,
+    locationName: text.optional(),
+    dateLabel: text.optional(),
+  }).optional(),
   wikipedia: z.string().regex(/^https:\/\/en\.wikipedia\.org\/wiki\/\S+$/, 'must be an en.wikipedia.org article URL'),
 };
 

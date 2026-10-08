@@ -3,9 +3,9 @@ import { ENTRIES, ENTRIES_BY_ID, hasPlace } from '../data';
 import type { Entry, Region } from '../data/schema';
 import { keyMoments, partOf } from '../lib/context';
 import type { Slice } from '../lib/slice';
-import { formatSpan, formatYear } from '../lib/years';
+import { useLocale } from '../state/LocaleContext';
 import { useLatest } from '../state/useLatest';
-import { CATEGORY_COLORS, CATEGORY_LABELS, REGION_COLORS, REGION_LABELS } from '../theme';
+import { CATEGORY_COLORS, REGION_COLORS } from '../theme';
 
 export const LIST_CAP = 5;
 const SWIPE_PX = 30;
@@ -22,6 +22,7 @@ interface Props {
 }
 
 export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHover, onSelect, onShowAllRegions }: Props) {
+  const { text, formatYear, regionLabels } = useLocale();
   // Expansions apply to one window only; the 5-per-region cap returns when the window changes.
   const windowKey = `${year}:${halfWidth}`;
   const [expansion, setExpansion] = useState<{ windowKey: string; regions: Region[] }>({ windowKey, regions: [] });
@@ -52,7 +53,7 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
     <aside ref={paneRef} className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
       <button
         className="sheet-handle"
-        aria-label={sheetOpen ? 'Collapse events' : 'Expand events'}
+        aria-label={sheetOpen ? text('Collapse events', '收起事件') : text('Expand events', '展开事件')}
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture(e.pointerId);
           swipeStart.current = e.clientY;
@@ -81,12 +82,12 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
       ) : (
         <div className="panel-list">
           <header className="panel-header">
-            <h2>Around {formatYear(year)}</h2>
-            <p className="panel-sub">What was in progress, and events within {halfWidth} years either side</p>
+            <h2>{text(`Around ${formatYear(year)}`, `${formatYear(year)}前后`)}</h2>
+            <p className="panel-sub">{text(`What was in progress, and events within ${halfWidth} years either side`, `正在延续的历史，以及前后${halfWidth}年内的事件`)}</p>
           </header>
           {slice.groups.length === 0 && (
             <p className="panel-empty">
-              Nothing recorded here for the regions shown. Zoom out the timeline, move the playhead or switch on more regions.
+              {text('Nothing recorded here for the regions shown. Zoom out the timeline, move the playhead or switch on more regions.', '所选地区在此时段暂无记录。请缩小时间轴、移动时间指针或选择更多地区。')}
             </p>
           )}
           {slice.groups.map((group) => {
@@ -94,12 +95,12 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
             const more = group.moments.length - shown.length;
             return (
               <section key={group.region} className="region">
-                <h3>{REGION_LABELS[group.region]}</h3>
-                {group.inProgress.length > 0 && <ul className="in-progress" aria-label={`In progress in ${REGION_LABELS[group.region]}`}>{group.inProgress.map(row)}</ul>}
+                <h3>{regionLabels[group.region]}</h3>
+                {group.inProgress.length > 0 && <ul className="in-progress" aria-label={text(`In progress in ${regionLabels[group.region]}`, `${regionLabels[group.region]}正在延续的历史`)}>{group.inProgress.map(row)}</ul>}
                 <ul>{shown.map(row)}</ul>
                 {more > 0 && (
                   <button className="more" onClick={() => setExpansion({ windowKey, regions: [...expanded, group.region] })}>
-                    +{more} more
+                    {text(`+${more} more`, `再显示${more}条`)}
                   </button>
                 )}
               </section>
@@ -107,8 +108,8 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
           })}
           {slice.elsewhere > 0 && (
             <p className="panel-elsewhere">
-              {slice.elsewhere} more {slice.elsewhere === 1 ? 'event' : 'events'} around this time in regions that are switched off.{' '}
-              <button className="more" onClick={onShowAllRegions}>Show all regions</button>
+              {text(`${slice.elsewhere} more ${slice.elsewhere === 1 ? 'event' : 'events'} around this time in regions that are switched off.`, `未显示的地区在此时段还有${slice.elsewhere}条记录。`)}{' '}
+              <button className="more" onClick={onShowAllRegions}>{text('Show all regions', '显示所有地区')}</button>
             </p>
           )}
         </div>
@@ -118,7 +119,7 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
 }
 
 function EntryRow({
-  entry,
+  entry: originalEntry,
   hovered,
   onHover,
   onSelect,
@@ -128,6 +129,8 @@ function EntryRow({
   onHover(id: string | null): void;
   onSelect(id: string): void;
 }) {
+  const { localize, formatSpan } = useLocale();
+  const entry = localize(originalEntry);
   const ref = useRef<HTMLButtonElement>(null);
   /** Whether this row's mouse-over set the shared hover, so it is cleared if the row goes away. */
   const ownsHover = useRef(false);
@@ -171,7 +174,7 @@ function EntryRow({
 const KIND_LABELS = { state: 'Historical state', period: 'Historical period' } as const;
 
 function EntryCard({
-  entry,
+  entry: originalEntry,
   hoveredId,
   onHover,
   onSelect,
@@ -181,6 +184,8 @@ function EntryCard({
   onHover(id: string | null): void;
   onSelect(id: string | null): void;
 }) {
+  const { text, localize, formatSpan, regionLabels, categoryLabels } = useLocale();
+  const entry = localize(originalEntry);
   const [allMoments, setAllMoments] = useState(false);
   const parents = entry.kind === 'state' ? [] : partOf(entry, ENTRIES_BY_ID);
   const moments = entry.kind === 'moment' ? [] : keyMoments(entry, ENTRIES);
@@ -193,43 +198,43 @@ function EntryCard({
   return (
     <article className="card" data-testid="entry-card" data-kind={entry.kind}>
       <button className="back" onClick={() => onSelect(null)}>
-        ← Around this time
+        {text('← Around this time', '← 返回此时段')}
       </button>
       <p className="card-category">
         {entry.kind !== 'state' && entry.category && (
           <span className="dot" style={{ background: CATEGORY_COLORS[entry.category] }} aria-hidden />
         )}
         {entry.kind === 'moment'
-          ? CATEGORY_LABELS[entry.category]
-          : `${KIND_LABELS[entry.kind]}${entry.kind === 'period' && entry.category ? ` · ${CATEGORY_LABELS[entry.category]}` : ''}`}
+          ? categoryLabels[entry.category]
+          : `${text(KIND_LABELS[entry.kind], entry.kind === 'state' ? '历史政权' : '历史时期')}${entry.kind === 'period' && entry.category ? ` · ${categoryLabels[entry.category]}` : ''}`}
       </p>
       <h2>{entry.title}</h2>
       <p className="card-meta">
         {entry.dateLabel ?? formatSpan(entry.start, entry.end)} · {hasPlace(entry) ? `${entry.location.name}, ` : ''}
-        {REGION_LABELS[entry.region]}
+        {regionLabels[entry.region]}
       </p>
       <p>{entry.summary}</p>
-      <h3>Why it mattered</h3>
+      <h3>{text('Why it mattered', '历史意义')}</h3>
       <p>{entry.significance}</p>
       {parents.length > 0 && (
         <section className="card-context">
-          <h3>Part of</h3>
+          <h3>{text('Part of', '所属历史')}</h3>
           <ul>{parents.map(row)}</ul>
         </section>
       )}
       {moments.length > 0 && (
         <section className="card-context">
-          <h3>Key moments</h3>
+          <h3>{text('Key moments', '重要事件')}</h3>
           <ul>{shownMoments.map(row)}</ul>
           {moments.length > shownMoments.length && (
             <button className="more" onClick={() => setAllMoments(true)}>
-              +{moments.length - shownMoments.length} more
+              {text(`+${moments.length - shownMoments.length} more`, `再显示${moments.length - shownMoments.length}条`)}
             </button>
           )}
         </section>
       )}
       <a href={entry.wikipedia} target="_blank" rel="noreferrer">
-        Read more on Wikipedia
+        {text('Read more on Wikipedia', '前往维基百科阅读更多（英文）')}
       </a>
     </article>
   );

@@ -25,14 +25,16 @@ export function clampYear(year: number): number {
   return Math.min(MAX_YEAR, Math.max(MIN_YEAR, rounded));
 }
 
-export function formatYear(year: number): string {
+export function formatYear(year: number, language: 'en' | 'zh' = 'en'): string {
+  if (language === 'zh') return year < 0 ? `公元前${-year}年` : `公元${year}年`;
   if (year < 0) return `${-year} BC`;
   if (year < 1000) return `AD ${year}`;
   return String(year);
 }
 
-export function formatSpan(start: number, end: number | null): string {
-  if (end === null) return formatYear(start);
+export function formatSpan(start: number, end: number | null, language: 'en' | 'zh' = 'en'): string {
+  if (end === null) return formatYear(start, language);
+  if (language === 'zh') return `${formatYear(start, language)}至${formatYear(end, language)}`;
   if (end < 0) return `${-start}-${-end} BC`;
   if (start > 0) return start < 1000 ? `AD ${start}-${end}` : `${start}-${end}`;
   return `${formatYear(start)} - ${formatYear(end)}`;

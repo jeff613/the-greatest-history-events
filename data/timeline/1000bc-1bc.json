@@ -12,7 +12,14 @@
     "location": { "name": "Nigeria-Cameroon borderlands (Bantu homeland)", "lat": 6, "lng": 10.5 },
     "summary": "Over many centuries, farming communities speaking Bantu languages spread south and east from their probable homeland near today's Nigeria-Cameroon border, eventually reaching East and southern Africa. They bring crop farming and, in time, iron working and cattle herding, mixing with or displacing the hunter-gatherer peoples already living there. The movement probably began before 1000 BC, and its dates and routes, reconstructed from languages, archaeology and genetics, are still debated.",
     "significance": "It shaped the language map of much of Africa: hundreds of millions of people today speak one of the roughly 500 Bantu languages, such as Swahili, Zulu and Kikongo.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Bantu_expansion"
+    "wikipedia": "https://en.wikipedia.org/wiki/Bantu_expansion",
+    "zh": {
+      "title": "班图人大迁徙",
+      "summary": "班图语农耕社群从今尼日利亚与喀麦隆边境附近向南、向东迁移，数百年间抵达东非和南部非洲。他们传播农业、冶铁与牧牛，并与原有采猎人群融合或使其迁离。运动可能早于公元前1000年，具体路线和年代仍有争议。",
+      "significance": "它塑造了非洲大部分地区的语言格局，今日数亿人使用约五百种班图语言，包括斯瓦希里语、祖鲁语和刚果语。",
+      "locationName": "尼日利亚与喀麦隆边境地区（班图人故乡）",
+      "dateLabel": "约公元前1000年-公元500年"
+    }
   },
   {
     "id": "dong-son",
@@ -23,7 +30,12 @@
     "region": "southeast-asia-oceania",
     "summary": "The Dong Son culture flourished in the Red River valley of northern Vietnam, where rice farmers cast large bronze drums decorated with boats, houses, birds and warriors. Its drums were traded or copied across mainland and island Southeast Asia.",
     "significance": "Dong Son bronzes are among the finest metalwork of ancient Southeast Asia, and in Vietnam the culture is regarded as an early root of the nation.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Dong_Son_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Dong_Son_culture",
+    "zh": {
+      "title": "东山文化",
+      "summary": "东山文化在越南北部红河流域繁荣。稻农铸造饰有船只、房屋、鸟类与战士图案的大型铜鼓，铜鼓通过贸易或仿制传播至东南亚大陆和群岛。",
+      "significance": "东山铜器是古代东南亚冶金艺术的杰作，在越南也被视为民族文化的早期根源。"
+    }
   },
   {
     "id": "nok",
@@ -34,7 +46,12 @@
     "region": "sub-saharan-africa",
     "summary": "The Nok culture of what is now central Nigeria is known for its terracotta sculptures of human heads and figures, with elaborate hairstyles and jewelry. Its farming communities were also among the earliest in West Africa to smelt iron.",
     "significance": "Nok terracottas are among the oldest figurative sculptures in Africa south of the Sahara and key evidence for the early spread of iron working there.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nok_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nok_culture",
+    "zh": {
+      "title": "诺克文化",
+      "summary": "今尼日利亚中部的诺克文化以人物陶塑闻名，发型与首饰刻画精细。当地农业社群也是西非最早冶铁的社群之一。",
+      "significance": "诺克陶塑是撒哈拉以南非洲最古老的具象雕塑之一，也是早期冶铁技术传播的重要证据。"
+    }
   },
   {
     "id": "first-temple-jerusalem",
@@ -50,7 +67,14 @@
     "partOf": ["israel-and-judah"],
     "summary": "According to the Hebrew Bible, King Solomon builds a temple to the God of Israel on a hill in Jerusalem to house the Ark of the Covenant. No remains of the building have been securely identified, and archaeologists debate both its date and how large and powerful Solomon's kingdom really was.",
     "significance": "The Temple became the center of Israelite worship until the Babylonians destroyed it in 587 or 586 BC, and the Temple Mount is venerated by Jews, Christians and Muslims.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
+    "wikipedia": "https://en.wikipedia.org/wiki/Solomon%27s_Temple",
+    "zh": {
+      "title": "耶路撒冷第一圣殿的建造",
+      "summary": "希伯来《圣经》记载，所罗门在耶路撒冷山上建造圣殿，安放约柜。建筑遗迹尚未得到确证，其年代及所罗门王国的规模仍有考古争论。",
+      "significance": "圣殿是以色列人礼拜中心，直到公元前587或586年被毁。圣殿山后来为犹太教、基督教和伊斯兰教共同尊崇。",
+      "locationName": "耶路撒冷",
+      "dateLabel": "约公元前957年（传统说法）"
+    }
   },
   {
     "id": "neo-assyrian",
@@ -61,7 +85,12 @@
     "region": "mena",
     "summary": "From its heartland on the upper Tigris, Assyria conquered an empire stretching from Iran to Egypt, ruled from capitals such as Nimrud and Nineveh. It governed through provinces, royal roads, a standing army and the mass deportation of conquered peoples.",
     "significance": "It was the largest empire the world had yet seen, and its methods of imperial rule were taken over by the Babylonian and Persian empires that followed.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire",
+    "zh": {
+      "title": "新亚述帝国",
+      "summary": "亚述从底格里斯河上游扩张，建立横跨伊朗至埃及的帝国，以尼姆鲁德、尼尼微等城为都，通过行省、驿道、常备军与强制迁徙治理臣民。",
+      "significance": "它成为当时世界最大的帝国，其行政与统治方法被后来的巴比伦和波斯继承。"
+    }
   },
   {
     "id": "neo-assyrian-empire",
@@ -76,7 +105,13 @@
     "partOf": ["neo-assyrian"],
     "summary": "King Adad-nirari II of Assyria, in northern Mesopotamia, begins a long run of yearly military campaigns to win back lands his kingdom had lost. Over the next three centuries his successors build an empire stretching from Iran to Egypt, ruled from great capitals such as Nimrud and Nineveh.",
     "significance": "Often described as the largest empire the world had yet seen, Assyria developed tools of imperial rule, such as provinces under appointed governors, royal roads and mass deportations of conquered peoples, that later Babylonian and Persian empires built on.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire",
+    "zh": {
+      "title": "新亚述帝国崛起",
+      "summary": "亚述王阿达德尼拉里二世开始连年征战，夺回失地。此后三百年，继任者建立从伊朗延伸至埃及的帝国，统治中心包括尼姆鲁德和尼尼微。",
+      "significance": "亚述发展出行省总督、王室道路与大规模人口迁徙等帝国治理方式，为后世巴比伦、波斯提供先例。",
+      "locationName": "亚述城"
+    }
   },
   {
     "id": "chavin",
@@ -87,7 +122,12 @@
     "region": "americas",
     "summary": "The Chavin culture centered on Chavin de Huantar, a temple complex high in the Peruvian Andes with underground galleries and carvings of jaguars, snakes and fanged deities. Pilgrims came from far away, and its art style spread across much of Peru.",
     "significance": "Chavin was the first religious and artistic tradition shared across a wide area of the Andes, a foundation for later Andean civilizations.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Chav%C3%ADn_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Chav%C3%ADn_culture",
+    "zh": {
+      "title": "查文文化",
+      "summary": "查文文化以秘鲁安第斯山区的查文德万塔尔神庙为中心，建有地下通道，雕刻美洲虎、蛇与露齿神像。朝圣者远道而来，艺术风格传遍秘鲁大部。",
+      "significance": "它是安第斯广大地区最早共同拥有的宗教与艺术传统，为后来文明奠定基础。"
+    }
   },
   {
     "id": "lapita-reach-tonga-samoa",
@@ -103,7 +143,14 @@
     "partOf": ["lapita"],
     "summary": "Seafarers of the Lapita culture, known for their finely stamped pottery, sail east from the Fiji region and settle the uninhabited islands of Tonga, and soon afterward Samoa. One of the earliest known settlement sites is Nukuleka on Tonga's main island, Tongatapu.",
     "significance": "Tonga and Samoa became the homeland where Polynesian culture took shape, before later voyagers set out from the region to settle the rest of the Pacific, from Hawaii to New Zealand.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture",
+    "zh": {
+      "title": "拉皮塔人抵达汤加与萨摩亚",
+      "summary": "拉皮塔航海者从斐济一带向东航行，在此前无人居住的汤加、随后在萨摩亚定居。汤加塔布岛努库莱卡是已知最早的聚落之一。",
+      "significance": "汤加与萨摩亚成为波利尼西亚文化形成的中心，此后航海者从这里出发，抵达夏威夷、新西兰等地。",
+      "locationName": "汤加塔布岛努库莱卡",
+      "dateLabel": "约公元前850年"
+    }
   },
   {
     "id": "carthage",
@@ -115,7 +162,13 @@
     "region": "mena",
     "summary": "Carthage was founded by Phoenician settlers from Tyre on the coast of what is now Tunisia. It grew into the richest trading city of the western Mediterranean, with colonies in Sicily, Sardinia and Spain and a powerful navy. Three wars with Rome ended with the city's destruction in 146 BC.",
     "significance": "Carthage was Rome's great rival, and its defeat left Rome in control of the Mediterranean.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Carthage",
+    "zh": {
+      "title": "迦太基",
+      "summary": "来自提尔的腓尼基人在今突尼斯海岸建立迦太基，后发展为西地中海最富有的贸易城市，在西西里、撒丁和西班牙拥有殖民地及强大海军。与罗马的三次战争最终导致前146年城市被毁。",
+      "significance": "迦太基是罗马最强劲的对手，其失败使罗马控制了地中海。",
+      "dateLabel": "公元前814年（传统说法）-公元前146年"
+    }
   },
   {
     "id": "adena-culture",
@@ -130,7 +183,14 @@
     "location": { "name": "Chillicothe, Ohio (Adena heartland)", "lat": 39.33, "lng": -82.98 },
     "summary": "In the Ohio River valley, people of the Adena culture build earthen burial mounds and circular earthworks. They hunt, gather and grow native plants such as squash and sunflower, and obtain copper and seashells through long-distance exchange. When the culture begins is debated: estimates range from about 800 BC to 500 BC.",
     "significance": "Adena traditions led into the larger Hopewell culture and were part of a long history of mound building in eastern North America.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Adena_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Adena_culture",
+    "zh": {
+      "title": "阿德纳筑丘文化",
+      "summary": "俄亥俄河谷等地的人群修筑土丘埋葬死者，经营跨区域交换网络，结合采猎与早期农业。这一文化的起始年代仍有争论。",
+      "significance": "阿德纳是北美东部早期筑丘传统的重要阶段，为后来的大型仪式中心和交流网络奠定基础。",
+      "locationName": "俄亥俄州奇利科西（阿德纳文化核心区）",
+      "dateLabel": "约公元前800年（起始年代有争议）"
+    }
   },
   {
     "id": "greek-alphabet",
@@ -145,7 +205,14 @@
     "location": { "name": "Eretria, Euboea (one proposed center)", "lat": 38.4, "lng": 23.79 },
     "summary": "Greeks adapt the alphabet used by Phoenician traders, keeping most of its consonant letters and turning some signs they do not need into vowels. This makes Greek one of the first scripts to write vowels as full letters alongside consonants. Where and exactly when this happened is unknown; Euboea, whose sailors traded with the Phoenicians, is one suggestion.",
     "significance": "The Greek alphabet is the ancestor of the Latin and Cyrillic scripts, so it shaped how billions of people write today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_Greek_alphabet"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_Greek_alphabet",
+    "zh": {
+      "title": "希腊人采用字母文字",
+      "summary": "希腊人改造腓尼基商人的字母，保留多数辅音符号，并将部分不需要的符号改为元音字母，使希腊文字成为最早完整记录元音和辅音的文字之一。确切时间与地点未定，与腓尼基人贸易频繁的优卑亚岛是可能起源地之一。",
+      "significance": "希腊字母是拉丁与西里尔字母的祖先，影响了今日数十亿人的书写方式。",
+      "locationName": "优卑亚岛埃雷特里亚（可能的起源中心之一）",
+      "dateLabel": "约公元前800年"
+    }
   },
   {
     "id": "scythians",
@@ -156,7 +223,12 @@
     "region": "central-asia",
     "summary": "The Scythians were nomadic horse archers of Iranian language who dominated the steppe north of the Black Sea and beyond. They traded with the Greek colonies, buried their leaders in great mounds with gold ornaments, and are described at length by Herodotus.",
     "significance": "They set the pattern of the mounted steppe nomad, whose mobility and archery troubled settled empires from Persia to China for the next two thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Scythians"
+    "wikipedia": "https://en.wikipedia.org/wiki/Scythians",
+    "zh": {
+      "title": "斯基泰人",
+      "summary": "斯基泰游牧骑马人活跃于黑海以北和欧亚草原，善用骑射，以大型墓冢、动物纹金器及与希腊殖民地的贸易闻名。",
+      "significance": "他们连接草原与地中海世界，骑射军事和艺术风格影响了广大欧亚地区。"
+    }
   },
   {
     "id": "upanishads",
@@ -172,7 +244,14 @@
     "partOf": ["vedic-period"],
     "summary": "In northern India, teachers and their students compose the earliest Upanishads, philosophical texts attached to the Vedas. They ask what the true self (atman) is and explore the idea that it is ultimately one with brahman, the reality underlying everything. Their dates are uncertain; the oldest are usually placed between about 800 and 500 BC.",
     "significance": "Ideas found in the Upanishads, such as karma, rebirth and liberation from the cycle of rebirth, became central to Hinduism and were shared or debated by Buddhism and Jainism.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Upanishads"
+    "wikipedia": "https://en.wikipedia.org/wiki/Upanishads",
+    "zh": {
+      "title": "早期《奥义书》的编成",
+      "summary": "印度北部的师生编成最早的《奥义书》，作为附属于吠陀的哲学文献。他们探究真实自我“我”与终极实在“梵”的关系，提出梵我同一等思想。成书年代未定，最古老篇章通常定于公元前800至前500年。",
+      "significance": "业报、轮回与解脱等观念成为印度教的核心，也为佛教和耆那教所继承或讨论。",
+      "locationName": "恒河平原毗提诃",
+      "dateLabel": "约公元前800年-500年"
+    }
   },
   {
     "id": "first-olympic-games",
@@ -187,7 +266,14 @@
     "location": { "name": "Olympia", "lat": 37.64, "lng": 21.63 },
     "summary": "At the sanctuary of Zeus at Olympia, Greeks hold a footrace that later writers count as the first Olympic Games. The festival is held every four years, and a sacred truce lets athletes and visitors travel safely. The date comes from victor lists compiled centuries later and may not be exact.",
     "significance": "Counting years by Olympiads became a shared Greek way of dating events, and the ancient games inspired the modern Olympics revived in 1896.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+    "zh": {
+      "title": "最早有记载的奥林匹克运动会",
+      "summary": "希腊人在奥林匹亚宙斯圣所举行赛跑，后世作者将其算作第一届奥运会。节庆每四年举行，神圣休战保障参赛者与访客通行。年代来自数百年后编成的优胜者名录，未必完全准确。",
+      "significance": "以四年一届的奥林匹亚纪年记录事件，成为希腊共同的年代框架。古代赛事也启发了1896年现代奥运会的复兴。",
+      "locationName": "奥林匹亚",
+      "dateLabel": "公元前776年（传统说法）"
+    }
   },
   {
     "id": "eastern-zhou",
@@ -202,7 +288,13 @@
     "partOf": ["zhou", "spring-and-autumn"],
     "summary": "After the Zhou capital near modern Xi'an is sacked in 771 BC by the Quanrong, a people from the west, King Ping moves the royal court east to Luoyi, near modern Luoyang. The Zhou kings keep their ritual role but steadily lose real power to the regional lords.",
     "significance": "The move opens the Eastern Zhou era, an age of rival states that was also China's classical age of philosophy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Eastern_Zhou"
+    "wikipedia": "https://en.wikipedia.org/wiki/Eastern_Zhou",
+    "zh": {
+      "title": "周王室东迁",
+      "summary": "公元前771年，来自西方的犬戎攻破今西安附近的周都。周平王将王室东迁至今洛阳附近的洛邑。此后周王保留礼仪地位，实际权力却逐渐落入地方诸侯之手。",
+      "significance": "东迁开启了东周时代。诸侯争霸的同时，中国哲学也进入了经典形成时期。",
+      "locationName": "洛邑（洛阳）"
+    }
   },
   {
     "id": "spring-and-autumn",
@@ -215,7 +307,13 @@
     "partOf": ["zhou"],
     "summary": "After the Zhou court moved east, its kings kept only ritual authority while more than a hundred vassal states fought and absorbed one another. The strongest rulers took turns as hegemon, leading alliances in the king's name. The period is named after the Spring and Autumn Annals, a chronicle of the state of Lu.",
     "significance": "The breakdown of the old order prompted Confucius and other thinkers to ask how a state should be governed, beginning the classical age of Chinese philosophy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period",
+    "zh": {
+      "title": "春秋时期",
+      "summary": "周王室东迁后，王权主要限于礼仪。百余诸侯国相互征战、兼并，强国君主轮流称霸，以周王名义主持联盟。此时期因鲁国编年史《春秋》而得名。",
+      "significance": "旧秩序的瓦解促使孔子等思想家思考如何治理国家，开启了中国哲学的经典时代。",
+      "dateLabel": "公元前770年-476年；结束年代说法不一"
+    }
   },
   {
     "id": "founding-of-rome",
@@ -230,7 +328,14 @@
     "location": { "name": "Palatine Hill, Rome", "lat": 41.89, "lng": 12.49 },
     "summary": "According to Roman legend, the twin brothers Romulus and Remus, raised by a she-wolf, found a city on the Palatine Hill, and Romulus becomes its first king after killing his brother. The 753 BC date was worked out by Roman scholars centuries later; archaeology shows villages on Rome's hills already existed by then.",
     "significance": "Romans later counted years 'from the founding of the city', and the small settlement on the Tiber grew into the center of a Mediterranean empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Founding_of_Rome"
+    "wikipedia": "https://en.wikipedia.org/wiki/Founding_of_Rome",
+    "zh": {
+      "title": "罗马建城（传统说法）",
+      "summary": "传统上，罗慕路斯于公元前753年在台伯河畔建立罗马。考古显示，这座城市更可能由帕拉蒂尼等山丘上的村落逐渐合并而成。",
+      "significance": "这个小聚落后来成为统治地中海的城市，其建城传说与纪年深刻影响了罗马身份认同。",
+      "locationName": "罗马帕拉蒂尼山",
+      "dateLabel": "公元前753年4月21日（传统说法）"
+    }
   },
   {
     "id": "homer-epics",
@@ -245,7 +350,14 @@
     "location": { "name": "Chios (one traditional home of Homer)", "lat": 38.37, "lng": 26.14 },
     "summary": "The Iliad, set during the Trojan War, and the Odyssey, about the hero Odysseus's long journey home, take shape in roughly their present form. They grew out of a long tradition of oral poetry, and whether a single poet named Homer composed them, and exactly when, is still debated.",
     "significance": "The two epics became the foundation of Greek education and of Western literature, read and retold for nearly three thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Homer"
+    "wikipedia": "https://en.wikipedia.org/wiki/Homer",
+    "zh": {
+      "title": "荷马的《伊利亚特》与《奥德赛》",
+      "summary": "传统归于荷马的《伊利亚特》和《奥德赛》在长期口头传唱基础上形成，分别讲述特洛伊战争与奥德修斯归乡。作者身份及成书年代仍有争论。",
+      "significance": "它们成为希腊教育与文化的基础，也奠定了西方文学的重要传统。",
+      "locationName": "希俄斯岛（传说中荷马故乡之一）",
+      "dateLabel": "约公元前750年-700年"
+    }
   },
   {
     "id": "kush-conquers-egypt",
@@ -261,7 +373,14 @@
     "partOf": ["kush"],
     "summary": "King Piye of Kush, ruling from Napata in what is now Sudan, marches north into a divided Egypt and defeats its rival rulers around 728 BC. He and his successors rule Egypt as its 25th Dynasty until Assyrian invasions push them back to Nubia in the mid-7th century BC.",
     "significance": "For several decades a Nubian kingdom ruled Egypt and revived old Egyptian traditions such as pyramid building, which Kush continued at home for centuries afterward.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Piye"
+    "wikipedia": "https://en.wikipedia.org/wiki/Piye",
+    "zh": {
+      "title": "库施征服埃及",
+      "summary": "努比亚库施王皮耶从纳帕塔北进，击败埃及地方统治者。其继任者将统治扩展至埃及全境，形成第25王朝。",
+      "significance": "库施第一次从埃及南方反过来统治埃及，融合并复兴了两地的宗教与王权传统。",
+      "locationName": "纳帕塔（巴尔卡尔山）",
+      "dateLabel": "约公元前728年"
+    }
   },
   {
     "id": "library-of-ashurbanipal",
@@ -277,7 +396,14 @@
     "partOf": ["neo-assyrian"],
     "summary": "Ashurbanipal, king of Assyria and unusually proud of being able to read, has scribes collect and copy clay tablets from across Mesopotamia for his palaces at Nineveh. The collection includes omens, medical texts, word lists, hymns and literature such as the Epic of Gilgamesh.",
     "significance": "When Nineveh was sacked in 612 BC many baked clay tablets survived; rediscovered in the 1850s, its tens of thousands of tablets and fragments are a main source for modern knowledge of Mesopotamian literature.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal"
+    "wikipedia": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal",
+    "zh": {
+      "title": "亚述巴尼拔图书馆",
+      "summary": "亚述王亚述巴尼拔以识字为荣，为尼尼微宫殿收集、抄写美索不达米亚各地泥版。内容包括占卜、医学、词汇表、赞歌及《吉尔伽美什史诗》等文学作品。",
+      "significance": "公元前612年尼尼微遭洗劫时，大量泥版因火烧而保存下来。19世纪50年代重新发现的数万块泥版与碎片，成为研究美索不达米亚文学的主要来源。",
+      "locationName": "尼尼微",
+      "dateLabel": "公元前7世纪（亚述巴尼拔在位时期，公元前669年-631年）"
+    }
   },
   {
     "id": "lydian-coins",
@@ -292,7 +418,14 @@
     "location": { "name": "Sardis", "lat": 38.49, "lng": 28.04 },
     "summary": "In the kingdom of Lydia in western Anatolia, lumps of electrum, a natural mix of gold and silver, are stamped with marks guaranteeing their weight and value. These are among the earliest known coins; some of the oldest were found buried at the temple of Artemis at Ephesus.",
     "significance": "Coinage spread quickly to the Greek cities and Persia, making trade and taxation easier; coins also appeared in India and China within a few centuries, probably independently.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_coins"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_coins",
+    "zh": {
+      "title": "吕底亚铸造早期钱币",
+      "summary": "安纳托利亚西部的吕底亚王国在天然金银合金块上加盖印记，保证其重量与价值。这些是已知最早的钱币之一，部分早期实物出土于以弗所阿耳忒弥斯神庙。",
+      "significance": "铸币迅速传播到希腊城邦与波斯，便利贸易和征税。数百年内，印度与中国也出现了钱币，可能属于独立发展。",
+      "locationName": "萨第斯",
+      "dateLabel": "约公元前630年"
+    }
   },
   {
     "id": "neo-babylonian",
@@ -303,7 +436,12 @@
     "region": "mena",
     "summary": "Babylon threw off Assyrian rule and, with the Medes, destroyed the Assyrian Empire. Under Nebuchadnezzar II it ruled Mesopotamia and the Levant, rebuilt Babylon on a grand scale and deported the people of Judah after destroying Jerusalem.",
     "significance": "It was the last native Mesopotamian empire, and the exile it imposed on the Judeans was a turning point in the history of Judaism.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire",
+    "zh": {
+      "title": "新巴比伦帝国",
+      "summary": "巴比伦摆脱亚述统治，在那波帕拉萨尔及尼布甲尼撒二世时期控制美索不达米亚与黎凡特，重建巴比伦城，最终被居鲁士征服。",
+      "significance": "它使巴比伦最后一次成为独立帝国中心，其建筑及犹太流亡事件留下深远文化影响。"
+    }
   },
   {
     "id": "fall-of-nineveh",
@@ -318,7 +456,13 @@
     "partOf": ["neo-assyrian", "neo-babylonian"],
     "summary": "An alliance of Babylonians and Medes besieges and sacks Nineveh, the vast capital of the Assyrian Empire. Within a few years the last Assyrian forces are defeated, and the empire that had dominated the Near East for three centuries disappears.",
     "significance": "Its lands were divided between the Neo-Babylonian Empire and the Medes, opening the way for Babylon's revival and, soon after, the rise of Persia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)",
+    "zh": {
+      "title": "尼尼微陷落",
+      "summary": "巴比伦人与米底人联军围攻并摧毁亚述都城尼尼微。亚述势力在余下数年间继续抵抗，但帝国已无法恢复。",
+      "significance": "近东长期占优势的亚述帝国由此走向终结，权力转移给巴比伦与米底。",
+      "locationName": "尼尼微"
+    }
   },
   {
     "id": "mahavira-jainism",
@@ -334,7 +478,14 @@
     "partOf": ["vedic-period"],
     "summary": "Mahavira, born into a ruling family near Vaishali in eastern India, leaves home to live as a wandering ascetic and, after years of fasting and meditation, is believed by his followers to reach perfect knowledge. He teaches strict non-violence (ahimsa) toward all living beings, truthfulness and non-attachment. Jains regard him not as their founder but as the 24th and last of a line of great teachers; many historians date his life later than the traditional dates.",
     "significance": "Jainism has survived for some 2,500 years, and its principle of ahimsa later influenced figures such as Mahatma Gandhi.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Mahavira"
+    "wikipedia": "https://en.wikipedia.org/wiki/Mahavira",
+    "zh": {
+      "title": "大雄与耆那教",
+      "summary": "大雄出身于印度东部毗舍离附近的统治家族，离家成为苦行者。追随者相信，他历经禁食与冥想后获得圆满知识，教导不杀生、诚实与不执著。耆那教将其视为第24位、也是最后一位祖师，而非最初创始人。许多历史学家将其生平定得晚于传统年代。",
+      "significance": "耆那教延续约两千五百年，不害生命的原则后来也影响了甘地等人。",
+      "locationName": "毗舍离（传统说法中的出生地）",
+      "dateLabel": "公元前599年（传统出生年份；年代有争议）"
+    }
   },
   {
     "id": "kush-capital-meroe",
@@ -350,7 +501,14 @@
     "partOf": ["kush"],
     "summary": "The kings of Kush shift their main royal center south from Napata to Meroe, on the Nile in what is now Sudan. One common explanation links the move to an Egyptian army's raid on Napata around 591 BC, but the shift was probably gradual and its timing is debated; Napata remained a religious center.",
     "significance": "Meroe, close to iron ore and timber and on routes toward the Red Sea and inner Africa, became a major center of iron working and trade, and Kush later developed its own Meroitic script.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Mero%C3%AB"
+    "wikipedia": "https://en.wikipedia.org/wiki/Mero%C3%AB",
+    "zh": {
+      "title": "库施迁都麦罗埃",
+      "summary": "库施的政治中心逐渐由纳帕塔转向尼罗河更上游的麦罗埃。迁移的确切年代与过程仍有争论。",
+      "significance": "麦罗埃成为贸易、冶铁与独特库施文化的中心，使王国更紧密地联系非洲内陆。",
+      "locationName": "麦罗埃",
+      "dateLabel": "约公元前590年（年代有争议）"
+    }
   },
   {
     "id": "babylonian-exile",
@@ -366,7 +524,14 @@
     "partOf": ["israel-and-judah", "neo-babylonian"],
     "summary": "After a long siege, the army of King Nebuchadnezzar II of Babylon captures Jerusalem, burns the Temple of Solomon and ends the Kingdom of Judah. Much of Judah's elite is deported to Babylonia.",
     "significance": "Many scholars think that during the exile Judean scribes collected and shaped much of what became the Hebrew Bible, and Judaism developed into a faith that could be practiced far from its homeland.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+    "zh": {
+      "title": "巴比伦摧毁耶路撒冷，流亡开始",
+      "summary": "尼布甲尼撒二世的军队于公元前587或586年攻陷耶路撒冷，摧毁圣殿，并将部分居民迁往巴比伦。",
+      "significance": "流亡深刻改变了犹太宗教与身份认同，推动经典整理，并使离散社群成为犹太历史的重要部分。",
+      "locationName": "耶路撒冷",
+      "dateLabel": "公元前587年或586年"
+    }
   },
   {
     "id": "achaemenid",
@@ -377,7 +542,12 @@
     "region": "mena",
     "summary": "Founded by Cyrus the Great, the Achaemenid Empire stretched at its height from the Aegean and Egypt to the Indus. It was governed through provinces under satraps, linked by royal roads, and generally tolerated local customs and religions.",
     "significance": "It was the largest empire of the ancient world to that date and a model of imperial administration, until Alexander the Great conquered it in 330 BC.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+    "zh": {
+      "title": "波斯阿契美尼德帝国",
+      "summary": "居鲁士及继任者建立横跨伊朗、美索不达米亚、埃及与安纳托利亚的波斯帝国，以行省、王道和地方统治传统管理庞大疆域，后被亚历山大征服。",
+      "significance": "它建立了前所未有的大规模帝国行政体系，影响后来近东与地中海国家。"
+    }
   },
   {
     "id": "cyrus-founds-persia",
@@ -393,7 +563,14 @@
     "partOf": ["achaemenid"],
     "summary": "Cyrus II, king of the Persians in what is now southwestern Iran, overthrows his overlord Astyages, king of the Medes. He then conquers Lydia and the Greek cities of Anatolia, building what becomes the Achaemenid Persian Empire.",
     "significance": "Within about thirty years, under Cyrus and his successors, it stretched from Egypt and the Aegean to the Indus, often described as the largest empire yet seen, held together by roads, governors and a general tolerance of local customs and religions.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+    "wikipedia": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+    "zh": {
+      "title": "居鲁士大帝建立波斯帝国",
+      "summary": "居鲁士推翻米底统治，统一波斯与米底，继而征服吕底亚和巴比伦，建立阿契美尼德帝国。",
+      "significance": "波斯成为此前最大的帝国，其利用地方精英、尊重不同宗教传统的治理方式影响后世。",
+      "locationName": "帕萨尔加德",
+      "dateLabel": "约公元前550年"
+    }
   },
   {
     "id": "magadha",
@@ -405,7 +582,13 @@
     "region": "south-asia",
     "summary": "Magadha, in the middle Ganges plain, was the strongest of the sixteen great states of northern India. Under kings such as Bimbisara and Ajatashatru it absorbed its neighbors, helped by fertile land, iron ore and war elephants. Both the Buddha and Mahavira taught in its territory. Chandragupta Maurya seized its throne around 322 BC.",
     "significance": "Magadha was the base from which the Maurya and later the Gupta empires were built.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Magadha"
+    "wikipedia": "https://en.wikipedia.org/wiki/Magadha",
+    "zh": {
+      "title": "摩揭陀",
+      "summary": "摩揭陀位于恒河平原，凭借肥沃土地、河运及军事实力兼并邻国，在王舍城和后来的华氏城形成权力中心。",
+      "significance": "它是佛教与耆那教兴起的重要地区，也成为孔雀王朝统一北印度的基础。",
+      "dateLabel": "约公元前544年-322年"
+    }
   },
   {
     "id": "cyrus-takes-babylon",
@@ -421,7 +604,14 @@
     "partOf": ["achaemenid", "neo-babylonian"],
     "summary": "Persian forces under Cyrus take Babylon, the greatest city of Mesopotamia, apparently with little fighting. Cyrus presents himself as a restorer of local gods, and according to the Bible he lets the exiled Judeans return home and rebuild their temple.",
     "significance": "It ended the last native Mesopotamian empire and put Mesopotamia and the Levant under Persian rule; the Cyrus Cylinder recording his conquest is sometimes cited, with some exaggeration, as an early charter of rights.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
+    "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_Babylon",
+    "zh": {
+      "title": "居鲁士攻占巴比伦",
+      "summary": "波斯王居鲁士的军队攻入巴比伦，终结新巴比伦帝国，并将其广大领地并入波斯。其统治允许部分被迁徙人群返回故土。",
+      "significance": "征服使波斯成为近东主导力量，也使犹太流亡者获准返回耶路撒冷、重建圣殿。",
+      "locationName": "巴比伦",
+      "dateLabel": "公元前539年10月"
+    }
   },
   {
     "id": "buddha-enlightenment",
@@ -437,7 +627,14 @@
     "partOf": ["vedic-period", "magadha"],
     "summary": "Siddhartha Gautama, who has given up a comfortable life as the son of a chief of the Shakya clan to seek an end to suffering, meditates under a fig tree at Bodh Gaya and, according to Buddhist tradition, attains enlightenment. As the Buddha, 'the awakened one', he teaches the Four Noble Truths and a Middle Way between indulgence and harsh self-denial. His dates are uncertain; many scholars now place his life about a century later than the traditional dates.",
     "significance": "Buddhism spread across Asia, from Sri Lanka to Japan, and remains one of the world's major religions.",
-    "wikipedia": "https://en.wikipedia.org/wiki/The_Buddha"
+    "wikipedia": "https://en.wikipedia.org/wiki/The_Buddha",
+    "zh": {
+      "title": "释迦牟尼悟道",
+      "summary": "悉达多·乔达摩出身释迦族首领家庭，为寻求止息痛苦而放弃优裕生活。佛教传统认为，他在菩提伽耶树下冥想而悟道，成为佛陀，即“觉者”，教导四圣谛与介于享乐和极端苦行之间的中道。确切年代未定，许多学者将其生平定得比传统年代晚约一百年。",
+      "significance": "佛教从斯里兰卡传播至日本等亚洲各地，至今仍是世界主要宗教之一。",
+      "locationName": "菩提伽耶",
+      "dateLabel": "约公元前528年（传统说法；年代有争议）"
+    }
   },
   {
     "id": "classical-greece",
@@ -448,7 +645,12 @@
     "region": "europe",
     "summary": "In the two centuries between the fall of the Athenian tyrants and the death of Alexander, the Greek city-states defeated Persia, fought one another in the Peloponnesian War and fell under Macedonian rule. Athens in particular produced drama, history, sculpture and philosophy of lasting influence.",
     "significance": "Its democracy, philosophy, science, theater and art became the foundation of later Western culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Classical_Greece"
+    "wikipedia": "https://en.wikipedia.org/wiki/Classical_Greece",
+    "zh": {
+      "title": "古典希腊",
+      "summary": "希腊城邦在抵抗波斯及彼此争战中发展，以雅典民主、斯巴达军事制度和哲学、戏剧、历史写作为代表，后来逐渐受到马其顿控制。",
+      "significance": "这一时期的政治思想、艺术和学术奠定了欧洲及更广泛世界的重要文化基础。"
+    }
   },
   {
     "id": "roman-republic",
@@ -459,7 +661,12 @@
     "region": "europe",
     "summary": "After expelling its kings, Rome was governed by elected magistrates, the Senate and popular assemblies. Over five centuries it conquered Italy, defeated Carthage and took control of the whole Mediterranean, before civil wars brought the Republic to an end.",
     "significance": "Its institutions, law and ideal of citizenship shaped later republics, and its conquests created the world the Roman Empire inherited.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Roman_Republic"
+    "wikipedia": "https://en.wikipedia.org/wiki/Roman_Republic",
+    "zh": {
+      "title": "罗马共和国",
+      "summary": "罗马从城邦发展为统治地中海的共和国，权力由执政官、元老院与公民大会分担。扩张带来财富和社会冲突，最终长期内战使共和国转为帝制。",
+      "significance": "共和国的法律与政治制度成为后世共和思想的重要参照，其征服也为罗马帝国奠定疆域。"
+    }
   },
   {
     "id": "roman-republic-founded",
@@ -475,7 +682,14 @@
     "partOf": ["roman-republic"],
     "summary": "Romans expel their last king, Tarquin the Proud, and replace the monarchy with a republic led by two magistrates elected every year (later called consuls) and advised by a Senate. Roman tradition dates this to 509 BC, but the details of the story are partly legendary.",
     "significance": "The Republic's elected officials, checks on power and rule of law became a model studied by later republics, including the founders of the United States.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+    "wikipedia": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy",
+    "zh": {
+      "title": "罗马共和国建立",
+      "summary": "罗马传统记载，最后一位国王塔克文被逐，政权改由每年选出的两位执政官与元老院治理。早期叙述夹杂传说，细节难以确证。",
+      "significance": "共和国体制延续近五百年，其反王权理念与政治制度影响了后世国家。",
+      "locationName": "罗马",
+      "dateLabel": "公元前509年（传统说法）"
+    }
   },
   {
     "id": "athenian-democracy",
@@ -491,7 +705,14 @@
     "partOf": ["classical-greece"],
     "summary": "The Athenian leader Cleisthenes reorganizes the citizens of Athens into new tribes and strengthens the assembly of adult male citizens, which votes on laws, war and peace. Women, slaves and resident foreigners are excluded.",
     "significance": "Athens' direct democracy, though limited, is among the earliest known systems of government by citizens' votes and has inspired democratic ideas ever since.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Athenian_democracy"
+    "wikipedia": "https://en.wikipedia.org/wiki/Athenian_democracy",
+    "zh": {
+      "title": "雅典民主制度",
+      "summary": "克里斯提尼重组雅典公民部落和议事机构，削弱旧贵族势力，逐渐形成男性公民参与决策的民主制度。女性、奴隶和外来居民被排除在外。",
+      "significance": "雅典成为最早的重要民主实践之一，为后来关于公民、参与和政治平等的争论提供范例。",
+      "locationName": "雅典",
+      "dateLabel": "公元前508年或507年"
+    }
   },
   {
     "id": "confucius",
@@ -507,7 +728,14 @@
     "partOf": ["zhou", "spring-and-autumn"],
     "summary": "Confucius (Kong Qiu), a teacher and sometime official from the state of Lu in eastern China, gathers students and teaches that good government rests on virtuous rulers, respect within families, proper ritual and lifelong learning. His sayings are later collected by his followers in the Analects.",
     "significance": "Confucianism became the official philosophy of Chinese states for some two thousand years and shaped the values, education and government of Korea, Japan and Vietnam as well.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Confucius"
+    "wikipedia": "https://en.wikipedia.org/wiki/Confucius",
+    "zh": {
+      "title": "孔子讲学",
+      "summary": "孔子名丘，是鲁国的教师，也曾任官。他招收学生，主张德治、亲亲尊长、遵守礼仪与终身学习。弟子及后学后来将其言论编为《论语》。",
+      "significance": "儒学在约两千年间成为中国国家治理的重要思想基础，并深刻影响朝鲜、日本和越南的价值观、教育与政治。",
+      "locationName": "鲁国曲阜",
+      "dateLabel": "约公元前500年（公元前551年-479年）"
+    }
   },
   {
     "id": "laozi-tao-te-ching",
@@ -523,7 +751,14 @@
     "partOf": ["zhou", "spring-and-autumn"],
     "summary": "Chinese tradition holds that Laozi, an archivist at the Zhou court, writes the Tao Te Ching, a short book of poetic sayings about the Tao, 'the Way' or natural order behind all things. It praises simplicity, humility and acting without forcing (wu wei). Both the traditional date and Laozi's existence as a single person are doubted; many scholars think the text was compiled over time and reached its present form around the 4th century BC.",
     "significance": "The Tao Te Ching became the founding text of Taoism, one of China's major religious and philosophical traditions, and is among the most translated books in the world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tao_Te_Ching"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
+    "zh": {
+      "title": "老子与《道德经》",
+      "summary": "中国传统认为，周王室的史官老子写成《道德经》，以简短诗性文字论述万物背后的“道”，提倡朴素、谦下与无为。其传统年代及老子是否确为单一历史人物均有争议；许多学者认为此书逐渐编成，约于公元前4世纪定型。",
+      "significance": "《道德经》成为道家与道教的重要根本文献，也是世界上被翻译最多的书籍之一。",
+      "locationName": "洛阳（周王室所在地，传统说法）",
+      "dateLabel": "公元前6世纪（传统说法）"
+    }
   },
   {
     "id": "monte-alban-founded",
@@ -538,7 +773,14 @@
     "location": { "name": "Monte Alban", "lat": 17.04, "lng": -96.77 },
     "summary": "The Zapotec people of the Oaxaca Valley in southern Mexico level a mountaintop and begin building a city there, with plazas, temples and carved stone monuments. Monte Alban becomes the capital of a Zapotec state that dominates the valley for more than a thousand years.",
     "significance": "It was among the first cities in Mesoamerica, and its carvings include some of the earliest writing and calendar signs in the Americas.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n"
+    "wikipedia": "https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n",
+    "zh": {
+      "title": "萨波特克人建立蒙特阿尔班",
+      "summary": "萨波特克人在今墨西哥瓦哈卡谷地的山顶建立蒙特阿尔班，修整地形，营建广场、神庙和公共建筑，逐渐控制周围谷地。",
+      "significance": "它是中美洲最早的城市与国家中心之一，见证早期文字、历法和区域统治的发展。",
+      "locationName": "蒙特阿尔班",
+      "dateLabel": "约公元前500年"
+    }
   },
   {
     "id": "sun-tzu-art-of-war",
@@ -554,7 +796,14 @@
     "partOf": ["zhou", "spring-and-autumn"],
     "summary": "The Art of War, traditionally credited to Sun Tzu, a general serving the state of Wu, sets out a short, practical philosophy of conflict: know yourself and your enemy, avoid costly battles, and win by planning and deception where possible. Many scholars think the text as we have it dates from the Warring States period, somewhat later than the traditional date.",
     "significance": "It became the most influential military treatise in East Asia and is still read today by soldiers, business leaders and strategists worldwide.",
-    "wikipedia": "https://en.wikipedia.org/wiki/The_Art_of_War"
+    "wikipedia": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "zh": {
+      "title": "《孙子兵法》",
+      "summary": "《孙子兵法》传统上归于吴国将领孙武，提出知己知彼、避免代价高昂的战争、尽可能以谋略与欺敌取胜等原则。许多学者认为，今本形成于战国时期，晚于传统说法。",
+      "significance": "它成为东亚影响最深远的军事著作，至今仍被世界各地的军人、商界人士和战略研究者阅读。",
+      "locationName": "吴国（苏州，传统说法）",
+      "dateLabel": "约公元前500年（传统说法）"
+    }
   },
   {
     "id": "battle-of-marathon",
@@ -569,7 +818,13 @@
     "partOf": ["classical-greece", "achaemenid"],
     "summary": "An Athenian army, helped by soldiers from Plataea, defeats a Persian invasion force sent by King Darius I on the plain of Marathon, northeast of Athens. A later legend says a runner carried the news of victory to Athens.",
     "significance": "The victory showed that the Persian army could be beaten and gave Athens great confidence; the legendary run inspired the modern marathon race.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Marathon"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Marathon",
+    "zh": {
+      "title": "马拉松战役",
+      "summary": "雅典及普拉提亚军队在马拉松平原击败登陆的波斯远征军，阻止其进攻雅典。",
+      "significance": "胜利增强雅典信心，成为希腊抵抗波斯的重要象征，但更大规模的入侵仍在十年后到来。",
+      "locationName": "马拉松"
+    }
   },
   {
     "id": "battle-of-salamis",
@@ -585,7 +840,14 @@
     "partOf": ["classical-greece", "achaemenid"],
     "summary": "King Xerxes of Persia leads a huge invasion of Greece. A Greek army holds the pass of Thermopylae for three days; when it is outflanked, most of it withdraws while a rearguard of King Leonidas's 300 Spartans and their allies fights to the end, and weeks later the Greek fleet, mostly Athenian ships, defeats the Persian navy in the narrow strait off the island of Salamis.",
     "significance": "Together with the land victory at Plataea the next year, Salamis ended Persia's attempts to conquer mainland Greece and opened the way for Athens' golden age.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece"
+    "wikipedia": "https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece",
+    "zh": {
+      "title": "温泉关与萨拉米斯战役",
+      "summary": "薛西斯大军进攻希腊，先突破温泉关守军，随后波斯舰队在萨拉米斯狭窄海峡败于希腊联合舰队。",
+      "significance": "海战扭转了入侵形势，为希腊城邦维持独立和后来古典文化繁荣创造条件。",
+      "locationName": "萨拉米斯海峡",
+      "dateLabel": "公元前480年8至9月"
+    }
   },
   {
     "id": "warring-states-china",
@@ -598,7 +860,13 @@
     "partOf": ["zhou"],
     "summary": "Rival Chinese states competed through warfare, diplomacy, and institutional reform before Qin unified China. Philosophical schools flourished during the conflict. The start is conventionally placed at 475 BC, though 453 or 403 BC is also used.",
     "significance": "The competition between states drove reforms in government, warfare and technology, produced the classic schools of Chinese thought, and ended in the first unified Chinese empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Warring_States_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Warring_States_period",
+    "zh": {
+      "title": "中国战国时期（约）",
+      "summary": "秦统一中国以前，各诸侯国通过战争、外交与制度改革争夺优势，思想流派也在竞争中蓬勃发展。战国通常以公元前475年为起点，也有以前453年或前403年为起点的说法。",
+      "significance": "国家间的竞争推动了政治、军事与技术改革，孕育诸子思想，并最终形成中国第一个统一帝国。",
+      "dateLabel": "约公元前475年-221年；起始年代有争议"
+    }
   },
   {
     "id": "parthenon-built",
@@ -613,7 +881,13 @@
     "partOf": ["classical-greece"],
     "summary": "On the Acropolis of Athens, the city builds a great marble temple to Athena, its patron goddess, as part of a building program led by the statesman Pericles and partly paid for with money from Athens' allies. The sculptor Phidias oversees its sculptures of gods, heroes and a procession of Athenians.",
     "significance": "The Parthenon became the best-known symbol of classical Greece, and its columns and proportions have been copied in buildings around the world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Parthenon"
+    "wikipedia": "https://en.wikipedia.org/wiki/Parthenon",
+    "zh": {
+      "title": "帕特农神庙建成",
+      "summary": "雅典在伯里克利领导下，于卫城修建献给雅典娜的帕特农神庙，以雕塑与建筑展示城市的财富和权力。",
+      "significance": "它成为古典希腊建筑的典范，对后世艺术与公共建筑设计产生持久影响。",
+      "locationName": "雅典卫城"
+    }
   },
   {
     "id": "peloponnesian-war",
@@ -628,7 +902,13 @@
     "partOf": ["classical-greece"],
     "summary": "Athens, with its naval empire, and Sparta, with its allies on land, fight a long war for leadership of the Greek world. After a plague in Athens, a disastrous Athenian expedition to Sicily and Persian money for a Spartan fleet, Athens surrenders in 404 BC.",
     "significance": "The war weakened the Greek city-states, and its history by Thucydides became a founding work of political and military analysis.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Peloponnesian_War"
+    "wikipedia": "https://en.wikipedia.org/wiki/Peloponnesian_War",
+    "zh": {
+      "title": "伯罗奔尼撒战争",
+      "summary": "雅典及其海上帝国与斯巴达的陆上联盟为希腊霸权长期交战。雅典遭遇瘟疫，远征西西里惨败，波斯又出资支持斯巴达舰队，最终雅典于公元前404年投降。",
+      "significance": "战争削弱了希腊城邦，修昔底德对战争的记述则成为政治与军事分析的奠基著作。",
+      "locationName": "斯巴达"
+    }
   },
   {
     "id": "gojoseon",
@@ -640,7 +920,13 @@
     "region": "east-asia",
     "summary": "Gojoseon was the first kingdom on the Korean Peninsula, centered on the northwest and southern Manchuria. Korean tradition dates its founding by the mythical Dangun to 2333 BC, but it is first attested in Chinese records some centuries before the Han dynasty conquered it in 108 BC and set up commanderies on its land.",
     "significance": "Koreans regard Gojoseon as the origin of their nation, and the name Joseon was later taken up again by the dynasty that ruled Korea from 1392.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Gojoseon"
+    "wikipedia": "https://en.wikipedia.org/wiki/Gojoseon",
+    "zh": {
+      "title": "古朝鲜",
+      "summary": "古朝鲜统治朝鲜半岛西北部与满洲南部。檀君于公元前2333年建国属于传统神话；中国文献在汉朝前108年征服并设郡之前数百年才有较明确记载。",
+      "significance": "朝鲜半岛居民将其视为民族起源，1392年建立的王朝也重新采用“朝鲜”国号。",
+      "dateLabel": "约公元前4世纪或更早-公元前108年"
+    }
   },
   {
     "id": "death-of-socrates",
@@ -655,7 +941,13 @@
     "partOf": ["classical-greece"],
     "summary": "An Athenian jury of about 500 citizens finds the philosopher Socrates guilty of not honoring the city's gods and of corrupting the young, and he is put to death by drinking poison hemlock. Socrates wrote nothing; he was known for questioning people in public about justice and virtue.",
     "significance": "His student Plato made Socrates the hero of his dialogues, and the method of questioning assumptions associated with him became central to Western philosophy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Trial_of_Socrates"
+    "wikipedia": "https://en.wikipedia.org/wiki/Trial_of_Socrates",
+    "zh": {
+      "title": "苏格拉底之死",
+      "summary": "约五百名公民组成的雅典陪审团，判哲学家苏格拉底不敬城邦诸神、腐蚀青年罪成立。他被迫饮下毒芹汁而死。苏格拉底未留下著作，以公开追问正义与美德闻名。",
+      "significance": "弟子柏拉图将他写成对话录的主要人物，与之相关的质疑假设的方法成为西方哲学的核心。",
+      "locationName": "雅典"
+    }
   },
   {
     "id": "plato-academy",
@@ -671,7 +963,14 @@
     "partOf": ["classical-greece"],
     "summary": "The philosopher Plato begins teaching in a grove outside Athens sacred to the hero Akademos, founding the school known as the Academy. Students discuss philosophy, mathematics and politics, and Plato writes dialogues such as the Republic.",
     "significance": "The Academy lasted in some form for centuries and gave its name to academies everywhere, and Plato's ideas shaped Western philosophy and Christian, Jewish and Islamic thought.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Platonic_Academy"
+    "wikipedia": "https://en.wikipedia.org/wiki/Platonic_Academy",
+    "zh": {
+      "title": "柏拉图创办学园",
+      "summary": "苏格拉底的学生柏拉图在雅典创办学园，研究哲学、数学与政治，吸引包括亚里士多德在内的学生。",
+      "significance": "学园成为长期延续的哲学教育中心，柏拉图的对话录深刻影响西方思想。",
+      "locationName": "雅典柏拉图学园",
+      "dateLabel": "约公元前387年"
+    }
   },
   {
     "id": "macedon",
@@ -683,7 +982,13 @@
     "region": "europe",
     "summary": "Macedon was a kingdom on the northern edge of the Greek world. Philip II rebuilt its army around the long pike and made it master of Greece, and his son Alexander used that army to conquer the Persian Empire as far as India. After Alexander's death his generals divided the empire, and Macedon itself fell to Rome in 168 BC.",
     "significance": "Macedon's conquests spread Greek language and culture from Egypt to Central Asia, beginning the Hellenistic age.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)",
+    "zh": {
+      "title": "马其顿王国",
+      "summary": "腓力二世改革军队并控制希腊，其子亚历山大征服波斯，建立横跨欧亚的帝国。亚历山大死后，马其顿由继承王朝统治，最终败于罗马。",
+      "significance": "马其顿将希腊文化传播至埃及和亚洲，开启希腊化时代。",
+      "dateLabel": "公元前359年-168年（从腓力二世即位至罗马征服）"
+    }
   },
   {
     "id": "aristotle-lyceum",
@@ -699,7 +1004,14 @@
     "partOf": ["classical-greece"],
     "summary": "Aristotle, a former student of Plato and tutor of the young Alexander the Great, opens his own school at the Lyceum, a gymnasium just outside Athens. He and his students collect and classify knowledge about animals, plants, governments, logic and the natural world.",
     "significance": "Aristotle's works on logic, biology, physics and ethics dominated learning in the Islamic world and medieval Europe for many centuries.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Lyceum_(classical)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Lyceum_(classical)",
+    "zh": {
+      "title": "亚里士多德创办吕克昂学园",
+      "summary": "柏拉图的学生、亚历山大大帝的老师亚里士多德，在雅典城外吕克昂体育场创办学园。他与学生搜集并分类研究动物、植物、政体、逻辑与自然知识。",
+      "significance": "其逻辑学、生物学、物理学和伦理学著作，在数百年间主导了伊斯兰世界及中世纪欧洲的学术。",
+      "locationName": "雅典吕克昂学园",
+      "dateLabel": "约公元前335年"
+    }
   },
   {
     "id": "alexander-conquers-persia",
@@ -714,7 +1026,13 @@
     "partOf": ["macedon", "achaemenid", "classical-greece"],
     "summary": "Alexander, the young king of Macedon, invades the Persian Empire in 334 BC, defeats King Darius III at Issus and Gaugamela, and takes Babylon and Persepolis. He pushes on into Central Asia and India before dying in Babylon in 323 BC, aged 32.",
     "significance": "His conquests spread Greek language and culture from Egypt to Afghanistan and began the Hellenistic age, while his empire split among his generals after his death.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great"
+    "wikipedia": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great",
+    "zh": {
+      "title": "亚历山大大帝征服波斯",
+      "summary": "亚历山大率马其顿军入侵波斯，在伊苏斯、高加米拉等战役获胜，夺取波斯主要都城，终结阿契美尼德王朝。",
+      "significance": "征服将希腊世界与近东、埃及连接起来，开创文化深度交流的希腊化时代。",
+      "locationName": "高加米拉（公元前331年决战地）"
+    }
   },
   {
     "id": "alexandria-founded",
@@ -730,7 +1048,14 @@
     "partOf": ["alexander-conquers-persia"],
     "summary": "After taking Egypt from the Persians, Alexander orders a new city laid out on the Mediterranean coast at the western edge of the Nile Delta, and names it after himself. Under the Ptolemies, the Greek dynasty founded by one of his generals, it becomes Egypt's capital and a great port.",
     "significance": "Alexandria became the leading center of learning in the ancient Mediterranean, home of the famous Library and Lighthouse, where Greek, Egyptian and Jewish cultures met.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_Alexandria"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_Alexandria",
+    "zh": {
+      "title": "亚历山大城建立",
+      "summary": "亚历山大在埃及地中海沿岸建立以自己命名的城市。传统年代为公元前331年，也有文献记为前332年。",
+      "significance": "亚历山大城成为贸易与学术中心，其图书馆和学者深刻影响古代知识世界。",
+      "locationName": "亚历山大港",
+      "dateLabel": "公元前331年（部分文献记为公元前332年）"
+    }
   },
   {
     "id": "alexander-in-india",
@@ -745,7 +1070,13 @@
     "partOf": ["alexander-conquers-persia"],
     "summary": "Alexander crosses into the Punjab and defeats King Porus at the Battle of the Hydaspes, fought on the Jhelum River in what is now Pakistan. His exhausted soldiers then refuse to march further east, and he turns back.",
     "significance": "The brief invasion opened contacts between India and the Greek world, and the turmoil it left in the northwest may have helped Chandragupta Maurya build his empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
+    "zh": {
+      "title": "亚历山大抵达印度",
+      "summary": "亚历山大进入印度次大陆西北部，在海达斯佩斯河击败波罗斯。其军队疲惫，不愿继续东进，他被迫折返。",
+      "significance": "远征扩大希腊与印度世界的接触，为后来的希腊-印度政权及文化交融铺路。",
+      "locationName": "海达斯佩斯河（杰赫勒姆河）"
+    }
   },
   {
     "id": "maurya",
@@ -756,7 +1087,12 @@
     "region": "south-asia",
     "summary": "Chandragupta Maurya overthrew the Nanda kings and built an empire from his capital Pataliputra that came to cover most of the Indian subcontinent. His grandson Ashoka, after conquering Kalinga, embraced Buddhism and proclaimed his principles in edicts carved on rocks and pillars.",
     "significance": "It was the first state to unite most of India, and Ashoka's patronage helped Buddhism grow from a regional movement into a religion that spread across Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Maurya_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Maurya_Empire",
+    "zh": {
+      "title": "孔雀王朝",
+      "summary": "旃陀罗笈多建立孔雀王朝，以华氏城为都，统治印度次大陆大部。阿育王进一步扩张，并在羯陵伽战争后倡导佛教与道德治理。",
+      "significance": "它是南亚第一个覆盖广大地区的帝国，也是佛教向更广阔亚洲传播的重要推动者。"
+    }
   },
   {
     "id": "maurya-empire-founded",
@@ -772,7 +1108,14 @@
     "partOf": ["maurya"],
     "summary": "Chandragupta Maurya, said by tradition to have been guided by the minister Chanakya, overthrows the Nanda dynasty and takes Pataliputra, capital of the kingdom of Magadha. He later wins the northwest from Alexander's successor Seleucus, building an empire across most of northern India.",
     "significance": "The Maurya Empire became the first state to rule most of the Indian subcontinent, and under Chandragupta's grandson Ashoka it helped spread Buddhism.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Chandragupta_Maurya"
+    "wikipedia": "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
+    "zh": {
+      "title": "旃陀罗笈多建立孔雀王朝",
+      "summary": "相传旃陀罗笈多在大臣考底利耶辅佐下推翻难陀王朝，占领摩揭陀都城华氏城。后来他从亚历山大继承者塞琉古手中取得西北地区，建立覆盖北印度大部的帝国。",
+      "significance": "孔雀王朝是第一个统治印度次大陆大部分地区的国家，其孙阿育王的统治又推动了佛教传播。",
+      "locationName": "华氏城",
+      "dateLabel": "约公元前322年"
+    }
   },
   {
     "id": "seleucid",
@@ -783,7 +1126,12 @@
     "region": "mena",
     "summary": "Seleucus, one of Alexander's generals, took the eastern part of his empire, from Anatolia and Syria to the borders of India. His successors founded Greek cities such as Antioch and Seleucia but steadily lost ground to Parthia in the east and Rome in the west.",
     "significance": "The Seleucids spread Greek language, cities and culture deep into Asia, where they blended with Persian, Mesopotamian and Indian traditions.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+    "zh": {
+      "title": "塞琉古帝国",
+      "summary": "亚历山大死后，塞琉古及后裔控制叙利亚、美索不达米亚、伊朗和部分中亚，建立希腊化城市，后在战争与地方独立中逐渐失地。",
+      "significance": "它成为希腊与西亚文化交汇的重要政权，并连接地中海与亚洲内陆。"
+    }
   },
   {
     "id": "ptolemaic-egypt",
@@ -794,7 +1142,12 @@
     "region": "mena",
     "summary": "Ptolemy, another of Alexander's generals, made himself king of Egypt and founded a Greek-speaking dynasty that ruled as pharaohs from Alexandria. The last of the line, Cleopatra VII, died in 30 BC when Rome annexed the country.",
     "significance": "Under the Ptolemies, Alexandria with its Library became the leading center of learning in the ancient Mediterranean.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
+    "zh": {
+      "title": "埃及托勒密王朝",
+      "summary": "亚历山大的将领托勒密自立为埃及国王，建立以亚历山大城为都、使用希腊语的王朝，兼具法老身份。最后一位统治者克娄巴特拉七世于公元前30年罗马吞并埃及时去世。",
+      "significance": "托勒密王朝时期，亚历山大城及其图书馆成为古代地中海最重要的学术中心。"
+    }
   },
   {
     "id": "el-mirador",
@@ -809,7 +1162,14 @@
     "location": { "name": "El Mirador", "lat": 17.75, "lng": -89.92 },
     "summary": "In the rainforest of what is now northern Guatemala, the Maya city of El Mirador grows into a huge center linked to nearby towns by raised causeways. Its La Danta complex is among the largest pyramids in the world by volume.",
     "significance": "El Mirador shows that the Maya built great cities and states centuries before their better-known Classic period, which began around AD 250.",
-    "wikipedia": "https://en.wikipedia.org/wiki/El_Mirador"
+    "wikipedia": "https://en.wikipedia.org/wiki/El_Mirador",
+    "zh": {
+      "title": "玛雅城市埃尔米拉多尔繁荣发展",
+      "summary": "今危地马拉北部雨林中的埃尔米拉多尔发展为巨大玛雅城市，以高架堤道连接邻近城镇，其拉丹塔建筑群体积跻身世界最大金字塔之列。",
+      "significance": "它表明，在约公元250年开始的古典时期之前数百年，玛雅人已建造大型城市和国家。",
+      "locationName": "埃尔米拉多尔",
+      "dateLabel": "约公元前300年"
+    }
   },
   {
     "id": "euclid-elements",
@@ -825,7 +1185,14 @@
     "partOf": ["ptolemaic-egypt"],
     "summary": "The mathematician Euclid, working in Alexandria, gathers the geometry and number theory known to the Greeks into the Elements, a work in thirteen books. Starting from a few definitions and axioms, it proves hundreds of results step by step.",
     "significance": "The Elements was used to teach mathematics for over two thousand years and set the model of logical proof used in mathematics and science.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_Elements"
+    "wikipedia": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
+    "zh": {
+      "title": "欧几里得《几何原本》",
+      "summary": "欧几里得在亚历山大城编成《几何原本》，从定义、公理出发，以严格证明组织几何与数论知识。",
+      "significance": "此书成为两千多年数学教育与演绎推理的标准，对科学思想影响深远。",
+      "locationName": "亚历山大港",
+      "dateLabel": "约公元前300年"
+    }
   },
   {
     "id": "yayoi-rice-farming",
@@ -840,7 +1207,14 @@
     "location": { "name": "Itazuke, Fukuoka (northern Kyushu)", "lat": 33.57, "lng": 130.45 },
     "summary": "Newcomers from the Korean Peninsula bring wet-rice farming and, in time, bronze and iron to northern Kyushu, and the new way of life spreads east across Japan, mixing with the long-established hunter-gatherer Jomon culture. The traditional start date is around 300 BC, but radiocarbon dating suggests rice farming may have reached Kyushu several centuries earlier.",
     "significance": "Rice farming, metal tools and new settlers laid the foundations of Japanese society, and modern Japanese people descend from both the Yayoi newcomers and the Jomon.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Yayoi_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Yayoi_period",
+    "zh": {
+      "title": "弥生文化将稻作传入日本",
+      "summary": "来自朝鲜半岛的人群将水稻种植及后来的青铜、铁器带至九州北部，新生活方式向东传播，与绳文采猎文化融合。传统起始年代为约前300年，碳测年提示稻作可能更早数百年传入。",
+      "significance": "农业、金属技术与移民奠定日本社会基础，现代日本人同时继承弥生与绳文人群的血缘。",
+      "locationName": "福冈板付（九州北部）",
+      "dateLabel": "约公元前300年（传统说法；也可能更早）"
+    }
   },
   {
     "id": "first-punic-war",
@@ -855,7 +1229,13 @@
     "partOf": ["roman-republic", "carthage"],
     "summary": "Rome and Carthage fight over Sicily in the first of three wars between them. Rome, until then a land power, builds large war fleets and finally wins a sea battle off the Aegates Islands, forcing Carthage to give up Sicily and pay a large indemnity.",
     "significance": "Sicily became Rome's first overseas province, and Rome emerged as a naval power, beginning its expansion beyond Italy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/First_Punic_War"
+    "wikipedia": "https://en.wikipedia.org/wiki/First_Punic_War",
+    "zh": {
+      "title": "第一次布匿战争",
+      "summary": "罗马与迦太基为西西里控制权爆发长期战争。罗马建立海军，在多次海陆战后迫使迦太基求和并退出西西里。",
+      "significance": "罗马获得首个海外行省，成为海上强权，也开启了两国持续一个多世纪的竞争。",
+      "locationName": "西西里岛"
+    }
   },
   {
     "id": "ashoka-buddhism",
@@ -871,7 +1251,14 @@
     "partOf": ["maurya"],
     "summary": "The Maurya emperor Ashoka conquers the eastern kingdom of Kalinga in a war that, by his own account, killed or uprooted hundreds of thousands of people. In inscriptions carved on rocks and pillars across his empire he expresses remorse, declares himself a follower of the Buddha and promotes dhamma: non-violence, tolerance and care for people and animals.",
     "significance": "Ashoka's support, including missions that Buddhist tradition says he sent to Sri Lanka and beyond, helped Buddhism grow from a regional movement into a pan-Asian religion; his lion capital is today India's national emblem.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ashoka"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ashoka",
+    "zh": {
+      "title": "阿育王皈依佛教",
+      "summary": "孔雀王朝阿育王征服东部羯陵伽。据其自身铭文，战争使数十万人死亡或流离失所。他在各地石刻与石柱上表示悔恨，宣称信奉佛教，并提倡不杀生、宽容及关爱人畜的“法”。",
+      "significance": "他的支持及佛教传统所记载的海外弘法，帮助佛教成长为泛亚洲宗教。其狮子柱头如今成为印度国徽。",
+      "locationName": "羯陵伽道利",
+      "dateLabel": "约公元前260年"
+    }
   },
   {
     "id": "archimedes",
@@ -886,7 +1273,14 @@
     "location": { "name": "Syracuse", "lat": 37.08, "lng": 15.29 },
     "summary": "Archimedes of Syracuse, in Sicily, works out the mathematics of levers and floating bodies, calculates the area and volume of curved shapes, gives a close estimate of pi, and designs machines, including war engines used to defend his city. He is killed in 212 BC when the Romans capture Syracuse.",
     "significance": "Often ranked among the greatest mathematicians of all time, Archimedes laid foundations of mechanics and hydrostatics and used methods that anticipated calculus.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Archimedes"
+    "wikipedia": "https://en.wikipedia.org/wiki/Archimedes",
+    "zh": {
+      "title": "叙拉古的阿基米德",
+      "summary": "西西里叙拉古的阿基米德研究杠杆与浮体的数学原理，计算曲面面积与体积，精确估计圆周率，并设计包括城防器械在内的机械。公元前212年，罗马攻占叙拉古时，他遭杀害。",
+      "significance": "他被誉为最伟大的数学家之一，奠定力学与流体静力学基础，部分方法也预示了后来的微积分。",
+      "locationName": "叙拉古",
+      "dateLabel": "约公元前250年（生卒约公元前287年至212年）"
+    }
   },
   {
     "id": "greco-bactrian-kingdom",
@@ -902,7 +1296,14 @@
     "partOf": ["seleucid"],
     "summary": "Diodotus, the Greek governor of Bactria, a region in today's northern Afghanistan and southern Uzbekistan and Tajikistan, breaks away from the Seleucid Empire and founds an independent Greek kingdom. Its cities, such as Ai-Khanoum, have Greek theaters and gymnasiums alongside local traditions.",
     "significance": "The kingdom and the Indo-Greek kingdoms that followed it carried Greek art and ideas deep into Asia, later influencing the Greco-Buddhist art of Gandhara.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom"
+    "wikipedia": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom",
+    "zh": {
+      "title": "希腊-巴克特里亚王国",
+      "summary": "巴克特里亚位于今阿富汗北部及乌兹别克斯坦、塔吉克斯坦南部。其希腊总督狄奥多托斯脱离塞琉古帝国，建立独立王国。阿伊哈努姆等城市兼有希腊剧场、体育场与本地文化传统。",
+      "significance": "该国及后来的印度-希腊王国将希腊艺术与思想传播至亚洲腹地，后来影响了犍陀罗佛教艺术。",
+      "locationName": "巴克特拉（巴尔赫）",
+      "dateLabel": "约公元前250年"
+    }
   },
   {
     "id": "parthian",
@@ -913,7 +1314,12 @@
     "region": "mena",
     "summary": "The Parni, a people from the steppe, took the province of Parthia from the Seleucids and under the Arsacid dynasty went on to rule Iran and Mesopotamia. Their armies of horse archers and armored cavalry defeated several Roman invasions, most famously at Carrhae.",
     "significance": "For nearly five centuries Parthia was Rome's great rival in the east and controlled the overland trade between the Mediterranean and China.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Parthian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Parthian_Empire",
+    "zh": {
+      "title": "帕提亚帝国",
+      "summary": "帕提亚人建立控制伊朗与美索不达米亚的帝国，以骑射与重装骑兵著称，与罗马长期争夺近东影响力，后被萨珊王朝取代。",
+      "significance": "它是罗马在东方的主要对手，也连接了丝绸之路上的东西方贸易。"
+    }
   },
   {
     "id": "qin",
@@ -924,7 +1330,12 @@
     "region": "east-asia",
     "summary": "The state of Qin conquered the other Warring States, and its king took the title of First Emperor. His government abolished the old feudal lords, standardized writing, coinage, weights and measures, and built roads and frontier walls with forced labor. The dynasty collapsed in revolt soon after his death.",
     "significance": "Though it lasted only fifteen years, the Qin created the centralized, bureaucratic empire that remained the model for Chinese government until 1912.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Qin_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Qin_dynasty",
+    "zh": {
+      "title": "秦朝",
+      "summary": "秦国征服其他战国诸侯，其君主称始皇帝。政府废除旧有分封秩序，统一文字、货币与度量衡，并征发劳役修筑道路和边墙。始皇死后不久，王朝在起义中覆亡。",
+      "significance": "秦虽仅延续十五年，却建立了中央集权的官僚帝国，成为此后直到1912年中国政治的基本模式。"
+    }
   },
   {
     "id": "qin-unifies-china",
@@ -939,7 +1350,13 @@
     "partOf": ["qin", "warring-states-china"],
     "summary": "King Ying Zheng of Qin conquers the last of the rival Warring States and takes the title Qin Shi Huang, the First Emperor. His government standardizes writing, coins, weights, measures and even cart axle widths across the empire.",
     "significance": "It created the first unified Chinese empire and the model of a centralized imperial state that lasted, through many dynasties, until 1912.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+    "wikipedia": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification",
+    "zh": {
+      "title": "秦统一中国",
+      "summary": "秦王嬴政征服最后一个敌对诸侯国，称秦始皇。他的政府在帝国范围内统一文字、货币、度量衡，乃至车辆的轴距。",
+      "significance": "秦建立了中国第一个统一帝国，其中央集权模式经过历代延续，直到1912年帝制终结。",
+      "locationName": "咸阳"
+    }
   },
   {
     "id": "hannibal-crosses-alps",
@@ -954,7 +1371,13 @@
     "partOf": ["roman-republic", "carthage"],
     "summary": "The Carthaginian general Hannibal leads an army of tens of thousands of soldiers, horses and a few dozen war elephants from Spain over the Pyrenees and the Alps into Italy. Many die on the way, but he goes on to crush Roman armies at the Trebia, Lake Trasimene and Cannae.",
     "significance": "The crossing opened the Second Punic War in Italy; Rome survived and defeated Carthage in 202 BC, leaving it the dominant power in the western Mediterranean.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps"
+    "wikipedia": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps",
+    "zh": {
+      "title": "汉尼拔翻越阿尔卑斯山",
+      "summary": "第二次布匿战争中，迦太基统帅汉尼拔率军及战象翻越阿尔卑斯山进入意大利，途中损失惨重，却成功出其不意地威胁罗马。",
+      "significance": "远征成为军事史上著名的大胆行动，使战争深入罗马本土，迫使罗马经历多年苦战。",
+      "locationName": "阿尔卑斯山西部（具体山口不详）"
+    }
   },
   {
     "id": "great-wall-qin",
@@ -970,7 +1393,14 @@
     "partOf": ["qin"],
     "summary": "After unifying China, the First Emperor sends his general Meng Tian north to drive back the Xiongnu nomads. Meng Tian joins and extends the walls that earlier northern states had built into one long frontier wall, made mostly of rammed earth and built by huge numbers of conscripted laborers.",
     "significance": "It began the idea of one long wall guarding China's northern border, which later dynasties rebuilt; most of the stone Great Wall seen today was built by the Ming dynasty, more than 1,500 years later.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_Great_Wall_of_China"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_Great_Wall_of_China",
+    "zh": {
+      "title": "秦朝连接各段城墙，修筑长城",
+      "summary": "统一后，秦始皇派蒙恬北击匈奴。蒙恬将先前北方诸侯国的城墙连接、延伸，形成漫长的边防城墙。这些城墙主要以夯土筑成，由大批征发劳工修建。",
+      "significance": "它确立了以长城守卫北方边境的构想，后世多次重修。今日所见的大部分砖石长城建于一千五百多年后的明朝。",
+      "locationName": "北部边疆九原（今包头附近）",
+      "dateLabel": "约公元前215年-210年"
+    }
   },
   {
     "id": "terracotta-army",
@@ -986,7 +1416,14 @@
     "partOf": ["qin"],
     "summary": "Qin Shi Huang, the First Emperor, dies on a tour of the east and is buried in a vast tomb complex built by hundreds of thousands of laborers. Pits beside the mound hold an army of several thousand life-size clay soldiers, each with individual features, along with horses, chariots and real bronze weapons. Farmers digging a well find the pits in 1974; the tomb mound itself has not been opened.",
     "significance": "The army is one of the great archaeological finds of the 20th century and shows the resources the first unified Chinese empire could command.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Terracotta_Army"
+    "wikipedia": "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "zh": {
+      "title": "秦始皇与兵马俑入葬",
+      "summary": "秦始皇东巡途中去世，葬入数十万劳工营建的庞大陵园。陵冢附近的坑中有数千个真人大小、面貌各异的陶俑，以及战马、战车和真正的青铜兵器。1974年农民打井时发现兵马俑坑；主陵墓尚未打开。",
+      "significance": "兵马俑是20世纪最重要的考古发现之一，展示了中国第一个统一帝国能够调动的庞大资源。",
+      "locationName": "西安附近秦始皇陵",
+      "dateLabel": "公元前210年"
+    }
   },
   {
     "id": "xiongnu",
@@ -997,7 +1434,12 @@
     "region": "central-asia",
     "summary": "The Xiongnu were a confederation of nomadic peoples of the Mongolian steppe, united under Modu Chanyu at the end of the 3rd century BC. They raided and extracted tribute from Han China until Han campaigns and internal splits broke their power.",
     "significance": "They were the first great steppe empire, and their rivalry with China set a pattern that recurred with later nomad powers down to the Mongols.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Xiongnu"
+    "wikipedia": "https://en.wikipedia.org/wiki/Xiongnu",
+    "zh": {
+      "title": "匈奴",
+      "summary": "匈奴是蒙古草原上的游牧部落联盟，公元前3世纪末由冒顿单于统一。他们侵扰汉朝边境，并通过交涉获取财物，后来因汉朝的军事行动与内部分裂而衰落。",
+      "significance": "匈奴建立了第一个强大的草原帝国。其与中国的对峙形成了此后草原政权反复沿用的关系模式，一直延续到蒙古时代。"
+    }
   },
   {
     "id": "han",
@@ -1008,7 +1450,12 @@
     "region": "east-asia",
     "summary": "Founded by Liu Bang after the fall of the Qin, the Han ruled China for four centuries with a brief interruption. It made Confucianism the basis of government and education, expanded into Central Asia, Korea and Vietnam, and opened the Silk Road trade.",
     "significance": "The Han fixed the pattern of Chinese imperial government and culture so firmly that the majority people of China still call themselves Han.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Han_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Han_dynasty",
+    "zh": {
+      "title": "汉朝",
+      "summary": "秦亡后，刘邦建立汉朝。除短暂中断外，汉统治中国约四百年，以儒学为治理和教育基础，向中亚、朝鲜半岛和越南扩展，并开辟丝绸之路贸易。",
+      "significance": "汉朝深刻奠定了中国帝国政治与文化的模式，中国人口最多的民族至今仍以“汉”为名。"
+    }
   },
   {
     "id": "han-dynasty-founded",
@@ -1024,7 +1471,14 @@
     "partOf": ["han"],
     "summary": "Liu Bang, a former village official, joins the revolts that topple the collapsing Qin dynasty and is made king of Han. After defeating his rival Xiang Yu he becomes emperor in 202 BC and rules from a new capital at Chang'an.",
     "significance": "The Han ruled China for about four centuries, made Confucianism the basis of government and gave their name to the Han Chinese, the world's largest ethnic group.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Han_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Han_dynasty",
+    "zh": {
+      "title": "汉朝建立",
+      "summary": "曾任基层官吏的刘邦参与反秦起义，被封为汉王。击败项羽后，他于公元前202年称帝，定都长安。",
+      "significance": "汉朝统治中国约四百年，确立儒学的政治地位，并使“汉”成为后来世界上人口最多民族的名称。",
+      "locationName": "长安",
+      "dateLabel": "公元前206年（刘邦称帝于公元前202年）"
+    }
   },
   {
     "id": "rome-destroys-carthage",
@@ -1039,7 +1493,13 @@
     "partOf": ["roman-republic", "carthage"],
     "summary": "After a three-year siege, Roman soldiers storm Carthage, kill or enslave its people and raze the city. In the same year another Roman army sacks the Greek city of Corinth after a revolt by the Achaean League. The story that Rome sowed salt on Carthage's fields is a later legend.",
     "significance": "Rome now dominated the western and central Mediterranean, and Carthage's lands became the Roman province of Africa.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Third_Punic_War"
+    "wikipedia": "https://en.wikipedia.org/wiki/Third_Punic_War",
+    "zh": {
+      "title": "罗马摧毁迦太基与科林斯",
+      "summary": "罗马于公元前146年攻陷并摧毁迦太基，同年在希腊毁灭科林斯，消除两个重要反抗中心。",
+      "significance": "罗马由此巩固地中海优势，迦太基与希腊的重要地区转入罗马统治。",
+      "locationName": "迦太基"
+    }
   },
   {
     "id": "silk-road-opens",
@@ -1054,7 +1514,13 @@
     "partOf": ["han", "xiongnu"],
     "summary": "The Han emperor Wu sends the envoy Zhang Qian west to seek allies against the Xiongnu. Captured and held by the Xiongnu for about ten years, Zhang escapes and reaches the Ferghana Valley, Sogdiana and Bactria, returning home in 126 BC with reports of their horses, cities and markets.",
     "significance": "His reports led the Han to push west and open regular routes across Central Asia, the network later called the Silk Road, which carried silk, horses, ideas and religions between China and the West.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Zhang_Qian"
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhang_Qian",
+    "zh": {
+      "title": "张骞出使，开辟丝绸之路",
+      "summary": "汉武帝派张骞西行，寻找对抗匈奴的盟友。张骞被匈奴拘留约十年后逃脱，抵达费尔干纳、粟特和巴克特里亚，并于公元前126年带回有关当地马匹、城市与市场的报告。",
+      "significance": "这些报告推动汉朝西进，开通穿越中亚的常规交通线。后来被称为丝绸之路的网络，促进了东西方丝绸、马匹、思想与宗教的交流。",
+      "locationName": "费尔干纳盆地（大宛国）"
+    }
   },
   {
     "id": "han-conquers-nanyue",
@@ -1069,7 +1535,13 @@
     "partOf": ["han", "dong-son"],
     "summary": "Emperor Wu of Han sends armies south to conquer Nanyue, a kingdom founded by a former Qin general that ruled what are now southern China and northern Vietnam from its capital at Panyu, modern Guangzhou. The Han divide its lands into commanderies, extending Han control over northern Vietnam through the commandery of Jiaozhi in the Red River delta.",
     "significance": "It began roughly a thousand years of Chinese rule over northern Vietnam, which ended with Vietnamese independence in the 10th century and left deep marks on Vietnamese culture and language.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Han_conquest_of_Nanyue"
+    "wikipedia": "https://en.wikipedia.org/wiki/Han_conquest_of_Nanyue",
+    "zh": {
+      "title": "汉朝征服南越",
+      "summary": "汉武帝派兵征服南越，将今中国南部与越南北部纳入郡县统治，控制红河三角洲等地。",
+      "significance": "这扩大了汉帝国南疆，并开启越南北部长时期的中国统治，留下语言、政治与文化影响。",
+      "locationName": "交趾（红河三角洲）"
+    }
   },
   {
     "id": "antikythera-mechanism",
@@ -1084,7 +1556,14 @@
     "location": { "name": "Antikythera", "lat": 35.87, "lng": 23.31 },
     "summary": "Greek craftsmen build a hand-cranked bronze device with at least 30 interlocking gears that models the movements of the Sun and Moon, the Moon's phases and eclipses, and probably the planets. It is lost in a shipwreck off the island of Antikythera and found by sponge divers in 1901. Its exact date of construction is debated.",
     "significance": "Often called the oldest known analog computer, it shows a level of mechanical skill not matched again, as far as we know, until medieval astronomical clocks.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    "wikipedia": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+    "zh": {
+      "title": "安提基特拉机械装置",
+      "summary": "一艘沉船保存了复杂的青铜齿轮装置，可计算天体运动、日月食与历法周期。制造年代尚有争论，通常定于约公元前100年。",
+      "significance": "它显示古希腊机械与天文学远比过去想象的发达，是已知最早的复杂模拟计算装置之一。",
+      "locationName": "安提基特拉岛",
+      "dateLabel": "约公元前100年（年代有争议）"
+    }
   },
   {
     "id": "teotihuacan",
@@ -1095,7 +1574,12 @@
     "region": "americas",
     "summary": "Teotihuacan, in the Valley of Mexico, grew into a planned city of perhaps 100,000 people, laid out along the Avenue of the Dead with the Pyramids of the Sun and Moon. Its traders and influence reached as far as the Maya cities.",
     "significance": "It was the largest city in the Americas in its time and one of the largest in the world, and later peoples such as the Aztecs revered its ruins as the place where the gods were born.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Teotihuacan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Teotihuacan",
+    "zh": {
+      "title": "特奥蒂瓦坎",
+      "summary": "墨西哥谷地的特奥蒂瓦坎发展为规划整齐、人口可能达十万的城市，沿亡者大道分布着太阳与月亮金字塔。商人与政治影响远达玛雅城市。",
+      "significance": "它是当时美洲最大的城市，也是世界大城之一。后来的阿兹特克等民族将其遗址尊为诸神诞生之地。"
+    }
   },
   {
     "id": "sima-qian-shiji",
@@ -1111,7 +1595,14 @@
     "partOf": ["han"],
     "summary": "Sima Qian, an official historian at the Han court, finishes the Shiji (Records of the Grand Historian), a history of China from the legendary Yellow Emperor to his own day. He completes it despite having been castrated as punishment for defending a disgraced general.",
     "significance": "Its mix of chronicles, tables, essays and biographies became the model for the official histories of every later Chinese dynasty.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Records_of_the_Grand_Historian"
+    "wikipedia": "https://en.wikipedia.org/wiki/Records_of_the_Grand_Historian",
+    "zh": {
+      "title": "司马迁完成《史记》",
+      "summary": "汉朝史官司马迁完成《史记》，记述从传说中的黄帝到他所处时代的中国历史。他因替获罪将领辩护而受宫刑，仍坚持完成此书。",
+      "significance": "《史记》结合本纪、表、书、世家与列传的体例，成为后世历代正史的典范。",
+      "locationName": "长安",
+      "dateLabel": "约公元前94年"
+    }
   },
   {
     "id": "silla",
@@ -1123,7 +1614,13 @@
     "region": "east-asia",
     "summary": "Silla began as a small kingdom around Gyeongju in southeastern Korea. Allied with Tang China, it conquered its rivals Baekje and Goguryeo in the 660s, then drove out the Tang armies and ruled most of the peninsula. Its aristocracy was ranked by a strict hereditary system, and Buddhism flourished under royal patronage.",
     "significance": "Silla was the first state to unite most of the Korean Peninsula, laying the basis for a single Korean culture and identity.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Silla"
+    "wikipedia": "https://en.wikipedia.org/wiki/Silla",
+    "zh": {
+      "title": "新罗",
+      "summary": "新罗从庆州附近小国兴起，与唐结盟，在660年代征服百济、高句丽，随后驱逐唐军，控制半岛大部。社会实行严格世袭等级，王室扶持佛教。",
+      "significance": "新罗首次统一朝鲜半岛大部分地区，为共同文化与身份认同奠定基础。",
+      "dateLabel": "公元前57年（传统说法）-公元935年"
+    }
   },
   {
     "id": "julian-calendar",
@@ -1139,7 +1636,14 @@
     "partOf": ["roman-republic"],
     "summary": "Julius Caesar, advised by the astronomer Sosigenes of Alexandria, replaces Rome's lunisolar calendar, which had been kept in step with the seasons by irregular, often politically motivated extra months, with a solar year of 365 days and a leap day every fourth year. To realign the seasons, the year 46 BC is stretched to 445 days, and the new calendar takes effect on 1 January 45 BC.",
     "significance": "With a small correction made under Pope Gregory XIII in 1582, it became the calendar used around the world today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Julian_calendar"
+    "wikipedia": "https://en.wikipedia.org/wiki/Julian_calendar",
+    "zh": {
+      "title": "儒略历推行",
+      "summary": "尤利乌斯·恺撒听取亚历山大天文学家索西琴尼建议，将依赖不规则闰月的旧历改为每年365天、每四年加一天的太阳历。为校正季节，公元前46年延长至445天，新历于前45年1月1日实施。",
+      "significance": "1582年教皇格列高利十三世稍作修正后，它演变为今日全球使用的公历。",
+      "locationName": "罗马",
+      "dateLabel": "公元前46年（生效于公元前45年1月1日）"
+    }
   },
   {
     "id": "caesar-assassination",
@@ -1155,7 +1659,14 @@
     "partOf": ["roman-republic"],
     "summary": "On the Ides of March, a group of Roman senators led by Brutus and Cassius stab Julius Caesar to death at a meeting of the Senate. They claim to be saving the Republic from a man who had just been named dictator for life.",
     "significance": "Instead of restoring the Republic, the murder sets off new civil wars that end with Caesar's heir Octavian becoming Rome's first emperor.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+    "wikipedia": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
+    "zh": {
+      "title": "尤利乌斯·恺撒遇刺",
+      "summary": "尤利乌斯·恺撒被授予终身独裁官后，一群元老担忧其权力与君主倾向，于公元前44年3月15日在元老院会议期间将他刺杀。",
+      "significance": "刺杀未能恢复共和国，反而引发新一轮内战，最终由屋大维建立帝制。",
+      "locationName": "罗马",
+      "dateLabel": "公元前44年3月15日"
+    }
   },
   {
     "id": "goguryeo",
@@ -1167,7 +1678,13 @@
     "region": "east-asia",
     "summary": "Goguryeo was the largest of Korea's Three Kingdoms, ruling northern Korea and much of Manchuria, with its capital at Pyongyang from 427. Its mounted armies expanded widely under King Gwanggaeto and repelled huge invasions by Sui and Tang China before the kingdom fell to the allied forces of Tang and Silla.",
     "significance": "Goguryeo was a major power of northeast Asia for seven centuries, and the name Korea derives from Goryeo, a later form of its name.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Goguryeo"
+    "wikipedia": "https://en.wikipedia.org/wiki/Goguryeo",
+    "zh": {
+      "title": "高句丽",
+      "summary": "高句丽是朝鲜三国中最大的政权，统治半岛北部及满洲大片地区，427年迁都平壤。其骑兵在广开土王时大举扩张，后来抵挡隋唐进攻，最终亡于唐与新罗联军。",
+      "significance": "它是东北亚延续七百年的强国，后世高丽及英文Korea的名称与其国号相关。",
+      "dateLabel": "公元前37年（传统说法）-公元668年"
+    }
   },
   {
     "id": "battle-of-actium",
@@ -1183,7 +1700,14 @@
     "partOf": ["roman-republic", "ptolemaic-egypt"],
     "summary": "Off the western coast of Greece, the fleet of Octavian, commanded by Marcus Agrippa, defeats the fleets of Mark Antony and Queen Cleopatra VII of Egypt. Antony and Cleopatra escape to Egypt, but their forces collapse.",
     "significance": "The victory left Octavian the sole master of the Roman world and ended the civil wars that had destroyed the Republic.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Actium"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Actium",
+    "zh": {
+      "title": "亚克兴海战",
+      "summary": "屋大维的舰队在希腊西岸亚克兴击败安东尼与克娄巴特拉的联合舰队，两人随后退往埃及。",
+      "significance": "胜利使屋大维成为罗马唯一强人，为共和国终结与帝国建立铺路。",
+      "locationName": "亚克兴",
+      "dateLabel": "公元前31年9月2日"
+    }
   },
   {
     "id": "cleopatra-death",
@@ -1199,7 +1723,14 @@
     "partOf": ["ptolemaic-egypt", "roman-republic"],
     "summary": "As Octavian's army takes Alexandria, Mark Antony kills himself, and soon after Cleopatra VII, the last ruler of the Ptolemaic dynasty, also dies by suicide, according to ancient writers by the bite of an asp. Octavian makes Egypt a Roman province under his personal control.",
     "significance": "It ended the line of Egyptian pharaohs reaching back some three thousand years, and Egypt's grain became vital for feeding Rome.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Death_of_Cleopatra"
+    "wikipedia": "https://en.wikipedia.org/wiki/Death_of_Cleopatra",
+    "zh": {
+      "title": "克娄巴特拉逝世，罗马吞并埃及",
+      "summary": "屋大维攻占亚历山大城后，克娄巴特拉七世死亡，传统记述为自杀。埃及托勒密王朝终结，领土归入罗马。",
+      "significance": "埃及失去独立，成为罗马重要粮仓，也标志着希腊化时代最后一个主要王国的消亡。",
+      "locationName": "亚历山大港",
+      "dateLabel": "公元前30年8月"
+    }
   },
   {
     "id": "augustus-first-emperor",
@@ -1215,7 +1746,14 @@
     "partOf": ["roman-republic", "roman-empire"],
     "summary": "Octavian formally 'restores' power to the Senate and people of Rome while keeping control of the army and key provinces, and the Senate grants him the title Augustus, 'the revered one'. He calls himself only princeps, 'first citizen', but historians date the Roman Empire from this settlement.",
     "significance": "Augustus' rule began the Pax Romana, about two centuries of relative peace across the Mediterranean, and set the pattern of imperial government Rome kept for centuries.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Augustus"
+    "wikipedia": "https://en.wikipedia.org/wiki/Augustus",
+    "zh": {
+      "title": "奥古斯都成为首位罗马皇帝",
+      "summary": "屋大维在保留军队与重要行省控制权的同时，形式上向元老院和人民“归还”权力。元老院授予其“奥古斯都”尊号。他自称“第一公民”，但历史学家将这一安排视为罗马帝国的开端。",
+      "significance": "他的统治开启了约两百年的“罗马和平”，也确立了此后延续数百年的帝国治理模式。",
+      "locationName": "罗马",
+      "dateLabel": "公元前27年1月"
+    }
   },
   {
     "id": "roman-empire",
@@ -1226,7 +1764,12 @@
     "region": "europe",
     "summary": "From Augustus onward, emperors ruled a state that surrounded the Mediterranean and reached from Britain to Mesopotamia. It gave its provinces two centuries of relative peace, a common law and a network of roads and cities, before the western half broke up under civil war and invasion.",
     "significance": "Rome's law, languages, architecture and its adoption of Christianity shaped Europe and the Mediterranean world for the next two thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Roman_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Roman_Empire",
+    "zh": {
+      "title": "罗马帝国",
+      "summary": "奥古斯都确立皇帝统治后，罗马控制地中海广大地区，以军队、道路、城市与法律治理多元人口。西部帝国于476年终结，东部则继续存在。",
+      "significance": "罗马的法律、语言、建筑和基督教传播，深刻塑造了欧洲及地中海世界。"
+    }
   },
   {
     "id": "baekje",
@@ -1238,7 +1781,13 @@
     "region": "east-asia",
     "summary": "Baekje ruled southwestern Korea, first from the Han River valley near modern Seoul and later from Gongju and Buyeo. A seafaring kingdom, it traded with southern China and was a close ally of Yamato Japan until it was conquered by Silla and Tang China.",
     "significance": "Baekje carried Buddhism, Chinese writing and continental arts and crafts to Japan, shaping early Japanese culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Baekje"
+    "wikipedia": "https://en.wikipedia.org/wiki/Baekje",
+    "zh": {
+      "title": "百济",
+      "summary": "百济统治朝鲜半岛西南部，先都汉江流域，后迁公州和扶余。它擅长航海，与中国南方贸易，并与日本大和政权密切结盟，最终被唐与新罗征服。",
+      "significance": "百济向日本传播佛教、汉字与大陆工艺，对早期日本文化产生重要影响。",
+      "dateLabel": "公元前18年（传统说法）-公元660年"
+    }
   },
   {
     "id": "birth-of-jesus",
@@ -1254,7 +1803,14 @@
     "partOf": ["roman-empire", "life-of-jesus"],
     "summary": "Jesus of Nazareth, whose life and teachings became the basis of Christianity, is born in Judea, a kingdom under Roman control ruled by Herod the Great. The Gospels of Matthew and Luke place his birth in Bethlehem; historians generally date it to about 6-4 BC, before Herod's death, and debate the details of the nativity stories.",
     "significance": "Christianity became the world's largest religion, and the AD calendar, devised in the 6th century, counts years from an estimate of his birth that was probably off by a few years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nativity_of_Jesus"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nativity_of_Jesus",
+    "zh": {
+      "title": "耶稣诞生",
+      "summary": "基督教传统记载，耶稣出生于伯利恒。由于福音书记载与历法推算存在差异，其确切出生年份通常估计在公元前6至前4年之间。",
+      "significance": "耶稣成为基督教的中心人物，其生平也被用作后来公元纪年的参照。",
+      "locationName": "伯利恒（传统说法）",
+      "dateLabel": "约公元前6-4年"
+    }
   },
   {
     "id": "life-of-jesus",
@@ -1267,6 +1823,12 @@
     "partOf": ["roman-empire"],
     "summary": "Jesus taught in Galilee and Judea under Roman rule. His followers formed the movement that became Christianity. The bar uses about 4 BC to AD 30; estimates commonly place his birth in 6-4 BC and death in AD 30-33.",
     "significance": "His teachings and his followers' belief in his resurrection became the basis of Christianity, the world's largest religion.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Jesus"
+    "wikipedia": "https://en.wikipedia.org/wiki/Jesus",
+    "zh": {
+      "title": "耶稣生平（约）",
+      "summary": "耶稣在罗马统治下的犹太地区生活与传教，宣讲上帝之国，聚集门徒，最后在耶路撒冷被处死。生卒确切年代仍有争议。",
+      "significance": "门徒对其教导、死亡与复活的信仰形成基督教，后来成为世界主要宗教之一。",
+      "dateLabel": "约公元前4年-公元30年；年代有争议"
+    }
   }
 ]

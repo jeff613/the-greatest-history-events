@@ -8,7 +8,12 @@
     "region": "central-asia",
     "summary": "Andronovo is the name archaeologists give to related Bronze Age herding communities spread across the steppe from the Urals to southern Siberia and Central Asia. They kept cattle, sheep and horses, mined copper and tin, and used chariots.",
     "significance": "Many scholars link these communities to early speakers of Indo-Iranian languages, whose descendants carried those languages into Iran and South Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Andronovo_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Andronovo_culture",
+    "zh": {
+      "title": "安德罗诺沃文化",
+      "summary": "安德罗诺沃是考古学家对一组青铜时代牧业社群的统称，分布于乌拉尔至西伯利亚南部和中亚的草原。他们饲养牛羊马，开采铜锡，并使用战车。",
+      "significance": "许多学者将这些社群与早期印度-伊朗语族联系起来，其后裔将这些语言带入伊朗和南亚。"
+    }
   },
   {
     "id": "egypt-middle-kingdom",
@@ -19,7 +24,12 @@
     "region": "mena",
     "summary": "After a period of division, kings from Thebes reunited Egypt and ruled from near the Faiyum. The Middle Kingdom pushed south into Nubia, expanded irrigation and produced literature that later Egyptians treated as classics.",
     "significance": "It restored the unified Egyptian state and set literary and artistic standards that Egyptians looked back to for more than a thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt"
+    "wikipedia": "https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt",
+    "zh": {
+      "title": "埃及中王国",
+      "summary": "分裂时期之后，底比斯的国王重新统一埃及，并在法尤姆附近治理国家。中王国向南扩展至努比亚，兴修灌溉，创作了后世奉为经典的文学作品。",
+      "significance": "它恢复了统一的埃及国家，并确立了此后一千余年间持续受到推崇的文学与艺术标准。"
+    }
   },
   {
     "id": "kerma",
@@ -30,7 +40,12 @@
     "region": "sub-saharan-africa",
     "summary": "Kerma was a Nubian kingdom on the upper Nile, in what is now northern Sudan, with a large capital, monumental mud-brick temples and royal burial mounds. It controlled trade in gold, ivory and cattle between central Africa and Egypt.",
     "significance": "It was the earliest large state in Africa south of Egypt and a rival strong enough to threaten Egypt itself before Egypt conquered it around 1500 BC.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Kerma"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Kerma",
+    "zh": {
+      "title": "克尔马王国",
+      "summary": "克尔马是位于今苏丹北部、尼罗河上游的努比亚王国，拥有大规模都城、土砖神庙与王室墓冢，并控制非洲内陆与埃及之间的黄金、象牙和牲畜贸易。",
+      "significance": "它是埃及以南非洲最早的大国，曾足以威胁埃及，直到约公元前1500年被埃及征服。"
+    }
   },
   {
     "id": "late-harappan",
@@ -41,7 +56,12 @@
     "region": "south-asia",
     "summary": "In the centuries after about 1900 BC the great cities of the Indus Valley were gradually abandoned. People moved into smaller settlements, many further east, while long-distance trade and the Indus script fell out of use.",
     "significance": "It marks the end of South Asia's first urban civilization; cities did not return on a large scale until the Ganges plain urbanized about a thousand years later.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+    "wikipedia": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+    "zh": {
+      "title": "哈拉帕文化晚期",
+      "summary": "约公元前1900年以后，印度河流域大城市逐渐废弃。居民迁往较小聚落，许多向东迁移，长途贸易与印度河文字渐渐消失。",
+      "significance": "这标志着南亚第一个城市文明结束；约一千年后，恒河平原城市化才使大规模城市重新出现。"
+    }
   },
   {
     "id": "minoan",
@@ -52,7 +72,12 @@
     "region": "europe",
     "summary": "The Minoans of Crete built Europe's first palace civilization, centered on sites such as Knossos, Phaistos and Malia. They traded across the eastern Mediterranean, decorated their palaces with vivid frescoes and kept records in the undeciphered Linear A script.",
     "significance": "Minoan art, seafaring and administration shaped the Mycenaean Greeks who succeeded them, and through them the later Greek world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Minoan_civilization"
+    "wikipedia": "https://en.wikipedia.org/wiki/Minoan_civilization",
+    "zh": {
+      "title": "米诺斯文明",
+      "summary": "克里特岛的米诺斯人建立了欧洲最早的宫殿文明，以克诺索斯、费斯托斯和马利亚等地为中心。他们在地中海东部贸易，以生动壁画装饰宫殿，并使用尚未破译的线形文字A记录事务。",
+      "significance": "米诺斯的艺术、航海与行政制度影响了继起的迈锡尼希腊人，并由此影响后来的希腊世界。"
+    }
   },
   {
     "id": "sintashta-chariot",
@@ -68,7 +93,14 @@
     "partOf": ["andronovo"],
     "summary": "Herders of the Sintashta culture, in the steppes east of the southern Ural Mountains, bury their dead with light two-wheeled vehicles whose wheels have spokes instead of solid wooden discs. These are the earliest known true chariots: fast, horse-drawn and light enough to carry a driver and a warrior.",
     "significance": "Within a few centuries the chariot spread, possibly from the steppe, to Mesopotamia, Egypt, Greece, India and China, transforming warfare and the prestige of elites across Eurasia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Sintashta_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Sintashta_culture",
+    "zh": {
+      "title": "辐条车轮战车的发明",
+      "summary": "南乌拉尔以东草原的辛塔什塔文化墓葬中，出现轻型两轮车辆，其车轮以辐条取代实心木盘。这些马拉车辆能载车手与战士，是已知最早的真正战车。",
+      "significance": "此后数百年，战车可能从草原传播至美索不达米亚、埃及、希腊、印度和中国，改变战争及精英的权力象征。",
+      "locationName": "辛塔什塔",
+      "dateLabel": "约公元前2000年"
+    }
   },
   {
     "id": "xia",
@@ -79,7 +111,12 @@
     "region": "east-asia",
     "summary": "Chinese tradition names the Xia as the first dynasty, founded by Yu the Great, who was said to have tamed the floods of the Yellow River. No writing from the period survives, and scholars debate whether the Xia can be identified with the Bronze Age Erlitou culture.",
     "significance": "Whether historical or legendary, the Xia stand at the head of the traditional sequence of Chinese dynasties and of the idea that rule passes from one dynasty to the next.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Xia_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Xia_dynasty",
+    "zh": {
+      "title": "夏朝（传统说法）",
+      "summary": "传统史书记载，夏是中国第一个王朝，由治理洪水的大禹建立。尚无该时期的文字留存，学者对夏朝能否与青铜时代的二里头文化对应仍有争论。",
+      "significance": "无论其历史细节如何，夏都位居中国传统王朝序列之首，也是王朝更替观念的起点。"
+    }
   },
   {
     "id": "assyrian-trade-kanesh",
@@ -94,7 +131,14 @@
     "location": { "name": "Kanesh (Kultepe)", "lat": 38.85, "lng": 35.63 },
     "summary": "Merchant families from the city of Ashur in northern Mesopotamia run a trading colony at Kanesh in central Anatolia. Donkey caravans carry tin and fine textiles north and bring back silver and gold, and the merchants record their deals in tens of thousands of clay tablets found at the site.",
     "significance": "The Kanesh tablets are the earliest large archive of private business letters and contracts, showing long-distance trade, credit and partnerships organized by families rather than kings.",
-    "wikipedia": "https://en.wikipedia.org/wiki/K%C3%BCltepe"
+    "wikipedia": "https://en.wikipedia.org/wiki/K%C3%BCltepe",
+    "zh": {
+      "title": "亚述商人在卡内什经商",
+      "summary": "来自美索不达米亚北部亚述城的商人，在安纳托利亚中部卡内什经营商站。驴队向北运输锡与精美纺织品，换回金银，交易记录保存在数万块泥版上。",
+      "significance": "卡内什泥版是最早的大型私人商业书信与契约档案，展示了由家族而非王室组织的远程贸易、信贷与合伙关系。",
+      "locationName": "卡内什（居尔丘）",
+      "dateLabel": "约公元前1900年"
+    }
   },
   {
     "id": "indus-valley-decline",
@@ -110,7 +154,14 @@
     "partOf": ["late-harappan"],
     "summary": "The great planned cities of the Indus Valley, such as Mohenjo-daro and Harappa, are gradually abandoned and people move to smaller villages, many further east. Long-distance trade fades and the Indus script falls out of use. The causes are still debated; shifting monsoon rains and drying rivers are leading explanations, and the old idea of a sudden invasion is no longer accepted.",
     "significance": "South Asia's first urban civilization dissolved into rural cultures, and cities would not return to the region on a large scale until the Ganges valley urbanized centuries later.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+    "wikipedia": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+    "zh": {
+      "title": "印度河流域文明衰落",
+      "summary": "摩亨佐-达罗、哈拉帕等规划严整的大城逐渐被放弃，居民转向较小村落，许多向东迁移。长途贸易与印度河文字衰落。成因仍有争议，季风变化和河流干涸是主要解释，突然入侵的旧说已不被接受。",
+      "significance": "南亚第一个城市文明转变为乡村社会，直到数百年后恒河流域城市化，大城市才再次兴起。",
+      "locationName": "摩亨佐-达罗",
+      "dateLabel": "约公元前1900年-1300年"
+    }
   },
   {
     "id": "old-babylonian-period",
@@ -121,7 +172,12 @@
     "region": "mena",
     "summary": "Amorite kings made Babylon the leading city of Mesopotamia, above all under Hammurabi, who united the region in the 18th century BC. Scribes of the period wrote in Akkadian and copied and extended Sumerian literature, mathematics and law.",
     "significance": "It made Babylon the cultural capital of Mesopotamia for the next fifteen centuries and left Hammurabi's law code, one of the best-known legal texts of the ancient world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Old_Babylonian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Old_Babylonian_Empire",
+    "zh": {
+      "title": "古巴比伦时期",
+      "summary": "阿摩利人诸王使巴比伦成为美索不达米亚的重要城市，汉谟拉比于公元前18世纪统一该地区。书吏使用阿卡德语，抄写并发展苏美尔文学、数学与法律。",
+      "significance": "巴比伦由此成为此后一千五百年的文化中心，《汉谟拉比法典》也成为古代最著名的法律文本之一。"
+    }
   },
   {
     "id": "epic-of-gilgamesh",
@@ -137,7 +193,14 @@
     "partOf": ["old-babylonian-period"],
     "summary": "Scribes in Babylonia combine older Sumerian poems about Gilgamesh, a legendary king of Uruk, into a single long epic in the Akkadian language. It follows Gilgamesh's friendship with the wild man Enkidu and his failed search for immortality. The best-known version is a later edition found in the library of the Assyrian king Ashurbanipal at Nineveh.",
     "significance": "Often called the oldest great work of literature to survive, it includes a flood story strikingly similar to the one in the Bible and still speaks to readers about friendship and death.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
+    "wikipedia": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh",
+    "zh": {
+      "title": "《吉尔伽美什史诗》成文",
+      "summary": "巴比伦书吏将关于乌鲁克传奇国王吉尔伽美什的苏美尔诗篇，编为阿卡德语长篇史诗，讲述他与恩奇都的友谊及寻求永生的失败。最著名版本后来发现于亚述巴尼拔图书馆。",
+      "significance": "它常被视为现存最古老的伟大文学作品，包含与《圣经》相似的洪水故事，对友谊与死亡的探讨至今仍有感染力。",
+      "locationName": "乌鲁克",
+      "dateLabel": "约公元前1800年"
+    }
   },
   {
     "id": "code-of-hammurabi",
@@ -153,7 +216,14 @@
     "partOf": ["old-babylonian-period"],
     "summary": "King Hammurabi of Babylon has 282 laws carved on stone pillars set up across his kingdom. The laws cover trade, property, family and crime, with punishments that often depend on the social rank of the people involved.",
     "significance": "One of the earliest and most complete written law codes, it established the idea that a ruler publishes fixed laws that apply across a whole state.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+    "wikipedia": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+    "zh": {
+      "title": "《汉谟拉比法典》",
+      "summary": "巴比伦王汉谟拉比将282条法律刻在石碑上，内容涉及贸易、财产、家庭与犯罪，刑罚常随当事人的社会地位而异。",
+      "significance": "这是最早且保存最完整的成文法典之一，体现了统治者公布适用于全国固定法律的观念。",
+      "locationName": "巴比伦",
+      "dateLabel": "约公元前1754年"
+    }
   },
   {
     "id": "kerma-kingdom-height",
@@ -169,7 +239,14 @@
     "partOf": ["kerma"],
     "summary": "The Nubian kingdom centered on Kerma, in what is now northern Sudan, controls much of the Nile valley south of Egypt. Its capital has a huge mud-brick temple, the Western Deffufa, and its kings are buried in enormous mounds. While Egypt is divided, Kerma's armies push north into Upper Egypt.",
     "significance": "Kerma was the first great kingdom in Africa south of Egypt, and it showed that Nubia was a power in its own right rather than a mere frontier of Egypt.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kerma_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kerma_culture",
+    "zh": {
+      "title": "克尔马王国的鼎盛时期",
+      "summary": "今苏丹北部的克尔马王国控制埃及以南大片尼罗河谷。都城有巨大的土砖神庙，国王葬于大型墓冢。埃及分裂时，克尔马军队曾向北推进至上埃及。",
+      "significance": "克尔马是埃及以南非洲第一个大王国，说明努比亚本身就是重要力量，而非仅仅是埃及边疆。",
+      "locationName": "克尔马",
+      "dateLabel": "约公元前1700年"
+    }
   },
   {
     "id": "knossos-palace-height",
@@ -185,7 +262,14 @@
     "partOf": ["minoan"],
     "summary": "After an earthquake around 1700 BC, the Minoans of Crete rebuild their palaces on a grander scale. Knossos becomes a sprawling complex of courtyards, storerooms, staircases and colorful wall paintings at the center of a seafaring trade network. The Minoans write in a script called Linear A, which is still undeciphered.",
     "significance": "Minoan Crete was one of Europe's earliest advanced civilizations, and its art, palaces and writing strongly influenced the Mycenaean Greeks who followed.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Knossos"
+    "wikipedia": "https://en.wikipedia.org/wiki/Knossos",
+    "zh": {
+      "title": "克诺索斯米诺斯宫殿的鼎盛时期",
+      "summary": "约公元前1700年的地震后，米诺斯人以更大规模重建克里特岛的宫殿。克诺索斯位于海上贸易网络中心，拥有众多庭院、库房、楼梯与彩色壁画。他们使用的线形文字A至今未被破译。",
+      "significance": "米诺斯克里特是欧洲最早的发达文明之一，其艺术、宫殿与文字深刻影响了后来的迈锡尼希腊人。",
+      "locationName": "克诺索斯",
+      "dateLabel": "约公元前1700年"
+    }
   },
   {
     "id": "poverty-point",
@@ -200,7 +284,14 @@
     "location": { "name": "Poverty Point", "lat": 32.64, "lng": -91.41 },
     "summary": "In what is now northeastern Louisiana, people who live by hunting, fishing and gathering build six concentric C-shaped earth ridges and several large mounds. The site is used and enlarged for several centuries and draws stone and copper from as far away as the Great Lakes and the Appalachians.",
     "significance": "Poverty Point shows that large-scale monumental building did not require farming, and it is one of the largest early earthwork sites in North America.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Poverty_Point"
+    "wikipedia": "https://en.wikipedia.org/wiki/Poverty_Point",
+    "zh": {
+      "title": "波弗蒂角土筑建筑的建造",
+      "summary": "今路易斯安那州东北部的狩猎、捕鱼与采集社群，修建六道同心C形土脊和大型土丘。遗址历时数百年扩建，石材与铜料远至五大湖及阿巴拉契亚地区。",
+      "significance": "波弗蒂角说明，大型公共建筑不一定依赖农业；它也是北美最早的大规模土筑遗址之一。",
+      "locationName": "波弗蒂角",
+      "dateLabel": "约公元前1700年"
+    }
   },
   {
     "id": "hittite-empire",
@@ -211,7 +302,12 @@
     "region": "mena",
     "summary": "From their capital Hattusa in central Anatolia, the Hittites built a kingdom that at its height controlled most of Anatolia and northern Syria. They fought and then made peace with Egypt, and their archives preserve the oldest written Indo-European language.",
     "significance": "The Hittites were one of the great powers of the Late Bronze Age, and their treaty with Egypt after the Battle of Kadesh is the earliest peace treaty whose text survives from both sides.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hittites"
+    "wikipedia": "https://en.wikipedia.org/wiki/Hittites",
+    "zh": {
+      "title": "赫梯帝国",
+      "summary": "赫梯人以安纳托利亚中部的哈图沙为都，极盛时控制安纳托利亚大部与叙利亚北部。他们曾与埃及交战，后又议和。档案保存了最早的印欧语系文字记录。",
+      "significance": "赫梯是青铜时代晚期的大国之一。卡迭石战役后与埃及签订的条约，是最早同时保存双方文本的和平条约。"
+    }
   },
   {
     "id": "lapita",
@@ -222,7 +318,12 @@
     "region": "southeast-asia-oceania",
     "summary": "The Lapita people, known from their distinctive stamped pottery, were seafarers who spread from the Bismarck Archipelago across thousands of kilometers of open ocean to Vanuatu, New Caledonia, Fiji, Tonga and Samoa.",
     "significance": "They were the first people to settle the remote Pacific and the ancestors of the Polynesians, who later reached Hawaii, New Zealand and Rapa Nui.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture",
+    "zh": {
+      "title": "拉皮塔文化",
+      "summary": "以独特印纹陶器闻名的拉皮塔航海者，从俾斯麦群岛出发，跨越数千公里海域，迁至瓦努阿图、新喀里多尼亚、斐济、汤加与萨摩亚。",
+      "significance": "他们是最早定居偏远太平洋岛屿的人群，也是后来抵达夏威夷、新西兰与拉帕努伊的波利尼西亚人的祖先。"
+    }
   },
   {
     "id": "mycenaean",
@@ -233,7 +334,12 @@
     "region": "europe",
     "summary": "Warrior elites on the Greek mainland built fortified palaces at Mycenae, Pylos, Tiryns and Thebes and took over Minoan Crete. They kept palace accounts in Linear B, the earliest written form of Greek, until their palaces were destroyed around 1200 BC.",
     "significance": "The Mycenaeans were the first Greek-speaking civilization, and memories of their world became the setting for the Iliad and the Odyssey.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Mycenaean_Greece"
+    "wikipedia": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+    "zh": {
+      "title": "迈锡尼希腊",
+      "summary": "希腊本土的武士贵族在迈锡尼、皮洛斯、梯林斯和底比斯修筑坚固宫殿，并征服米诺斯克里特。他们用最早的书面希腊语线形文字B记录宫廷账目，直到约公元前1200年宫殿遭到毁坏。",
+      "significance": "迈锡尼是最早的希腊语文明，对其世界的记忆构成了《伊利亚特》和《奥德赛》的背景。"
+    }
   },
   {
     "id": "nebra-sky-disc",
@@ -248,7 +354,14 @@
     "location": { "name": "Nebra", "lat": 51.28, "lng": 11.52 },
     "summary": "A bronze disc inlaid with gold shapes of the Sun or Moon, a crescent and stars, including a cluster that looks like the Pleiades, is buried on a hilltop in what is now central Germany. It was found by illegal treasure hunters in 1999. Most researchers date its burial to about 1600 BC.",
     "significance": "It is the oldest known concrete depiction of the night sky, suggesting that Bronze Age Europeans tracked the heavens, possibly to help set their farming calendar.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nebra_sky_disc"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nebra_sky_disc",
+    "zh": {
+      "title": "内布拉星象盘制成",
+      "summary": "一块饰有太阳或满月、新月、星辰及疑似昴星团金片的青铜圆盘，被埋在今德国中部山顶。1999年盗掘者发现它，多数研究者将埋藏年代定为约公元前1600年。",
+      "significance": "它是已知最早具象描绘夜空的实物之一，表明青铜时代欧洲人观测天象，可能用于安排农时。",
+      "locationName": "内布拉",
+      "dateLabel": "约公元前1600年"
+    }
   },
   {
     "id": "shang",
@@ -259,7 +372,12 @@
     "region": "east-asia",
     "summary": "The Shang ruled the middle Yellow River valley from a series of capitals, the last near modern Anyang. Their kings commanded chariot armies, cast elaborate bronze ritual vessels and consulted their ancestors through inscribed oracle bones.",
     "significance": "The Shang is the earliest Chinese dynasty confirmed by its own written records, and its script is the direct ancestor of modern Chinese characters.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty",
+    "zh": {
+      "title": "商朝",
+      "summary": "商朝统治黄河中游地区，曾多次迁都，最后的都城位于今安阳附近。商王指挥战车军队，铸造精美的青铜礼器，并通过刻有文字的甲骨向祖先占卜。",
+      "significance": "商是最早得到同时代文字证实的中国王朝，其文字是现代汉字的直接源头。"
+    }
   },
   {
     "id": "shang-dynasty-founded",
@@ -275,7 +393,14 @@
     "partOf": ["shang"],
     "summary": "According to tradition, Tang of Shang overthrows the last Xia king and founds a dynasty that rules the Yellow River valley for about 500 years. The Shang build walled cities, cast elaborate bronze vessels and consult their ancestors with oracle bones.",
     "significance": "The Shang is the earliest Chinese dynasty confirmed by archaeology and its own writing, and that script is the direct ancestor of modern Chinese characters.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Shang_dynasty",
+    "zh": {
+      "title": "商朝建立",
+      "summary": "相传商汤推翻夏朝末王，建立了统治黄河流域约五百年的商朝。商人修筑城墙、铸造精美青铜器，并用甲骨向祖先占卜。",
+      "significance": "商是最早得到考古与自身文字记录共同证实的中国王朝，其文字直接发展为后世汉字。",
+      "locationName": "郑州",
+      "dateLabel": "约公元前1600年"
+    }
   },
   {
     "id": "hittites-sack-babylon",
@@ -291,7 +416,14 @@
     "partOf": ["hittite-empire", "old-babylonian-period"],
     "summary": "The Hittite king Mursili I leads a long-distance raid from Anatolia down the Euphrates and sacks Babylon. The raid ends the dynasty of Hammurabi, but the Hittites do not stay. The exact year is uncertain because scholars use competing chronologies for this period.",
     "significance": "The power vacuum let the Kassites take over Babylonia and rule it for over four centuries, and the date of the sack anchors much of the chronology of the ancient Near East.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Mursili_I"
+    "wikipedia": "https://en.wikipedia.org/wiki/Mursili_I",
+    "zh": {
+      "title": "赫梯人攻陷巴比伦",
+      "summary": "赫梯王穆尔西里一世从安纳托利亚远征幼发拉底河流域，洗劫巴比伦，结束汉谟拉比王朝，但并未长期占领。由于断代体系不同，确切年份仍有争论。",
+      "significance": "权力真空使加喜特人得以统治巴比伦四百余年，此役年代也是古代近东断代的重要基点。",
+      "locationName": "巴比伦",
+      "dateLabel": "约公元前1595年（中年表）"
+    }
   },
   {
     "id": "egypt-new-kingdom",
@@ -302,7 +434,12 @@
     "region": "mena",
     "summary": "After Ahmose I expelled the Hyksos, Egypt became an empire reaching from Nubia to Syria. Pharaohs such as Hatshepsut, Thutmose III, Akhenaten and Ramesses II built the temples of Karnak, Luxor and Abu Simbel and were buried in the Valley of the Kings.",
     "significance": "This was ancient Egypt at the height of its wealth and power, and most of the monuments and royal names by which Egypt is known today date from it.",
-    "wikipedia": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+    "wikipedia": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt",
+    "zh": {
+      "title": "埃及新王国",
+      "summary": "阿赫摩斯一世驱逐喜克索斯人后，埃及发展为横跨努比亚至叙利亚的帝国。哈特谢普苏特、图特摩斯三世、阿肯那顿和拉美西斯二世等法老营建宏伟神庙，并葬于帝王谷。",
+      "significance": "这是古埃及财富与国力的高峰，今日最著名的许多埃及遗迹和法老都来自这一时期。"
+    }
   },
   {
     "id": "thutmose-conquers-kush",
@@ -318,7 +455,14 @@
     "partOf": ["kerma", "egypt-new-kingdom"],
     "summary": "Pharaoh Thutmose I leads his army south into Nubia, defeats the Kingdom of Kerma and carves a boundary inscription beyond the Fourth Cataract of the Nile. His successors complete the conquest, and Egypt governs Nubia through a viceroy known as the King's Son of Kush.",
     "significance": "Egyptian rule lasted about four centuries and brought Egyptian gods, temples and writing deep into Nubia, shaping the later Kushite kingdoms that would one day conquer Egypt itself.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Thutmose_I"
+    "wikipedia": "https://en.wikipedia.org/wiki/Thutmose_I",
+    "zh": {
+      "title": "埃及征服库施",
+      "summary": "图特摩斯一世南征努比亚，击败克尔马王国，在尼罗河第四瀑布以南立界碑。继任者完成征服，并通过称为“库施王子”的总督治理。",
+      "significance": "埃及统治约四百年，将宗教、神庙与文字深入传播到努比亚，影响了后来反过来征服埃及的库施王国。",
+      "locationName": "克尔马",
+      "dateLabel": "约公元前1504年"
+    }
   },
   {
     "id": "ban-chiang-bronze",
@@ -333,7 +477,14 @@
     "location": { "name": "Ban Chiang", "lat": 17.4, "lng": 103.24 },
     "summary": "Villagers at Ban Chiang in northeastern Thailand cast bronze tools and ornaments and make distinctive pottery painted with red swirls. When bronze first appeared there is disputed: proposed dates range from about 2000 BC to about 1000 BC.",
     "significance": "Ban Chiang is a key site for understanding how metalworking came to Southeast Asia, and it showed that the region had its own long Bronze Age tradition.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ban_Chiang"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ban_Chiang",
+    "zh": {
+      "title": "班清的青铜冶炼",
+      "summary": "今泰国东北部班清的村民铸造青铜工具与饰物，并制作绘有红色纹饰的独特陶器。青铜器最早出现的年代仍有争议，学者提出的时间从公元前2000年到约前1000年不等。",
+      "significance": "班清是理解冶金技术如何传入东南亚的重要遗址，显示当地拥有悠久而独特的青铜时代传统。",
+      "locationName": "班清",
+      "dateLabel": "约公元前1500年（有争议）"
+    }
   },
   {
     "id": "indo-aryan-migrations",
@@ -349,7 +500,14 @@
     "partOf": ["vedic-period"],
     "summary": "Groups speaking early Indo-Aryan languages, the ancestors of Sanskrit, move gradually from Central Asia into the northwest of the Indian subcontinent. Most scholars see this as a slow movement of herders over generations rather than an invasion, supported by evidence from languages and ancient DNA, although the idea remains politically contested in India.",
     "significance": "These migrants brought the language and religious traditions of the Vedas, which mixed with local cultures to shape Hinduism and the Indo-Aryan languages spoken by most of South Asia today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Indo-Aryan_migrations"
+    "wikipedia": "https://en.wikipedia.org/wiki/Indo-Aryan_migrations",
+    "zh": {
+      "title": "印度-雅利安人迁入南亚",
+      "summary": "使用早期印度-雅利安语言的人群从中亚逐渐迁入印度次大陆西北部。多数研究者依据语言与古DNA，将其视为数代牧民缓慢迁徙，而非单次入侵；这一解释在印度仍有政治争议。",
+      "significance": "这些语言与吠陀宗教传统同本地文化融合，影响了印度教及今日南亚大部分地区的语言。",
+      "locationName": "斯瓦特河谷",
+      "dateLabel": "约公元前1500年"
+    }
   },
   {
     "id": "lapita-expansion",
@@ -365,7 +523,14 @@
     "partOf": ["lapita"],
     "summary": "A seafaring people known for pottery decorated with stamped patterns, called Lapita by archaeologists, appear in the islands northeast of New Guinea. Over the next several centuries, in outrigger canoes, they sail thousands of kilometers east to Vanuatu, New Caledonia, Fiji, Tonga and Samoa, islands no human had reached before.",
     "significance": "Lapita voyagers were the ancestors of the Polynesians, beginning the settlement of the remote Pacific, the last major region of the world to be reached by people.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Lapita_culture",
+    "zh": {
+      "title": "拉皮塔航海者开始定居太平洋诸岛",
+      "summary": "新几内亚东北诸岛出现了制作印纹陶器的航海社群，考古学家称其为拉皮塔人。此后数百年，他们乘带舷外浮木的独木舟，向东抵达此前无人定居的太平洋岛屿。",
+      "significance": "他们开启了偏远太平洋的定居进程，这是人类最后抵达的主要区域之一，也是波利尼西亚扩张的起点。",
+      "locationName": "俾斯麦群岛穆绍岛",
+      "dateLabel": "约公元前1500年"
+    }
   },
   {
     "id": "rigveda-composed",
@@ -381,7 +546,14 @@
     "partOf": ["vedic-period"],
     "summary": "In the Punjab region, poet-priests compose the Rigveda, a collection of more than 1,000 hymns in early Sanskrit addressed to gods such as Indra, Agni and Varuna. The hymns are memorized and passed on orally with remarkable precision for many centuries before being written down.",
     "significance": "The Rigveda is the oldest text of Hinduism and one of the oldest surviving texts in any Indo-European language, and it is still recited in Hindu rituals today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Rigveda"
+    "wikipedia": "https://en.wikipedia.org/wiki/Rigveda",
+    "zh": {
+      "title": "《梨俱吠陀》的编成",
+      "summary": "旁遮普地区的祭司诗人用早期梵语创作了《梨俱吠陀》，其中有一千余首献给因陀罗、阿耆尼、伐楼拿等神的赞歌。这些诗歌先通过严格记诵口传数百年，后来才写成文字。",
+      "significance": "它是印度教最古老的经典，也是现存最早的印欧语言文献之一，至今仍在印度教仪式中诵读。",
+      "locationName": "旁遮普地区",
+      "dateLabel": "约公元前1500年-1200年"
+    }
   },
   {
     "id": "vedic-period",
@@ -392,7 +564,12 @@
     "region": "south-asia",
     "summary": "Speakers of Indo-Aryan languages settled first in the Punjab and then along the Ganges, moving from herding to farming and forming chiefdoms and early kingdoms. Their priests composed the Vedas, hymns and ritual texts passed down orally in Sanskrit.",
     "significance": "The Vedas became the foundational scriptures of Hinduism, and the period laid down the languages, rituals and social ideas that shaped later Indian civilization.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Vedic_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Vedic_period",
+    "zh": {
+      "title": "吠陀时期",
+      "summary": "印度-雅利安语使用者先定居旁遮普，继而沿恒河发展，从畜牧转向农业，形成酋邦与早期王国。祭司以梵语创作并口传吠陀赞歌和仪式文本。",
+      "significance": "吠陀成为印度教的根本经典，该时期奠定了印度文明的重要语言、礼仪和社会观念。"
+    }
   },
   {
     "id": "hatshepsut-pharaoh",
@@ -408,7 +585,14 @@
     "partOf": ["egypt-new-kingdom"],
     "summary": "When the young Thutmose III comes to the throne in 1479 BC, his stepmother Hatshepsut rules for him as regent, and a few years later (c. 1473 BC) she is crowned pharaoh in her own right. She reigns for about two decades, sponsoring trade expeditions and great buildings such as her temple at Deir el-Bahari.",
     "significance": "Hatshepsut was one of the few women to rule Egypt as pharaoh, and her mostly peaceful, prosperous reign is one of the best documented of any ancient female ruler.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hatshepsut"
+    "wikipedia": "https://en.wikipedia.org/wiki/Hatshepsut",
+    "zh": {
+      "title": "哈特谢普苏特成为法老",
+      "summary": "公元前1479年，年幼的图特摩斯三世即位，其继母哈特谢普苏特摄政。约前1473年，她以自身名义加冕为法老。她统治约二十年，资助贸易远征与代尔巴哈里神庙等大型工程。",
+      "significance": "她是少数以法老身份统治埃及的女性之一，其大体和平而繁荣的统治也是古代女性君主中记载最丰富的之一。",
+      "locationName": "底比斯代尔巴哈里",
+      "dateLabel": "约公元前1479年（摄政）；加冕于约公元前1473年"
+    }
   },
   {
     "id": "punt-expedition",
@@ -424,7 +608,14 @@
     "partOf": ["egypt-new-kingdom"],
     "summary": "Hatshepsut sends a fleet down the Red Sea to the Land of Punt, a trading partner most likely on the coast of the Horn of Africa. The ships return with myrrh and frankincense trees, ebony, ivory, gold and live baboons, and the voyage is celebrated in reliefs on her temple at Deir el-Bahari.",
     "significance": "The expedition is one of the best-recorded long-distance trading voyages of the ancient world and shows early links between Egypt and the Horn of Africa.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Land_of_Punt"
+    "wikipedia": "https://en.wikipedia.org/wiki/Land_of_Punt",
+    "zh": {
+      "title": "哈特谢普苏特派遣船队前往蓬特",
+      "summary": "哈特谢普苏特派船队沿红海前往蓬特，可能位于非洲之角沿岸。船队带回没药与乳香树、乌木、象牙、黄金和活狒狒。她的代尔巴哈里神庙以浮雕记录这次远航。",
+      "significance": "这是古代记载最详尽的长途贸易航行之一，展示了埃及与非洲之角的早期联系。",
+      "locationName": "厄立特里亚海岸（可能为蓬特所在地）",
+      "dateLabel": "约公元前1470年"
+    }
   },
   {
     "id": "battle-of-megiddo",
@@ -440,7 +631,14 @@
     "partOf": ["egypt-new-kingdom"],
     "summary": "Pharaoh Thutmose III leads his army through a narrow mountain pass to surprise a coalition of Canaanite rulers at Megiddo, in what is now northern Israel. After a seven-month siege the city surrenders. Some scholars date the battle to 1482 BC instead.",
     "significance": "It is the first battle recorded in reliable detail, it made Egypt master of the Levant, and the name Megiddo later gave rise to the word Armageddon.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)",
+    "zh": {
+      "title": "米吉多战役",
+      "summary": "图特摩斯三世率军穿越狭窄山口，在今以色列北部的米吉多突袭迦南诸王联盟。围城七个月后，该城投降。部分学者将战役年代定为公元前1482年。",
+      "significance": "这是最早有可靠细节记载的战役，确立了埃及在黎凡特的优势。“米吉多”后来也成为“哈米吉多顿”一词的来源。",
+      "locationName": "米吉多",
+      "dateLabel": "约公元前1457年"
+    }
   },
   {
     "id": "akhenaten-aten",
@@ -456,7 +654,14 @@
     "partOf": ["egypt-new-kingdom"],
     "summary": "Pharaoh Amenhotep IV renames himself Akhenaten and promotes the worship of the Aten, the disc of the Sun, above all other gods, neglecting or closing temples of Amun and other gods and building a new capital at Amarna. His art style is unusually naturalistic. After his death, Egypt returns to its traditional religion and his name is erased from monuments.",
     "significance": "Akhenaten's cult is often called one of the earliest steps toward monotheism, though scholars debate how far it really went, and the Amarna letters found at his capital reveal the diplomacy of the age.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Atenism"
+    "wikipedia": "https://en.wikipedia.org/wiki/Atenism",
+    "zh": {
+      "title": "阿肯那顿的宗教改革",
+      "summary": "阿蒙霍特普四世改名阿肯那顿，抬高对太阳圆盘阿顿的崇拜，冷落或关闭其他神庙，并在阿玛尔纳建新都。其艺术风格独特；死后传统宗教恢复，其名号被抹去。",
+      "significance": "这种信仰常被视为迈向一神论的早期尝试，但程度仍有争论。阿玛尔纳书信则揭示了当时的国际外交。",
+      "locationName": "阿玛尔纳",
+      "dateLabel": "约公元前1353年"
+    }
   },
   {
     "id": "tutankhamun-burial",
@@ -472,7 +677,14 @@
     "partOf": ["egypt-new-kingdom"],
     "summary": "The young pharaoh Tutankhamun, who restored Egypt's traditional gods after Akhenaten, dies at about 19 and is buried in a small tomb in the Valley of the Kings packed with treasures, including a solid gold coffin and a gold mask. The tomb is hidden and largely forgotten until Howard Carter finds it nearly intact in 1922.",
     "significance": "As one of the very few royal tombs found almost intact, it is the richest window into ancient Egyptian royal burial and made Tutankhamun the most famous pharaoh in the modern world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun",
+    "zh": {
+      "title": "图坦卡蒙入葬",
+      "summary": "恢复传统神祇崇拜的图坦卡蒙约19岁去世，葬于帝王谷小墓，随葬黄金棺椁、金面具等珍宝。墓穴长期隐没，直到1922年霍华德·卡特发现时仍大致完好。",
+      "significance": "这是极少数近乎完整保存的王陵，为了解古埃及王室葬俗提供珍贵窗口，也使图坦卡蒙成为现代最著名的法老之一。",
+      "locationName": "帝王谷",
+      "dateLabel": "约公元前1323年"
+    }
   },
   {
     "id": "battle-of-kadesh",
@@ -488,7 +700,14 @@
     "partOf": ["egypt-new-kingdom", "hittite-empire"],
     "summary": "Pharaoh Ramesses II of Egypt and King Muwatalli II of the Hittites clash at Kadesh, on the Orontes River in Syria, in what may be the largest chariot battle ever fought, with thousands of chariots on each side. Ramesses is nearly caught in an ambush, and the result is a stalemate, although he celebrates it as a great victory on temple walls.",
     "significance": "Neither empire could defeat the other, which led them to make peace, and the battle is the best-documented of the ancient world thanks to records from both sides.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Kadesh"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Kadesh",
+    "zh": {
+      "title": "卡迭石战役",
+      "summary": "拉美西斯二世与赫梯王穆瓦塔里二世在叙利亚奥龙特斯河畔卡迭石交战，双方可能投入数千战车。拉美西斯险遭伏击，战局最终僵持，却在神庙壁刻中宣称大胜。",
+      "significance": "双方均难以彻底击败对方，最终走向议和。两国留下的记录使此役成为古代记载最详尽的战役之一。",
+      "locationName": "卡迭石",
+      "dateLabel": "约公元前1274年"
+    }
   },
   {
     "id": "egyptian-hittite-treaty",
@@ -504,7 +723,14 @@
     "partOf": ["egypt-new-kingdom", "hittite-empire"],
     "summary": "Ramesses II of Egypt and the Hittite king Hattusili III agree a formal treaty of peace, mutual defense and return of fugitives. Each side keeps its own version: the Egyptian text is carved on temple walls at Karnak, and the Hittite version survives on clay tablets from Hattusa.",
     "significance": "It is the oldest known peace treaty whose text survives from both sides, and it ended generations of war between the two greatest powers of the Near East.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty",
+    "zh": {
+      "title": "埃及与赫梯签订和平条约",
+      "summary": "拉美西斯二世与赫梯王哈图西里三世签订和平、共同防御和遣返逃亡者的条约。埃及版本刻于卡纳克神庙，赫梯版本则保存在哈图沙泥版上。",
+      "significance": "这是已知最早同时保存双方文本的和平条约，结束了近东两大强国数代人的战争。",
+      "locationName": "皮拉美西斯",
+      "dateLabel": "约公元前1259年"
+    }
   },
   {
     "id": "oracle-bone-script",
@@ -520,7 +746,14 @@
     "partOf": ["shang"],
     "summary": "At the late Shang capital near modern Anyang, diviners for King Wu Ding and his successors carve questions to the ancestors on turtle shells and cattle shoulder blades, then apply heat and read the cracks as answers. These inscriptions, rediscovered around 1899, are the earliest known Chinese writing.",
     "significance": "The oracle bone script is the direct ancestor of Chinese characters still in use today, giving Chinese one of the longest continuous writing traditions in the world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+    "wikipedia": "https://en.wikipedia.org/wiki/Oracle_bone_script",
+    "zh": {
+      "title": "甲骨文：中国最早的成熟文字",
+      "summary": "商朝晚期，都城位于今安阳附近。武丁及其继任者的占卜者将向祖先提出的问题刻在龟甲和牛肩胛骨上，再加热并根据裂纹判断吉凶。这些约于1899年重新被发现的铭文，是目前已知最早的中国文字记录。",
+      "significance": "甲骨文是今日汉字的直接源头，使中文成为世界上延续最久的文字传统之一。",
+      "locationName": "安阳（殷墟）",
+      "dateLabel": "约公元前1250年"
+    }
   },
   {
     "id": "iron-working-spreads",
@@ -535,7 +768,14 @@
     "location": { "name": "Eastern Mediterranean (Levant)", "lat": 33.5, "lng": 35.8 },
     "summary": "Iron had been smelted in small amounts for centuries, but around 1200 BC smiths in the Levant, Cyprus and nearby regions begin making it in quantity for tools and weapons. Iron ore is far more common than the copper and tin needed for bronze; one common explanation for the shift is that tin became harder to obtain as long-distance trade broke down.",
     "significance": "Cheaper metal tools and weapons spread over the following centuries across Europe, Asia and Africa, giving the Iron Age its name.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ferrous_metallurgy"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ferrous_metallurgy",
+    "zh": {
+      "title": "冶铁技术传播",
+      "summary": "铁虽早已少量冶炼，但约公元前1200年起，黎凡特、塞浦路斯及邻近地区开始大量制造铁工具和武器。铁矿比铜锡更普遍，贸易崩溃导致锡短缺可能推动了这一转变。",
+      "significance": "廉价金属工具与武器此后传播至欧亚非各地，开启了所谓“铁器时代”。",
+      "locationName": "地中海东部（黎凡特）",
+      "dateLabel": "约公元前1200年"
+    }
   },
   {
     "id": "late-bronze-age-collapse",
@@ -550,7 +790,14 @@
     "location": { "name": "Ugarit", "lat": 35.6, "lng": 35.78 },
     "summary": "Within a few decades, the interconnected kingdoms of the eastern Mediterranean fall apart. The Hittite Empire disintegrates, Mycenaean palaces in Greece are destroyed, trading cities such as Ugarit are burned, and Egypt is weakened. Historians debate the causes, which likely combined drought, earthquakes, raids by the Sea Peoples, rebellions and the breakdown of trade.",
     "significance": "It ended the Bronze Age world of palace kingdoms and opened a darker period from which new peoples and states emerged.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse"
+    "wikipedia": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
+    "zh": {
+      "title": "青铜时代晚期崩溃",
+      "summary": "短短数十年内，地中海东部相互联系的王国体系崩溃：赫梯解体，迈锡尼宫殿与乌加里特等城市被毁，埃及衰弱。原因可能包括干旱、地震、海上民族袭击、内乱和贸易中断，仍有争论。",
+      "significance": "它终结了以宫廷王国为中心的青铜时代秩序，为新民族与新国家的兴起创造了条件。",
+      "locationName": "乌加里特",
+      "dateLabel": "约公元前1200年-1150年"
+    }
   },
   {
     "id": "olmec",
@@ -561,7 +808,12 @@
     "region": "americas",
     "summary": "On the Gulf Coast of Mexico the Olmec built large ceremonial centers at San Lorenzo and La Venta, with earthen pyramids, carved thrones and colossal stone heads. Their trade in jade, obsidian and other goods reached across Mesoamerica.",
     "significance": "Often called the first civilization of Mesoamerica, the Olmec passed on religious ideas, art styles and the ball game to the Maya and other later cultures.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Olmecs"
+    "wikipedia": "https://en.wikipedia.org/wiki/Olmecs",
+    "zh": {
+      "title": "奥尔梅克文明",
+      "summary": "奥尔梅克人在墨西哥湾沿岸的圣洛伦佐和拉文塔建造大型仪式中心，包括土筑金字塔、雕刻宝座与巨石头像，玉石和黑曜石贸易遍及中美洲文化区。",
+      "significance": "奥尔梅克常被视为该地区第一个文明，其宗教、艺术与球赛影响了玛雅等后续文化。"
+    }
   },
   {
     "id": "olmec-civilization",
@@ -577,7 +829,14 @@
     "partOf": ["olmec"],
     "summary": "On the Gulf Coast of Mexico, the Olmecs build San Lorenzo, Mesoamerica's first large ceremonial center, with earthen platforms, drainage systems and colossal stone heads that probably portray their rulers. They trade jade, obsidian and other goods across much of Mexico and Central America.",
     "significance": "The Olmecs are often seen as Mesoamerica's first civilization, and their art, ball game and religious ideas influenced later cultures such as the Maya and the peoples of central Mexico.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Olmecs"
+    "wikipedia": "https://en.wikipedia.org/wiki/Olmecs",
+    "zh": {
+      "title": "奥尔梅克文明兴起",
+      "summary": "奥尔梅克人在墨西哥湾沿岸建造圣洛伦佐仪式中心，修筑土台与排水设施，雕刻可能表现统治者的巨石头像，并在广大地区贸易玉石和黑曜石。",
+      "significance": "它被视为中美洲最早的文明之一，其艺术、球赛与宗教观念影响了玛雅及墨西哥中部诸文化。",
+      "locationName": "圣洛伦佐",
+      "dateLabel": "约公元前1200年"
+    }
   },
   {
     "id": "zoroaster",
@@ -592,7 +851,14 @@
     "location": { "name": "Bactria (traditional, uncertain)", "lat": 36.76, "lng": 66.9 },
     "summary": "The prophet Zoroaster (Zarathustra) teaches that the world is a struggle between truth and goodness, led by the wise god Ahura Mazda, and the forces of the lie, and that each person must choose a side. His hymns, the Gathas, are in an ancient eastern Iranian language. His dates and homeland are uncertain: many scholars place him between about 1500 and 1000 BC, while others argue for the 6th century BC.",
     "significance": "Zoroastrianism became the main religion of the Persian empires, and its ideas of a final judgment, heaven and hell and a cosmic battle of good and evil may have influenced Judaism, Christianity and Islam.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Zoroaster"
+    "wikipedia": "https://en.wikipedia.org/wiki/Zoroaster",
+    "zh": {
+      "title": "琐罗亚斯德创立祆教",
+      "summary": "先知琐罗亚斯德教导，世界是由智慧之神阿胡拉·马兹达领导的真理与善，对抗谎言力量的战场，每个人都须作出选择。他的赞歌《伽萨》使用古老的东伊朗语言。生平年代与故乡未定，许多学者认为他生活于公元前1500至前1000年，也有人主张前6世纪。",
+      "significance": "祆教成为波斯帝国的主要宗教，其末日审判、天堂地狱与善恶斗争观念可能影响了犹太教、基督教和伊斯兰教。",
+      "locationName": "巴克特里亚（传统说法，地点未定）",
+      "dateLabel": "约公元前1500年-1000年（有争议）"
+    }
   },
   {
     "id": "sea-peoples-defeated",
@@ -608,7 +874,14 @@
     "partOf": ["egypt-new-kingdom", "late-bronze-age-collapse"],
     "summary": "Pharaoh Ramesses III defeats a coalition of seaborne raiders, the Sea Peoples, in battles on land and at the mouths of the Nile. He records the victory in reliefs at his temple at Medinet Habu. The origins of the Sea Peoples are still uncertain; one group, the Peleset, is usually identified with the Philistines.",
     "significance": "Egypt survived the upheavals that destroyed its neighbors, but the cost weakened it, and defeated groups settled along the coast of Canaan.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Delta"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Delta",
+    "zh": {
+      "title": "拉美西斯三世击败海上民族",
+      "summary": "拉美西斯三世在陆地与尼罗河口击败“海上民族”联盟，并于麦迪奈特哈布神庙浮雕中记录胜利。其起源尚不明确，其中佩莱塞特人通常被认为与非利士人相关。",
+      "significance": "埃及在摧毁邻国的动乱中幸存，但战争使其衰弱，部分战败人群后来定居迦南沿岸。",
+      "locationName": "尼罗河三角洲",
+      "dateLabel": "约公元前1177年"
+    }
   },
   {
     "id": "kush",
@@ -619,7 +892,12 @@
     "region": "sub-saharan-africa",
     "summary": "The Kingdom of Kush rose in Nubia after Egyptian rule ended, with its capital first at Napata and later at Meroe. Its kings conquered and ruled Egypt as the 25th Dynasty, and afterwards built hundreds of pyramids and developed their own Meroitic script.",
     "significance": "Kush was one of Africa's longest-lived states, lasting more than a thousand years as a center of iron working and of trade between the Mediterranean and inner Africa.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Kush"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Kush",
+    "zh": {
+      "title": "库施王国",
+      "summary": "埃及统治结束后，库施在努比亚兴起，先都纳帕塔，后迁麦罗埃。其君主曾作为第25王朝统治埃及，后来营建数百金字塔并发展麦罗埃文字。",
+      "significance": "库施是非洲延续最久的国家之一，作为地中海与非洲内陆之间的冶铁和贸易中心，存在逾千年。"
+    }
   },
   {
     "id": "phoenician-alphabet",
@@ -634,7 +912,14 @@
     "location": { "name": "Byblos", "lat": 34.12, "lng": 35.65 },
     "summary": "Scribes in Phoenician cities such as Byblos use a standardized script of just 22 letters, each standing for a consonant sound, developed from earlier alphabets of the region. It is far easier to learn than the hundreds of signs of cuneiform or hieroglyphs, and Phoenician traders carry it around the Mediterranean.",
     "significance": "Adapted by the Greeks, who added vowels, and by the Aramaeans, it became the ancestor of the Greek, Latin, Cyrillic, Hebrew and Arabic alphabets used by billions of people today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Phoenician_alphabet"
+    "wikipedia": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+    "zh": {
+      "title": "腓尼基字母",
+      "summary": "腓尼基商人使用约22个主要表示辅音的符号书写，将较简便的字母文字带到地中海各港口，取代需要掌握大量符号的复杂书写体系。",
+      "significance": "它影响希腊、阿拉米等文字，并通过后继体系成为今日许多主要字母文字的源头。",
+      "locationName": "比布鲁斯",
+      "dateLabel": "约公元前1050年"
+    }
   },
   {
     "id": "israel-and-judah",
@@ -646,7 +931,13 @@
     "region": "mena",
     "summary": "According to the Hebrew Bible, the Israelite tribes were united under Saul, David and Solomon, then split into a northern kingdom, Israel, and a southern one, Judah, with its capital at Jerusalem. Assyria destroyed Israel in 722 BC and Babylon destroyed Judah and its temple in 586 BC. How large the early united kingdom really was is debated by archaeologists.",
     "significance": "The religion and scriptures that took shape in these kingdoms became Judaism, the root of Christianity and Islam as well.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ancient_Israel_and_Judah"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_ancient_Israel_and_Judah",
+    "zh": {
+      "title": "以色列与犹大王国",
+      "summary": "传统叙述中的扫罗、大卫和所罗门王国，后来分为北方以色列与南方犹大。早期年代与统一王国规模有争议；两国最终分别被亚述和巴比伦征服。",
+      "significance": "其宗教传统与历史记忆成为希伯来《圣经》的基础，并深刻影响犹太教、基督教和伊斯兰教。",
+      "dateLabel": "约公元前1047年-586年（早期年代依据传统说法）"
+    }
   },
   {
     "id": "zhou",
@@ -657,7 +948,12 @@
     "region": "east-asia",
     "summary": "The Zhou overthrew the Shang and ruled through a network of related lords, justifying their rule by the Mandate of Heaven. After 771 BC the kings kept only ritual authority while the regional states grew into rival powers.",
     "significance": "It was the longest-lasting Chinese dynasty, and its later centuries produced Confucius, Laozi and the other thinkers who founded Chinese philosophy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhou_dynasty",
+    "zh": {
+      "title": "周朝",
+      "summary": "周推翻商朝，以天命观念说明统治的正当性，并通过有亲缘关系的诸侯网络治理天下。公元前771年后，周王逐渐仅保留礼仪上的权威，诸侯国则成长为相互竞争的强权。",
+      "significance": "周是中国延续时间最长的王朝，后期出现了孔子、老子等奠定中国哲学基础的思想家。"
+    }
   },
   {
     "id": "zhou-conquer-shang",
@@ -673,6 +969,13 @@
     "partOf": ["zhou", "shang"],
     "summary": "King Wu of Zhou, from the Wei River valley in the west, defeats the last Shang king at the Battle of Muye, near the Shang capital. The Zhou justify their conquest with the idea that Heaven had withdrawn its mandate from the corrupt Shang. The date 1046 BC comes from a modern Chinese chronology project; other dates have been proposed.",
     "significance": "The Zhou became the longest-ruling dynasty in Chinese history, and the Mandate of Heaven became the standard way to explain the rise and fall of Chinese dynasties for 3,000 years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Muye"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Muye",
+    "zh": {
+      "title": "周灭商",
+      "summary": "来自西部渭河流域的周武王在商都附近的牧野之战击败商朝末王。周人宣称，商朝失德，天命已经转移。公元前1046年的年代依据现代中国断代工程，亦有其他年代说法。",
+      "significance": "周成为中国统治时间最长的王朝；此后三千年，天命观念一直是解释王朝兴衰的重要框架。",
+      "locationName": "牧野",
+      "dateLabel": "公元前1046年（另有其他年代说法）"
+    }
   }
 ]

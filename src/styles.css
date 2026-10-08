@@ -950,6 +950,7 @@ a:focus-visible {
 
   .app {
     grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr) auto;
     grid-template-areas:
       'header'
       'map'
@@ -977,10 +978,10 @@ a:focus-visible {
   }
 
   .panel-area {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: var(--strip-h);
+    grid-area: map;
+    position: relative;
+    align-self: end;
+    max-height: 100%;
     z-index: 2;
     height: 56px;
     transition: height 200ms ease;
@@ -1078,5 +1079,39 @@ a:focus-visible {
 
   .map-context p {
     font-size: 13.5px;
+  }
+}
+
+.header-actions,
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.language-toggle button[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--board);
+}
+
+:root:lang(zh-CN) {
+  --display: 'Songti SC', 'Noto Serif CJK SC', 'SimSun', serif;
+  --body: 'Songti SC', 'Noto Serif CJK SC', 'SimSun', serif;
+}
+
+:lang(zh-CN) .eyebrow,
+:lang(zh-CN) .lane-label,
+:lang(zh-CN) .timeline-regions button {
+  letter-spacing: 0;
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .header-actions button {
+    padding: 5px 7px;
   }
 }

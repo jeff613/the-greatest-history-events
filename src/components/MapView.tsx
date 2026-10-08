@@ -15,7 +15,8 @@ import { useEffect, useRef, useState } from 'react';
 import type { Bar, Placed } from '../data/schema';
 import { createLatestLoader, neighborSnapshots, snapshotFor, territoryName, type Snapshot } from '../lib/borders';
 import { territoryFor } from '../lib/eraTerritory';
-import { formatYear } from '../lib/years';
+import { useLocale } from '../state/LocaleContext';
+import mapLabels from '../../data/locales/map.zh.json';
 import type { TerritorySelection } from '../state/useTimeState';
 import { useLatest } from '../state/useLatest';
 import { CATEGORY_COLORS, INK, MAP_COLORS, REGION_BOUNDS } from '../theme';
@@ -24,6 +25,9 @@ import cinzelLatin from '@fontsource-variable/cinzel/files/cinzel-latin-wght-nor
 
 // MapLibre 6 looks for its worker next to its own module, which bundling breaks; let Vite build and serve it.
 setWorkerUrl(mapWorkerUrl);
+
+const chineseMapLabels: Record<string, string> = mapLabels;
+const translateTerritory = (name: string) => chineseMapLabels[name] ?? name;
 
 const FADE_MS = 300;
 /** Close enough to see a place among its neighbors; selecting an entry zooms in at least this far. */
@@ -236,6 +240,9 @@ interface Props {
 }
 
 export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritory, pins, selectedPlaced, hoveredId, onHover, onSelect }: Props) {
+  const { language, text, localize, formatYear } = useLocale();
+  const locale = useLatest({ language, localize });
+  const territoryLabel = (name: string) => language === 'zh' ? translateTerritory(name) : name;
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const territoryPopupRef = useRef<Popup | null>(null);
@@ -272,6 +279,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
         dragRotate: false,
         pitchWithRotate: false,
         attributionControl: false,
+        localIdeographFontFamily: 'Songti SC, Noto Serif CJK SC, SimSun, serif',
       });
     } catch (err) {
       console.error('Map failed to start', err);
@@ -302,7 +310,9 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
         return;
       }
       const { layer, properties } = features[0];
-      territoryPopup.setLngLat(event.lngLat).setText(layer.id === 'pins' ? properties.title : territoryName(properties)).addTo(map);
+      const name = territoryName(properties);
+      territoryPopup.setLngLat(event.lngLat).setText(layer.id === 'pins' ? properties.title
+        : locale.current.language === 'zh' ? translateTerritory(name) : name).addTo(map);
     };
     map.on('mousemove', inspectTerritory);
     map.on('click', (event) => {
@@ -349,7 +359,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
       highlight.current = { hover: null, selected: null };
       setShownSnapshot(null);
     };
-  }, [callbacks]);
+  }, [callbacks, locale]);
 
   useEffect(() => {
     if (ready && mapRef.current) setSlotOpacity(mapRef.current, activeSlot.current, showBorders);
@@ -363,7 +373,25 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     map.setPaintProperty('territory-outline', 'line-opacity', visible ? 1 : 0);
   }, [ready, selectedTerritory, showBorders]);
 
-  useEffect(() => { territoryPopupRef.current?.remove(); }, [year, showBorders, selectedBar, shownSnapshot]);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
+    for (const slot of ['a', 'b']) {
+      map.setLayoutProperty(`borders-${slot}-label`, 'text-field', ['get', language === 'zh' ? 'NAME_ZH' : 'NAME']);
+    }
+    // MapLibre owns these controls, so update their accessible labels without rebuilding the map.
+    for (const [selector, label] of [
+      ['.maplibregl-ctrl-zoom-in', text('Zoom in', '放大')],
+      ['.maplibregl-ctrl-zoom-out', text('Zoom out', '缩小')],
+      ['.maplibregl-canvas', text('Map', '地图')],
+    ]) {
+      const element = containerRef.current?.querySelector(selector);
+      element?.setAttribute('aria-label', label);
+      if (element?.tagName === 'BUTTON') element.setAttribute('title', label);
+    }
+  }, [ready, language, text]);
+
+  useEffect(() => { territoryPopupRef.current?.remove(); }, [year, showBorders, selectedBar, shownSnapshot, language]);
 
   const snapshotFile = snapshotFor(index, year)?.file ?? null;
 
@@ -385,7 +413,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
         await (map.getSource(`borders-${next}`) as GeoJSONSource).setData({
           ...data,
           features: data.features.map((feature) => ({
-            ...feature, properties: { ...feature.properties, NAME: territoryName(feature.properties ?? {}) },
+            ...feature, properties: { ...feature.properties, NAME: territoryName(feature.properties ?? {}), NAME_ZH: translateTerritory(territoryName(feature.properties ?? {})) },
           })),
         });
         if (swap !== swapSeq.current || mapRef.current !== map) return;
@@ -402,8 +430,8 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
 
   useEffect(() => {
     if (!ready) return;
-    (mapRef.current!.getSource('events') as GeoJSONSource).setData(pinsToGeoJson(pins));
-  }, [ready, pins]);
+    (mapRef.current!.getSource('events') as GeoJSONSource).setData(pinsToGeoJson(pins.map(localize)));
+  }, [ready, pins, localize]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -507,34 +535,34 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
       data-region={highlightedRegion ?? undefined}
       data-territory={territoryStatus?.status === 'shown' ? territoryStatus.eraId : undefined}>
       <div className="map-caption">
-        <span className="eyebrow">THE WORLD AROUND</span>
+        <span className="eyebrow">{text('THE WORLD AROUND', '世界此时')}</span>
         <strong>{formatYear(year)}</strong>
-        <span>{pins.length} events on the map</span>
+        <span>{text(`${pins.length} events on the map`, `地图上有${pins.length}条记录`)}</span>
       </div>
       {!failed && <div className="map-context">
         <button aria-pressed={showBorders} onClick={() => setShowBorders((shown) => !shown)}>
-          {showBorders ? 'Historical borders' : 'Geography only'}
+          {showBorders ? text('Historical borders', '历史疆界') : text('Geography only', '仅看地理')}
         </button>
         {selectedTerritory && <p className="territory-caption">
-          <strong>{selectedTerritory.name}</strong> · Selected territory
-          <button aria-label="Clear territory selection" onClick={() => onSelectTerritory(null)}>×</button>
+          <strong>{territoryLabel(selectedTerritory.name)}</strong> · {text('Selected territory', '所选疆域')}
+          <button aria-label={text('Clear territory selection', '清除疆域选择')} onClick={() => onSelectTerritory(null)}>×</button>
         </p>}
         {selectedBar && <p className="territory-caption">
-          <strong>{selectedBar.title}</strong>{' · '}
-          {selectedBar.kind === 'period' ? 'Historical period'
-            : territoryStatus?.eraId !== selectedBar.id || territoryStatus.status === 'loading' ? 'Loading territory...'
-            : territoryStatus.status === 'shown' ? `Highlighted territory: ${formatYear(territoryStatus.year!)}`
-            : territoryStatus.status === 'failed' ? 'Territory could not load. Select the era again to retry.'
-            : 'No matching territory in the available snapshots.'}
+          <strong>{localize(selectedBar).title}</strong>{' · '}
+          {selectedBar.kind === 'period' ? text('Historical period', '历史时期')
+            : territoryStatus?.eraId !== selectedBar.id || territoryStatus.status === 'loading' ? text('Loading territory...', '正在加载疆域……')
+            : territoryStatus.status === 'shown' ? text(`Highlighted territory: ${formatYear(territoryStatus.year!)}`, `高亮疆域：${formatYear(territoryStatus.year!)}`)
+            : territoryStatus.status === 'failed' ? text('Territory could not load. Select the era again to retry.', '无法加载疆域，请重新选择该时期以重试。')
+            : text('No matching territory in the available snapshots.', '可用快照中未找到匹配疆域。')}
         </p>}
         <p>{showBorders
-          ? shownYear !== undefined ? `Border snapshot: ${formatYear(shownYear)}. Approximate areas of influence.` : 'Loading historical borders...'
-          : 'Physical geography without political boundaries.'}</p>
-        {showBorders && shownYear !== undefined && shownYear !== year && <p>Boundaries between snapshots are not reconstructed.</p>}
+          ? shownYear !== undefined ? text(`Border snapshot: ${formatYear(shownYear)}. Approximate areas of influence.`, `疆界快照：${formatYear(shownYear)}。仅示意大致势力范围。`) : text('Loading historical borders...', '正在加载历史疆界……')
+          : text('Physical geography without political boundaries.', '仅显示自然地理，不显示政治疆界。')}</p>
+        {showBorders && shownYear !== undefined && shownYear !== year && <p>{text('Boundaries between snapshots are not reconstructed.', '未重建各快照年代之间的疆界。')}</p>}
       </div>}
       {failed ? (
         <p className="map-fallback">
-          The map needs WebGL, which this browser could not start. The timeline and event list still work.
+          {text('The map needs WebGL, which this browser could not start. The timeline and event list still work.', '地图需要 WebGL，但此浏览器无法启动它。时间轴与事件列表仍可使用。')}
         </p>
       ) : (
         <div ref={containerRef} className="map-canvas" />

@@ -12,6 +12,7 @@ An interactive world map and timeline of history from 2000 BC to AD 2000, built 
 - **A map that follows the year.** Historical borders change as you move through time. Selecting a state highlights its territory; selecting a moment zooms to where it happened.
 - **A reading pane.** With nothing selected it lists what was in progress and what happened around the current year. Select an entry for a short description, why it mattered, what it was part of, its key moments, and a Wikipedia link.
 - **Shareable links.** The year, zoom and selected entry are kept in the URL.
+- **English and Simplified Chinese.** Use the English / 中文 buttons in the header to switch the interface and historical entries. Every page load starts in English; switching languages preserves the selected entry, timeline and map view.
 
 The content is a curated focus on Europe and Asia, with major turning points elsewhere: about 470 entries in all.
 
@@ -68,6 +69,16 @@ All content lives in `data/timeline/`, one JSON file per millennium. Every entry
 - `npm run validate` checks every rule and names the file, entry and field when one is broken.
 
 The conventions for working in the code are in [AGENTS.md](AGENTS.md), and the design is described in [docs/superpowers/specs](docs/superpowers/specs).
+
+## Translations
+
+English stays in each record's existing fields. Its `zh` object supplies Chinese `title`, `summary` and `significance`, plus `locationName` and `dateLabel` when the English record has those fields. Keep both languages up to date when adding or editing content. IDs, relationships, coordinates and Wikipedia URLs are shared; Wikipedia links still open the English articles.
+
+`src/state/LocaleContext.tsx` provides the language state, interface text and localized entry views. Date formatting lives in `src/lib/years.ts`. Language is not stored in the URL or browser storage, so reloading returns to English even in a Chinese-language browser.
+
+`data/locales/map.zh.json` translates major map labels by their source names. Names without a translation retain the original label. Keep canonical border names unchanged so territory matching continues to work. Chinese text uses system Chinese serif fonts.
+
+`npm test` checks translation coverage for every entry and preserves shared record fields. `npm run test:e2e` checks the English default, language switching, related entries, the About dialog and the mobile layout.
 
 ## Accuracy
 

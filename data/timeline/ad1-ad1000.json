@@ -13,7 +13,14 @@
     "partOf": ["roman-empire", "life-of-jesus"],
     "summary": "Jesus of Nazareth, a Jewish preacher from Galilee who teaches about the coming kingdom of God, is arrested in Jerusalem and executed by crucifixion on the orders of the Roman governor Pontius Pilate. His followers soon proclaim that he has risen from the dead. Most historians accept that he existed and was crucified, but the exact year is uncertain, with AD 30 and 33 the most often proposed.",
     "significance": "His followers' belief in his resurrection became the center of Christianity, which spread across the Roman world and is today the world's largest religion.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus"
+    "wikipedia": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus",
+    "zh": {
+      "title": "耶稣被钉十字架",
+      "summary": "罗马总督本丢·彼拉多治下，耶稣在耶路撒冷被钉十字架，通常定于公元30年或33年。基督徒相信他死后复活。",
+      "significance": "他的死亡与复活信仰成为基督教核心，也使十字架成为世界最广为识别的宗教象征之一。",
+      "locationName": "耶路撒冷",
+      "dateLabel": "约公元30年（或33年）"
+    }
   },
   {
     "id": "kushan",
@@ -24,7 +31,12 @@
     "region": "central-asia",
     "summary": "The Kushans, descended from the Yuezhi nomads, built an empire reaching from Central Asia across Afghanistan into northern India. Under kings such as Kanishka they controlled the trade routes between Rome, Persia, India and China and patronized Buddhism.",
     "significance": "Through the Kushan realm Buddhism and its Greek-influenced Gandharan art travelled along the Silk Road into Central Asia and China.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kushan_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kushan_Empire",
+    "zh": {
+      "title": "贵霜帝国",
+      "summary": "贵霜统治者出自迁入中亚的月氏人，建立横跨今阿富汗、巴基斯坦与北印度的帝国，连接印度洋贸易与丝绸之路，支持佛教及多种宗教传统。",
+      "significance": "贵霜促进希腊、伊朗与印度文化交融，并帮助佛教经中亚传播到中国。"
+    }
   },
   {
     "id": "roman-conquest-britain",
@@ -39,7 +51,13 @@
     "partOf": ["roman-empire"],
     "summary": "Emperor Claudius sends an army of some 40,000 men across the Channel, probably landing at Richborough in Kent, and takes the British tribal center of Camulodunum (Colchester). Conquest of the rest of the island is slow and contested, including the revolt of Queen Boudica around AD 60, and Rome never permanently holds the far north of Scotland.",
     "significance": "Britain remained a Roman province for nearly four centuries, gaining towns such as London, roads and Hadrian's Wall before Roman rule ended in the early 400s.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain"
+    "wikipedia": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain",
+    "zh": {
+      "title": "罗马征服不列颠",
+      "summary": "克劳狄皇帝派约四万军队渡海，可能在肯特里奇伯勒登陆，并攻占卡穆洛杜努姆，即今科尔切斯特。征服过程漫长，约公元60年发生布狄卡起义。罗马从未长期控制苏格兰最北部。",
+      "significance": "不列颠大部分地区作为罗马行省近四百年，修建了伦敦等城镇、道路与哈德良长城，直到5世纪初罗马统治结束。",
+      "locationName": "里奇伯勒（可能的登陆点）"
+    }
   },
   {
     "id": "funan",
@@ -50,7 +68,12 @@
     "region": "southeast-asia-oceania",
     "summary": "Funan, the Chinese name for a kingdom in the lower Mekong, grew rich on sea trade between India and China. Finds at its port of Oc Eo include Roman coins and Indian jewelry, and its rulers adopted Indian ideas of kingship, religion and writing.",
     "significance": "It is the earliest known state in Southeast Asia and an early channel by which Indian culture reached the region.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Funan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Funan",
+    "zh": {
+      "title": "扶南",
+      "summary": "扶南是湄公河下游王国的中文名称，依靠印度与中国之间的海上贸易致富。俄厄港发现罗马钱币和印度饰物，其统治者接受印度的王权、宗教与文字观念。",
+      "significance": "扶南是东南亚最早可知的国家之一，也是印度文化传入该地区的重要渠道。"
+    }
   },
   {
     "id": "buddhism-reaches-china",
@@ -66,7 +89,14 @@
     "partOf": ["han"],
     "summary": "According to tradition, Emperor Ming of the Han dynasty dreams of a golden figure, sends envoys west, and in AD 68 founds the White Horse Temple at Luoyang for two Indian monks who arrive with Buddhist scriptures. The story is legendary in its details; Buddhism probably reached China gradually with merchants and missionaries along the Silk Road, and a Han prince is already recorded supporting Buddhist monks a few years earlier.",
     "significance": "Buddhism became one of China's major religions, and from China it spread to Korea, Japan and Vietnam.",
-    "wikipedia": "https://en.wikipedia.org/wiki/White_Horse_Temple"
+    "wikipedia": "https://en.wikipedia.org/wiki/White_Horse_Temple",
+    "zh": {
+      "title": "佛教传入中国",
+      "summary": "相传汉明帝梦见金人，遣使西行，并于公元68年在洛阳建立白马寺，安置携经而来的两位印度僧人。故事细节带有传说色彩；佛教更可能随商人与传教者沿丝绸之路逐步传入，且此前数年已有汉朝宗室支持僧人的记载。",
+      "significance": "佛教成为中国主要宗教之一，又从中国传播到朝鲜、日本和越南。",
+      "locationName": "洛阳白马寺（传统说法）",
+      "dateLabel": "公元68年（传统说法）"
+    }
   },
   {
     "id": "destruction-second-temple",
@@ -81,7 +111,13 @@
     "partOf": ["roman-empire"],
     "summary": "During a great Jewish revolt against Roman rule, a Roman army under Titus, son of the emperor Vespasian, besieges Jerusalem for months, then storms the city and burns the Temple. Much of the city is destroyed, and many of its people are killed or enslaved.",
     "significance": "Without the Temple and its sacrifices, Judaism re-centered on synagogues, prayer and the study of scripture led by rabbis, while the Arch of Titus in Rome still shows the Temple's treasures carried off in triumph.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+    "zh": {
+      "title": "第二圣殿被毁",
+      "summary": "罗马军队在提图斯率领下镇压犹太起义，攻陷耶路撒冷并摧毁第二圣殿，造成大量死亡与流散。",
+      "significance": "圣殿祭祀中心消失，犹太教逐渐以经学、律法与会堂生活为核心，事件也成为犹太历史记忆的重要转折。",
+      "locationName": "耶路撒冷"
+    }
   },
   {
     "id": "pompeii-vesuvius",
@@ -96,7 +132,13 @@
     "partOf": ["roman-empire"],
     "summary": "Mount Vesuvius, near the Bay of Naples, erupts violently and buries the Roman towns of Pompeii and Herculaneum under ash, pumice and searing flows of hot gas and rock. Thousands die. The traditional date is 24 August, but some evidence suggests the eruption came a few weeks later, in October.",
     "significance": "Rediscovered from the 1700s, the buried towns preserve houses, paintings, shops and graffiti that give an unusually detailed picture of everyday Roman life.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+    "wikipedia": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
+    "zh": {
+      "title": "维苏威火山掩埋庞贝",
+      "summary": "维苏威火山猛烈喷发，以火山灰和炽热物质掩埋庞贝、赫库兰尼姆及附近聚落，造成大量居民死亡。",
+      "significance": "遗址保存建筑、壁画、器物乃至生活痕迹，为了解罗马日常生活提供独特窗口。",
+      "locationName": "庞贝"
+    }
   },
   {
     "id": "aksum",
@@ -107,7 +149,12 @@
     "region": "sub-saharan-africa",
     "summary": "From its capital in the Ethiopian highlands and its Red Sea port of Adulis, Aksum traded ivory and gold with Rome, Arabia and India. Its kings minted their own coins, raised giant stone stelae and in the 4th century adopted Christianity.",
     "significance": "Aksum was one of the great trading powers of late antiquity and the origin of Ethiopian Christianity and the Ge'ez literary tradition.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+    "zh": {
+      "title": "阿克苏姆王国",
+      "summary": "阿克苏姆在今埃塞俄比亚、厄立特里亚高地兴起，通过红海港口参与罗马、阿拉伯与印度之间的贸易，铸造钱币并树立巨大石碑，后来接受基督教。",
+      "significance": "它是古代非洲重要强国，也是埃塞俄比亚与厄立特里亚基督教传统的源头。"
+    }
   },
   {
     "id": "funan-kingdom",
@@ -123,7 +170,14 @@
     "partOf": ["funan"],
     "summary": "In the lower Mekong region of what is now southern Vietnam and Cambodia, the kingdom known by its Chinese name, Funan, grows rich on sea trade between India and China. At its port of Oc Eo, archaeologists have found Roman coins, Indian beads and Chinese goods. Much of what is known about Funan comes from Chinese records, and its beginnings are uncertain.",
     "significance": "Funan is often seen as one of the earliest states of Southeast Asia, and it helped bring Indian ideas about kingship, religion and writing into the region.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Funan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Funan",
+    "zh": {
+      "title": "扶南王国",
+      "summary": "湄公河下游今越南南部、柬埔寨一带的扶南王国，凭借印度与中国之间的海上贸易兴起。俄厄港出土罗马钱币、印度珠饰及中国商品。有关扶南的知识多来自中国记载，其起源年代尚不明确。",
+      "significance": "扶南常被视为东南亚最早的国家之一，推动了印度王权、宗教与文字观念的传播。",
+      "locationName": "湄公河三角洲俄厄（扶南港口）",
+      "dateLabel": "约公元100年"
+    }
   },
   {
     "id": "moche",
@@ -134,7 +188,12 @@
     "region": "americas",
     "summary": "In the river valleys of Peru's dry north coast, the Moche built irrigation canals and huge adobe pyramids such as the Huaca del Sol. Their potters and metalworkers produced lifelike portrait vessels and the gold ornaments found in the tombs of Sipan.",
     "significance": "Moche art is among the finest of the ancient Americas and a main source for understanding Andean society before the Inca.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Moche_culture"
+    "wikipedia": "https://en.wikipedia.org/wiki/Moche_culture",
+    "zh": {
+      "title": "莫切文化",
+      "summary": "秘鲁北岸干旱河谷的莫切人修筑灌溉渠与大型土砖金字塔，例如太阳神庙。他们制作逼真的人物陶器，以及西潘墓葬所见的精美金饰。",
+      "significance": "莫切艺术是古代美洲艺术的杰出代表，也是了解印加以前安第斯社会的重要资料。"
+    }
   },
   {
     "id": "nazca-lines",
@@ -149,7 +208,14 @@
     "location": { "name": "Nazca desert", "lat": -14.74, "lng": -75.13 },
     "summary": "On the desert plain of southern Peru, the Nazca people scrape away dark surface stones to make huge figures of animals such as a monkey, a hummingbird and a spider, along with long straight lines and geometric shapes, some best seen from the air. They were made over several centuries, roughly 500 BC to AD 500, and their purpose, perhaps ritual walking paths or links to water and the sky, is still debated.",
     "significance": "The lines are among the largest artworks ever made, and their preservation in the dry desert has made them one of the best-known archaeological sites in the Americas.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nazca_Lines"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nazca_Lines",
+    "zh": {
+      "title": "纳斯卡线条",
+      "summary": "秘鲁纳斯卡沙漠的人群移除表面深色石块，在地面形成动物、植物、直线与几何图案。制作持续数百年，其用途仍有争论，可能涉及仪式与水源。",
+      "significance": "这些巨型地画展示安第斯社会组织与象征文化，也因干燥气候而保存至今。",
+      "locationName": "纳斯卡沙漠",
+      "dateLabel": "约公元100年（制作于约公元前500年-公元500年）"
+    }
   },
   {
     "id": "cai-lun-paper",
@@ -164,7 +230,13 @@
     "partOf": ["han"],
     "summary": "Cai Lun, an official at the Han court in Luoyang, presents the emperor with paper made from tree bark, hemp, old rags and fishing nets. Simpler kinds of paper already existed in China, but his method made a cheaper, better writing material, and Chinese tradition credits him as the inventor of paper.",
     "significance": "Paper gradually replaced bamboo strips and silk in China, then spread to Korea, Japan, the Islamic world and Europe, and later helped make printing and wider literacy possible.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Cai_Lun"
+    "wikipedia": "https://en.wikipedia.org/wiki/Cai_Lun",
+    "zh": {
+      "title": "蔡伦改进造纸术",
+      "summary": "洛阳汉廷官员蔡伦向皇帝呈献以树皮、麻、旧布和渔网制成的纸。中国此前已有较简单的纸，但他的工艺使纸更廉价、更适合书写，因此传统上常将造纸术归功于他。",
+      "significance": "纸逐渐取代竹简与丝帛，随后传到朝鲜、日本、伊斯兰世界和欧洲，为印刷术及读写能力的普及创造条件。",
+      "locationName": "洛阳（汉都）"
+    }
   },
   {
     "id": "roman-empire-greatest-extent",
@@ -179,7 +251,13 @@
     "partOf": ["roman-empire"],
     "summary": "When Emperor Trajan dies in 117, his conquests of Dacia (in today's Romania) and, briefly, Armenia and Mesopotamia have stretched Roman rule from Britain to the Persian Gulf. His successor Hadrian soon gives up the eastern conquests and turns to defending the borders.",
     "significance": "This marked the peak of Roman territorial expansion; afterward the empire mostly defended what it held, a shift symbolized by Hadrian's Wall in Britain.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Trajan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Trajan",
+    "zh": {
+      "title": "罗马帝国疆域达到顶峰",
+      "summary": "图拉真皇帝征服达契亚，并进攻帕提亚、占领美索不达米亚，使罗马疆域达到最大。部分东方领土在其死后不久即被放弃。",
+      "significance": "这一高峰显示罗马的军事力量，也暴露了远距离统治与防守的极限。",
+      "locationName": "罗马"
+    }
   },
   {
     "id": "ptolemy-almagest",
@@ -195,7 +273,14 @@
     "partOf": ["roman-empire"],
     "summary": "Claudius Ptolemy, a Greek scholar working in Roman Egypt, writes a great treatise on astronomy, later known by its Arabic name, the Almagest. It describes an Earth-centered universe in which the Sun, Moon and planets move on combinations of circles, with tables for predicting their positions.",
     "significance": "Translated into Arabic and later Latin, it remained the standard work of astronomy in the Islamic world and Europe for some 1,400 years, until Copernicus and Kepler replaced its Earth-centered model.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Almagest"
+    "wikipedia": "https://en.wikipedia.org/wiki/Almagest",
+    "zh": {
+      "title": "托勒密《天文学大成》",
+      "summary": "在罗马统治下的埃及，希腊学者克劳狄乌斯·托勒密写成天文学巨著，后来以阿拉伯语来源的书名《天文学大成》著称。他提出地心宇宙体系，以多重圆周运动解释日月行星，并提供预测位置的表格。",
+      "significance": "此书译成阿拉伯文与拉丁文后，在约一千四百年间成为伊斯兰世界和欧洲的天文学标准，直到哥白尼、开普勒体系取而代之。",
+      "locationName": "亚历山大港",
+      "dateLabel": "约公元150年"
+    }
   },
   {
     "id": "yellow-turban-rebellion",
@@ -210,7 +295,13 @@
     "partOf": ["han"],
     "summary": "Zhang Jue, leader of a Taoist-inspired healing movement, launches a vast peasant uprising across northern and eastern China, his followers wearing yellow headscarves. The Han government crushes the main revolt within a year, but only by relying on regional generals and their private armies.",
     "significance": "Those generals became warlords who fought over the weakened Han court, a struggle that ended the dynasty in 220 and led to the Three Kingdoms.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion"
+    "wikipedia": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion",
+    "zh": {
+      "title": "黄巾起义",
+      "summary": "受道教思想影响的宗教领袖张角发动遍及中国北部和东部的农民起义，追随者以黄巾为标志。汉廷在一年内镇压主要起义，却依赖地方将领及其私人军队。",
+      "significance": "这些将领演变为争夺衰弱汉廷的军阀，最终导致汉朝于220年灭亡，并形成三国局面。",
+      "locationName": "河北巨鹿（张角的根据地）"
+    }
   },
   {
     "id": "champa",
@@ -221,7 +312,12 @@
     "region": "southeast-asia-oceania",
     "summary": "Champa was a group of kingdoms of the Cham people along the coast of what is now central and southern Vietnam. Seafarers and traders, they adopted Hinduism and built brick temple towers, and fought long wars with the Khmer and the Vietnamese. Dai Viet took their capital in 1471, and the last Cham territory was annexed in 1832.",
     "significance": "Champa was a major station on the sea route between China and India for more than a thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Champa"
+    "wikipedia": "https://en.wikipedia.org/wiki/Champa",
+    "zh": {
+      "title": "占婆",
+      "summary": "占婆诸王国分布于今越南中南部沿海，参与海上贸易，接受印度教与佛教，建造砖塔神庙。其领土后来逐步被向南扩张的越南政权吞并。",
+      "significance": "占婆是连接中国、印度与东南亚的海上文化中心，其后裔和文化传统仍然存在。"
+    }
   },
   {
     "id": "teotihuacan-pyramid-sun",
@@ -237,7 +333,14 @@
     "partOf": ["teotihuacan"],
     "summary": "In the Valley of Mexico, the people of Teotihuacan complete the Pyramid of the Sun, one of the largest structures in the ancient Americas, along the city's great central avenue, later called the Avenue of the Dead. The city is already home to tens of thousands of people, later growing toward 100,000 or more. Its builders' language and name for the city are unknown; 'Teotihuacan' is the name later given by the Aztecs.",
     "significance": "Teotihuacan was one of the largest cities in the world at its height, and its trade, art and influence reached as far as the Maya region.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Pyramid_of_the_Sun"
+    "wikipedia": "https://en.wikipedia.org/wiki/Pyramid_of_the_Sun",
+    "zh": {
+      "title": "特奥蒂瓦坎太阳金字塔",
+      "summary": "特奥蒂瓦坎在今墨西哥谷地建造巨大的太阳金字塔，成为城市规划与宗教空间的中心建筑之一。其建造年代通常定于约公元200年。",
+      "significance": "它显示美洲早期城市能够动员庞大劳力，至今仍是该文明最显著的象征之一。",
+      "locationName": "特奥蒂瓦坎",
+      "dateLabel": "约公元200年"
+    }
   },
   {
     "id": "battle-of-red-cliffs",
@@ -253,7 +356,14 @@
     "partOf": ["han"],
     "summary": "The warlord Cao Cao, master of northern China, leads a large army and fleet south to finish off his rivals. The allied forces of Sun Quan and Liu Bei, far fewer in number, set his chained ships on fire on the Yangtze and force him to retreat north.",
     "significance": "The defeat ended Cao Cao's hope of reuniting China and fixed the three-way division that became the Three Kingdoms; it is one of the most retold battles in Chinese literature.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs",
+    "zh": {
+      "title": "赤壁之战",
+      "summary": "控制北方的曹操率大军与水师南下，试图消灭对手。孙权与刘备的联军人数较少，却在长江上火攻曹军相连的战船，迫使其北撤。",
+      "significance": "此败挫折了曹操统一中国的希望，奠定三国鼎立格局，也成为中国文学中最常被讲述的战役之一。",
+      "locationName": "长江沿岸赤壁（具体地点有争议）",
+      "dateLabel": "公元208年至209年冬季"
+    }
   },
   {
     "id": "three-kingdoms",
@@ -264,7 +374,12 @@
     "region": "east-asia",
     "summary": "When the Han dynasty collapsed, China was divided among three rival states: Wei in the north, Shu in the southwest and Wu in the southeast. Decades of war followed until the Jin dynasty briefly reunited the country in 280.",
     "significance": "The period opened more than three centuries of division in China, and its generals and strategists became legends through the novel Romance of the Three Kingdoms.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    "wikipedia": "https://en.wikipedia.org/wiki/Three_Kingdoms",
+    "zh": {
+      "title": "三国时期",
+      "summary": "汉朝瓦解后，中国分为北方的魏、西南的蜀和东南的吴。数十年战争之后，晋朝于280年短暂统一全国。",
+      "significance": "三国开启了中国三百余年的分裂时期，其将领与谋士又通过《三国演义》成为广为流传的人物。"
+    }
   },
   {
     "id": "sasanian",
@@ -275,7 +390,12 @@
     "region": "mena",
     "summary": "Ardashir I overthrew the Parthians and founded a Persian dynasty that ruled Iran and Mesopotamia from Ctesiphon. The Sasanians made Zoroastrianism the state religion and fought Rome and Byzantium for four centuries, until the Arab conquests destroyed the empire.",
     "significance": "It was the last Persian empire before Islam, and its court culture, art and administration deeply influenced the caliphates that replaced it.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+    "zh": {
+      "title": "萨珊帝国",
+      "summary": "萨珊王朝取代帕提亚，建立以伊朗和美索不达米亚为核心的中央集权帝国，扶持祆教，与罗马及拜占庭长期交战，最终亡于阿拉伯征服。",
+      "significance": "它塑造了伊朗国家与宫廷文化，其行政、艺术和政治传统影响了后来的伊斯兰世界。"
+    }
   },
   {
     "id": "himiko",
@@ -290,7 +410,14 @@
     "location": { "name": "Yoshinogari, Kyushu (one proposed site of Yamatai)", "lat": 33.32, "lng": 130.38 },
     "summary": "A Chinese history, the Records of the Three Kingdoms, reports that Himiko, the shaman queen of Yamatai in the land of Wa, sends envoys to the court of Wei and is recognized as a friendly ruler. Where Yamatai lay, in Kyushu or in the Nara region, has been argued over for centuries.",
     "significance": "The account is the earliest detailed description of Japan by any writer and the first record of a named Japanese ruler.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Himiko"
+    "wikipedia": "https://en.wikipedia.org/wiki/Himiko",
+    "zh": {
+      "title": "卑弥呼女王遣使中国",
+      "summary": "《三国志》记载，倭国邪马台的巫女王卑弥呼遣使到魏廷，并获册封。邪马台究竟位于九州还是奈良一带，数百年来一直存在争论。",
+      "significance": "这是目前最早详述日本的文献之一，也是最早记载具体姓名的日本统治者的资料。",
+      "locationName": "九州吉野里（可能的邪马台国遗址之一）",
+      "dateLabel": "公元238年或239年"
+    }
   },
   {
     "id": "classic-maya",
@@ -301,7 +428,12 @@
     "region": "americas",
     "summary": "In the lowlands of Guatemala, Belize and southern Mexico, Maya city-states such as Tikal, Calakmul, Palenque and Copan were ruled by divine kings. They built stone temples and palaces and recorded their history in a hieroglyphic script with a precise calendar.",
     "significance": "The Classic Maya created the most developed writing system of the ancient Americas, along with advanced astronomy and mathematics that included the concept of zero.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Maya_civilization"
+    "wikipedia": "https://en.wikipedia.org/wiki/Maya_civilization",
+    "zh": {
+      "title": "玛雅古典时期",
+      "summary": "玛雅低地形成蒂卡尔、卡拉克穆尔、帕伦克等竞争城邦，统治者建造金字塔宫殿，以文字和复杂历法记录王朝、战争与仪式。",
+      "significance": "此时期是玛雅城市、艺术、天文学与文字文化的高峰，留下古代美洲最丰富的历史记录之一。"
+    }
   },
   {
     "id": "classic-maya-period",
@@ -317,7 +449,14 @@
     "partOf": ["classic-maya"],
     "summary": "In the rainforests of what are now southern Mexico, Guatemala and Belize, Maya city-states such as Tikal, Calakmul, Palenque and Copan flourish under divine kings. They build stone temples and palaces, and record royal history on carved monuments in a hieroglyphic script, using an advanced calendar and a counting system that includes zero.",
     "significance": "The Classic Maya created the most fully developed writing system known from the ancient Americas, along with remarkable achievements in astronomy, mathematics and art.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Maya_civilization"
+    "wikipedia": "https://en.wikipedia.org/wiki/Maya_civilization",
+    "zh": {
+      "title": "玛雅古典时期开始",
+      "summary": "约公元250年起，玛雅低地城市进入古典时期，王朝铭文、石碑和大型建筑增多，蒂卡尔等城邦彼此竞争。",
+      "significance": "玛雅的文字、历法、天文和艺术在此时期高度发展，使其成为古代美洲最具代表性的文明之一。",
+      "locationName": "蒂卡尔（代表地点）",
+      "dateLabel": "约公元250年"
+    }
   },
   {
     "id": "yamato",
@@ -329,7 +468,13 @@
     "region": "east-asia",
     "summary": "From the Nara basin, the Yamato rulers gradually brought the clans of western and central Japan under their authority, burying their dead in huge keyhole-shaped mounds. In the 6th and 7th centuries the court adopted Buddhism, Chinese writing and, with the Taika reforms, a Chinese model of centralized government.",
     "significance": "The Yamato rulers are the ancestors of Japan's imperial line, and in this period Japan took shape as a single state.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Yamato_Kingship"
+    "wikipedia": "https://en.wikipedia.org/wiki/Yamato_Kingship",
+    "zh": {
+      "title": "日本大和政权",
+      "summary": "大和统治者以奈良盆地为中心，逐步将日本中部和西部氏族纳入统治，并建造巨大的前方后圆坟。6至7世纪，朝廷接受佛教与汉字，又通过大化改新借鉴中国中央集权制度。",
+      "significance": "大和统治者是日本皇室世系的祖先，日本也在这一时期逐渐形成统一国家。",
+      "dateLabel": "约公元250年-710年"
+    }
   },
   {
     "id": "jin-dynasty",
@@ -340,7 +485,12 @@
     "region": "east-asia",
     "summary": "The Sima family took the throne of Wei and reunited China in 280, but a war between its princes left the north open to invasion by steppe peoples. From 317 the dynasty survived in the south, ruling from Jiankang, modern Nanjing, while rival kingdoms fought over the north.",
     "significance": "The flight of the court and many northern families shifted the center of Chinese culture toward the Yangtze for the first time and helped Buddhism take root in China.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)",
+    "zh": {
+      "title": "晋朝",
+      "summary": "司马氏取代魏，并于280年统一中国，但宗室内战使北方无力抵御草原民族入侵。317年起，晋室在南方延续，定都建康，即今南京，北方则由诸国争夺。",
+      "significance": "朝廷与大量北方家族南迁，使中国文化中心首次明显向长江流域转移，也促进了佛教在中国扎根。"
+    }
   },
   {
     "id": "ghana",
@@ -351,7 +501,12 @@
     "region": "sub-saharan-africa",
     "summary": "The Ghana Empire, founded by Soninke people in what is now Mauritania and Mali, grew rich by taxing the trade in gold from the south and salt from the Sahara. Arab writers described its king's wealth and its capital at Koumbi Saleh.",
     "significance": "It was the first of the great trading empires of the West African Sahel, followed by Mali and Songhai; modern Ghana took its name from it.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ghana_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghana_Empire",
+    "zh": {
+      "title": "加纳帝国",
+      "summary": "古加纳帝国位于今毛里塔尼亚和马里一带，与现代加纳并不重合。其统治者控制撒哈拉南缘的黄金、盐及商路，向贸易征税。",
+      "significance": "它是西非最早的大帝国之一，将萨赫勒与北非、地中海商业世界连接起来。"
+    }
   },
   {
     "id": "edict-of-milan",
@@ -366,7 +521,13 @@
     "partOf": ["roman-empire"],
     "summary": "Meeting in Milan, the Roman emperors Constantine and Licinius agree to give all people, including Christians, the freedom to worship as they choose, and to return property taken from Christians. It follows the last and harshest persecution of Christians, which an edict of 311 had already ended in part; historians debate whether a formal 'edict' was ever issued in Milan.",
     "significance": "With Constantine's backing, Christianity grew from a persecuted minority into the favored religion of the empire, and by 380 its official religion.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Edict_of_Milan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+    "zh": {
+      "title": "《米兰敕令》",
+      "summary": "君士坦丁与李锡尼在米兰会面，同意保障包括基督徒在内的宗教信仰自由，并归还教会财产。311年已有宽容措施，所谓“敕令”的正式形式仍有学术争论。",
+      "significance": "基督教由受迫害群体逐步转为得到皇帝支持的宗教，并于380年获得帝国国教地位。",
+      "locationName": "米兰"
+    }
   },
   {
     "id": "gupta",
@@ -377,7 +538,12 @@
     "region": "south-asia",
     "summary": "The Gupta kings ruled most of northern India from the Ganges plain. Their court patronized Sanskrit literature, such as the plays of Kalidasa, along with Hindu and Buddhist art and scholars including the astronomer Aryabhata.",
     "significance": "The Gupta age is remembered as a classical age of Indian culture, and its mathematicians developed the decimal place-value system with zero that the world now uses.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Gupta_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Gupta_Empire",
+    "zh": {
+      "title": "笈多王朝",
+      "summary": "笈多王朝以恒河平原为中心统治北印度大部，宫廷扶持迦梨陀娑等人的梵语文学、印度教与佛教艺术，以及数学和天文学。",
+      "significance": "笈多时期被视为印度文化的古典时代，十进位值制等数学传统在这一背景中发展。"
+    }
   },
   {
     "id": "gupta-empire-founded",
@@ -393,7 +559,14 @@
     "partOf": ["gupta"],
     "summary": "Chandragupta I, a king in the Ganges valley, takes the title 'great king of kings' and begins the Gupta era. His successors Samudragupta and Chandragupta II expand the empire across much of northern India.",
     "significance": "The Gupta age is often called a classical or golden age of India, with advances in mathematics and astronomy, Sanskrit literature such as Kalidasa's plays, and Hindu and Buddhist art.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Gupta_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Gupta_Empire",
+    "zh": {
+      "title": "笈多王朝建立",
+      "summary": "恒河流域君主旃陀罗笈多一世采用大王之王头衔，开启笈多纪元。继任者沙摩陀罗笈多和旃陀罗笈多二世将帝国扩大至北印度大部。",
+      "significance": "这一时期常被称为印度文化的黄金时代，文学、艺术、数学和天文学取得重要成就。",
+      "locationName": "华氏城",
+      "dateLabel": "约公元320年"
+    }
   },
   {
     "id": "council-of-nicaea",
@@ -408,7 +581,13 @@
     "partOf": ["roman-empire"],
     "summary": "Emperor Constantine calls Christian bishops from across the empire to Nicaea, in northwestern Anatolia, to settle a bitter dispute over the teachings of Arius, a priest of Alexandria who says Christ the Son was created by God the Father. The council rejects Arius's view and issues a statement of belief, the original Nicene Creed.",
     "significance": "It was the first council claiming to speak for the whole church, and the Nicene Creed, in a version expanded in 381, is still recited by most Christian churches.",
-    "wikipedia": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea"
+    "wikipedia": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+    "zh": {
+      "title": "尼西亚会议",
+      "summary": "君士坦丁召集各地主教到尼西亚，处理阿里乌关于圣子由圣父创造的教义争端。会议拒绝该主张，形成最初的《尼西亚信经》。",
+      "significance": "这是首次声称代表整个教会的普世会议，381年扩充后的信经至今仍为多数基督教会采用。",
+      "locationName": "尼西亚（伊兹尼克）"
+    }
   },
   {
     "id": "aksum-christianity",
@@ -424,7 +603,14 @@
     "partOf": ["aksum"],
     "summary": "King Ezana of Aksum converts to Christianity, influenced by Frumentius, a Syrian Christian who had been brought to the royal court as a captive and later became the kingdom's first bishop. Aksum's coins begin to show the cross instead of pagan symbols. The exact date of the conversion is uncertain.",
     "significance": "Aksum was among the earliest states to adopt Christianity officially, and the Ethiopian and Eritrean Orthodox churches trace their origins to this conversion.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ezana_of_Axum"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ezana_of_Axum",
+    "zh": {
+      "title": "阿克苏姆接受基督教",
+      "summary": "阿克苏姆王埃扎纳在叙利亚基督徒弗鲁门提乌斯影响下接受基督教，后者曾为宫廷俘虏，后来成为首任主教。钱币开始出现十字架，确切改宗年份未定。",
+      "significance": "阿克苏姆成为最早正式接受基督教的国家之一，埃塞俄比亚与厄立特里亚教会均将传统追溯至此。",
+      "locationName": "阿克苏姆",
+      "dateLabel": "约公元4世纪30年代"
+    }
   },
   {
     "id": "byzantine",
@@ -435,7 +621,12 @@
     "region": "europe",
     "summary": "The eastern half of the Roman Empire, ruled from Constantinople, survived the fall of the west by a thousand years. Greek in language and Orthodox Christian in religion, it preserved Roman law and ancient learning while defending itself against Persians, Arabs, Bulgars, crusaders and Turks.",
     "significance": "It shielded Europe from the east for centuries, converted the Slavs to Orthodox Christianity, and passed Greek learning on to both the Islamic world and Renaissance Italy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+    "zh": {
+      "title": "拜占庭帝国",
+      "summary": "以君士坦丁堡为中心的东罗马帝国，在西部灭亡后延续约一千年。它使用希腊语、信奉东正教，保存罗马法律和古典知识，并长期对抗波斯、阿拉伯、十字军与土耳其势力。",
+      "significance": "它向斯拉夫世界传播东正教，也将古希腊学术传递给伊斯兰世界与文艺复兴时期的意大利。"
+    }
   },
   {
     "id": "constantinople-founded",
@@ -451,7 +642,14 @@
     "partOf": ["roman-empire", "byzantine"],
     "summary": "Emperor Constantine dedicates the old Greek city of Byzantium, rebuilt and greatly enlarged, as a new imperial capital named Constantinople. It controls the strait of the Bosporus between Europe and Asia and between the Black Sea and the Mediterranean.",
     "significance": "Constantinople was the capital of the Eastern Roman (Byzantine) Empire for over a thousand years, then of the Ottoman Empire, and as Istanbul remains one of the world's great cities.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Constantinople"
+    "wikipedia": "https://en.wikipedia.org/wiki/Constantinople",
+    "zh": {
+      "title": "君士坦丁堡建立",
+      "summary": "君士坦丁将古希腊城市拜占庭大规模扩建，正式设为帝国新都，命名君士坦丁堡。城市扼守博斯普鲁斯海峡，连接欧亚与黑海、地中海。",
+      "significance": "它作为东罗马首都延续千余年，后成为奥斯曼首都，如今的伊斯坦布尔仍是世界大城。",
+      "locationName": "君士坦丁堡（伊斯坦布尔）",
+      "dateLabel": "公元330年5月11日"
+    }
   },
   {
     "id": "huns-cross-volga",
@@ -466,7 +664,14 @@
     "location": { "name": "Caspian steppe near Atyrau (representative)", "lat": 47.11, "lng": 51.92 },
     "summary": "The Huns, nomadic horse archers whose origins are uncertain, move west across the steppe north of the Caspian Sea, defeating the Alans and then the Goths living north of the Black Sea. In 376 large numbers of Goths flee to the Roman frontier on the Danube and are allowed to cross into the empire.",
     "significance": "The Huns' advance is often seen as setting off a chain of movements by Germanic and other peoples into the Roman Empire, the so-called Migration Period, which helped bring down the Western Empire and reshape Europe's map.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Huns"
+    "wikipedia": "https://en.wikipedia.org/wiki/Huns",
+    "zh": {
+      "title": "匈人西迁，民族大迁徙开始",
+      "summary": "起源尚不明确的游牧骑射人群匈人向西越过里海北方草原，击败阿兰人与黑海北部哥特人。376年，大批哥特人渡向多瑙河罗马边境并获准进入。",
+      "significance": "匈人西进推动日耳曼及其他民族连锁迁徙，加速西罗马瓦解并重塑欧洲。",
+      "locationName": "阿特劳附近里海草原（代表地点）",
+      "dateLabel": "约公元370年-376年"
+    }
   },
   {
     "id": "northern-wei",
@@ -477,7 +682,12 @@
     "region": "east-asia",
     "summary": "The Tuoba clan of the Xianbei, a people from the steppe, founded a state that united northern China in 439. Its rulers sponsored Buddhism on a grand scale, and Emperor Xiaowen moved the capital to Luoyang in 494 and required his court to adopt Chinese dress, language and names.",
     "significance": "The Northern Wei showed how conquerors from the steppe could rule China by blending with it, and its land system and Buddhist art influenced the Sui and Tang.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Northern_Wei"
+    "wikipedia": "https://en.wikipedia.org/wiki/Northern_Wei",
+    "zh": {
+      "title": "北魏",
+      "summary": "草原民族鲜卑的拓跋氏建立北魏，于439年统一中国北方。北魏大力扶持佛教；孝文帝于494年迁都洛阳，要求朝廷采用汉族服饰、语言和姓氏。",
+      "significance": "北魏展现了草原征服者通过文化融合治理中国的方式，其土地制度与佛教艺术影响了隋唐。"
+    }
   },
   {
     "id": "visigoths-sack-rome",
@@ -493,7 +703,14 @@
     "partOf": ["roman-empire"],
     "summary": "The Visigoths, led by their king Alaric, enter Rome and plunder it for three days after the Western Roman government, based at Ravenna, refuses their demands. It is the first time in about 800 years that the city has fallen to a foreign enemy.",
     "significance": "The sack shocked the Roman world and prompted Augustine of Hippo to write The City of God, a defense of Christianity that shaped Western thought for centuries.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+    "zh": {
+      "title": "西哥特人洗劫罗马",
+      "summary": "以拉文纳为中心的西罗马政府拒绝要求后，阿拉里克率西哥特人进入罗马，洗劫三天。这是约八百年来罗马首次落入外敌之手。",
+      "significance": "洗劫震动罗马世界，促使希波的奥古斯丁撰写《上帝之城》，这部基督教辩护著作影响西方思想数百年。",
+      "locationName": "罗马",
+      "dateLabel": "公元410年8月24日"
+    }
   },
   {
     "id": "visigothic-kingdom",
@@ -504,7 +721,12 @@
     "region": "europe",
     "summary": "The Visigoths, a Germanic people who had sacked Rome in 410, were settled in southern Gaul by the Romans and built a kingdom there. Driven out of most of Gaul by the Franks in 507, they ruled Spain from Toledo and converted from Arian to Catholic Christianity in 589. The kingdom fell to the Umayyad invasion of 711.",
     "significance": "It was one of the main successor states of the western Roman Empire, and its law code shaped medieval Spanish law.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Visigothic_Kingdom"
+    "wikipedia": "https://en.wikipedia.org/wiki/Visigothic_Kingdom",
+    "zh": {
+      "title": "西哥特王国",
+      "summary": "西哥特人在410年洗劫罗马后，于高卢南部建立王国。507年败于法兰克后，统治重心转到托莱多和西班牙，589年改宗天主教，最终在711年倭马亚入侵后崩溃。",
+      "significance": "它是西罗马的重要继承国，其法典对中世纪西班牙法律影响深远。"
+    }
   },
   {
     "id": "northern-and-southern-dynasties",
@@ -515,7 +737,12 @@
     "region": "east-asia",
     "summary": "For nearly two centuries China was divided between a north ruled by dynasties of steppe origin and a south ruled by a succession of Chinese dynasties from Jiankang, modern Nanjing. Despite constant war it was an age of creativity in poetry, painting and calligraphy, and Buddhism spread through both halves.",
     "significance": "Buddhism became a religion of the whole of China in these centuries, and the south was settled and developed into the country's economic heartland.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+    "wikipedia": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties",
+    "zh": {
+      "title": "南北朝时期",
+      "summary": "近两百年间，中国分为由草原民族出身的王朝统治的北方，以及以建康为都城、王朝相继更迭的南方。战乱不断，诗歌、绘画、书法仍富有创造力，佛教在南北广泛传播。",
+      "significance": "佛教在此期间成为遍及中国的宗教，南方也随着人口迁入和开发，逐渐成长为经济中心。"
+    }
   },
   {
     "id": "nalanda-founded",
@@ -531,7 +758,14 @@
     "partOf": ["gupta"],
     "summary": "A great Buddhist monastery and center of learning is founded at Nalanda in eastern India, traditionally under the Gupta king Kumaragupta I. It grows into a large residential community of monks and students who study Buddhist philosophy, logic, grammar and medicine. Calling it a 'university' is a modern comparison, and its founding date is approximate.",
     "significance": "Nalanda drew scholars from as far as China, Korea and Central Asia, including the Chinese pilgrim Xuanzang, and remained a major center of Buddhist learning until its decline around 1200.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nalanda_mahavihara"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+    "zh": {
+      "title": "那烂陀寺建立",
+      "summary": "印度东部建立了大型佛教寺院与学习中心那烂陀，传统上归于笈多王朝鸠摩罗笈多一世时期。它发展为僧侣与学生共同居住的庞大社群，教授佛学、逻辑、语法与医学。“大学”是现代类比，其创建年代也仅为约数。",
+      "significance": "那烂陀吸引中国、朝鲜、中亚等地的学者，包括玄奘，并一直是重要佛学中心，直到约1200年衰落。",
+      "locationName": "那烂陀",
+      "dateLabel": "约公元427年（传统说法）"
+    }
   },
   {
     "id": "yungang-grottoes",
@@ -547,7 +781,14 @@
     "partOf": ["northern-wei", "northern-and-southern-dynasties"],
     "summary": "Near their capital at Pingcheng, modern Datong, the Northern Wei emperors have Buddhist cave temples cut into a sandstone cliff under the direction of the monk Tanyao. Over the following decades sculptors carve more than 50,000 figures, from tiny reliefs to seated Buddhas about 17 meters high.",
     "significance": "The caves are the first great monument of Buddhist art in China, blending styles from India and Central Asia with Chinese ones.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Yungang_Grottoes"
+    "wikipedia": "https://en.wikipedia.org/wiki/Yungang_Grottoes",
+    "zh": {
+      "title": "云冈石窟开凿",
+      "summary": "北魏皇帝在首都平城、今大同附近，由僧人昙曜主持，在砂岩崖壁开凿佛教石窟。此后数十年雕刻了五万余尊造像，从微小浮雕到约17米高的坐佛。",
+      "significance": "云冈是中国早期最重要的佛教艺术遗存之一，融合了印度、中亚和中国的艺术风格。",
+      "locationName": "大同附近云冈",
+      "dateLabel": "约公元460年"
+    }
   },
   {
     "id": "fall-of-western-roman-empire",
@@ -562,7 +803,13 @@
     "partOf": ["roman-empire"],
     "summary": "The Germanic general Odoacer deposes Romulus Augustulus, the last Western Roman emperor, and rules Italy as king without naming a new emperor. By then the Western Empire had already lost most of its provinces to Germanic kingdoms.",
     "significance": "The date is the traditional end of the ancient world in Western Europe, while the Eastern Roman (Byzantine) Empire carries on for nearly another thousand years.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+    "zh": {
+      "title": "西罗马帝国灭亡",
+      "summary": "日耳曼将领奥多亚塞废黜西罗马皇帝罗慕路斯·奥古斯都，以国王身份治理意大利而不另立皇帝。此时西部帝国大部分行省已被日耳曼王国占据。",
+      "significance": "476年常被作为西欧古代结束的标志，而东罗马帝国仍继续存在近千年。",
+      "locationName": "拉文纳"
+    }
   },
   {
     "id": "frankish-kingdom",
@@ -574,7 +821,13 @@
     "region": "europe",
     "summary": "Clovis united the Franks, conquered most of Roman Gaul and accepted Catholic Christianity around 500. His Merovingian descendants reigned for two and a half centuries while real power passed to their chief officials, the mayors of the palace, one of whom, Pippin, took the crown in 751. His son Charlemagne turned the kingdom into an empire.",
     "significance": "The Frankish kingdom was the most lasting state to follow Rome in the West, and both France and Germany descend from it.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Francia"
+    "wikipedia": "https://en.wikipedia.org/wiki/Francia",
+    "zh": {
+      "title": "法兰克王国",
+      "summary": "克洛维统一法兰克人，征服罗马高卢大部，并于约500年接受天主教。墨洛温后裔统治两个半世纪，实权逐渐转入宫相手中。751年，宫相丕平夺取王位，其子查理曼又将王国扩展为帝国。",
+      "significance": "法兰克是罗马之后西欧延续最久的国家，法国和德国均由其演变而来。",
+      "dateLabel": "481-800年（此后为加洛林帝国）"
+    }
   },
   {
     "id": "aryabhata",
@@ -589,7 +842,13 @@
     "partOf": ["gupta"],
     "summary": "The Indian astronomer Aryabhata, aged 23 by his own account, completes the Aryabhatiya, a short work in verse on mathematics and astronomy. It works with a place-value number system and gives a value of pi of about 3.1416, early sine tables, and the idea that the Earth spins on its axis.",
     "significance": "His work shaped Indian astronomy for centuries and, through Arabic translations, influenced mathematics and astronomy in the Islamic world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Aryabhata"
+    "wikipedia": "https://en.wikipedia.org/wiki/Aryabhata",
+    "zh": {
+      "title": "阿耶波多的天文学与数学",
+      "summary": "印度天文学家阿耶波多自述23岁时完成《阿耶波多历数书》，论述数学与天文，使用位值制，给出约3.1416的圆周率和早期正弦表，并提出地球绕轴自转。",
+      "significance": "其著作影响印度天文学数百年，又经阿拉伯文翻译传播到伊斯兰世界。",
+      "locationName": "拘苏摩补罗（可能为华氏城）"
+    }
   },
   {
     "id": "justinian-code",
@@ -604,7 +863,13 @@
     "partOf": ["byzantine"],
     "summary": "Emperor Justinian I issues the first version of a new code that gathers and simplifies centuries of Roman imperial laws. Over the next few years his commission, led by the jurist Tribonian, adds a digest of Roman legal writings and a textbook for students, the whole later called the Corpus Juris Civilis.",
     "significance": "Rediscovered in Italy in the 11th century, it became the foundation of the civil law systems used across much of continental Europe, Latin America and beyond.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis"
+    "wikipedia": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
+    "zh": {
+      "title": "《查士丁尼法典》",
+      "summary": "查士丁尼一世颁布新法典首版，汇集并整理数百年罗马帝国法律。此后，由特里波尼安主持的委员会又编成法学著作摘要与教材，合称《民法大全》。",
+      "significance": "11世纪在意大利重新受到重视后，它成为欧洲大陆、拉丁美洲及其他广大地区大陆法体系的基础。",
+      "locationName": "君士坦丁堡"
+    }
   },
   {
     "id": "hagia-sophia",
@@ -620,7 +885,14 @@
     "partOf": ["byzantine"],
     "summary": "After a riot destroys the previous church, Emperor Justinian has the architects Anthemius of Tralles and Isidore of Miletus build a new Hagia Sophia ('Holy Wisdom') in Constantinople in under six years. Its enormous dome seems to float above a ring of windows.",
     "significance": "For centuries it was the largest church in the Christian world; after 1453 it became a mosque whose design inspired Ottoman architects, and it remains a landmark of world architecture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hagia_Sophia"
+    "wikipedia": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+    "zh": {
+      "title": "圣索菲亚大教堂建成",
+      "summary": "旧教堂在暴乱中被毁后，查士丁尼皇帝不到六年就在君士坦丁堡重建圣索菲亚大教堂。巨大的穹顶仿佛悬浮在一圈窗户之上。",
+      "significance": "它曾是基督教世界最大的教堂，1453年后改为清真寺，设计影响了奥斯曼建筑师，至今仍是世界建筑史的里程碑。",
+      "locationName": "君士坦丁堡圣索菲亚大教堂",
+      "dateLabel": "公元537年12月27日"
+    }
   },
   {
     "id": "plague-of-justinian",
@@ -635,7 +907,13 @@
     "partOf": ["byzantine"],
     "summary": "Bubonic plague appears at Pelusium in Egypt in 541 and reaches Constantinople the next year, where contemporaries report thousands of deaths a day. DNA from victims' remains confirms it was caused by the same bacterium as the later Black Death. The plague keeps returning for some two centuries, and how many people it killed is still debated.",
     "significance": "It is the first well-documented outbreak of bubonic plague, and it may have weakened the Byzantine Empire just as Justinian tried to win back the West.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Plague_of_Justinian"
+    "wikipedia": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
+    "zh": {
+      "title": "查士丁尼瘟疫",
+      "summary": "541年，鼠疫出现在埃及佩鲁西乌姆，翌年传至君士坦丁堡，当时的记述称每日有数千人死亡。遗骸DNA证实，它与后来的黑死病由同一种细菌引起。疫情反复约两百年，死亡规模仍有争论。",
+      "significance": "这是有详细记载的第一次鼠疫大流行，削弱了拜占庭帝国，可能也影响了地中海世界后来的力量格局。",
+      "locationName": "君士坦丁堡"
+    }
   },
   {
     "id": "buddhism-reaches-japan",
@@ -651,7 +929,14 @@
     "partOf": ["yamato", "baekje"],
     "summary": "According to the Nihon Shoki, an early Japanese chronicle, King Seong of the Korean kingdom of Baekje sends a Buddhist statue and scriptures to the Japanese court. Other sources give the date as 538. The new religion is opposed by some powerful clans but supported by the Soga clan, and later by Prince Shotoku.",
     "significance": "Buddhism became, alongside Shinto, one of Japan's two main religious traditions, bringing temples such as Horyu-ji, art and learning from the Asian mainland.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Buddhism_in_Japan"
+    "wikipedia": "https://en.wikipedia.org/wiki/Buddhism_in_Japan",
+    "zh": {
+      "title": "佛教传入日本",
+      "summary": "《日本书纪》记载，百济圣王向日本朝廷赠送佛像与经书，另有文献将此事定于538年。部分氏族反对新宗教，苏我氏与后来的圣德太子则支持它。",
+      "significance": "佛教与神道一起成为日本主要宗教传统，并带来大陆的寺院建筑、艺术与学术。",
+      "locationName": "飞鸟（大和朝廷所在地）",
+      "dateLabel": "公元552年（传统说法；部分文献记为538年）"
+    }
   },
   {
     "id": "gokturk",
@@ -662,7 +947,12 @@
     "region": "central-asia",
     "summary": "The Turks overthrew their Rouran overlords and founded a khaganate that soon reached from Mongolia to the Black Sea, before splitting into eastern and western halves. After a period of Tang rule, a second khaganate revived Turkic power until 744.",
     "significance": "It was the first state to call itself Turk, and its Orkhon inscriptions are the oldest surviving texts in a Turkic language.",
-    "wikipedia": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate"
+    "wikipedia": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate",
+    "zh": {
+      "title": "突厥汗国",
+      "summary": "突厥人推翻柔然，建立横跨蒙古至黑海的汗国，随后分裂为东西两部。经历唐朝控制时期后，第二汗国再次兴起，延续至744年。",
+      "significance": "这是第一个以“突厥”为名的国家，鄂尔浑碑铭也是现存最早的重要突厥语文献。"
+    }
   },
   {
     "id": "life-of-muhammad",
@@ -674,7 +964,13 @@
     "region": "mena",
     "summary": "Muhammad preached Islam in western Arabia and established a community at Medina after the migration of 622. His religious and political leadership laid the foundations for the subsequent caliphates. His birth year is approximate.",
     "significance": "Muslims regard him as the last prophet of God; the faith he preached and the community he founded grew into one of the world's largest religions and a civilization spanning three continents.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad"
+    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad",
+    "zh": {
+      "title": "穆罕默德生平（约）",
+      "summary": "穆罕默德在阿拉伯西部传教，622年迁徙后于麦地那建立共同体，以宗教与政治领袖身份为后来的哈里发政权奠定基础。出生年份为约数。",
+      "significance": "穆斯林将其视为最后的先知，他创立的信仰与共同体后来发展为世界主要宗教及横跨三洲的文明。",
+      "dateLabel": "约公元570年-632年"
+    }
   },
   {
     "id": "sui",
@@ -685,7 +981,12 @@
     "region": "east-asia",
     "summary": "The Sui reunited China after more than three centuries of division. Its two emperors rebuilt the Great Wall, dug the Grand Canal linking the Yellow River and the Yangtze, and exhausted the country with forced labor and failed wars in Korea.",
     "significance": "Short as it was, the Sui restored a united empire and built the canal and institutions on which the Tang dynasty's prosperity rested.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Sui_dynasty",
+    "zh": {
+      "title": "隋朝",
+      "summary": "隋朝结束了中国三百余年的分裂。两位皇帝修筑长城，开凿连接黄河与长江的大运河，但繁重劳役和对高句丽的失败战争也耗尽国力。",
+      "significance": "隋虽短暂，却恢复了统一，并以运河和制度建设为唐朝繁荣奠定基础。"
+    }
   },
   {
     "id": "tiwanaku",
@@ -696,7 +997,12 @@
     "region": "americas",
     "summary": "Tiwanaku was a city and state near Lake Titicaca, nearly 4,000 meters above sea level, known for monumental stonework such as the Gateway of the Sun. It fed a large population with raised-field farming and spread its influence across the southern Andes.",
     "significance": "It was one of the first large states of the Andean highlands, and the Inca later honored its ruins as the place of their own origins.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tiwanaku"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tiwanaku",
+    "zh": {
+      "title": "蒂瓦纳库",
+      "summary": "蒂瓦纳库位于的的喀喀湖附近、海拔近四千米的高原，以太阳门等巨石建筑闻名。高畦农业支撑较大人口，影响扩展至安第斯南部。",
+      "significance": "它是安第斯高原早期大国之一，印加人后来将其遗址尊为自身起源之地。"
+    }
   },
   {
     "id": "imperial-examinations",
@@ -712,7 +1018,14 @@
     "partOf": ["sui"],
     "summary": "The Sui dynasty begins selecting some officials through written examinations open to candidates recommended from across the empire, rather than by birth alone. The Tang expand the system, and under the Song it becomes the main route into government, testing knowledge of the Confucian classics.",
     "significance": "For 1,300 years, until 1905, the examinations shaped Chinese education and society around the ideal of rule by scholars, and they inspired civil service examinations elsewhere.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Imperial_examination"
+    "wikipedia": "https://en.wikipedia.org/wiki/Imperial_examination",
+    "zh": {
+      "title": "科举制度兴起",
+      "summary": "隋朝开始通过笔试选拔部分由各地推荐的官员，而非完全依据门第。唐朝扩展这一制度，宋朝时它成为入仕的主要途径，考查内容以儒家经典为中心。",
+      "significance": "直到1905年废除，科举在约一千三百年间围绕士人治国的理想塑造了中国教育与社会，也影响了其他地区的文官考试。",
+      "locationName": "洛阳（隋朝都城）",
+      "dateLabel": "公元605年（传统说法）"
+    }
   },
   {
     "id": "sui-grand-canal",
@@ -727,7 +1040,13 @@
     "partOf": ["sui"],
     "summary": "Emperor Yang of the Sui dynasty orders millions of laborers to dig and link canals joining the Yellow River and the Yangtze, connecting the rich farmlands of the south with the political centers of the north. Parts of the system already existed, and most of the work is finished within a few years.",
     "significance": "Expanded by later dynasties, the Grand Canal became the longest artificial waterway in the world and a lifeline of China's economy, though its huge cost in forced labor helped bring down the Sui in 618.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(China)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(China)",
+    "zh": {
+      "title": "隋朝开凿大运河",
+      "summary": "隋炀帝征发数百万劳工，开凿并连接运河，使黄河与长江贯通，将南方富庶农区与北方政治中心相连。部分河段已有基础，大部分工程在数年内完成。",
+      "significance": "后世继续扩建的大运河成为世界上最长的人工水道和中国经济命脉，但沉重劳役也加速了隋朝在618年的灭亡。",
+      "locationName": "洛阳（隋朝运河网络枢纽）"
+    }
   },
   {
     "id": "harsha-empire",
@@ -741,7 +1060,13 @@
     "location": { "name": "Kannauj", "lat": 27.05, "lng": 79.92 },
     "summary": "Harsha becomes king of Thanesar at the age of about 16 and soon also rules Kannauj, which he makes his capital. Through wars and alliances he dominates much of northern India, though his advance south is stopped by the Chalukya king Pulakeshin II.",
     "significance": "Harsha's reign is well described by his court poet Bana and the Chinese pilgrim Xuanzang; after his death northern India split into rival kingdoms, and for some time no single ruler from the region held such a large realm.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Harsha"
+    "wikipedia": "https://en.wikipedia.org/wiki/Harsha",
+    "zh": {
+      "title": "北印度戒日王帝国",
+      "summary": "戒日王约十六岁时继承塔内萨尔王位，很快又统治曲女城并以此为都。他通过征战与结盟控制北印度大部，但南进被遮娄其王朝补罗稽舍二世阻止。",
+      "significance": "宫廷诗人波那和中国僧人玄奘详细记述了其统治。他死后北印度重新分裂，此后一段时间无人再统治如此广阔的地区。",
+      "locationName": "曲女城"
+    }
   },
   {
     "id": "horyuji",
@@ -757,7 +1082,14 @@
     "partOf": ["yamato"],
     "summary": "Prince Shotoku, regent of Japan and a devoted patron of Buddhism, founds the temple of Horyu-ji near his palace at Ikaruga. The original buildings burn in 670 and are rebuilt over the following decades.",
     "significance": "Its pagoda and main hall are the oldest wooden buildings still standing in the world, and they preserve the architecture of 7th-century China and Korea.",
-    "wikipedia": "https://en.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji"
+    "wikipedia": "https://en.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji",
+    "zh": {
+      "title": "法隆寺建立",
+      "summary": "信奉佛教的摄政圣德太子在斑鸠宫殿附近创建法隆寺。原建筑于670年遭火灾，此后数十年陆续重建。",
+      "significance": "其塔与金堂是世界现存最古老的木构建筑，保存了7世纪东亚建筑传统。",
+      "locationName": "奈良附近斑鸠町",
+      "dateLabel": "公元607年（传统说法）"
+    }
   },
   {
     "id": "muhammad-first-revelation",
@@ -773,7 +1105,14 @@
     "partOf": ["life-of-muhammad"],
     "summary": "According to Islamic tradition, Muhammad, a merchant of Mecca aged about 40, is meditating in a cave on Mount Hira when the angel Gabriel appears and commands him to 'Recite!'. These words begin the revelations that Muslims believe continue for the rest of his life and are collected in the Quran.",
     "significance": "It marks the beginning of Islam, which grew into one of the world's largest religions, with nearly two billion followers today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad%27s_first_revelation"
+    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad%27s_first_revelation",
+    "zh": {
+      "title": "穆罕默德首次获得启示",
+      "summary": "伊斯兰传统记载，约四十岁的麦加商人穆罕默德在希拉山洞冥想时，天使吉卜利勒显现并命令他“诵读”。穆斯林相信，启示此后延续其余生，并汇集为《古兰经》。",
+      "significance": "这标志着伊斯兰教的开端。它后来成为世界最大的宗教之一，信徒接近二十亿。",
+      "locationName": "麦加附近希拉山洞",
+      "dateLabel": "约公元610年（传统说法）"
+    }
   },
   {
     "id": "tang",
@@ -784,7 +1123,12 @@
     "region": "east-asia",
     "summary": "The Tang ruled from Chang'an, then one of the largest cities in the world, over an empire reaching far into Central Asia. Its early centuries were an age of poetry, painting, Buddhism and trade along the Silk Road; the An Lushan rebellion later weakened it.",
     "significance": "The Tang is remembered as a golden age of Chinese civilization, and its laws, writing and culture became models for Korea, Japan and Vietnam.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty",
+    "zh": {
+      "title": "唐朝",
+      "summary": "唐朝以长安为都，疆域深入中亚。长安是当时世界最大的城市之一。前期诗歌、绘画、佛教及丝绸之路贸易繁荣，安史之乱后国势转弱。",
+      "significance": "唐被视为中国文明的黄金时代，其法律、文字与文化成为朝鲜、日本和越南学习的范本。"
+    }
   },
   {
     "id": "tang-dynasty-founded",
@@ -799,7 +1143,13 @@
     "partOf": ["tang"],
     "summary": "Li Yuan, a general of the collapsing Sui dynasty, seizes power and founds the Tang with its capital at Chang'an. The city grows into one of the largest and most cosmopolitan in the world, at the eastern end of the Silk Road.",
     "significance": "The Tang is remembered as a golden age of Chinese poetry, art and trade, and its culture and institutions shaped Korea, Japan and Vietnam.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tang_dynasty",
+    "zh": {
+      "title": "唐朝建立",
+      "summary": "隋末将领李渊夺取政权，建立唐朝，定都长安。这座位于丝绸之路东端的城市发展为世界上规模最大、文化最为多元的都市之一。",
+      "significance": "唐朝被视为中国诗歌、艺术与贸易的黄金时代，其文化和制度深刻影响了朝鲜、日本与越南。",
+      "locationName": "长安"
+    }
   },
   {
     "id": "tibetan-empire",
@@ -810,7 +1160,12 @@
     "region": "central-asia",
     "summary": "Songtsen Gampo united the Tibetan plateau, founded Lhasa and married princesses from China and Nepal, who by tradition brought Buddhism with them. His successors fought Tang China for control of the Silk Road oases and briefly occupied the Tang capital in 763. The empire broke apart after the assassination of its last king in 842.",
     "significance": "At its height Tibet was one of the great powers of Asia, and in these centuries it adopted the Buddhism and the script that define its culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Empire",
+    "zh": {
+      "title": "吐蕃帝国",
+      "summary": "松赞干布统一青藏高原，以拉萨为中心，迎娶唐朝与尼泊尔公主；传统认为她们推动佛教传播。继任者与唐争夺丝路绿洲，763年曾短暂攻占长安。末代赞普842年遇刺后帝国瓦解。",
+      "significance": "吐蕃鼎盛时是亚洲强国之一，佛教与藏文也在这一时期成为其文化的重要基础。"
+    }
   },
   {
     "id": "hijra",
@@ -825,7 +1180,13 @@
     "partOf": ["life-of-muhammad"],
     "summary": "Facing growing hostility in Mecca, Muhammad's followers move in small groups to the oasis town of Yathrib, later called Medina, and in 622, according to tradition, Muhammad slips out of Mecca secretly with his companion Abu Bakr to join them. In Medina he becomes the town's leader, and an agreement traditionally called the Constitution of Medina sets out the rights and duties of its Muslim, Jewish and other communities.",
     "significance": "The Islamic calendar counts its years from the Hijra, which marks the start of Islam as a political as well as religious community.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hijrah"
+    "wikipedia": "https://en.wikipedia.org/wiki/Hijrah",
+    "zh": {
+      "title": "希吉拉：迁徙麦地那",
+      "summary": "面对麦加日益加深的敌意，穆罕默德的追随者分批迁往叶斯里卜，后称麦地那。传统记载，622年穆罕默德与阿布·伯克尔秘密离开麦加前往会合，并成为当地领袖。“麦地那宪章”规定了穆斯林、犹太人及其他群体的权利义务。",
+      "significance": "伊斯兰历以此次迁徙为纪元，它标志着伊斯兰教作为政治与宗教共同体的形成。",
+      "locationName": "麦地那"
+    }
   },
   {
     "id": "xuanzang-journey",
@@ -840,7 +1201,13 @@
     "partOf": ["tang"],
     "summary": "The Chinese monk Xuanzang slips out of Tang China without permission and travels across the deserts and mountains of Central Asia to India in search of authentic Buddhist scriptures. He studies for years at the monastery of Nalanda and returns with more than 600 texts, which he spends the rest of his life translating.",
     "significance": "His translations shaped East Asian Buddhism, and his detailed account of the lands he crossed is a prime source for the history of India and Central Asia; it also inspired the novel Journey to the West.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Xuanzang"
+    "wikipedia": "https://en.wikipedia.org/wiki/Xuanzang",
+    "zh": {
+      "title": "玄奘西行求法",
+      "summary": "僧人玄奘未经许可离开唐朝，穿越中亚沙漠与群山，赴印度寻求可靠佛经。他在那烂陀寺学习多年，带回六百余部经典，并将余生用于翻译。",
+      "significance": "其译经影响了东亚佛教，旅行记录成为研究印度与中亚的重要史料，旅程也启发了小说《西游记》。",
+      "locationName": "长安（旅程起点与终点）"
+    }
   },
   {
     "id": "early-islamic-conquests",
@@ -855,7 +1222,13 @@
     "partOf": ["rashidun"],
     "summary": "After Muhammad's death, the first caliphs unite Arabia and send armies against the Byzantine and Sasanian empires, both worn out by decades of war with each other. Within about thirty years the Arabs take Syria, Iraq, Egypt and most of Iran, bringing the Sasanian Empire to an end. Most people in the conquered lands convert to Islam only gradually, over the following centuries.",
     "significance": "The conquests created a new empire stretching from North Africa to Iran, in which Arabic and Islam spread and lasting borders between the Muslim and Christian worlds took shape.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Early_Muslim_conquests"
+    "wikipedia": "https://en.wikipedia.org/wiki/Early_Muslim_conquests",
+    "zh": {
+      "title": "早期伊斯兰征服",
+      "summary": "穆罕默德死后，早期哈里发统一阿拉伯，进攻因长期战争而衰弱的拜占庭与萨珊。约三十年内，叙利亚、伊拉克、埃及与伊朗大部被征服；当地多数人则在其后数百年逐步改宗。",
+      "significance": "征服建立了从北非至伊朗的新帝国，传播阿拉伯语和伊斯兰教，并重塑穆斯林与基督教世界的边界。",
+      "locationName": "麦地那（早期哈里发政权首都）"
+    }
   },
   {
     "id": "rashidun",
@@ -866,7 +1239,12 @@
     "region": "mena",
     "summary": "After Muhammad's death, the first four caliphs, Abu Bakr, Umar, Uthman and Ali, led the Muslim community from Medina. In three decades their armies took Syria, Egypt, Iraq and Iran, defeating the Byzantine Empire and destroying the Sasanian one.",
     "significance": "Their conquests created an Islamic empire in a single generation, and the disputes over the succession to Ali began the division between Sunni and Shia Islam.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Rashidun_Caliphate"
+    "wikipedia": "https://en.wikipedia.org/wiki/Rashidun_Caliphate",
+    "zh": {
+      "title": "正统哈里发时期",
+      "summary": "穆罕默德之后，阿布·伯克尔、欧麦尔、奥斯曼和阿里四位哈里发领导穆斯林共同体。三十年间，军队夺取叙利亚、埃及、伊拉克与伊朗，重创拜占庭并终结萨珊。",
+      "significance": "这些征服在一代人间建立伊斯兰帝国，围绕阿里继承权的争端也开启了逊尼派与什叶派的分化。"
+    }
   },
   {
     "id": "taika-reforms",
@@ -881,7 +1259,13 @@
     "partOf": ["yamato"],
     "summary": "Prince Naka no Oe and Nakatomi no Kamatari overthrow the powerful Soga clan in a palace coup and launch reforms to build a centralized state on the Chinese Tang model, with land owned by the throne, a census and taxes collected by officials. How much of the reform edict recorded in the Nihon Shoki dates from this time is debated.",
     "significance": "The reforms helped turn the Yamato kingdom into a centralized imperial state ruled by law codes, and Kamatari's descendants, the Fujiwara clan, dominated the Japanese court for centuries.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Taika_Reform"
+    "wikipedia": "https://en.wikipedia.org/wiki/Taika_Reform",
+    "zh": {
+      "title": "日本大化改新",
+      "summary": "中大兄皇子与中臣镰足发动宫廷政变，推翻强大的苏我氏，开始仿照唐朝建立中央集权国家，推行土地归国家、官员代替世袭氏族首领治理等改革。",
+      "significance": "这些改革削弱了旧氏族权力，奠定日本律令国家的制度基础。",
+      "locationName": "难波（今大阪）"
+    }
   },
   {
     "id": "khazar-khaganate",
@@ -892,7 +1276,12 @@
     "region": "central-asia",
     "summary": "The Khazars, a Turkic people, ruled the steppe between the Black and Caspian seas and taxed the trade that crossed it. They stopped the Arab advance north of the Caucasus, and their ruling class adopted Judaism in the 8th or 9th century. The Rus prince Sviatoslav destroyed their capital in the 960s.",
     "significance": "The Khazars shielded eastern Europe from the Arab conquests, and their choice of Judaism is unique among steppe empires.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Khazars"
+    "wikipedia": "https://en.wikipedia.org/wiki/Khazars",
+    "zh": {
+      "title": "可萨汗国",
+      "summary": "突厥语族的可萨人统治黑海与里海之间的草原，征收商路税，并阻止阿拉伯军队越过高加索。统治阶层在8或9世纪接受犹太教，首都于10世纪60年代遭罗斯军摧毁。",
+      "significance": "可萨阻挡了阿拉伯向东欧扩张，其选择犹太教也在草原帝国中别具一格。"
+    }
   },
   {
     "id": "srivijaya",
@@ -903,7 +1292,12 @@
     "region": "southeast-asia-oceania",
     "summary": "From Palembang on Sumatra, the Buddhist kingdom of Srivijaya controlled the Strait of Malacca and the Sunda Strait, the sea lanes between India and China. It grew rich on trade and was a center of Buddhist learning visited by Chinese and Indian monks.",
     "significance": "For some six centuries it dominated the maritime trade of Southeast Asia and linked the economies of the Indian Ocean and the South China Sea.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Srivijaya"
+    "wikipedia": "https://en.wikipedia.org/wiki/Srivijaya",
+    "zh": {
+      "title": "室利佛逝",
+      "summary": "以苏门答腊巨港为中心的室利佛逝控制马六甲与巽他海峡，通过印度和中国间的海上贸易致富，并成为中印僧侣往来的佛学中心。",
+      "significance": "它在约六百年间主导东南亚海上贸易，连接印度洋与南海经济。"
+    }
   },
   {
     "id": "umayyad",
@@ -914,7 +1308,12 @@
     "region": "mena",
     "summary": "The Umayyad family made the caliphate hereditary and ruled it from Damascus. Under them Muslim rule expanded west across North Africa into Spain and east to Central Asia and the Indus, Arabic became the language of government, and the Dome of the Rock was built.",
     "significance": "The Umayyads turned the Arab conquests into a lasting empire, the largest the world had yet seen, and a branch of the family later ruled Muslim Spain.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+    "wikipedia": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+    "zh": {
+      "title": "倭马亚王朝",
+      "summary": "倭马亚家族使哈里发职位世袭，定都大马士革。穆斯林统治向西跨越北非进入西班牙，向东扩展至中亚与印度河地区。阿拉伯语成为行政语言，圆顶清真寺也在此时建成。",
+      "significance": "倭马亚将阿拉伯征服转化为持久帝国，成为当时世界最大的帝国。其一支后裔后来统治穆斯林西班牙。"
+    }
   },
   {
     "id": "silla-unifies-korea",
@@ -930,7 +1329,14 @@
     "partOf": ["silla", "goguryeo"],
     "summary": "In alliance with Tang China, the kingdom of Silla destroys Baekje in 660 and Goguryeo in 668. When the Tang try to keep the conquered lands for themselves, Silla fights its former ally and by 676 has driven the Tang armies north of the Taedong River.",
     "significance": "Most of the Korean Peninsula came under a single ruler for the first time, while the northern lands of Goguryeo passed to the new kingdom of Balhae.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Unified_Silla"
+    "wikipedia": "https://en.wikipedia.org/wiki/Unified_Silla",
+    "zh": {
+      "title": "新罗统一朝鲜半岛大部",
+      "summary": "新罗与唐结盟，660年灭百济、668年灭高句丽。唐试图保有征服地区后，新罗转而与其交战，到676年将唐军驱至大同江以北。",
+      "significance": "半岛大部首次归于一个政权，高句丽北方故地后来则由渤海国继承。",
+      "locationName": "庆州（新罗首都）",
+      "dateLabel": "公元668年（676年完成）"
+    }
   },
   {
     "id": "empress-wu",
@@ -946,7 +1352,14 @@
     "partOf": ["tang"],
     "summary": "Wu Zetian, who has governed Tang China for decades as empress consort and then as regent for her sons, sets them aside and takes the throne herself, proclaiming a new Zhou dynasty. She rules until a palace coup removes her in 705, shortly before her death.",
     "significance": "She is the only woman to have ruled China as emperor in her own name; her reign widened the examination system and promoted officials from outside the old aristocracy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Wu_Zetian"
+    "wikipedia": "https://en.wikipedia.org/wiki/Wu_Zetian",
+    "zh": {
+      "title": "武则天称帝",
+      "summary": "武则天先以皇后、后以皇太后身份掌权数十年，继而废黜儿子，自立为帝，改国号为周。705年宫廷政变迫使她退位，同年去世。",
+      "significance": "她是中国唯一以自身名义称帝的女性。其统治扩大了科举选拔，并提拔旧贵族之外的官员。",
+      "locationName": "洛阳",
+      "dateLabel": "公元690年"
+    }
   },
   {
     "id": "republic-of-venice",
@@ -958,7 +1371,13 @@
     "region": "europe",
     "summary": "Venice grew from a refuge in a lagoon into a republic governed by an elected doge and a closed circle of merchant families. Its galleys carried the trade between Europe and the eastern Mediterranean, and it held an empire of ports and islands from the Adriatic to Cyprus. Napoleon ended the republic in 1797.",
     "significance": "For centuries Venice was the richest trading city in Europe and its main link to the Byzantine and Islamic worlds.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Republic_of_Venice"
+    "wikipedia": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+    "zh": {
+      "title": "威尼斯共和国",
+      "summary": "威尼斯从潟湖避难聚落发展为由选举总督与商人家族治理的共和国，凭海运贸易控制亚得里亚海至塞浦路斯的港口和岛屿，1797年被拿破仑终结。",
+      "significance": "它长期是欧洲最富有的商贸城市，也是欧洲联系拜占庭与伊斯兰世界的重要纽带。",
+      "dateLabel": "697年（传统说法）-1797年"
+    }
   },
   {
     "id": "balhae",
@@ -969,7 +1388,12 @@
     "region": "east-asia",
     "summary": "Balhae was founded by Dae Jo-yeong, a former general of Goguryeo, and ruled Manchuria, northern Korea and the coast of what is now the Russian Far East. It adopted Tang institutions, traded with Japan, and was known in China as the flourishing land of the East before it fell to the Khitan.",
     "significance": "Balhae carried on the legacy of Goguryeo in the north; both Korea and China count it as part of their history.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Balhae"
+    "wikipedia": "https://en.wikipedia.org/wiki/Balhae",
+    "zh": {
+      "title": "渤海国",
+      "summary": "原高句丽将领大祚荣建立渤海国，统治满洲、朝鲜半岛北部与今俄罗斯远东沿海。渤海采用唐制，与日本贸易，被誉为“海东盛国”，后来亡于契丹。",
+      "significance": "渤海在北方延续了高句丽遗产，朝鲜半岛与中国的历史叙述都将其视为自身历史的一部分。"
+    }
   },
   {
     "id": "kanem-bornu",
@@ -981,7 +1405,13 @@
     "region": "sub-saharan-africa",
     "summary": "The kingdom of Kanem grew up northeast of Lake Chad, at the southern end of a trade route across the Sahara, and its rulers adopted Islam in the 11th century. Driven from Kanem in the 14th century, the dynasty rebuilt its state in Bornu, west of the lake, where it reached its height under Idris Alooma around 1600.",
     "significance": "A single dynasty, the Sayfawa, ruled it for most of that time, one of the longest reigns of any ruling house in history.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kanem%E2%80%93Bornu_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kanem%E2%80%93Bornu_Empire",
+    "zh": {
+      "title": "加涅姆-博尔努",
+      "summary": "加涅姆兴起于乍得湖东北、撒哈拉商路南端，统治者于11世纪接受伊斯兰教。14世纪王朝西迁博尔努，约1600年在伊德里斯·阿洛马治下达到高峰。",
+      "significance": "赛法瓦王朝延续了其中大部分时期，是历史上统治时间最长的王朝之一。",
+      "dateLabel": "约700-1893年"
+    }
   },
   {
     "id": "nara-period",
@@ -992,7 +1422,12 @@
     "region": "east-asia",
     "summary": "Japan's court settled at Heijo-kyo, modern Nara, its first lasting capital, laid out on the model of the Tang capital Chang'an. The state compiled law codes and the first histories of Japan, the Kojiki and Nihon Shoki, and poets wrote the verses collected in the Man'yoshu.",
     "significance": "In these decades Japan became a literate, centralized state on the Chinese model, with Buddhism established as a religion of the court.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nara_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Nara_period",
+    "zh": {
+      "title": "奈良时期",
+      "summary": "日本朝廷定都平城京，即今奈良。这座仿照唐都长安布局的城市，是日本首个长期使用的都城。国家编纂律令、《古事记》《日本书纪》等史书，诗歌则汇为《万叶集》。",
+      "significance": "日本在这一时期逐渐形成借鉴中国制度、拥有文字文化的中央集权国家，佛教也成为宫廷的重要宗教。"
+    }
   },
   {
     "id": "umayyad-conquest-iberia",
@@ -1007,7 +1442,13 @@
     "partOf": ["visigothic-kingdom", "umayyad"],
     "summary": "Tariq ibn Ziyad, a Berber commander serving the Umayyad caliphate, crosses from North Africa at Gibraltar, which is named after him (Jabal Tariq, 'Tariq's mountain'). He defeats the Visigothic king Roderic, and within a few years Muslim forces control most of the Iberian Peninsula.",
     "significance": "Muslim-ruled al-Andalus, centered on Cordoba, became a meeting place of Islamic, Jewish and Christian culture, until the Christian kingdoms of the north completed their reconquest in 1492.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
+    "wikipedia": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula",
+    "zh": {
+      "title": "倭马亚王朝征服伊比利亚",
+      "summary": "为倭马亚效力的柏柏尔将领塔里克·伊本·齐亚德渡海，击败西哥特王罗德里克，数年内控制伊比利亚大部。直布罗陀之名源于“塔里克之山”。",
+      "significance": "穆斯林统治的安达卢斯成为伊斯兰、犹太与基督教文化交流地区，最后一个政权直到1492年才被征服。",
+      "locationName": "直布罗陀（登陆点）"
+    }
   },
   {
     "id": "arab-conquest-sindh",
@@ -1022,7 +1463,13 @@
     "partOf": ["umayyad"],
     "summary": "Muhammad ibn al-Qasim, a young Umayyad general, captures the port of Debal near the mouth of the Indus, defeats King Dahir of Sindh and takes control of Sindh and southern Punjab, in today's Pakistan. Most of the detailed story comes from the Chach Nama, a Persian chronicle written some five centuries later, whose reliability historians debate.",
     "significance": "Sindh became the first lasting foothold of Muslim rule in South Asia, linking the Indus region to the trade and scholarship of the Islamic world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Arab_conquest_of_Sindh"
+    "wikipedia": "https://en.wikipedia.org/wiki/Arab_conquest_of_Sindh",
+    "zh": {
+      "title": "阿拉伯人征服信德",
+      "summary": "年轻将领穆罕默德·伊本·卡西姆攻占印度河口附近港口，击败信德国王，控制今巴基斯坦的信德和旁遮普南部。详细叙述多来自五百年后写成的《查赫纳玛》，可靠性仍有争论。",
+      "significance": "信德成为穆斯林在南亚第一个持久统治据点，将印度河地区与伊斯兰贸易和学术网络连接。",
+      "locationName": "今卡拉奇附近代布尔（地点未定）"
+    }
   },
   {
     "id": "battle-of-tours",
@@ -1038,7 +1485,14 @@
     "partOf": ["frankish-kingdom", "umayyad"],
     "summary": "Frankish forces under Charles Martel defeat an Umayyad army from al-Andalus led by Abd al-Rahman al-Ghafiqi, who is killed in the battle, somewhere between Poitiers and Tours in western France. Some historians date the battle to 733.",
     "significance": "Later writers often hailed it as saving Christian Europe from Islamic conquest, a view many historians now consider exaggerated, but it strengthened Charles Martel's family, the Carolingians.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "zh": {
+      "title": "图尔战役",
+      "summary": "查理·马特率法兰克军在图尔与普瓦捷之间击败来自安达卢斯的倭马亚军，敌军统帅战死。部分学者将战役定于733年。",
+      "significance": "后世常称其“拯救基督教欧洲”，现代研究多认为这种说法夸大，但胜利确实强化了加洛林家族。",
+      "locationName": "图尔与普瓦捷之间（具体地点未定）",
+      "dateLabel": "公元732年10月（或733年）"
+    }
   },
   {
     "id": "uyghur-khaganate",
@@ -1049,7 +1503,12 @@
     "region": "central-asia",
     "summary": "The Uyghurs overthrew the Gokturks and ruled Mongolia for a century from their capital on the Orkhon River. They helped the Tang dynasty put down the An Lushan Rebellion in return for a lucrative trade of horses for silk, and their rulers adopted Manichaeism. The Kyrgyz destroyed the khaganate in 840, and the Uyghurs moved south to the oases of the Tarim Basin.",
     "significance": "It was the first steppe empire to build cities and adopt a world religion, and its heirs gave the Mongols their script.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
+    "wikipedia": "https://en.wikipedia.org/wiki/Uyghur_Khaganate",
+    "zh": {
+      "title": "回鹘汗国",
+      "summary": "回鹘推翻突厥，在蒙古高原统治近百年，以鄂尔浑河畔为都。它帮助唐平定安史之乱，换取有利的马绢贸易，统治者接受摩尼教。840年被黠戛斯击败后，回鹘人南迁塔里木绿洲。",
+      "significance": "回鹘是较早建城并接受世界性宗教的草原帝国，其后继者又向蒙古人传播文字。"
+    }
   },
   {
     "id": "abbasid",
@@ -1060,7 +1519,12 @@
     "region": "mena",
     "summary": "The Abbasids overthrew the Umayyads and moved the capital to Baghdad, which became one of the largest cities in the world. Their caliphs lost real power to regional dynasties from the 9th century on, but remained the symbolic heads of Sunni Islam until the Mongols took Baghdad in 1258.",
     "significance": "Abbasid Baghdad was the center of a flowering of science, medicine, mathematics and philosophy that preserved and extended Greek, Persian and Indian learning.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
+    "wikipedia": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+    "zh": {
+      "title": "阿拔斯王朝",
+      "summary": "阿拔斯推翻倭马亚，将首都迁往巴格达，后者发展为世界最大城市之一。自9世纪起，地方王朝逐步夺走实权，但哈里发仍为逊尼派伊斯兰教的象征领袖，直到1258年蒙古攻陷巴格达。",
+      "significance": "阿拔斯时期的巴格达是科学、医学、数学与哲学中心，保存并发展了希腊、波斯与印度知识。"
+    }
   },
   {
     "id": "abbasid-caliphate",
@@ -1075,7 +1539,13 @@
     "partOf": ["abbasid"],
     "summary": "A revolt that began in Khorasan, in eastern Iran, defeats the last Umayyad caliph at the Battle of the Zab in northern Iraq. Abu al-Abbas al-Saffah, a descendant of Muhammad's uncle Abbas, had already been proclaimed caliph at Kufa, and now founds the Abbasid dynasty. Many members of the Umayyad family are massacred, though one, Abd al-Rahman, escapes to Spain.",
     "significance": "The Abbasids moved the center of the Islamic world east to Iraq, and under later caliphs their capital Baghdad became the heart of a golden age of trade, science and scholarship.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Abbasid_revolution"
+    "wikipedia": "https://en.wikipedia.org/wiki/Abbasid_revolution",
+    "zh": {
+      "title": "阿拔斯王朝建立",
+      "summary": "呼罗珊起义军在伊拉克北部扎卜河战役击败最后一位倭马亚哈里发。穆罕默德叔父阿拔斯的后裔阿布·阿拔斯·萨法赫此前已在库法称哈里发，由此建立阿拔斯王朝。许多倭马亚家族成员被杀，阿卜杜勒·拉赫曼等人逃往西班牙。",
+      "significance": "阿拔斯将伊斯兰世界重心东移至伊拉克，后来以巴格达为中心，开启贸易、科学与学术的黄金时代。",
+      "locationName": "库法（首位阿拔斯哈里发即位地）"
+    }
   },
   {
     "id": "islamic-golden-age",
@@ -1088,7 +1558,13 @@
     "partOf": ["abbasid"],
     "summary": "Scholars across the Islamic world advanced mathematics, medicine, astronomy, philosophy, and literature, drawing on and extending earlier traditions. This band uses the Abbasid-era convention; cultural activity extended beyond these dates and across several regions.",
     "significance": "Its scholars preserved and extended ancient learning and made original advances, such as algebra and clinical medicine, that later passed to Europe.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Islamic_Golden_Age"
+    "wikipedia": "https://en.wikipedia.org/wiki/Islamic_Golden_Age",
+    "zh": {
+      "title": "伊斯兰黄金时代（约）",
+      "summary": "伊斯兰世界的学者继承并发展先前传统，在数学、医学、天文、哲学和文学方面取得重要进展。此处采用常见的阿拔斯时代划分，但文化活动跨越这些年代，也分布于多个地区。",
+      "significance": "学者保存古代知识，并在代数与临床医学等领域取得原创进展，后来又将这些成果传入欧洲。",
+      "dateLabel": "约公元750年-1258年；起止年代说法不一"
+    }
   },
   {
     "id": "tang-poetry",
@@ -1104,7 +1580,14 @@
     "partOf": ["tang"],
     "summary": "In the middle of the 8th century, Li Bai and Du Fu, later judged the two greatest poets in the Chinese language, are both writing, alongside Wang Wei and many others. Skill in verse is tested in the civil service examinations and expected of every educated person; some 49,000 poems from the Tang survive.",
     "significance": "Tang poems have been memorized by Chinese schoolchildren ever since and set the standard for poetry across East Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tang_poetry"
+    "wikipedia": "https://en.wikipedia.org/wiki/Tang_poetry",
+    "zh": {
+      "title": "唐诗的黄金时代",
+      "summary": "8世纪中叶，李白、杜甫与王维等诗人活跃，他们后来被视为中国诗歌的代表人物。诗赋能力是科举考查和士人修养的一部分，现存唐诗约四万九千首。",
+      "significance": "唐诗此后一直被中国学生诵读，并为整个东亚的诗歌创作树立典范。",
+      "locationName": "长安",
+      "dateLabel": "约公元750年"
+    }
   },
   {
     "id": "battle-of-talas",
@@ -1119,7 +1602,13 @@
     "partOf": ["tang", "abbasid"],
     "summary": "An Abbasid army defeats Tang Chinese forces near the Talas River, in today's Kazakhstan and Kyrgyzstan, reportedly after the Tang army's Karluk Turk allies change sides. A famous story says Chinese prisoners taken here taught papermaking in Samarkand, but historians think paper had probably reached Central Asia earlier.",
     "significance": "It marked the westernmost reach of Tang China, which soon lost its hold on Central Asia during the An Lushan Rebellion, leaving the region open to Islamic and Turkic influence.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Talas"
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Talas",
+    "zh": {
+      "title": "怛罗斯之战",
+      "summary": "阿拔斯军在怛罗斯河附近击败唐军，据记载唐的葛逻禄盟军临阵倒戈。中国俘虏将造纸传至撒马尔罕的故事广为流传，但纸可能更早已到中亚。",
+      "significance": "此役标志唐朝西进的界限；安史之乱后，唐更失去中亚控制，该地区逐渐转向伊斯兰与突厥文化。",
+      "locationName": "塔拉兹附近（怛罗斯河）"
+    }
   },
   {
     "id": "bulguksa-seokguram",
@@ -1135,7 +1624,14 @@
     "partOf": ["silla"],
     "summary": "Kim Daeseong, chief minister of Silla, begins the temple of Bulguksa and, on the mountain above it, the Seokguram grotto, a domed chamber of fitted granite blocks around a seated Buddha who faces the sunrise over the East Sea.",
     "significance": "The two are the masterpieces of Buddhist art and architecture from Silla and remain among Korea's most treasured monuments.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Bulguksa"
+    "wikipedia": "https://en.wikipedia.org/wiki/Bulguksa",
+    "zh": {
+      "title": "佛国寺与石窟庵建造",
+      "summary": "新罗大臣金大城主持修建佛国寺及山上的石窟庵。石窟庵以精密拼合的花岗岩构成穹顶石室，中央坐佛面向东方海上的日出。",
+      "significance": "二者是新罗佛教艺术与建筑的杰作，也是朝鲜半岛最珍贵的古迹之一。",
+      "locationName": "庆州吐含山",
+      "dateLabel": "公元751年（774年完成）"
+    }
   },
   {
     "id": "todaiji-great-buddha",
@@ -1151,7 +1647,14 @@
     "partOf": ["nara-period"],
     "summary": "Emperor Shomu, hoping to protect Japan from epidemics and unrest, has a bronze Buddha about 15 meters high cast at the temple of Todai-ji in Nara, using much of the country's copper. An Indian monk paints in the statue's eyes at a ceremony attended by thousands of monks and envoys from abroad.",
     "significance": "The project made Buddhism a religion of the Japanese state; the hall that houses the statue is still one of the largest wooden buildings in the world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/T%C5%8Ddai-ji"
+    "wikipedia": "https://en.wikipedia.org/wiki/T%C5%8Ddai-ji",
+    "zh": {
+      "title": "东大寺大佛开光",
+      "summary": "圣武天皇希望借佛教消除疫病与动乱，在奈良东大寺铸造约15米高的铜佛，耗用全国大量铜料。开光仪式由印度僧人为佛像点睛，数千僧人与外国使节参加。",
+      "significance": "工程强化了佛教作为国家宗教的地位，安放佛像的大殿至今仍是世界最大的木构建筑之一。",
+      "locationName": "奈良东大寺",
+      "dateLabel": "公元752年"
+    }
   },
   {
     "id": "an-lushan-rebellion",
@@ -1166,7 +1669,13 @@
     "partOf": ["tang"],
     "summary": "An Lushan, a powerful Tang general of Sogdian and Turkic descent, rebels from his base in the northeast and captures both Tang capitals, Luoyang and Chang'an. The war lasts until 763. Census figures fall dramatically, but historians think this partly reflects the collapse of record-keeping as well as mass deaths.",
     "significance": "The Tang survived, but much weakened: regional governors gained lasting power, and China lost control of Central Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/An_Lushan_rebellion"
+    "wikipedia": "https://en.wikipedia.org/wiki/An_Lushan_rebellion",
+    "zh": {
+      "title": "安史之乱",
+      "summary": "具有粟特与突厥血统的唐朝将领安禄山从东北根据地起兵，攻占洛阳与长安。战争持续至763年。户籍数字骤减，但历史学家认为，这不仅反映大量死亡，也部分源于登记制度崩溃。",
+      "significance": "唐朝虽得以延续，却严重衰弱：地方节度使获得持久权力，唐也失去了对中亚的控制。",
+      "locationName": "范阳，今北京附近（安禄山的根据地）"
+    }
   },
   {
     "id": "al-andalus",
@@ -1177,7 +1686,12 @@
     "region": "europe",
     "summary": "A prince of the Umayyad family who escaped the Abbasid takeover founded an independent emirate at Córdoba in 756, and in 929 his descendant took the title of caliph. Under them Córdoba became one of the largest cities in Europe, known for its great mosque, libraries and scholars. The caliphate broke up into small rival kingdoms after 1031.",
     "significance": "Muslim Spain passed Arabic science, philosophy and much of the learning of ancient Greece on to Latin Europe.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Al-Andalus"
+    "wikipedia": "https://en.wikipedia.org/wiki/Al-Andalus",
+    "zh": {
+      "title": "安达卢斯（科尔多瓦倭马亚政权）",
+      "summary": "逃离阿拔斯追杀的倭马亚王子于756年在科尔多瓦建立独立政权，后裔于929年称哈里发。科尔多瓦以大清真寺、图书馆和学者闻名，1031年后分裂为诸小国。",
+      "significance": "穆斯林西班牙向拉丁欧洲传播阿拉伯科学、哲学与大量古希腊知识。"
+    }
   },
   {
     "id": "papal-states",
@@ -1188,7 +1702,12 @@
     "region": "europe",
     "summary": "The Frankish king Pippin gave the pope the lands around Rome and Ravenna in 756, and for eleven centuries the popes ruled a band of central Italy as princes as well as heads of the Church. The Kingdom of Italy took most of it in 1860 and Rome itself in 1870.",
     "significance": "Their own territory made the popes a political power in Europe, and its loss left the question of the pope's status open until the creation of Vatican City in 1929.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Papal_States"
+    "wikipedia": "https://en.wikipedia.org/wiki/Papal_States",
+    "zh": {
+      "title": "教皇国",
+      "summary": "法兰克王丕平于756年将罗马、拉文纳附近领土交给教皇。此后约十一世纪，教皇既是宗教领袖，也治理意大利中部领地。意大利于1860年夺取大部，1870年占领罗马。",
+      "significance": "世俗领地使教皇成为欧洲政治强权；领土丧失后的地位争议，直到1929年梵蒂冈城建立才获解决。"
+    }
   },
   {
     "id": "baghdad-founded",
@@ -1203,7 +1722,13 @@
     "partOf": ["abbasid", "islamic-golden-age"],
     "summary": "The Abbasid caliph al-Mansur founds a new capital on the Tigris River, close to where it nears the Euphrates, built as a great round city with the caliph's palace and mosque at its center. Its location on river and caravan routes draws merchants from across Asia.",
     "significance": "Baghdad grew into one of the largest and richest cities in the world and a center of scholarship where Greek, Persian and Indian learning was translated into Arabic.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Round_City_of_Baghdad"
+    "wikipedia": "https://en.wikipedia.org/wiki/Round_City_of_Baghdad",
+    "zh": {
+      "title": "巴格达建城",
+      "summary": "阿拔斯哈里发曼苏尔在底格里斯河畔、靠近幼发拉底河处营建新都，设计为以宫殿和清真寺为中心的大型圆城。河流与陆路交通吸引了亚洲各地商人。",
+      "significance": "巴格达成为世界最大、最富有的城市之一，也是将希腊、波斯和印度学术译成阿拉伯文的重要中心。",
+      "locationName": "巴格达"
+    }
   },
   {
     "id": "lindisfarne-viking-age",
@@ -1219,7 +1744,14 @@
     "partOf": ["viking-age"],
     "summary": "Raiders from Scandinavia attack the monastery on the island of Lindisfarne, off the coast of Northumbria in northeastern England, killing monks and carrying off treasures and captives. The scholar Alcuin writes that such terror had never before appeared in Britain.",
     "significance": "The raid is traditionally seen as the start of the Viking Age, when Norse raiders, traders and settlers reached from North America to the Caspian Sea.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Lindisfarne"
+    "wikipedia": "https://en.wikipedia.org/wiki/Sack_of_Lindisfarne",
+    "zh": {
+      "title": "维京人袭击林迪斯法恩",
+      "summary": "斯堪的纳维亚袭击者洗劫英格兰东北海岸林迪斯法恩修道院，杀害僧侣，带走财宝和俘虏，引发当时学者震惊。",
+      "significance": "此事通常被视为维京时代开端，随后北欧袭击者、商人与定居者的足迹远达北美和里海。",
+      "locationName": "林迪斯法恩",
+      "dateLabel": "公元793年6月8日"
+    }
   },
   {
     "id": "viking-age",
@@ -1231,7 +1763,13 @@
     "region": "europe",
     "summary": "Seafarers from Scandinavia raided, traded, and settled from the North Atlantic to the rivers of eastern Europe, founding communities in the British Isles, Normandy, Iceland, and Greenland. The band runs from the raid on Lindisfarne to the Norman conquest of England, the conventional dates in English-language histories.",
     "significance": "The Vikings redrew the map of northern Europe, founding or reshaping states from Russia to Normandy and England, and were the first Europeans to reach North America.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Viking_Age"
+    "wikipedia": "https://en.wikipedia.org/wiki/Viking_Age",
+    "zh": {
+      "title": "维京时代",
+      "summary": "斯堪的纳维亚航海者在北大西洋与东欧河道贸易、劫掠和定居，在不列颠、诺曼底、冰岛和格陵兰建立社群。此处采用793年至1066年的常见划分。",
+      "significance": "维京人重塑北欧政治版图，也是最早抵达北美的欧洲人。",
+      "dateLabel": "公元793年-1066年；惯用年代范围"
+    }
   },
   {
     "id": "heian",
@@ -1242,7 +1780,12 @@
     "region": "east-asia",
     "summary": "With the capital at Heian-kyo, modern Kyoto, the Japanese imperial court reached its cultural height under the dominance of the Fujiwara family. Court ladies wrote classics such as The Tale of Genji, while real power in the provinces passed to warrior clans.",
     "significance": "The period shaped a distinctly Japanese literature, script and aesthetic, and its end marked the rise of the samurai who would rule Japan for seven centuries.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Heian_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Heian_period",
+    "zh": {
+      "title": "日本平安时期",
+      "summary": "日本朝廷以平安京、今京都为中心，在藤原氏主导下达到宫廷文化高峰。宫廷女性写出《源氏物语》等经典，地方实权却逐渐转入武士家族之手。",
+      "significance": "这一时期形成了独特的日本文学、文字与审美，其结束也标志着此后七百年武士统治的兴起。"
+    }
   },
   {
     "id": "borobudur",
@@ -1257,7 +1800,14 @@
     "location": { "name": "Borobudur, Java", "lat": -7.61, "lng": 110.2 },
     "summary": "In central Java, rulers of the Sailendra dynasty build Borobudur, a vast Buddhist monument shaped as a stepped mountain topped by stupas. Pilgrims walking up its terraces pass more than 2,600 carved relief panels and over 500 statues of the Buddha. Construction probably takes several decades.",
     "significance": "Often described as the largest Buddhist monument in the world, Borobudur shows how deeply Indian religion and art had taken root in island Southeast Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Borobudur"
+    "wikipedia": "https://en.wikipedia.org/wiki/Borobudur",
+    "zh": {
+      "title": "婆罗浮屠建造",
+      "summary": "爪哇中部夏连特拉王朝修建婆罗浮屠，形如层层上升、顶有佛塔的巨型山丘。朝圣者沿台地绕行，可见两千六百余幅浮雕和五百余尊佛像。建设可能持续数十年。",
+      "significance": "婆罗浮屠常被称为世界最大的佛教建筑遗迹，见证印度宗教与艺术在东南亚群岛的深厚影响。",
+      "locationName": "爪哇岛婆罗浮屠",
+      "dateLabel": "约公元800年"
+    }
   },
   {
     "id": "carolingian",
@@ -1268,7 +1818,12 @@
     "region": "europe",
     "summary": "Charlemagne, king of the Franks, united most of western and central Europe and was crowned emperor in Rome in 800. His court promoted learning and church reform, but his grandsons divided the empire in 843 and it had dissolved by 888.",
     "significance": "It revived the idea of empire in the West and its division produced the kingdoms that became France and Germany.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Carolingian_Empire",
+    "zh": {
+      "title": "加洛林帝国",
+      "summary": "查理曼统一西欧和中欧大部，800年加冕为帝，宫廷推动教育与教会改革。其孙辈于843年分割帝国，至888年整体瓦解。",
+      "significance": "它复兴了西欧帝国观念，分裂后形成的王国成为法国和德国的前身。"
+    }
   },
   {
     "id": "charlemagne-crowned",
@@ -1284,7 +1839,14 @@
     "partOf": ["frankish-kingdom", "carolingian"],
     "summary": "On Christmas Day, Pope Leo III crowns Charlemagne, king of the Franks and Lombards, as emperor in Rome. Charlemagne already rules much of western and central Europe, from the Pyrenees to the Elbe.",
     "significance": "It revived the title of emperor in the West for the first time since 476 and tied together the papacy, the Frankish monarchy and the Roman imperial idea, laying foundations for medieval Europe and the later Holy Roman Empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Charlemagne"
+    "wikipedia": "https://en.wikipedia.org/wiki/Charlemagne",
+    "zh": {
+      "title": "查理曼加冕称帝",
+      "summary": "圣诞节，教皇利奥三世在罗马为法兰克与伦巴第国王查理曼加冕。此时其疆域已覆盖从比利牛斯山至易北河的广大地区。",
+      "significance": "西方自476年后首次恢复皇帝称号，将教皇、法兰克王权与罗马帝国传统连接，影响后来的神圣罗马帝国。",
+      "locationName": "罗马旧圣彼得大教堂",
+      "dateLabel": "公元800年12月25日"
+    }
   },
   {
     "id": "khmer",
@@ -1295,7 +1857,12 @@
     "region": "southeast-asia-oceania",
     "summary": "From their capital at Angkor in Cambodia, the Khmer kings ruled much of mainland Southeast Asia. They built vast reservoirs and canals and hundreds of stone temples, including Angkor Wat and the Bayon, first for Hindu gods and later for the Buddha.",
     "significance": "Angkor was among the largest cities of the pre-industrial world, and its temples remain the national symbol of Cambodia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Khmer_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Khmer_Empire",
+    "zh": {
+      "title": "高棉帝国",
+      "summary": "高棉诸王以吴哥为中心统治东南亚大陆大部，修建巨大水库、运河和吴哥窟、巴戎寺等石构神庙，信仰从印度教逐步转向佛教。",
+      "significance": "吴哥是前工业时代世界最大的城市区域之一，其神庙至今仍是柬埔寨的国家象征。"
+    }
   },
   {
     "id": "al-khwarizmi-algebra",
@@ -1311,7 +1878,14 @@
     "partOf": ["abbasid", "islamic-golden-age"],
     "summary": "In Baghdad, the Persian scholar Muhammad ibn Musa al-Khwarizmi writes a book on solving equations by 'completion and balancing', in Arabic al-jabr. He also writes on the Indian system of numerals, including zero, a work known mainly from later Latin translations.",
     "significance": "The word 'algebra' comes from his book's title and 'algorithm' from his name, and Latin translations of his works helped bring algebra and Hindu-Arabic numerals to Europe.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Al-Jabr"
+    "wikipedia": "https://en.wikipedia.org/wiki/Al-Jabr",
+    "zh": {
+      "title": "花拉子米与代数学",
+      "summary": "波斯学者花拉子米在巴格达著书，以“还原与对消”方法求解方程。他还介绍包含零在内的印度数制，该部分著作主要通过后世拉丁文译本传世。",
+      "significance": "“代数”一词源于其书名，“算法”的欧洲语言名称源于其姓名。拉丁译本推动代数与印度-阿拉伯数字在欧洲传播。",
+      "locationName": "巴格达",
+      "dateLabel": "约公元820年"
+    }
   },
   {
     "id": "chola",
@@ -1322,7 +1896,12 @@
     "region": "south-asia",
     "summary": "The Chola kings of the Tamil country conquered southern India and Sri Lanka, and under Rajaraja I and Rajendra I sent fleets across the Bay of Bengal as far as Srivijaya. They built great temples such as the Brihadisvara at Thanjavur and commissioned fine bronze sculpture.",
     "significance": "The Cholas were one of the few Indian powers to project force overseas, and they carried Tamil trade and culture to Southeast Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Chola_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Chola_Empire",
+    "zh": {
+      "title": "朱罗王朝",
+      "summary": "泰米尔朱罗王朝征服南印度和斯里兰卡，在罗阇罗阇一世、拉金德拉一世时期派舰队远征室利佛逝，营建坦贾武尔大寺并制作精美铜像。",
+      "significance": "朱罗是少数能跨海投射军力的印度政权，将泰米尔贸易与文化传播到东南亚。"
+    }
   },
   {
     "id": "pagan",
@@ -1333,7 +1912,12 @@
     "region": "southeast-asia-oceania",
     "summary": "From the city of Pagan on the Irrawaddy, King Anawrahta united the valley in the 11th century, the first state to rule most of what is now Myanmar. Its kings and people adopted Theravada Buddhism and built more than ten thousand temples on the plain around the capital. The kingdom collapsed after Mongol invasions in the 1280s.",
     "significance": "Pagan established the Burmese language, script and Theravada Buddhism as the basis of Burmese culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Pagan_Kingdom"
+    "wikipedia": "https://en.wikipedia.org/wiki/Pagan_Kingdom",
+    "zh": {
+      "title": "蒲甘王国",
+      "summary": "11世纪，阿奴律陀以伊洛瓦底河畔的蒲甘为中心统一河谷，建立首个统治今缅甸大部的国家。君民接受上座部佛教，在首都周围修建万余寺塔。13世纪80年代蒙古入侵后，王国瓦解。",
+      "significance": "蒲甘使缅语、缅文与上座部佛教成为缅甸文化的基础。"
+    }
   },
   {
     "id": "chaco-canyon",
@@ -1348,7 +1932,14 @@
     "location": { "name": "Pueblo Bonito, Chaco Canyon", "lat": 36.06, "lng": -107.96 },
     "summary": "In a dry canyon in what is now New Mexico, Ancestral Puebloan people begin building 'great houses', huge multi-story stone buildings such as Pueblo Bonito, with hundreds of rooms and round ceremonial chambers called kivas. Chaco grows into a center linked by straight roads to settlements across the region.",
     "significance": "Chaco was the largest center of the ancient American Southwest until its decline in the 1100s, and modern Pueblo peoples regard it as an ancestral place.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Chaco_Culture_National_Historical_Park"
+    "wikipedia": "https://en.wikipedia.org/wiki/Chaco_Culture_National_Historical_Park",
+    "zh": {
+      "title": "查科峡谷的大型建筑",
+      "summary": "今新墨西哥州的查科峡谷中，祖先普韦布洛人开始建造“大屋”，例如普韦布洛博尼托。这些多层石构建筑拥有数百房间与称为基瓦的圆形仪式空间，并以笔直道路连接周围聚落。",
+      "significance": "查科曾是古代美国西南地区最大的中心，12世纪衰落。今日普韦布洛族群仍将其视为祖先之地。",
+      "locationName": "查科峡谷普韦布洛博尼托",
+      "dateLabel": "约公元850年"
+    }
   },
   {
     "id": "gunpowder",
@@ -1364,7 +1955,14 @@
     "partOf": ["tang"],
     "summary": "Chinese Taoist alchemists, possibly searching for an elixir of immortality, find that mixing saltpeter, sulfur and charcoal makes a mixture that burns fiercely. A text often dated to the mid-9th century warns that such mixtures can burn the hands and face, but the date of the discovery is uncertain.",
     "significance": "By the 10th century gunpowder was used in Chinese warfare; it later spread across Asia and to Europe, where guns and cannons transformed war and the power of states.",
-    "wikipedia": "https://en.wikipedia.org/wiki/History_of_gunpowder"
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_gunpowder",
+    "zh": {
+      "title": "火药的发现",
+      "summary": "中国道教炼丹者可能在寻找长生药时，发现硝石、硫磺与木炭混合后会猛烈燃烧。一部常被定为9世纪中叶的文献警告，这类混合物可能烧伤手脸，但火药的确切发现年代未定。",
+      "significance": "10世纪时，火药已用于中国战争，后来传遍亚洲并进入欧洲。火枪与火炮改变了战争及国家力量。",
+      "locationName": "唐朝中国（以长安为代表地点）",
+      "dateLabel": "约公元850年"
+    }
   },
   {
     "id": "diamond-sutra",
@@ -1379,7 +1977,13 @@
     "partOf": ["tang"],
     "summary": "A Chinese copy of the Diamond Sutra, a Buddhist scripture, is printed from carved wooden blocks onto a paper scroll about 5 meters long. A note at its end says a man named Wang Jie had it made for his parents in the year corresponding to 868. Sealed in a cave at Dunhuang, it was found in 1900.",
     "significance": "It is the oldest known printed book with a date, showing that woodblock printing was already a mature craft in Tang China.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Diamond_Sutra"
+    "wikipedia": "https://en.wikipedia.org/wiki/Diamond_Sutra",
+    "zh": {
+      "title": "《金刚经》：现存最早有明确纪年的印刷书籍",
+      "summary": "一部汉文《金刚经》以雕版印在约5米长的纸卷上，卷末题记说明王玠于868年为父母敬造。它被封藏于敦煌洞窟，1900年重新发现。",
+      "significance": "这是已知最早带有明确纪年的印刷书籍，表明唐代雕版印刷已相当成熟。",
+      "locationName": "敦煌莫高窟（发现地）"
+    }
   },
   {
     "id": "kievan-rus",
@@ -1390,7 +1994,12 @@
     "region": "europe",
     "summary": "According to the Primary Chronicle, the Varangian prince Oleg seized Kiev in 882 and joined it to Novgorod, uniting the East Slavic lands along the river routes between the Baltic and Byzantium. Prince Vladimir adopted Orthodox Christianity from Constantinople in 988. The state later split into rival principalities, and the Mongols destroyed Kiev in 1240.",
     "significance": "Kievan Rus is the common ancestor of Russia, Ukraine and Belarus, and its choice of Orthodoxy tied the East Slavs to the Byzantine world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kievan_Rus%27"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kievan_Rus%27",
+    "zh": {
+      "title": "基辅罗斯",
+      "summary": "传统记载，882年瓦良格王公奥列格占领基辅，与诺夫哥罗德结合，控制波罗的海通往拜占庭的河运。988年弗拉基米尔接受东正教，后来诸国分裂，1240年基辅被蒙古摧毁。",
+      "significance": "基辅罗斯是俄罗斯、乌克兰和白俄罗斯的共同历史源头，其宗教选择将东斯拉夫世界与拜占庭联系起来。"
+    }
   },
   {
     "id": "classic-maya-collapse",
@@ -1406,7 +2015,14 @@
     "partOf": ["classic-maya"],
     "summary": "Over the 8th and 9th centuries, the great Maya cities of the southern lowlands, such as Tikal, Copan and Palenque, stop raising dated monuments, their kings disappear and most of their people move away. The causes are debated; leading explanations include severe droughts, endless warfare and overuse of the land.",
     "significance": "Maya civilization did not end: cities in the northern Yucatan such as Chichen Itza flourished afterward, and millions of Maya people live in the region today.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Classic_Maya_collapse"
+    "wikipedia": "https://en.wikipedia.org/wiki/Classic_Maya_collapse",
+    "zh": {
+      "title": "玛雅古典文明衰落",
+      "summary": "8至9世纪，蒂卡尔、科潘、帕伦克等南部低地玛雅城市停止立碑，王权瓦解，人口大减。严重干旱、战争和土地过度利用是主要解释，具体原因仍有争论。",
+      "significance": "玛雅文明并未终结，尤卡坦北部城市随后继续繁荣，今日仍有数百万玛雅人生活于该地区。",
+      "locationName": "蒂卡尔（代表地点）",
+      "dateLabel": "约公元900年"
+    }
   },
   {
     "id": "five-dynasties",
@@ -1417,7 +2033,12 @@
     "region": "east-asia",
     "summary": "After the Tang dynasty fell, five short-lived dynasties followed one another in northern China while some ten independent kingdoms divided the south and the far north. The Khitan Liao took the land around modern Beijing in this period, and the wars ended only when the Song reunited most of the country.",
     "significance": "The old Tang aristocracy was destroyed in these decades, clearing the way for the Song dynasty's government by examination-trained officials.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    "wikipedia": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period",
+    "zh": {
+      "title": "五代十国",
+      "summary": "唐亡后，北方相继出现五个短命王朝，南方和北部边缘则分立着约十个政权。契丹辽在此期间取得今北京一带，直到宋统一大部分地区，长期战争才告一段落。",
+      "significance": "旧唐贵族在这一时期衰亡，为宋朝以科举官僚为核心的政治秩序扫清了道路。"
+    }
   },
   {
     "id": "fatimid",
@@ -1428,7 +2049,12 @@
     "region": "mena",
     "summary": "The Fatimids, a Shia dynasty claiming descent from the Prophet's daughter Fatima, took power in what is now Tunisia in 909 and conquered Egypt in 969, where they founded Cairo as their capital. At their height they ruled North Africa, Sicily, Syria and the holy cities of Arabia. Saladin abolished the caliphate in 1171.",
     "significance": "The Fatimids were the only major Shia caliphate, and they made Cairo, with its Al-Azhar mosque and school, a center of the Islamic world.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+    "wikipedia": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+    "zh": {
+      "title": "法蒂玛王朝",
+      "summary": "自称先知之女法蒂玛后裔的什叶派王朝于909年在今突尼斯兴起，969年征服埃及并建开罗。极盛时控制北非、西西里、叙利亚与圣城，1171年被萨拉丁终结。",
+      "significance": "这是主要的什叶派哈里发政权，开罗及爱资哈尔成为伊斯兰世界的重要中心。"
+    }
   },
   {
     "id": "liao",
@@ -1439,7 +2065,12 @@
     "region": "east-asia",
     "summary": "The Khitan, a nomadic people of Manchuria, were united by Abaoji and built an empire reaching from Mongolia to northern China, including the region of modern Beijing. They ruled their nomad and Chinese subjects under separate systems of law and forced the Song dynasty to pay an annual tribute after 1005.",
     "significance": "The Liao pioneered the dual government later used by the Jin, Yuan and Qing; the old Western name for China, Cathay, comes from the word Khitan.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Liao_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Liao_dynasty",
+    "zh": {
+      "title": "辽朝",
+      "summary": "阿保机统一满洲地区的游牧民族契丹，建立横跨蒙古高原与中国北方的帝国，包括今北京地区。辽以不同制度治理游牧与汉地人口，1005年后宋每年向辽支付岁币。",
+      "significance": "辽开创了后被金、元、清沿用的双重治理模式。西方对中国的旧称 Cathay 源于“契丹”。"
+    }
   },
   {
     "id": "goryeo",
@@ -1450,7 +2081,12 @@
     "region": "east-asia",
     "summary": "Wang Geon founded Goryeo and reunited the Korean Peninsula in 936. The kingdom was strongly Buddhist, famous for its pale green celadon pottery, and it carved the Buddhist canon onto wooden blocks and pioneered printing with metal type. It survived Khitan invasions but became a vassal of the Mongols in the 13th century.",
     "significance": "Goryeo held Korea together for nearly five centuries, and its name is the source of the word Korea.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Goryeo"
+    "wikipedia": "https://en.wikipedia.org/wiki/Goryeo",
+    "zh": {
+      "title": "高丽",
+      "summary": "王建建立高丽，于936年重新统一朝鲜半岛。高丽崇奉佛教，以青瓷闻名，将佛经雕刻于木版，并开创金属活字印刷。它抵挡契丹入侵，却在13世纪成为蒙古的附属国。",
+      "significance": "高丽维系统一近五百年，英文 Korea 即源于其国名。"
+    }
   },
   {
     "id": "kingdom-of-england",
@@ -1461,7 +2097,12 @@
     "region": "europe",
     "summary": "Athelstan brought the Anglo-Saxon kingdoms under one crown in 927. The Normans conquered the kingdom in 1066, and over the following centuries its kings were forced to share power with Parliament, a process settled by civil war and the revolution of 1688. In 1707 England united with Scotland as Great Britain.",
     "significance": "England's common law and parliamentary government were carried around the world by the empire that grew out of it.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_England"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_England",
+    "zh": {
+      "title": "英格兰王国",
+      "summary": "927年，埃塞尔斯坦将盎格鲁-撒克逊诸国统一。1066年诺曼征服后，王权逐步与议会分享权力，经历内战和1688年革命。1707年英格兰与苏格兰合为大不列颠。",
+      "significance": "普通法与议会制度随后通过大英帝国传播到世界各地。"
+    }
   },
   {
     "id": "song",
@@ -1472,7 +2113,12 @@
     "region": "east-asia",
     "summary": "The Song reunited most of China and governed it through officials chosen by examination. Its cities and commerce boomed and it issued the first government paper money, but it lost the north to the Jurchen Jin in 1127 and fell to the Mongols in 1279.",
     "significance": "Song China was the most economically and technologically advanced society of its time, bringing printing, gunpowder weapons and the compass into wide use.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Song_dynasty"
+    "wikipedia": "https://en.wikipedia.org/wiki/Song_dynasty",
+    "zh": {
+      "title": "宋朝",
+      "summary": "宋统一中国大部分地区，通过科举官员治理国家。城市与商业繁荣，并发行最早的政府纸币。1127年北方失于女真金朝，1279年南宋又亡于蒙古。",
+      "significance": "宋是当时经济和科技最发达的社会之一，印刷、火药武器和指南针得到广泛应用。"
+    }
   },
   {
     "id": "holy-roman-empire",
@@ -1483,7 +2129,12 @@
     "region": "europe",
     "summary": "Beginning with the coronation of Otto I, the empire was a union of German, Italian, Bohemian and other lands under an elected emperor. Over the centuries its princes, bishops and free cities gained near-independence, and Napoleon's victories brought it to an end in 1806.",
     "significance": "For more than eight centuries it shaped the politics of central Europe, and its loose structure is one reason Germany and Italy became unified nations only in the 19th century.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+    "wikipedia": "https://en.wikipedia.org/wiki/Holy_Roman_Empire",
+    "zh": {
+      "title": "神圣罗马帝国",
+      "summary": "从奥托一世加冕起，帝国涵盖德意志、意大利、波希米亚等地，由选举产生的皇帝领导。诸侯、主教与自由城市逐渐获得高度自主，帝国最终于1806年解体。",
+      "significance": "它塑造中欧八百余年，其分权结构也是德意志与意大利较晚统一的原因之一。"
+    }
   },
   {
     "id": "dai-viet",
@@ -1494,7 +2145,12 @@
     "region": "southeast-asia-oceania",
     "summary": "After a thousand years of Chinese rule, the Vietnamese of the Red River delta secured their independence in the 10th century. Under the Ly, Tran and Le dynasties the kingdom repelled Song, Mongol and Ming invasions, governed through Confucian examinations, and expanded steadily southward at the expense of Champa. It was renamed Vietnam in 1804.",
     "significance": "Dai Viet kept Vietnam independent of China while adopting much of its statecraft, and gave the country its present shape.",
-    "wikipedia": "https://en.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t"
+    "wikipedia": "https://en.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t",
+    "zh": {
+      "title": "大越",
+      "summary": "越南人在经历约千年中国统治后于10世纪独立。李、陈、黎等王朝抵抗宋、蒙古与明的进攻，采用儒家官僚制度，并不断向占婆领土南扩，1804年改国号为越南。",
+      "significance": "大越在借鉴中国国家制度的同时保持独立，并逐步形成今日越南的疆域。"
+    }
   },
   {
     "id": "ghaznavid",
@@ -1505,7 +2161,12 @@
     "region": "central-asia",
     "summary": "The Ghaznavids were a dynasty of Turkic slave soldiers who made themselves rulers at Ghazni in what is now Afghanistan. Under Mahmud, who raided northern India seventeen times, the empire stretched from Iran to the Punjab, and his court patronized the poet Ferdowsi and the scholar al-Biruni.",
     "significance": "The Ghaznavids opened northern India to Muslim rule and set the pattern of Turkic armies ruling through Persian culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ghaznavids"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghaznavids",
+    "zh": {
+      "title": "加兹尼王朝",
+      "summary": "突厥奴隶军人出身的加兹尼王朝，以今阿富汗加兹尼为中心。马哈茂德屡次进攻北印度，疆域横跨伊朗至旁遮普，宫廷扶持菲尔多西与比鲁尼等学者。",
+      "significance": "它为穆斯林进入北印度铺路，并确立突厥军事精英结合波斯文化的统治模式。"
+    }
   },
   {
     "id": "rajaraja-chola",
@@ -1520,7 +2181,13 @@
     "partOf": ["chola"],
     "summary": "Rajaraja I becomes king of the Cholas of Tamil Nadu and conquers neighboring kingdoms in southern India, northern Sri Lanka and the Maldives, using a strong navy. At his capital Thanjavur he builds the Brihadisvara Temple, completed around 1010.",
     "significance": "Under Rajaraja and his son Rajendra I, the Chola Empire became the leading power of southern India and the Bay of Bengal, spreading Tamil culture and trade across the sea to Southeast Asia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Rajaraja_I"
+    "wikipedia": "https://en.wikipedia.org/wiki/Rajaraja_I",
+    "zh": {
+      "title": "罗阇罗阇扩张朱罗王朝",
+      "summary": "罗阇罗阇一世即位后，以强大海军和军队征服南印度邻国、斯里兰卡北部及马尔代夫，并在首都坦贾武尔建造约1010年完工的大寺。",
+      "significance": "他与其子拉金德拉一世使朱罗成为南印度和孟加拉湾的主导力量，将泰米尔文化与贸易扩展到东南亚。",
+      "locationName": "坦贾武尔"
+    }
   },
   {
     "id": "kingdom-of-france",
@@ -1531,7 +2198,12 @@
     "region": "europe",
     "summary": "When Hugh Capet was elected king in 987 he controlled little beyond Paris. His descendants slowly brought the great duchies under the crown, drove the English out in the Hundred Years' War, and by the reign of Louis XIV had made France the strongest and most centralized monarchy in Europe. The Revolution abolished the monarchy in 1792.",
     "significance": "France was the leading power of medieval and early modern Europe, and its language and court set the fashion for the continent.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_France"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_France",
+    "zh": {
+      "title": "法兰西王国",
+      "summary": "987年于格·卡佩即位时，直接控制范围仅略超巴黎。后代逐步收服大诸侯，百年战争中逐走英军，至路易十四时形成强大中央集权君主国，1792年被革命推翻。",
+      "significance": "法国长期是欧洲主要强国，其语言与宫廷文化成为大陆各国效仿的典范。"
+    }
   },
   {
     "id": "kingdom-of-hungary",
@@ -1543,7 +2215,13 @@
     "region": "europe",
     "summary": "Stephen I, a descendant of the Magyar chiefs who had settled the Danube plain, was crowned a Christian king in 1000. The kingdom became one of the largest in medieval Europe, survived a Mongol invasion in 1241, and held the Ottoman advance for a century before its army was destroyed at Mohacs in 1526.",
     "significance": "Hungary was the shield of central Europe against the Ottomans; after 1526 it was divided between them and the Habsburgs.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary"
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary",
+    "zh": {
+      "title": "匈牙利王国",
+      "summary": "定居多瑙河平原的马扎尔首领后裔伊什特万一世于1000年加冕为基督教国王。匈牙利成长为中世纪欧洲大国，经历蒙古入侵，并长期抵抗奥斯曼，直到1526年莫哈奇惨败。",
+      "significance": "匈牙利是中欧抵御奥斯曼的重要屏障，1526年后领土被奥斯曼与哈布斯堡等势力分割。",
+      "dateLabel": "1000-1526年（作为独立王国）"
+    }
   },
   {
     "id": "norse-vinland",
@@ -1559,7 +2237,14 @@
     "partOf": ["viking-age"],
     "summary": "Norse sailors from the settlements in Greenland, led according to Icelandic sagas by Leif Erikson, reach a land they call Vinland on the coast of North America. At L'Anse aux Meadows, in Newfoundland, archaeologists have found a Norse camp, possibly the Vinland of the sagas, including wood cut with metal tools that a tree-ring study dates to 1021. They do not stay long.",
     "significance": "It was the first known European contact with the Americas, nearly five centuries before Columbus, though it left no lasting settlement.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Vinland"
+    "wikipedia": "https://en.wikipedia.org/wiki/Vinland",
+    "zh": {
+      "title": "北欧人抵达文兰",
+      "summary": "格陵兰的北欧航海者抵达北美沿岸，称之为文兰；冰岛萨迦将旅程归于莱夫·埃里克松。纽芬兰兰塞奥兹牧草地发现北欧营地，可能对应传说中的文兰，其中经金属工具砍伐的木材被树轮研究定为1021年。定居并未持续很久。",
+      "significance": "这是已知最早的欧洲与美洲接触，比哥伦布早近五百年，但没有形成持久殖民地。",
+      "locationName": "纽芬兰兰塞奥兹牧草地",
+      "dateLabel": "约1000年"
+    }
   },
   {
     "id": "polynesians-settle-hawaii",
@@ -1574,6 +2259,13 @@
     "location": { "name": "Island of Hawaii (representative point)", "lat": 19.6, "lng": -155.5 },
     "summary": "Polynesian voyagers, probably from the Marquesas or Society Islands, sail thousands of kilometers across open ocean in double-hulled canoes and settle the Hawaiian Islands, bringing crops such as taro and animals such as pigs. The timing is debated: older estimates placed it several centuries earlier, but recent radiocarbon studies point to around 1000 to 1200.",
     "significance": "The settlement of Hawaii was one of the great feats of navigation without instruments, part of the Polynesian expansion that reached nearly every habitable island of the Pacific.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Hawaii"
+    "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Hawaii",
+    "zh": {
+      "title": "波利尼西亚人定居夏威夷",
+      "summary": "波利尼西亚人可能从马克萨斯或社会群岛乘双体独木舟抵达夏威夷，携带芋头、猪等动植物。年代仍有争论，近年的碳测年倾向约1000至1200年。",
+      "significance": "这是无现代仪器远洋导航的杰出成就，也是波利尼西亚遍及太平洋宜居岛屿扩张的一部分。",
+      "locationName": "夏威夷岛（代表地点）",
+      "dateLabel": "约公元1000年-1200年"
+    }
   }
 ]
