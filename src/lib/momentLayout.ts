@@ -6,6 +6,8 @@ export interface Marker {
   halfWidth: number;
   label: string;
   importance: 1 | 2 | 3;
+  /** Keep the selected entry labelled ahead of other markers when space is limited. */
+  selected?: boolean;
 }
 
 /** Beside the marker on its line, or centered in the first or second row above it. */
@@ -23,7 +25,7 @@ type Box = [left: number, right: number];
 const collides = (box: Box, others: Box[]) => others.some(([l, r]) => box[0] < r + GAP && box[1] > l - GAP);
 
 /**
- * Decides which markers get a label and where. Most important first, then earliest, so that the
+ * Decides which markers get a label and where. Selected first, then most important, then earliest, so that the
  * labels do not change as the playhead moves: beside the marker (right, then left) if that stretch of the line is free of other markers and
  * labels, otherwise centered above it in the first of the two rows that is free, otherwise no label.
  */
@@ -32,7 +34,7 @@ export function placeLabels(markers: Marker[], width: number, charWidth: number)
   const beside: Box[] = [];
   const rows: Record<'above' | 'top', Box[]> = { above: [], top: [] };
   const bodies = new Map(markers.map((m): [string, Box] => [m.id, [m.x - m.halfWidth, m.x + m.halfWidth]]));
-  const order = [...markers].sort((a, b) => b.importance - a.importance || a.x - b.x);
+  const order = [...markers].sort((a, b) => Number(b.selected ?? false) - Number(a.selected ?? false) || b.importance - a.importance || a.x - b.x);
   for (const m of order) {
     const w = m.label.length * charWidth;
     const others = [...bodies].filter(([id]) => id !== m.id).map(([, box]) => box);

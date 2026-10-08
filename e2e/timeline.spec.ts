@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('scrubbing the timeline changes the year and the URL', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('strip-year')).toHaveText('44 BC');
   const box = (await page.getByTestId('timeline-axis').boundingBox())!;
   await page.mouse.click(box.x + box.width - 2, box.y + box.height / 2);
@@ -11,12 +12,14 @@ test('scrubbing the timeline changes the year and the URL', async ({ page }) => 
 
 test('the playhead stays fully on screen at the last year', async ({ page }) => {
   await page.goto('/?year=2000');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const head = (await page.getByTestId('playhead').boundingBox())!;
   expect(head.x + head.width).toBeLessThanOrEqual(page.viewportSize()!.width);
 });
 
 test('the 500 years button shows 500 years around the playhead', async ({ page }) => {
   await page.goto('/?year=1945');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await page.getByRole('button', { name: '500 years', exact: true }).click();
   const labels = page.locator('.strip-axis .tick-label');
   await expect(labels.first()).toHaveText('1500');
@@ -25,8 +28,24 @@ test('the 500 years button shows 500 years around the playhead', async ({ page }
   await expect(page.getByTestId('playhead')).toBeVisible();
 });
 
+test('the 100 years preset zooms around the playhead and all years restores the full span', async ({ page }) => {
+  await page.goto('/?year=1950');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
+  const zoom = page.getByRole('group', { name: 'Timeline zoom', exact: true });
+  await expect(zoom).toContainText('Visible span');
+  await zoom.getByRole('button', { name: '100 years', exact: true }).click();
+  const labels = page.locator('.strip-axis .tick-label');
+  await expect(labels.first()).toHaveText('1900');
+  await expect(labels.last()).toHaveText('2000');
+  await expect(page.getByTestId('strip-year')).toHaveText('1950');
+  await zoom.getByRole('button', { name: 'All years', exact: true }).click();
+  await expect(labels.first()).toHaveText('2000 BC');
+  await expect(labels.last()).toHaveText('2000');
+});
+
 test('clicking an era band jumps to its start', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await page.locator('[data-entry="han"] rect').click();
   await expect(page.getByTestId('strip-year')).toHaveText('206 BC');
   await expect(page).toHaveURL(/year=-206/);
@@ -34,6 +53,7 @@ test('clicking an era band jumps to its start', async ({ page }) => {
 
 test('dragging the playhead along the axis changes the year', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const head = (await page.getByTestId('playhead').boundingBox())!;
   const axis = (await page.getByTestId('timeline-axis').boundingBox())!;
   await page.mouse.move(head.x + head.width / 2, axis.y + axis.height / 2);
@@ -46,6 +66,7 @@ test('dragging the playhead along the axis changes the year', async ({ page }) =
 
 test('dragging across the bands pans the view without changing the year', async ({ page }) => {
   await page.goto('/?year=-44&zoom=4');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('strip-year')).toHaveText('44 BC');
   const band = page.locator('[data-entry="han"] rect');
   await band.scrollIntoViewIfNeeded();
@@ -63,6 +84,7 @@ test('dragging across the bands pans the view without changing the year', async 
 
 test('clicking an era that starts off-screen brings its start into view', async ({ page }) => {
   await page.goto('/?year=100&zoom=40');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const band = page.locator('[data-entry="han"] rect');
   const axis = (await page.getByTestId('timeline-axis').boundingBox())!;
   expect((await band.boundingBox())!.x).toBeLessThanOrEqual(axis.x + 1);
@@ -74,6 +96,7 @@ test('clicking an era that starts off-screen brings its start into view', async 
 
 test('wheel scrolling browses regions without zooming and buttons still zoom', async ({ page }) => {
   await page.goto('/?year=-44&zoom=4');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const lanes = page.locator('.strip-lanes');
   const box = (await lanes.boundingBox())!;
   const band = page.locator('[data-entry="roman-empire"] rect');
@@ -92,10 +115,11 @@ test('wheel scrolling browses regions without zooming and buttons still zoom', a
 
 test('region toggles support comparisons and an empty selection', async ({ page }) => {
   await page.goto('/?year=-44&zoom=4');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const regions = page.getByRole('navigation', { name: 'Timeline regions' });
   const lanes = page.locator('.strip-lanes [data-region]');
-  await expect(lanes).toHaveCount(6);
-  for (const name of ['Mid. East', 'Steppe', 'S. Asia', 'SE Asia']) {
+  await expect(lanes).toHaveCount(8);
+  for (const name of ['Mid. East', 'Steppe', 'S. Asia', 'SE Asia', 'Africa', 'Americas']) {
     const button = regions.getByRole('button', { name, exact: true });
     await button.click();
     await expect(button).toHaveAttribute('aria-pressed', 'false');
@@ -120,16 +144,14 @@ test('region toggles support comparisons and an empty selection', async ({ page 
 });
 
 
-test('the Americas and Africa can be added to a timeline comparison', async ({ page }) => {
+test('the Americas and Africa start selected and can be toggled independently', async ({ page }) => {
   await page.goto('/?year=1450&zoom=4');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const regions = page.getByRole('navigation', { name: 'Timeline regions' });
   const americas = regions.getByRole('button', { name: 'Americas', exact: true });
   const africa = regions.getByRole('button', { name: 'Africa', exact: true });
-  await expect(americas).toHaveAttribute('aria-pressed', 'false');
-  await expect(africa).toHaveAttribute('aria-pressed', 'false');
-  await expect(page.locator('[data-entry="inca"]')).toHaveCount(0);
-  await americas.click();
-  await africa.click();
+  await expect(americas).toHaveAttribute('aria-pressed', 'true');
+  await expect(africa).toHaveAttribute('aria-pressed', 'true');
   await expect(page.locator('.strip-lanes [data-region]')).toHaveCount(8);
   await expect(page.locator('[data-entry="inca"]')).toHaveCount(1);
   await expect(page.locator('[data-entry="aztec"]')).toHaveCount(1);
@@ -138,5 +160,26 @@ test('the Americas and Africa can be added to a timeline comparison', async ({ p
   await americas.click();
   await expect(page.locator('[data-entry="inca"]')).toHaveCount(0);
   await expect(page.locator('[data-entry="mali"]')).toHaveCount(1);
+  await africa.click();
+  await expect(page.locator('[data-entry="mali"]')).toHaveCount(0);
+  await americas.click();
+  await africa.click();
+  await expect(page.locator('.strip-lanes [data-region]')).toHaveCount(8);
   await expect(page.getByTestId('strip-year')).toHaveText('1450');
+});
+
+test('zoomed regions pack visible entries without reserving off-screen rows', async ({ page }) => {
+  await page.goto('/?year=-300');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
+  for (const span of ['500 years', '100 years', 'All years']) {
+    await page.getByRole('button', { name: span, exact: true }).click();
+    const europe = page.locator('[data-region="europe"]');
+    const bars = europe.locator('.era > rect');
+    expect(await bars.count()).toBeGreaterThan(0);
+    const bottom = await bars.evaluateAll((rects) => Math.max(...rects.map((rect) =>
+      Number(rect.getAttribute('y')) + Number(rect.getAttribute('height')))));
+    const nextRule = Number(await page.locator('[data-region="mena"] .lane-rule').getAttribute('y1'));
+    expect(nextRule - bottom).toBeGreaterThan(0);
+    expect(nextRule - bottom).toBeLessThanOrEqual(12);
+  }
 });

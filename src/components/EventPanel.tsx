@@ -36,7 +36,7 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
   // its scroll position when what it shows changes.
   useLayoutEffect(() => {
     paneRef.current!.scrollTop = 0;
-  }, [selected?.id]);
+  }, [selected?.id, sheetOpen]);
 
   // On phones, choosing an entry (for example from a map pin) opens the sheet.
   useEffect(() => {
@@ -53,6 +53,7 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
     <aside ref={paneRef} className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
       <button
         className="sheet-handle"
+        aria-expanded={sheetOpen}
         aria-label={sheetOpen ? text('Collapse events', '收起事件') : text('Expand events', '展开事件')}
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture(e.pointerId);

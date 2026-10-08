@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('the map renders a canvas', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('map').locator('canvas')).toBeVisible();
   await expect(page.getByTestId('map')).toHaveAttribute('data-borders', 'world_bc100.geojson');
 });
@@ -15,6 +16,7 @@ test('without WebGL the map shows a fallback and the timeline still works', asyn
     } as typeof original;
   });
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByText('The map needs WebGL')).toBeVisible();
   await page.locator('[data-entry="han"] rect').click();
   await expect(page.getByTestId('strip-year')).toHaveText('206 BC');
@@ -29,6 +31,7 @@ test('tapping a territory reveals its name and highlights it, including blank-na
     }] } });
   });
   await page.goto('/?year=700');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('map')).toHaveAttribute('data-borders', 'world_700.geojson');
   const canvas = page.getByTestId('map').locator('canvas');
   await canvas.click({ position: { x: 450, y: 180 } });
@@ -60,6 +63,7 @@ async function mapView(page: import('@playwright/test').Page) {
 
 test('selecting a moment zooms the map in on its place', async ({ page }) => {
   await page.goto('/?year=1440&zoom=6');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('map')).toHaveAttribute('data-borders', /.+/);
   await page.locator('.marker[data-entry="fall-of-constantinople"] .marker-shape').click();
   await expect.poll(async () => (await mapView(page)).zoom).toBeGreaterThanOrEqual(4);
@@ -70,6 +74,7 @@ test('selecting a moment zooms the map in on its place', async ({ page }) => {
 
 test('selecting a period with no single place zooms the map to its region', async ({ page }) => {
   await page.goto('/?year=1500&zoom=6');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('map')).toHaveAttribute('data-borders', /.+/);
   await page.locator('.era[data-entry="renaissance"]').click({ position: { x: 40, y: 8 } });
   // The map starts at zoom 1.8, showing most of the world.
@@ -83,6 +88,7 @@ test('selecting a period with no single place zooms the map to its region', asyn
 
 test('selecting a small state zooms in closely on its territory', async ({ page }) => {
   await page.goto('/?year=1500&zoom=6');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByTestId('map')).toHaveAttribute('data-borders', /.+/);
   await page.locator('.era[data-entry="joseon"]').click({ position: { x: 40, y: 8 } });
   await expect(page.getByTestId('map')).toHaveAttribute('data-territory', 'joseon');

@@ -8,6 +8,7 @@ for (const period of [
 ]) {
   test(`selecting ${period.name} shows context without inventing a territory`, async ({ page }) => {
     await page.goto(`/?year=${period.year}&zoom=20`);
+    await page.getByRole('button', { name: 'English', exact: true }).click();
     await expect(page.getByRole('button', { name: period.region, exact: true })).toHaveAttribute('aria-pressed', 'true');
     const band = page.locator(`[data-entry="${period.id}"]`);
     await band.scrollIntoViewIfNeeded();

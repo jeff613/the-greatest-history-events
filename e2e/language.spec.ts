@@ -1,27 +1,28 @@
 import { expect, test } from '@playwright/test';
 
-test('English is the default even in a Chinese browser; switching preserves the selected event', async ({ browser }) => {
-  const context = await browser.newContext({ locale: 'zh-CN' });
+test('Chinese and all regions are defaults even in an English browser; switching preserves selection', async ({ browser }) => {
+  const context = await browser.newContext({ locale: 'en-US' });
   const page = await context.newPage();
   await page.goto('/?year=-44&item=caesar-assassination');
   const card = page.getByTestId('entry-card');
-  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
-  await expect(card.getByRole('heading', { name: 'Julius Caesar assassinated' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'English', exact: true })).toHaveAttribute('aria-pressed', 'true');
-  const url = page.url();
-  await page.getByRole('button', { name: '中文', exact: true }).click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'zh-CN');
   await expect(page).toHaveTitle('世界历史长卷');
   await expect(card.getByRole('heading', { name: '尤利乌斯·恺撒遇刺' })).toBeVisible();
+  await expect(page.getByRole('button', { name: '中文', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.strip-lanes [data-region]')).toHaveCount(8);
+  await expect(page.getByRole('navigation', { name: '时间轴地区' }).locator('button[aria-pressed="false"]')).toHaveCount(0);
   await expect(card).toContainText('历史意义');
   await expect(card).toContainText('公元前44年3月15日');
   await expect(page.getByTestId('strip-year')).toHaveText('公元前44年');
-  await expect(page).toHaveURL(url);
+  const url = page.url();
   await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(card.getByRole('heading', { name: 'Julius Caesar assassinated' })).toBeVisible();
-  await page.getByRole('button', { name: '中文', exact: true }).click();
-  await page.reload();
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page).toHaveURL(url);
+  await page.getByRole('button', { name: 'Africa', exact: true }).click();
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'zh-CN');
+  await expect(page.locator('.strip-lanes [data-region]')).toHaveCount(8);
   await context.close();
 });
 

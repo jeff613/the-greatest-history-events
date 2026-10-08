@@ -14,6 +14,7 @@ describe('minImportance', () => {
     expect(minImportance(1501)).toBe(3);
     expect(minImportance(1500)).toBe(2);
     expect(minImportance(500)).toBe(2);
+    expect(minImportance(301)).toBe(2);
     expect(minImportance(300)).toBe(1);
     expect(minImportance(100)).toBe(1);
   });
@@ -76,6 +77,14 @@ describe('placeLabels', () => {
     expect(pair({ importance: 3 }, { importance: 1 }).get('a')).toBe('above');
     expect(pair({}, {}).get('a')).toBe('above');
     expect(pair({}, {}).get('b')).toBe('top');
+  });
+
+  it('keeps a selected detailed event labelled ahead of crowded highlights', () => {
+    const crowd = [marker('a', 20, { importance: 3 }), marker('b', 40, { importance: 3 }),
+      marker('selected', 60, { importance: 1, selected: true })];
+    const labels = placeLabels(crowd, 80, CHAR);
+    expect(labels.get('selected')).toBe('above');
+    expect(labels.size).toBe(2);
   });
 
   it('leaves a marker unlabelled when the line and both rows above are taken', () => {

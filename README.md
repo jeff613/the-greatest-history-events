@@ -12,9 +12,17 @@ An interactive world map and timeline of history from 2000 BC to AD 2000, built 
 - **A map that follows the year.** Historical borders change as you move through time. Selecting a state highlights its territory; selecting a moment zooms to where it happened.
 - **A reading pane.** With nothing selected it lists what was in progress and what happened around the current year. Select an entry for a short description, why it mattered, what it was part of, its key moments, and a Wikipedia link.
 - **Shareable links.** The year, zoom and selected entry are kept in the URL.
-- **English and Simplified Chinese.** Use the English / 中文 buttons in the header to switch the interface and historical entries. Every page load starts in English; switching languages preserves the selected entry, timeline and map view.
+- **English and Simplified Chinese.** Use the English / 中文 buttons in the header to switch the interface and historical entries. Every page load starts in Simplified Chinese with all regions selected; switching languages preserves the selected entry, timeline and map view.
 
-The content is a curated focus on Europe and Asia, with major turning points elsewhere: about 470 entries in all.
+The collection focuses on Europe and Asia and includes major turning points elsewhere. It contains 608 entries: 362 moments, 83 periods and 163 states. East Asia includes 118 moments, with expanded coverage of Chinese philosophy, science, literature, trade, institutions and modern history.
+
+## Exploring the timeline
+
+Fresh page loads start in Simplified Chinese with all eight regions and all three entry types selected. Use **English / 中文** to switch language, the region buttons to choose comparisons, and **States / Periods / Moments** to show or hide each type. These choices reset on reload; shared URLs preserve the year, zoom and selected entry.
+
+Use **100 years**, **500 years**, **All years**, or the **+ / -** buttons to change the visible span. The detail indicator explains which event tiers are showing. Zooming in adds events while retaining the higher tiers. A selected event remains visible regardless of tier when its date is in view, subject to region and type filters.
+
+Chinese states and periods occupy adjacent rows within East Asia, followed by Japanese and Korean groups. Rows are packed for the visible time window and selected types. Short periods appear once as labelled markers when their names cannot fit inside a bar. Scroll to browse regions, drag to move through time, and drag the timeline's upper edge to adjust its height.
 
 ## Getting started
 
@@ -63,8 +71,10 @@ All content lives in `data/timeline/`, one JSON file per millennium. Every entry
 }
 ```
 
+- Moment importance is editorial: `3` for world-changing highlights, `2` for major regional or thematic milestones, `1` for closer detail. Avoid assigning every new entry to the highest tier. The timeline shows tier 3 at spans over 1,500 years, adds tier 2 at 1,500 years or less, and adds tier 1 at 300 years or less. Selected moments stay visible within the visible range regardless of tier, subject to region/type filters. States and periods remain visible as context. Label placement prioritizes the selection, then importance; crowded markers may remain unlabelled until closer zoom.
 - `kind` is `state`, `period` or `moment`. A moment has no `end`; a state or period must have one.
 - A moment or period can name the states and periods it belongs to: `"partOf": ["byzantine", "ottoman"]`. These links are what the card shows as "Part of" and "Key moments".
+- New East Asian state or period IDs should be added to the appropriate presentation group in `src/lib/packEras.ts`; moments do not require this mapping. These groups arrange rows, not territorial claims.
 - Years are signed integers with no year zero: `-44` is 44 BC.
 - `npm run validate` checks every rule and names the file, entry and field when one is broken.
 
@@ -74,17 +84,23 @@ The conventions for working in the code are in [AGENTS.md](AGENTS.md), and the d
 
 English stays in each record's existing fields. Its `zh` object supplies Chinese `title`, `summary` and `significance`, plus `locationName` and `dateLabel` when the English record has those fields. Keep both languages up to date when adding or editing content. IDs, relationships, coordinates and Wikipedia URLs are shared; Wikipedia links still open the English articles.
 
-`src/state/LocaleContext.tsx` provides the language state, interface text and localized entry views. Date formatting lives in `src/lib/years.ts`. Language is not stored in the URL or browser storage, so reloading returns to English even in a Chinese-language browser.
+`src/state/LocaleContext.tsx` provides the language state, interface text and localized entry views. Date formatting lives in `src/lib/years.ts`. Language is not stored in the URL or browser storage, so reloading returns to Simplified Chinese regardless of the browser language.
 
 `data/locales/map.zh.json` translates major map labels by their source names. Names without a translation retain the original label. Keep canonical border names unchanged so territory matching continues to work. Chinese text uses system Chinese serif fonts.
 
-`npm test` checks translation coverage for every entry and preserves shared record fields. `npm run test:e2e` checks the English default, language switching, related entries, the About dialog and the mobile layout.
+`npm test` checks translation coverage for every entry and preserves shared record fields. `npm run test:e2e` checks the Chinese default, language switching, related entries, the About dialog and the mobile layout.
 
 ## Accuracy
 
 Borders are approximate. Before the modern era most states had no fixed frontiers, and many overlapped, so treat the shaded areas as a rough picture of who held sway. The map shows the nearest border snapshot at or before the selected year, not a reconstruction of every year.
 
 The entries are short summaries, and every one links to Wikipedia for further reading. If you find a mistake, please [open an issue](https://github.com/jeff613/the-greatest-history-events/issues).
+
+## Verification and release status
+
+Local verification on 2026-10-08 passed 128 unit tests, 52 browser tests, data validation, TypeScript checking and the production build. The 140 entries added in this update have checked Wikipedia links and English/Simplified Chinese text. Browser coverage includes zoom tiers, selection retention, region/type filters, Chinese defaults, shared links and phone layouts.
+
+`main` is the website's release branch. Pushing runs CI but does not publish the site. Deployment is a separate operations step using the latest remote `main`; generated `dist/` files and downloaded map assets are not committed.
 
 ## Data sources
 

@@ -297,6 +297,25 @@
     }
   },
   {
+    "id": "hundred-schools",
+    "kind": "period",
+    "title": "Hundred Schools of Thought",
+    "start": -770,
+    "end": -221,
+    "dateLabel": "c. 770-221 BC",
+    "region": "east-asia",
+    "partOf": ["zhou"],
+    "summary": "Competing thinkers in Zhou China debate ethics, government and the natural world. Confucian, Daoist, Mohist and Legalist traditions develop across the Spring and Autumn and Warring States periods; the boundaries of this intellectual flowering are approximate.",
+    "significance": "These debates shaped Chinese political thought, education and philosophy for more than two millennia.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hundred_Schools_of_Thought",
+    "zh": {
+      "title": "百家争鸣",
+      "summary": "周代中国的思想家围绕伦理、治国与自然展开争论。儒家、道家、墨家与法家等传统在春秋战国时期发展；这一思想繁荣阶段的起止年代为大致范围。",
+      "significance": "这些辩论塑造了此后两千多年的中国政治思想、教育与哲学。",
+      "dateLabel": "约公元前770至221年"
+    }
+  },
+  {
     "id": "spring-and-autumn",
     "kind": "period",
     "title": "Spring and Autumn period",
@@ -485,6 +504,26 @@
       "significance": "耆那教延续约两千五百年，不害生命的原则后来也影响了甘地等人。",
       "locationName": "毗舍离（传统说法中的出生地）",
       "dateLabel": "公元前599年（传统出生年份；年代有争议）"
+    }
+  },
+  {
+    "id": "solon-reforms",
+    "kind": "moment",
+    "title": "Solon's reforms in Athens",
+    "start": -594,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Athens, Greece", "lat": 37.98, "lng": 23.73 },
+    "summary": "Solon cancels debt obligations that have reduced Athenians to bondage and reorganizes political participation. His reforms do not establish full democracy or end slavery generally.",
+    "significance": "The reforms eased a social crisis and became an important stage in the development of Athenian government.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Solon",
+    "zh": {
+      "title": "梭伦改革",
+      "summary": "梭伦取消使雅典人沦为债役者的债务，并调整政治参与制度。改革并未建立完整民主，也未普遍废除奴隶制。",
+      "significance": "改革缓解了社会危机，成为雅典政治制度发展的重要阶段。",
+      "locationName": "希腊雅典"
     }
   },
   {
@@ -725,7 +764,7 @@
     "category": "religion",
     "importance": 3,
     "location": { "name": "Qufu, state of Lu", "lat": 35.6, "lng": 116.99 },
-    "partOf": ["zhou", "spring-and-autumn"],
+    "partOf": ["zhou", "spring-and-autumn", "hundred-schools"],
     "summary": "Confucius (Kong Qiu), a teacher and sometime official from the state of Lu in eastern China, gathers students and teaches that good government rests on virtuous rulers, respect within families, proper ritual and lifelong learning. His sayings are later collected by his followers in the Analects.",
     "significance": "Confucianism became the official philosophy of Chinese states for some two thousand years and shaped the values, education and government of Korea, Japan and Vietnam as well.",
     "wikipedia": "https://en.wikipedia.org/wiki/Confucius",
@@ -748,7 +787,7 @@
     "category": "religion",
     "importance": 2,
     "location": { "name": "Luoyang (Zhou court, traditional)", "lat": 34.62, "lng": 112.45 },
-    "partOf": ["zhou", "spring-and-autumn"],
+    "partOf": ["zhou", "spring-and-autumn", "hundred-schools"],
     "summary": "Chinese tradition holds that Laozi, an archivist at the Zhou court, writes the Tao Te Ching, a short book of poetic sayings about the Tao, 'the Way' or natural order behind all things. It praises simplicity, humility and acting without forcing (wu wei). Both the traditional date and Laozi's existence as a single person are doubted; many scholars think the text was compiled over time and reached its present form around the 4th century BC.",
     "significance": "The Tao Te Ching became the founding text of Taoism, one of China's major religious and philosophical traditions, and is among the most translated books in the world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
@@ -793,7 +832,7 @@
     "category": "culture",
     "importance": 1,
     "location": { "name": "Wu (Suzhou), traditional", "lat": 31.3, "lng": 120.62 },
-    "partOf": ["zhou", "spring-and-autumn"],
+    "partOf": ["zhou", "spring-and-autumn", "hundred-schools"],
     "summary": "The Art of War, traditionally credited to Sun Tzu, a general serving the state of Wu, sets out a short, practical philosophy of conflict: know yourself and your enemy, avoid costly battles, and win by planning and deception where possible. Many scholars think the text as we have it dates from the Warring States period, somewhat later than the traditional date.",
     "significance": "It became the most influential military treatise in East Asia and is still read today by soldiers, business leaders and strategists worldwide.",
     "wikipedia": "https://en.wikipedia.org/wiki/The_Art_of_War",
@@ -869,6 +908,29 @@
     }
   },
   {
+    "id": "twelve-tables",
+    "kind": "moment",
+    "title": "Rome publishes the Twelve Tables",
+    "start": -450,
+    "end": null,
+    "dateLabel": "451-450 BC",
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Rome, Italy", "lat": 41.9, "lng": 12.5 },
+    "partOf": ["roman-republic"],
+    "summary": "Roman laws are set down in the Twelve Tables, traditionally dated to 451-450 BC. The original tablets are lost, and the text is known through later quotations.",
+    "significance": "Publicly stated rules became a foundational reference for Roman law, though they preserved sharp social inequalities.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Twelve_Tables",
+    "zh": {
+      "title": "罗马公布《十二铜表法》",
+      "summary": "罗马法律被写入《十二铜表法》，传统定年为公元前451至450年。原始铜表已佚，其内容通过后世引文保存。",
+      "significance": "公开成文的规则成为罗马法的基础参照，但仍保留明显的社会不平等。",
+      "locationName": "意大利罗马",
+      "dateLabel": "公元前451至450年"
+    }
+  },
+  {
     "id": "parthenon-built",
     "kind": "period",
     "title": "Parthenon built",
@@ -908,6 +970,29 @@
       "summary": "雅典及其海上帝国与斯巴达的陆上联盟为希腊霸权长期交战。雅典遭遇瘟疫，远征西西里惨败，波斯又出资支持斯巴达舰队，最终雅典于公元前404年投降。",
       "significance": "战争削弱了希腊城邦，修昔底德对战争的记述则成为政治与军事分析的奠基著作。",
       "locationName": "斯巴达"
+    }
+  },
+  {
+    "id": "mozi-impartial-care",
+    "kind": "moment",
+    "title": "Mozi argues for impartial care",
+    "start": -430,
+    "end": null,
+    "dateLabel": "c. 430 BC",
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Lu region, China", "lat": 35.6, "lng": 116.99 },
+    "partOf": ["hundred-schools", "zhou"],
+    "summary": "Mozi and his followers argue for impartial concern, criticize aggressive war and oppose wasteful elite display. This approximate date marks his activity, not the publication of a single book.",
+    "significance": "Mohism offered a major alternative to Confucian thought and developed influential arguments in ethics, logic and practical defense.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mozi",
+    "zh": {
+      "title": "墨子倡导兼爱",
+      "summary": "墨子及其追随者倡导兼爱，批评攻伐战争与贵族奢侈。这一近似年代标示其思想活动，并非某部著作的出版日期。",
+      "significance": "墨家提供了儒学之外的重要思想路径，并在伦理、逻辑与实用防御方面展开有影响力的论述。",
+      "locationName": "中国鲁地",
+      "dateLabel": "约公元前430年"
     }
   },
   {
@@ -988,6 +1073,27 @@
       "summary": "腓力二世改革军队并控制希腊，其子亚历山大征服波斯，建立横跨欧亚的帝国。亚历山大死后，马其顿由继承王朝统治，最终败于罗马。",
       "significance": "马其顿将希腊文化传播至埃及和亚洲，开启希腊化时代。",
       "dateLabel": "公元前359年-168年（从腓力二世即位至罗马征服）"
+    }
+  },
+  {
+    "id": "shang-yang-reforms",
+    "kind": "moment",
+    "title": "Shang Yang begins reforming Qin",
+    "start": -356,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Yueyang, Qin", "lat": 34.66, "lng": 109.24 },
+    "partOf": ["warring-states-china", "zhou"],
+    "summary": "Shang Yang promotes reforms traditionally beginning in 356 BC, reorganizing households, rewards, punishments and military service in Qin. The changes weaken hereditary privilege and strengthen direct state control.",
+    "significance": "The reforms helped build the military and administrative power behind Qin's later conquest of its rivals.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shang_Yang",
+    "zh": {
+      "title": "商鞅开始变法",
+      "summary": "商鞅变法传统上以公元前356年为开端，调整秦国户籍、赏罚与军役制度，削弱世袭特权，加强国家直接控制。",
+      "significance": "变法帮助建立了秦国后来征服诸国所依赖的军事与行政力量。",
+      "locationName": "秦国栎阳"
     }
   },
   {
@@ -1076,6 +1182,22 @@
       "summary": "亚历山大进入印度次大陆西北部，在海达斯佩斯河击败波罗斯。其军队疲惫，不愿继续东进，他被迫折返。",
       "significance": "远征扩大希腊与印度世界的接触，为后来的希腊-印度政权及文化交融铺路。",
       "locationName": "海达斯佩斯河（杰赫勒姆河）"
+    }
+  },
+  {
+    "id": "hellenistic-world",
+    "kind": "period",
+    "title": "Hellenistic world",
+    "start": -323,
+    "end": -31,
+    "region": "mena",
+    "summary": "After Alexander dies, successor kingdoms spread Greek language and institutions across Egypt and western Asia while interacting with local traditions. The era is conventionally bounded by his death and the battle of Actium.",
+    "significance": "New centers such as Alexandria connected scholarship, trade and art across a vast multicultural world.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hellenistic_period",
+    "zh": {
+      "title": "希腊化时代",
+      "summary": "亚历山大去世后，继业者王国将希腊语言与制度传播到埃及和西亚，并与当地传统交融。这一时代通常以他的去世和亚克兴海战为起止。",
+      "significance": "亚历山大等新中心将学术、贸易与艺术连接到广阔的多文化世界。"
     }
   },
   {
@@ -1195,6 +1317,29 @@
     }
   },
   {
+    "id": "mencius-benevolent-rule",
+    "kind": "moment",
+    "title": "Mencius argues for humane government",
+    "start": -300,
+    "end": null,
+    "dateLabel": "c. 300 BC",
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Zoucheng, China (home region)", "lat": 35.4, "lng": 116.97 },
+    "partOf": ["hundred-schools", "zhou"],
+    "summary": "Mencius develops arguments about moral cultivation, the goodness of human nature and rulers' obligations to their people. The date represents his later teaching career; the text bearing his name took shape through transmission.",
+    "significance": "His ideas became central to later Confucian education and debates about legitimate government.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mencius",
+    "zh": {
+      "title": "孟子倡导仁政",
+      "summary": "孟子阐述道德修养、性善与统治者对民众的责任。这一年代代表其晚期思想活动；以他命名的文本经过传承而形成。",
+      "significance": "他的思想成为后来儒家教育以及政治合法性讨论的核心。",
+      "locationName": "中国邹城（故里）",
+      "dateLabel": "约公元前300年"
+    }
+  },
+  {
     "id": "yayoi-rice-farming",
     "kind": "moment",
     "title": "Yayoi culture brings rice farming to Japan",
@@ -1261,6 +1406,29 @@
     }
   },
   {
+    "id": "dujiangyan-irrigation",
+    "kind": "moment",
+    "title": "Dujiangyan transforms irrigation in Sichuan",
+    "start": -256,
+    "end": null,
+    "dateLabel": "c. 256 BC",
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Dujiangyan, China", "lat": 31.0, "lng": 103.61 },
+    "partOf": ["warring-states-china"],
+    "summary": "Li Bing directs a river-control and irrigation project on the Min River, traditionally dated around 256 BC. Channels and a dividing structure regulate water entering the Chengdu Plain.",
+    "significance": "The system supported sustained agricultural development and remains a landmark of hydraulic engineering.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dujiangyan",
+    "zh": {
+      "title": "都江堰改变四川灌溉",
+      "summary": "李冰主持岷江治水与灌溉工程，传统上定于约公元前256年，通过分水与渠道工程调节流入成都平原的水量。",
+      "significance": "该系统支持了长期农业发展，并成为水利工程的重要典范。",
+      "locationName": "中国都江堰",
+      "dateLabel": "约公元前256年"
+    }
+  },
+  {
     "id": "archimedes",
     "kind": "moment",
     "title": "Archimedes at Syracuse",
@@ -1319,6 +1487,29 @@
       "title": "帕提亚帝国",
       "summary": "帕提亚人建立控制伊朗与美索不达米亚的帝国，以骑射与重装骑兵著称，与罗马长期争夺近东影响力，后被萨珊王朝取代。",
       "significance": "它是罗马在东方的主要对手，也连接了丝绸之路上的东西方贸易。"
+    }
+  },
+  {
+    "id": "eratosthenes-earth",
+    "kind": "moment",
+    "title": "Eratosthenes measures the Earth",
+    "start": -240,
+    "end": null,
+    "dateLabel": "c. 240 BC",
+    "region": "mena",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Alexandria, Egypt", "lat": 31.2, "lng": 29.92 },
+    "partOf": ["ptolemaic-egypt"],
+    "summary": "Eratosthenes estimates the circumference of Earth by comparing the angle of sunlight at Alexandria with reports of the midday Sun at Syene, and using the distance between them. The measurement is usually dated to around 240 BC; its exact accuracy depends on the length of the ancient unit he used.",
+    "significance": "He showed how geometry and observations on the ground could measure the whole planet, making a landmark contribution to geography.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Eratosthenes",
+    "zh": {
+      "title": "埃拉托色尼测量地球周长",
+      "summary": "埃拉托色尼比较亚历山大的太阳入射角与塞伊尼正午太阳的记载，并利用两地距离估算地球周长。这次测量通常定于约公元前240年；其准确程度取决于他所用古代长度单位的实际大小。",
+      "significance": "他证明可以通过地面观测与几何推理测量整个地球，成为地理学史上的重要里程碑。",
+      "locationName": "埃及亚历山大",
+      "dateLabel": "约公元前240年"
     }
   },
   {
@@ -1481,6 +1672,27 @@
     }
   },
   {
+    "id": "rosetta-stone",
+    "kind": "moment",
+    "title": "Rosetta Stone decree inscribed",
+    "start": -196,
+    "end": null,
+    "region": "mena",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Memphis, Egypt", "lat": 29.85, "lng": 31.25 },
+    "partOf": ["ptolemaic-egypt"],
+    "summary": "A priestly decree honoring Ptolemy V is recorded in hieroglyphic, Demotic and Greek scripts. A surviving copy becomes known as the Rosetta Stone.",
+    "significance": "The parallel texts later supplied a crucial key to deciphering Egyptian hieroglyphs.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+    "zh": {
+      "title": "罗塞塔石碑刻成",
+      "summary": "一份颂扬托勒密五世的祭司法令以圣书体、世俗体与希腊文记录。留存的一份刻本后来被称为罗塞塔石碑。",
+      "significance": "平行文本后来成为破解古埃及圣书体的关键线索。",
+      "locationName": "埃及孟菲斯"
+    }
+  },
+  {
     "id": "rome-destroys-carthage",
     "kind": "moment",
     "title": "Rome destroys Carthage and Corinth",
@@ -1520,6 +1732,27 @@
       "summary": "汉武帝派张骞西行，寻找对抗匈奴的盟友。张骞被匈奴拘留约十年后逃脱，抵达费尔干纳、粟特和巴克特里亚，并于公元前126年带回有关当地马匹、城市与市场的报告。",
       "significance": "这些报告推动汉朝西进，开通穿越中亚的常规交通线。后来被称为丝绸之路的网络，促进了东西方丝绸、马匹、思想与宗教的交流。",
       "locationName": "费尔干纳盆地（大宛国）"
+    }
+  },
+  {
+    "id": "han-classical-scholarship",
+    "kind": "moment",
+    "title": "Han expands state-supported classical learning",
+    "start": -124,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["han"],
+    "summary": "Emperor Wu's court establishes a program for students attached to official classical scholars. Traditionally associated with the founding of the imperial academy, the measure strengthens the link between learning and government service.",
+    "significance": "State sponsorship helped make classical scholarship a durable foundation of imperial education and administration.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Taixue",
+    "zh": {
+      "title": "汉朝扩大官学经学教育",
+      "summary": "汉武帝朝廷为经学博士设置弟子制度。这项措施传统上与太学建立相联系，加强了学术教育与仕途之间的关系。",
+      "significance": "国家支持使经学成为帝国教育与行政的持久基础。",
+      "locationName": "中国长安"
     }
   },
   {
@@ -1602,6 +1835,27 @@
       "significance": "《史记》结合本纪、表、书、世家与列传的体例，成为后世历代正史的典范。",
       "locationName": "长安",
       "dateLabel": "约公元前94年"
+    }
+  },
+  {
+    "id": "salt-iron-debate",
+    "kind": "moment",
+    "title": "Debate on salt and iron monopolies",
+    "start": -81,
+    "end": null,
+    "region": "east-asia",
+    "category": "trade",
+    "importance": 1,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["han"],
+    "summary": "Han officials and scholars debate state monopolies, military spending and economic policy. Their arguments are preserved in a later compilation rather than a verbatim transcript.",
+    "significance": "The debate became a lasting reference for arguments over state intervention, public finance and the welfare of ordinary people.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Discourses_on_Salt_and_Iron",
+    "zh": {
+      "title": "盐铁会议",
+      "summary": "汉朝官员与学者辩论国家专卖、军事开支与经济政策。相关论述保存在后来的编纂文本中，而非逐字会议记录。",
+      "significance": "会议成为有关国家干预、公共财政与民众生计争论的持久参照。",
+      "locationName": "中国长安"
     }
   },
   {
@@ -1753,6 +2007,23 @@
       "significance": "他的统治开启了约两百年的“罗马和平”，也确立了此后延续数百年的帝国治理模式。",
       "locationName": "罗马",
       "dateLabel": "公元前27年1月"
+    }
+  },
+  {
+    "id": "pax-romana",
+    "kind": "period",
+    "title": "Pax Romana",
+    "start": -27,
+    "end": 180,
+    "region": "europe",
+    "partOf": ["roman-empire"],
+    "summary": "From Augustus to Marcus Aurelius, the Roman Empire experiences a long interval of relative internal stability. The name does not mean an absence of war: conquest, revolts, slavery and frontier violence continue.",
+    "significance": "Imperial roads, cities and Mediterranean trade flourished within a durable political framework.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pax_Romana",
+    "zh": {
+      "title": "罗马和平时期",
+      "summary": "从奥古斯都到马可·奥勒留，罗马帝国经历较长的内部相对稳定时期。“和平”并不意味着没有战争；征服、叛乱、奴隶制与边境暴力仍然存在。",
+      "significance": "帝国道路、城市与地中海贸易在较持久的政治框架下繁荣发展。"
     }
   },
   {

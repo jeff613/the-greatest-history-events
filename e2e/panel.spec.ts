@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('lists events around the current year grouped by region', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const panel = page.getByTestId('event-panel');
   await expect(panel).toContainText('Around 44 BC');
   await expect(panel.getByRole('heading', { level: 3, name: 'Europe' })).toBeVisible();
@@ -10,6 +11,7 @@ test('lists events around the current year grouped by region', async ({ page }) 
 
 test('the list changes after scrubbing to the end', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const box = (await page.getByTestId('timeline-axis').boundingBox())!;
   await page.mouse.click(box.x + box.width - 2, box.y + box.height / 2);
   const panel = page.getByTestId('event-panel');
@@ -19,12 +21,14 @@ test('the list changes after scrubbing to the end', async ({ page }) => {
 
 test('selecting an event opens its card, updates the URL and survives reload', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const panel = page.getByTestId('event-panel');
   await panel.getByRole('button', { name: /^Julius Caesar assassinated/ }).click();
   await expect(panel.getByRole('heading', { level: 2, name: 'Julius Caesar assassinated' })).toBeVisible();
   await expect(panel).toContainText('Why it mattered');
   await expect(page).toHaveURL(/item=caesar-assassination/);
   await page.reload();
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(panel.getByRole('heading', { level: 2, name: 'Julius Caesar assassinated' })).toBeVisible();
   await panel.getByRole('button', { name: /Around this time/ }).click();
   await expect(panel).toContainText('Around 44 BC');
@@ -33,16 +37,19 @@ test('selecting an event opens its card, updates the URL and survives reload', a
 
 test('bad URL values fall back safely', async ({ page }) => {
   await page.goto('/?year=0&event=nope&zoom=-3');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const panel = page.getByTestId('event-panel');
   await expect(panel).toContainText('Around AD 1');
   await expect(panel.locator('article.card')).toHaveCount(0);
   await expect(panel).not.toContainText('Why it mattered');
   await page.goto('/?year=99999');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(panel).toContainText('Around 2000');
 });
 
 test('selecting a hovered row does not leave it stuck as hovered', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   const panel = page.getByTestId('event-panel');
   const row = panel.getByRole('button', { name: /^Julius Caesar assassinated/ });
   await row.hover();

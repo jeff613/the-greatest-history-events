@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('About explains the borders and credits the data sources', async ({ page }) => {
   await page.goto('/');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await page.getByRole('button', { name: 'About' }).click();
   const dialog = page.getByRole('dialog', { name: 'About The Greatest History' });
   await expect(dialog.getByRole('button', { name: 'Close' })).toBeFocused();

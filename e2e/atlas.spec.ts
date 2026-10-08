@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('the atlas exposes snapshot age and supports physical geography', async ({ page }) => {
   await page.goto('/?year=-44');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByText('Border snapshot: 100 BC.', { exact: false })).toBeVisible();
   const toggle = page.getByRole('button', { name: 'Historical borders', exact: true });
   await expect(toggle).toHaveAttribute('aria-pressed', 'true');
@@ -16,6 +17,7 @@ test('the atlas exposes snapshot age and supports physical geography', async ({ 
 
 test('an empire that falls between the source snapshots still has its own borders', async ({ page }) => {
   await page.goto('/?year=-210&zoom=20');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByText('Border snapshot: 210 BC.', { exact: false })).toBeVisible();
   const qin = page.locator('[data-entry="qin"]');
   await qin.scrollIntoViewIfNeeded();
@@ -27,6 +29,7 @@ test('an empire that falls between the source snapshots still has its own border
 
 test('China remains discoverable and selecting Han highlights its land', async ({ page }) => {
   await page.goto('/?year=-44&zoom=4');
+  await page.getByRole('button', { name: 'English', exact: true }).click();
   await expect(page.getByRole('button', { name: 'China & East Asia', exact: true })).toHaveAttribute('aria-pressed', 'true');
   const han = page.locator('[data-entry="han"]');
   await han.scrollIntoViewIfNeeded();

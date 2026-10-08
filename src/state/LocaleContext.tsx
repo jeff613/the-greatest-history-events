@@ -39,10 +39,10 @@ function localeValues(language: Language) {
   };
 }
 
-const LocaleContext = createContext({ ...localeValues('en'), setLanguage: (_language: Language) => {} });
+const LocaleContext = createContext({ ...localeValues('zh'), setLanguage: (_language: Language) => {} });
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('zh');
   const value = useMemo(() => ({ ...localeValues(language), setLanguage }), [language]);
   useEffect(() => {
     document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';

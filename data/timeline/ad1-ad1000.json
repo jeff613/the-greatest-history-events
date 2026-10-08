@@ -1,5 +1,25 @@
 [
   {
+    "id": "wang-mang-xin",
+    "kind": "moment",
+    "title": "Wang Mang interrupts Han rule",
+    "start": 9,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "summary": "Wang Mang takes the imperial title and establishes the Xin dynasty. His ambitious land and currency reforms face resistance amid natural disasters and rebellions; Han rule is later restored.",
+    "significance": "The short interregnum exposes tensions over landholding, reform and imperial legitimacy in early China.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wang_Mang",
+    "zh": {
+      "title": "王莽代汉建立新朝",
+      "summary": "王莽称帝建立新朝。他推行土地与货币改革，但在自然灾害和起义中遭遇阻力；汉朝统治后来恢复。",
+      "significance": "这一短暂插曲揭示了早期中国土地占有、改革与皇权合法性之间的矛盾。",
+      "locationName": "中国长安"
+    }
+  },
+  {
     "id": "crucifixion-of-jesus",
     "kind": "moment",
     "title": "Crucifixion of Jesus",
@@ -73,6 +93,29 @@
       "title": "扶南",
       "summary": "扶南是湄公河下游王国的中文名称，依靠印度与中国之间的海上贸易致富。俄厄港发现罗马钱币和印度饰物，其统治者接受印度的王权、宗教与文字观念。",
       "significance": "扶南是东南亚最早可知的国家之一，也是印度文化传入该地区的重要渠道。"
+    }
+  },
+  {
+    "id": "periplus-indian-ocean",
+    "kind": "moment",
+    "title": "A merchant guide to the Indian Ocean",
+    "start": 60,
+    "end": null,
+    "dateLabel": "c. AD 60",
+    "region": "mena",
+    "category": "trade",
+    "importance": 1,
+    "location": { "name": "Berenice, Egypt", "lat": 23.91, "lng": 35.48 },
+    "partOf": ["roman-empire"],
+    "summary": "An anonymous Greek-speaking writer describes ports, commodities and sailing routes from the Red Sea to India. The Periplus is usually dated to the middle of the first century AD.",
+    "significance": "It provides unusually detailed evidence of commercial links between Africa, Arabia, India and the Roman world.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea",
+    "zh": {
+      "title": "印度洋商人航海指南",
+      "summary": "一位匿名希腊语作者记述从红海到印度的港口、商品与航线。《厄立特里亚海航行记》通常定于公元1世纪中叶。",
+      "significance": "它为非洲、阿拉伯、印度与罗马世界的商业联系提供了罕见的详细证据。",
+      "locationName": "埃及贝勒尼基",
+      "dateLabel": "约公元60年"
     }
   },
   {
@@ -154,6 +197,29 @@
       "title": "阿克苏姆王国",
       "summary": "阿克苏姆在今埃塞俄比亚、厄立特里亚高地兴起，通过红海港口参与罗马、阿拉伯与印度之间的贸易，铸造钱币并树立巨大石碑，后来接受基督教。",
       "significance": "它是古代非洲重要强国，也是埃塞俄比亚与厄立特里亚基督教传统的源头。"
+    }
+  },
+  {
+    "id": "ban-zhao-lessons-women",
+    "kind": "moment",
+    "title": "Ban Zhao writes Lessons for Women",
+    "start": 100,
+    "end": null,
+    "dateLabel": "c. AD 100",
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Luoyang, China", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["han"],
+    "summary": "Ban Zhao sets out advice on women's conduct and learning in a work generally dated to the early second century. It advocates education while accepting a strongly hierarchical gender order.",
+    "significance": "The work shaped later prescriptions for women and provides evidence of both female scholarship and its social constraints.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lessons_for_Women",
+    "zh": {
+      "title": "班昭撰写《女诫》",
+      "summary": "班昭在通常定于2世纪初的著作中讨论女性行为与学习，倡导女性受教育，同时接受强烈的性别等级秩序。",
+      "significance": "著作影响了后世女性行为规范，也反映了女性学术活动及其社会限制。",
+      "locationName": "中国洛阳",
+      "dateLabel": "约公元100年"
     }
   },
   {
@@ -239,6 +305,27 @@
     }
   },
   {
+    "id": "trajan-column",
+    "kind": "moment",
+    "title": "Trajan's Column dedicated",
+    "start": 113,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Rome, Italy", "lat": 41.9, "lng": 12.48 },
+    "partOf": ["roman-empire"],
+    "summary": "A monumental column in Rome commemorates Trajan's Dacian campaigns through a spiraling relief. Its scenes combine military storytelling with imperial self-presentation.",
+    "significance": "The monument became an influential model of public historical narrative and political commemoration.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Trajan%27s_Column",
+    "zh": {
+      "title": "图拉真纪功柱落成",
+      "summary": "罗马的一座纪念柱以螺旋浮雕纪念图拉真的达契亚战争，将军事叙事与帝国自我呈现相结合。",
+      "significance": "它成为公共历史叙事与政治纪念艺术的重要范例。",
+      "locationName": "意大利罗马"
+    }
+  },
+  {
     "id": "roman-empire-greatest-extent",
     "kind": "moment",
     "title": "Roman Empire at its greatest extent",
@@ -257,6 +344,27 @@
       "summary": "图拉真皇帝征服达契亚，并进攻帕提亚、占领美索不达米亚，使罗马疆域达到最大。部分东方领土在其死后不久即被放弃。",
       "significance": "这一高峰显示罗马的军事力量，也暴露了远距离统治与防守的极限。",
       "locationName": "罗马"
+    }
+  },
+  {
+    "id": "zhang-heng-seismoscope",
+    "kind": "moment",
+    "title": "Zhang Heng's earthquake detector",
+    "start": 132,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Luoyang, China", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["han"],
+    "summary": "At the Han court, Zhang Heng presents an instrument intended to indicate the direction of a distant earthquake. Historical descriptions tell of bronze dragons releasing balls into toad-shaped receivers. The original device does not survive, and its internal mechanism remains debated.",
+    "significance": "The earliest known seismoscope represents an ambitious attempt to detect natural events beyond direct human perception using an instrument.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhang_Heng",
+    "zh": {
+      "title": "张衡制成候风地动仪",
+      "summary": "张衡在汉朝宫廷展示用于指示远方地震方向的仪器。史书记载，铜龙吐出小球，由下方的蟾蜍承接。原器没有留存，其内部构造至今仍有争议。",
+      "significance": "这是已知最早的地震检测仪器，体现了借助仪器探测人类感官之外自然现象的探索。",
+      "locationName": "中国洛阳"
     }
   },
   {
@@ -320,6 +428,27 @@
     }
   },
   {
+    "id": "battle-guandu",
+    "kind": "moment",
+    "title": "Cao Cao wins at Guandu",
+    "start": 200,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Guandu, China", "lat": 34.77, "lng": 113.98 },
+    "partOf": ["han"],
+    "summary": "Cao Cao defeats Yuan Shao after a campaign in northern China, including an attack on his rival's supply depot. The victory shifts the balance among warlords as Han central authority collapses.",
+    "significance": "Guandu laid the groundwork for Cao Cao's dominance in the north and the later Three Kingdoms division.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Guandu",
+    "zh": {
+      "title": "曹操赢得官渡之战",
+      "summary": "曹操在中国北方战役中击败袁绍，袭击对方粮仓成为关键行动。胜利改变了汉朝中央权威瓦解时期的军阀力量对比。",
+      "significance": "官渡之战为曹操统一北方与后来三国格局奠定基础。",
+      "locationName": "中国官渡"
+    }
+  },
+  {
     "id": "teotihuacan-pyramid-sun",
     "kind": "moment",
     "title": "Pyramid of the Sun at Teotihuacan",
@@ -363,6 +492,27 @@
       "significance": "此败挫折了曹操统一中国的希望，奠定三国鼎立格局，也成为中国文学中最常被讲述的战役之一。",
       "locationName": "长江沿岸赤壁（具体地点有争议）",
       "dateLabel": "公元208年至209年冬季"
+    }
+  },
+  {
+    "id": "caracalla-citizenship",
+    "kind": "moment",
+    "title": "Roman citizenship extended across the empire",
+    "start": 212,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Rome, Italy", "lat": 41.9, "lng": 12.5 },
+    "partOf": ["roman-empire"],
+    "summary": "Emperor Caracalla grants Roman citizenship to nearly all free inhabitants of the empire. Enslaved people remain excluded, and citizenship does not remove differences of wealth or legal status.",
+    "significance": "The edict transformed membership in the Roman political community from a selective privilege into a much broader status.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Constitutio_Antoniniana",
+    "zh": {
+      "title": "罗马公民权扩大至全帝国",
+      "summary": "卡拉卡拉皇帝将罗马公民权授予帝国几乎所有自由居民。被奴役者仍被排除，公民权也未消除财富与法律地位差别。",
+      "significance": "法令使罗马政治共同体成员资格从选择性特权转变为更广泛的身份。",
+      "locationName": "意大利罗马"
     }
   },
   {
@@ -477,6 +627,27 @@
     }
   },
   {
+    "id": "liu-hui-nine-chapters",
+    "kind": "moment",
+    "title": "Liu Hui explains the Nine Chapters",
+    "start": 263,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Cao Wei, northern China (regional location)", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["three-kingdoms"],
+    "summary": "Liu Hui writes a commentary on the Nine Chapters on the Mathematical Art, explaining why its procedures work. His work includes geometric reasoning and an algorithm for approximating pi.",
+    "significance": "The commentary became a foundational work in Chinese mathematical reasoning, extending a much older problem-solving tradition.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Liu_Hui",
+    "zh": {
+      "title": "刘徽注解《九章算术》",
+      "summary": "刘徽为《九章算术》作注，解释各种算法成立的理由，内容包括几何推理与圆周率近似算法。",
+      "significance": "注解成为中国数学推理的基础著作，发展了更早的解题传统。",
+      "locationName": "中国北方曹魏境内（区域位置）"
+    }
+  },
+  {
     "id": "jin-dynasty",
     "kind": "state",
     "title": "Jin dynasty",
@@ -506,6 +677,27 @@
       "title": "加纳帝国",
       "summary": "古加纳帝国位于今毛里塔尼亚和马里一带，与现代加纳并不重合。其统治者控制撒哈拉南缘的黄金、盐及商路，向贸易征税。",
       "significance": "它是西非最早的大帝国之一，将萨赫勒与北非、地中海商业世界连接起来。"
+    }
+  },
+  {
+    "id": "disaster-yongjia",
+    "kind": "moment",
+    "title": "Luoyang falls in the Yongjia disaster",
+    "start": 311,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Luoyang, China", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["jin-dynasty"],
+    "summary": "Forces of the Han-Zhao state capture Luoyang, sack the Jin capital and take Emperor Huai prisoner. The disaster deepens the collapse of Western Jin authority in northern China.",
+    "significance": "The upheaval accelerated migration south and helped reshape the political and cultural geography of China.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Disaster_of_Yongjia",
+    "zh": {
+      "title": "永嘉之乱中洛阳陷落",
+      "summary": "汉赵军队攻陷洛阳，劫掠晋都并俘虏晋怀帝，进一步加剧了西晋在中国北方统治的崩溃。",
+      "significance": "动荡加速人口南迁，推动重塑中国政治与文化地理。",
+      "locationName": "中国洛阳"
     }
   },
   {
@@ -674,6 +866,27 @@
     }
   },
   {
+    "id": "battle-fei-river",
+    "kind": "moment",
+    "title": "Eastern Jin prevails at the Fei River",
+    "start": 383,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Shouxian, China", "lat": 32.57, "lng": 116.79 },
+    "partOf": ["jin-dynasty"],
+    "summary": "Eastern Jin forces defeat an invasion led by Former Qin ruler Fu Jian. The invading coalition breaks apart, frustrating an attempt to reunify China by conquest.",
+    "significance": "The battle preserved the southern regime and prolonged the political division between north and south.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Fei_River",
+    "zh": {
+      "title": "东晋赢得淝水之战",
+      "summary": "东晋军队击败前秦君主苻坚率领的入侵军队。入侵联盟瓦解，以征服统一中国的尝试受挫。",
+      "significance": "战役保住了南方政权，延长了南北政治分裂。",
+      "locationName": "中国寿县"
+    }
+  },
+  {
     "id": "northern-wei",
     "kind": "state",
     "title": "Northern Wei",
@@ -687,6 +900,26 @@
       "title": "北魏",
       "summary": "草原民族鲜卑的拓跋氏建立北魏，于439年统一中国北方。北魏大力扶持佛教；孝文帝于494年迁都洛阳，要求朝廷采用汉族服饰、语言和姓氏。",
       "significance": "北魏展现了草原征服者通过文化融合治理中国的方式，其土地制度与佛教艺术影响了隋唐。"
+    }
+  },
+  {
+    "id": "faxian-departs",
+    "kind": "moment",
+    "title": "Faxian begins his pilgrimage to India",
+    "start": 399,
+    "end": null,
+    "region": "east-asia",
+    "category": "religion",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "summary": "The Buddhist monk Faxian leaves China to seek monastic texts, traveling through Central Asia to India and returning by sea. His account records religious practices and conditions along the route.",
+    "significance": "The journey strengthened Buddhist textual exchange and left an important source for the history of Asia.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Faxian",
+    "zh": {
+      "title": "法显启程赴印度求法",
+      "summary": "佛教僧人法显离开中国寻求戒律典籍，经中亚到印度，再由海路返回。他的记述记录了沿途宗教实践与社会状况。",
+      "significance": "旅程加强了佛教典籍交流，并留下研究亚洲历史的重要资料。",
+      "locationName": "中国长安"
     }
   },
   {
@@ -768,6 +1001,27 @@
     }
   },
   {
+    "id": "council-chalcedon",
+    "kind": "moment",
+    "title": "Council of Chalcedon",
+    "start": 451,
+    "end": null,
+    "region": "mena",
+    "category": "religion",
+    "importance": 2,
+    "location": { "name": "Chalcedon, Turkey", "lat": 40.99, "lng": 29.03 },
+    "partOf": ["byzantine"],
+    "summary": "A council defines Christ as one person in two natures, divine and human. Several Christian communities reject the formulation, deepening enduring divisions.",
+    "significance": "Its disputes helped shape the separate histories of Chalcedonian and Oriental Orthodox churches.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
+    "zh": {
+      "title": "迦克墩公会议",
+      "summary": "会议将基督界定为一个位格、兼具神性与人性两种本性。一些基督徒群体拒绝这一表述，形成持久分歧。",
+      "significance": "相关争论塑造了迦克墩派教会与东方正统教会各自的发展历史。",
+      "locationName": "土耳其迦克墩"
+    }
+  },
+  {
     "id": "yungang-grottoes",
     "kind": "moment",
     "title": "Yungang Grottoes begun",
@@ -809,6 +1063,29 @@
       "summary": "日耳曼将领奥多亚塞废黜西罗马皇帝罗慕路斯·奥古斯都，以国王身份治理意大利而不另立皇帝。此时西部帝国大部分行省已被日耳曼王国占据。",
       "significance": "476年常被作为西欧古代结束的标志，而东罗马帝国仍继续存在近千年。",
       "locationName": "拉文纳"
+    }
+  },
+  {
+    "id": "zu-chongzhi-pi",
+    "kind": "moment",
+    "title": "Zu Chongzhi refines the value of pi",
+    "start": 480,
+    "end": null,
+    "dateLabel": "c. AD 480",
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Jiankang, China", "lat": 32.06, "lng": 118.8 },
+    "partOf": ["northern-and-southern-dynasties"],
+    "summary": "Zu Chongzhi obtains exceptionally close bounds for pi and the approximation 355/113. These achievements are conventionally placed in the fifth century, around 480; his detailed method does not survive.",
+    "significance": "His results demonstrate the high precision achieved by early Chinese computational mathematics.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zu_Chongzhi",
+    "zh": {
+      "title": "祖冲之精算圆周率",
+      "summary": "祖冲之得出极为精确的圆周率上下界及355/113近似值。这些成果通常定于5世纪、约480年前后，详细方法未完整留存。",
+      "significance": "成果展示了早期中国计算数学达到的高度精确性。",
+      "locationName": "中国建康",
+      "dateLabel": "约公元480年"
     }
   },
   {
@@ -872,6 +1149,28 @@
     }
   },
   {
+    "id": "rule-benedict",
+    "kind": "moment",
+    "title": "Rule of Saint Benedict",
+    "start": 530,
+    "end": null,
+    "dateLabel": "c. AD 530",
+    "region": "europe",
+    "category": "religion",
+    "importance": 1,
+    "location": { "name": "Monte Cassino, Italy", "lat": 41.49, "lng": 13.81 },
+    "summary": "Benedict develops a rule for monastic community life balancing prayer, work and study. Its composition is conventionally placed in the sixth century, around 530.",
+    "significance": "The rule became a major framework for western monasticism and institutions that preserved texts and learning.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rule_of_Saint_Benedict",
+    "zh": {
+      "title": "《圣本笃会规》形成",
+      "summary": "本笃制定修道共同生活的规则，协调祈祷、劳动与学习。成书通常定于6世纪、约530年前后。",
+      "significance": "会规成为西欧修道制度的重要框架，相关机构保存了文献与学术。",
+      "locationName": "意大利卡西诺山",
+      "dateLabel": "约公元530年"
+    }
+  },
+  {
     "id": "hagia-sophia",
     "kind": "moment",
     "title": "Hagia Sophia completed",
@@ -913,6 +1212,29 @@
       "summary": "541年，鼠疫出现在埃及佩鲁西乌姆，翌年传至君士坦丁堡，当时的记述称每日有数千人死亡。遗骸DNA证实，它与后来的黑死病由同一种细菌引起。疫情反复约两百年，死亡规模仍有争论。",
       "significance": "这是有详细记载的第一次鼠疫大流行，削弱了拜占庭帝国，可能也影响了地中海世界后来的力量格局。",
       "locationName": "君士坦丁堡"
+    }
+  },
+  {
+    "id": "qimin-yaoshu",
+    "kind": "moment",
+    "title": "Jia Sixie compiles Essential Techniques for the People",
+    "start": 544,
+    "end": null,
+    "dateLabel": "c. AD 544",
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Northern China (regional location)", "lat": 36.7, "lng": 118.48 },
+    "partOf": ["northern-and-southern-dynasties"],
+    "summary": "Jia Sixie compiles practical knowledge of farming, animal husbandry, food processing and household production. The agricultural treatise is generally dated to around 544.",
+    "significance": "The book preserved detailed agricultural techniques and became one of China's most influential farming manuals.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qimin_Yaoshu",
+    "zh": {
+      "title": "贾思勰编成《齐民要术》",
+      "summary": "贾思勰汇集耕作、畜牧、食品加工与家庭生产的实用知识。这部农书通常定于约544年。",
+      "significance": "著作保存了详细农业技术，成为中国最具影响力的农书之一。",
+      "locationName": "中国北方（区域位置）",
+      "dateLabel": "约公元544年"
     }
   },
   {
@@ -989,6 +1311,46 @@
     }
   },
   {
+    "id": "bhakti-traditions",
+    "kind": "period",
+    "title": "Bhakti devotional traditions",
+    "start": 600,
+    "end": 1700,
+    "dateLabel": "c. AD 600-1700",
+    "region": "south-asia",
+    "summary": "Poet-saints express devotion to Hindu deities in regional languages, beginning with influential Tamil traditions and later flourishing across India. This approximate span covers diverse movements, not a single organization or a fixed beginning and end.",
+    "significance": "Devotional poetry expanded religious participation and enriched regional literatures, sometimes challenging caste and ritual authority.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bhakti_movement",
+    "zh": {
+      "title": "巴克提虔信传统",
+      "summary": "诗人圣徒以地方语言表达对印度教神祇的虔敬，从有影响力的泰米尔传统发展到印度各地。这一大致时间范围涵盖多种运动，并非单一组织，也没有统一的起止。",
+      "significance": "虔信诗歌扩大了宗教参与，丰富地方文学，并在一些传统中挑战种姓与仪式权威。",
+      "dateLabel": "约公元600至1700年"
+    }
+  },
+  {
+    "id": "chaturanga-chess",
+    "kind": "moment",
+    "title": "Chaturanga, an ancestor of chess",
+    "start": 600,
+    "end": null,
+    "dateLabel": "c. AD 600",
+    "region": "south-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Northern India", "lat": 26.85, "lng": 80.95 },
+    "summary": "A strategy game known as chaturanga develops in India around the sixth century. Its exact origins are uncertain; related forms travel to Persia and beyond.",
+    "significance": "The game lies in the ancestry of chess and illustrates the movement of ideas and recreation across cultures.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chaturanga",
+    "zh": {
+      "title": "国际象棋前身恰图兰卡",
+      "summary": "一种名为恰图兰卡的策略棋戏约在6世纪的印度发展。确切起源尚不明晰；相关形式随后传入波斯及其他地区。",
+      "significance": "它是国际象棋的前身之一，展示了观念与娱乐方式的跨文化传播。",
+      "locationName": "印度北部",
+      "dateLabel": "约公元600年"
+    }
+  },
+  {
     "id": "tiwanaku",
     "kind": "state",
     "title": "Tiwanaku",
@@ -1046,6 +1408,27 @@
       "summary": "隋炀帝征发数百万劳工，开凿并连接运河，使黄河与长江贯通，将南方富庶农区与北方政治中心相连。部分河段已有基础，大部分工程在数年内完成。",
       "significance": "后世继续扩建的大运河成为世界上最长的人工水道和中国经济命脉，但沉重劳役也加速了隋朝在618年的灭亡。",
       "locationName": "洛阳（隋朝运河网络枢纽）"
+    }
+  },
+  {
+    "id": "zhaozhou-bridge",
+    "kind": "moment",
+    "title": "Zhaozhou Bridge completed",
+    "start": 605,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Zhao County, China", "lat": 37.72, "lng": 114.76 },
+    "partOf": ["sui"],
+    "summary": "Builders led by Li Chun complete a stone bridge with a shallow main arch and smaller openings above it. Construction is usually dated to 595-605 under the Sui.",
+    "significance": "The surviving bridge is an outstanding example of early open-spandrel stone-arch engineering.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhaozhou_Bridge",
+    "zh": {
+      "title": "赵州桥建成",
+      "summary": "李春主持建成一座采用平缓主拱、拱肩另设小拱的石桥，工程通常定于隋代595至605年。",
+      "significance": "这座留存至今的桥梁是早期敞肩石拱工程的杰出范例。",
+      "locationName": "中国赵县"
     }
   },
   {
@@ -1186,6 +1569,47 @@
       "summary": "面对麦加日益加深的敌意，穆罕默德的追随者分批迁往叶斯里卜，后称麦地那。传统记载，622年穆罕默德与阿布·伯克尔秘密离开麦加前往会合，并成为当地领袖。“麦地那宪章”规定了穆斯林、犹太人及其他群体的权利义务。",
       "significance": "伊斯兰历以此次迁徙为纪元，它标志着伊斯兰教作为政治与宗教共同体的形成。",
       "locationName": "麦地那"
+    }
+  },
+  {
+    "id": "xuanwu-gate",
+    "kind": "moment",
+    "title": "Xuanwu Gate coup brings Taizong to power",
+    "start": 626,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["tang"],
+    "summary": "Li Shimin kills his rival brothers in a palace coup and soon succeeds his father as Emperor Taizong. The violent succession precedes a reign later celebrated for effective government.",
+    "significance": "The coup shaped Tang leadership and the contested relationship between dynastic legitimacy and political achievement.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Xuanwu_Gate_Incident",
+    "zh": {
+      "title": "玄武门之变后唐太宗即位",
+      "summary": "李世民在宫廷政变中杀死与其竞争的兄弟，随后继承父位成为唐太宗。这场暴力继承发生在后来以治理成就著称的统治之前。",
+      "significance": "政变改变了唐朝领导层，也体现王朝合法性与政治成就之间的复杂关系。",
+      "locationName": "中国长安"
+    }
+  },
+  {
+    "id": "brahmagupta-zero",
+    "kind": "moment",
+    "title": "Brahmagupta sets out arithmetic with zero",
+    "start": 628,
+    "end": null,
+    "region": "south-asia",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Bhinmal, India", "lat": 25.0, "lng": 72.27 },
+    "summary": "Brahmagupta writes the Brahmasphutasiddhanta, setting out rules for calculating with zero and negative numbers. He treats a number minus itself as zero and explains arithmetic using debts and fortunes. His rules for division by zero are not correct by modern standards.",
+    "significance": "Treating zero as a number that participates in arithmetic, rather than only a placeholder, helped establish a foundation of modern mathematics.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brahmagupta",
+    "zh": {
+      "title": "婆罗摩笈多阐述零的运算法则",
+      "summary": "婆罗摩笈多撰写《梵天悉檀多》，阐述零与负数的运算法则。他把一个数减去自身的结果定义为零，并用债务与财产解释运算。按现代数学标准，他关于除以零的规则并不正确。",
+      "significance": "把零视为可以参与运算的数，而不只是占位符，有助于奠定现代数学的基础。",
+      "locationName": "印度比恩马尔"
     }
   },
   {
@@ -1339,6 +1763,27 @@
     }
   },
   {
+    "id": "battle-karbala",
+    "kind": "moment",
+    "title": "Battle of Karbala",
+    "start": 680,
+    "end": null,
+    "region": "mena",
+    "category": "religion",
+    "importance": 2,
+    "location": { "name": "Karbala, Iraq", "lat": 32.62, "lng": 44.03 },
+    "partOf": ["umayyad"],
+    "summary": "Husayn ibn Ali, a grandson of Muhammad, and his small party are killed by forces of the Umayyad caliph Yazid. Their deaths become a focus of mourning and political memory.",
+    "significance": "Karbala became central to Shia religious identity and to ideas of resistance against unjust authority.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Karbala",
+    "zh": {
+      "title": "卡尔巴拉之战",
+      "summary": "穆罕默德的外孙侯赛因·伊本·阿里及其少量追随者被倭马亚哈里发叶齐德的军队杀害。他们的死亡成为哀悼与政治记忆的核心。",
+      "significance": "卡尔巴拉成为什叶派宗教认同及反抗不义权威观念的核心。",
+      "locationName": "伊拉克卡尔巴拉"
+    }
+  },
+  {
     "id": "empress-wu",
     "kind": "moment",
     "title": "Wu Zetian becomes emperor",
@@ -1414,6 +1859,24 @@
     }
   },
   {
+    "id": "trans-saharan-trade-flourishing",
+    "kind": "period",
+    "title": "Medieval trans-Saharan trade",
+    "start": 700,
+    "end": 1600,
+    "dateLabel": "c. AD 700-1600",
+    "region": "sub-saharan-africa",
+    "summary": "Caravan networks link West African markets with North Africa, carrying gold, salt, books and enslaved people. The dates mark a broad medieval phase; desert trade existed earlier and continued afterward.",
+    "significance": "These exchanges supported powerful African states and carried Islam and scholarship across the Sahara.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Trans-Saharan_trade",
+    "zh": {
+      "title": "中世纪跨撒哈拉贸易",
+      "summary": "商队网络把西非市场与北非连接起来，运送黄金、盐、书籍和被奴役者。这里标示中世纪的一个大致阶段；沙漠贸易此前已存在，此后也继续进行。",
+      "significance": "这些交流支持了强大的非洲国家，并推动伊斯兰教与学术跨越撒哈拉传播。",
+      "dateLabel": "约公元700至1600年"
+    }
+  },
+  {
     "id": "nara-period",
     "kind": "period",
     "title": "Nara period",
@@ -1472,6 +1935,27 @@
     }
   },
   {
+    "id": "nihon-shoki-completed",
+    "kind": "moment",
+    "title": "Nihon Shoki completed",
+    "start": 720,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Nara, Japan", "lat": 34.69, "lng": 135.81 },
+    "partOf": ["nara-period"],
+    "summary": "The Japanese court completes a history written in classical Chinese, combining origin traditions with accounts of rulers and diplomacy. Its narratives express the interests of the early state.",
+    "significance": "The chronicle became a foundational source for Japanese history and for understanding how the court constructed its past.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nihon_Shoki",
+    "zh": {
+      "title": "《日本书纪》编成",
+      "summary": "日本朝廷完成以汉文书写的历史，将起源传说与君主、外交记述结合，其叙事体现早期国家的立场。",
+      "significance": "这部编年史成为研究日本历史及朝廷如何建构过去的基础资料。",
+      "locationName": "日本奈良"
+    }
+  },
+  {
     "id": "battle-of-tours",
     "kind": "moment",
     "title": "Battle of Tours",
@@ -1492,6 +1976,27 @@
       "significance": "后世常称其“拯救基督教欧洲”，现代研究多认为这种说法夸大，但胜利确实强化了加洛林家族。",
       "locationName": "图尔与普瓦捷之间（具体地点未定）",
       "dateLabel": "公元732年10月（或733年）"
+    }
+  },
+  {
+    "id": "orkhon-kul-tigin",
+    "kind": "moment",
+    "title": "Kul Tigin inscription erected",
+    "start": 732,
+    "end": null,
+    "region": "central-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Orkhon Valley, Mongolia", "lat": 47.56, "lng": 102.84 },
+    "partOf": ["gokturk"],
+    "summary": "A memorial to the Turkic prince Kul Tigin records the fortunes of the Turks in Old Turkic and Chinese. A related monument honors Bilge Qaghan in 735.",
+    "significance": "These monuments preserve some of the earliest substantial Turkic texts and a steppe ruling elite's own account of its past.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Orkhon_inscriptions",
+    "zh": {
+      "title": "阙特勤碑建立",
+      "summary": "纪念突厥王子阙特勤的碑文以古突厥文和汉文记录突厥历史。相关的毗伽可汗碑于735年建立。",
+      "significance": "这些碑铭保存了最早的一批长篇突厥语文本，以及草原统治精英对自身历史的叙述。",
+      "locationName": "蒙古鄂尔浑河谷"
     }
   },
   {
@@ -1545,6 +2050,25 @@
       "summary": "呼罗珊起义军在伊拉克北部扎卜河战役击败最后一位倭马亚哈里发。穆罕默德叔父阿拔斯的后裔阿布·阿拔斯·萨法赫此前已在库法称哈里发，由此建立阿拔斯王朝。许多倭马亚家族成员被杀，阿卜杜勒·拉赫曼等人逃往西班牙。",
       "significance": "阿拔斯将伊斯兰世界重心东移至伊拉克，后来以巴格达为中心，开启贸易、科学与学术的黄金时代。",
       "locationName": "库法（首位阿拔斯哈里发即位地）"
+    }
+  },
+  {
+    "id": "abbasid-translation-movement",
+    "kind": "period",
+    "title": "Abbasid translation movement",
+    "start": 750,
+    "end": 1000,
+    "dateLabel": "c. AD 750-1000",
+    "region": "mena",
+    "partOf": ["abbasid", "islamic-golden-age"],
+    "summary": "Patrons and multilingual scholars translate Greek philosophy, medicine and mathematics into Arabic, often through Syriac. Baghdad becomes a major center of this work during the eighth to tenth centuries.",
+    "significance": "Translation preserved and transformed earlier learning, providing material for new research in the Islamic world and later in Europe.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Graeco-Arabic_translation_movement",
+    "zh": {
+      "title": "阿拔斯翻译运动",
+      "summary": "赞助者与多语学者将希腊哲学、医学和数学译成阿拉伯语，常以叙利亚语译本为中介。8至10世纪，巴格达成为这项工作的主要中心。",
+      "significance": "翻译保存并改造了早期知识，为伊斯兰世界及后来欧洲的新研究提供材料。",
+      "dateLabel": "约公元750至1000年"
     }
   },
   {
@@ -1731,6 +2255,27 @@
     }
   },
   {
+    "id": "two-tax-law",
+    "kind": "moment",
+    "title": "Tang introduces the Two-Tax system",
+    "start": 780,
+    "end": null,
+    "region": "east-asia",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["tang"],
+    "summary": "The Tang government introduces a new fiscal system associated with minister Yang Yan, collecting taxes in summer and autumn with greater attention to property and resources.",
+    "significance": "The reform marked a shift away from earlier household and labor obligations toward a different basis for imperial revenue.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Two-tax_system",
+    "zh": {
+      "title": "唐朝实行两税法",
+      "summary": "唐朝政府在杨炎推动下实行新财政制度，于夏秋两季征税，更重视财产与经济资源。",
+      "significance": "改革标志着帝国财政逐步摆脱早期以户籍和劳役为核心的负担体系。",
+      "locationName": "中国长安"
+    }
+  },
+  {
     "id": "lindisfarne-viking-age",
     "kind": "moment",
     "title": "Viking raid on Lindisfarne",
@@ -1785,6 +2330,28 @@
       "title": "日本平安时期",
       "summary": "日本朝廷以平安京、今京都为中心，在藤原氏主导下达到宫廷文化高峰。宫廷女性写出《源氏物语》等经典，地方实权却逐渐转入武士家族之手。",
       "significance": "这一时期形成了独特的日本文学、文字与审美，其结束也标志着此后七百年武士统治的兴起。"
+    }
+  },
+  {
+    "id": "book-of-kells",
+    "kind": "moment",
+    "title": "Book of Kells illuminated",
+    "start": 800,
+    "end": null,
+    "dateLabel": "c. AD 800",
+    "region": "europe",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Iona, Scotland (traditional association)", "lat": 56.33, "lng": -6.39 },
+    "summary": "Monastic artists produce an elaborately decorated Latin Gospel manuscript around AD 800. Its precise place of production is debated, with Iona and Kells closely associated with its history.",
+    "significance": "The manuscript is a celebrated example of Insular art, combining intricate ornament with the transmission of Christian scripture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Book_of_Kells",
+    "zh": {
+      "title": "《凯尔经》绘成",
+      "summary": "修道院艺术家约于公元800年制作华丽装饰的拉丁文福音书抄本。确切制作地点仍有争议，爱奥那与凯尔斯均与其历史密切相关。",
+      "significance": "它是岛屿艺术的著名范例，将精密装饰与基督教经典的传承结合起来。",
+      "locationName": "苏格兰爱奥那岛（传统关联地点）",
+      "dateLabel": "约公元800年"
     }
   },
   {
@@ -1849,6 +2416,24 @@
     }
   },
   {
+    "id": "swahili-trading-cities",
+    "kind": "period",
+    "title": "Swahili trading cities flourish",
+    "start": 800,
+    "end": 1500,
+    "dateLabel": "c. AD 800-1500",
+    "region": "sub-saharan-africa",
+    "summary": "Independent African port cities grow along the East African coast, linking inland producers with Indian Ocean merchants. Their Swahili-speaking societies develop distinctive urban, Islamic and maritime traditions; these dates show an approximate phase of growth.",
+    "significance": "The cities made East Africa a major participant in trade and cultural exchange across the Indian Ocean.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Swahili_city-states",
+    "zh": {
+      "title": "斯瓦希里贸易城市繁荣",
+      "summary": "独立的非洲港口城市沿东非海岸发展，将内陆生产者与印度洋商人相连接。斯瓦希里语社会形成独特的城市、伊斯兰与海洋传统；这些年代标示一个大致发展阶段。",
+      "significance": "这些城市使东非成为印度洋贸易与文化交流的重要参与者。",
+      "dateLabel": "约公元800至1500年"
+    }
+  },
+  {
     "id": "khmer",
     "kind": "state",
     "title": "Khmer Empire",
@@ -1885,6 +2470,48 @@
       "significance": "“代数”一词源于其书名，“算法”的欧洲语言名称源于其姓名。拉丁译本推动代数与印度-阿拉伯数字在欧洲传播。",
       "locationName": "巴格达",
       "dateLabel": "约公元820年"
+    }
+  },
+  {
+    "id": "treaty-verdun",
+    "kind": "moment",
+    "title": "Treaty of Verdun divides the Carolingian realm",
+    "start": 843,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Verdun, France", "lat": 49.16, "lng": 5.38 },
+    "partOf": ["carolingian"],
+    "summary": "Charlemagne's grandsons divide the empire into western, middle and eastern kingdoms after civil war. The agreement settles an immediate dynastic conflict, not modern national boundaries.",
+    "significance": "The division became a major turning point in the political development of western and central Europe.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Verdun",
+    "zh": {
+      "title": "《凡尔登条约》分割加洛林帝国",
+      "summary": "内战后，查理曼的孙辈将帝国分为西部、中部与东部王国。协议解决的是当时的王朝冲突，而非划定现代国家边界。",
+      "significance": "这一分割成为西欧与中欧政治发展的重要转折。",
+      "locationName": "法国凡尔登"
+    }
+  },
+  {
+    "id": "huichang-buddhist-suppression",
+    "kind": "moment",
+    "title": "Tang court suppresses Buddhist monasteries",
+    "start": 845,
+    "end": null,
+    "region": "east-asia",
+    "category": "religion",
+    "importance": 2,
+    "location": { "name": "Chang'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["tang"],
+    "summary": "Emperor Wuzong orders the closure of many Buddhist monasteries and the return of monks and nuns to lay life. Confiscation of property forms part of a wider campaign against religious institutions.",
+    "significance": "The campaign sharply reduced institutional Buddhism and exposed tensions between monastic wealth and state power.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Great_Anti-Buddhist_Persecution",
+    "zh": {
+      "title": "唐武宗会昌灭佛",
+      "summary": "唐武宗下令关闭大量佛寺，勒令僧尼还俗，并没收财产，构成针对宗教机构的广泛打击。",
+      "significance": "运动严重削弱了制度化佛教，凸显寺院财富与国家权力之间的矛盾。",
+      "locationName": "中国长安"
     }
   },
   {
@@ -1965,6 +2592,27 @@
     }
   },
   {
+    "id": "hunayn-galen-translations",
+    "kind": "moment",
+    "title": "Hunayn records his translations of Galen",
+    "start": 856,
+    "end": null,
+    "region": "mena",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Baghdad, Iraq", "lat": 33.32, "lng": 44.37 },
+    "partOf": ["abbasid-translation-movement", "abbasid"],
+    "summary": "Hunayn ibn Ishaq writes an account of translations of Galen's medical works, later revised. He describes manuscripts, earlier versions and the work of translating between Greek, Syriac and Arabic.",
+    "significance": "His work shows the scholarly care behind the transfer of ancient medicine into the Arabic-speaking world.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hunayn_ibn_Ishaq",
+    "zh": {
+      "title": "侯奈因记述盖伦著作翻译",
+      "summary": "侯奈因·伊本·伊斯哈格撰写并随后修订盖伦医学著作翻译记述，说明手稿、旧译本，以及希腊语、叙利亚语与阿拉伯语之间的翻译工作。",
+      "significance": "他的工作展示了古代医学传入阿拉伯语世界背后的严谨学术实践。",
+      "locationName": "伊拉克巴格达"
+    }
+  },
+  {
     "id": "diamond-sutra",
     "kind": "moment",
     "title": "Diamond Sutra, oldest dated printed book",
@@ -1999,6 +2647,29 @@
       "title": "基辅罗斯",
       "summary": "传统记载，882年瓦良格王公奥列格占领基辅，与诺夫哥罗德结合，控制波罗的海通往拜占庭的河运。988年弗拉基米尔接受东正教，后来诸国分裂，1240年基辅被蒙古摧毁。",
       "significance": "基辅罗斯是俄罗斯、乌克兰和白俄罗斯的共同历史源头，其宗教选择将东斯拉夫世界与拜占庭联系起来。"
+    }
+  },
+  {
+    "id": "al-razi-smallpox-measles",
+    "kind": "moment",
+    "title": "Al-Razi distinguishes smallpox and measles",
+    "start": 900,
+    "end": null,
+    "dateLabel": "c. AD 900",
+    "region": "mena",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Rayy, Iran", "lat": 35.59, "lng": 51.44 },
+    "partOf": ["islamic-golden-age"],
+    "summary": "The physician al-Razi writes a careful account distinguishing smallpox from measles, conventionally dated around 900. His descriptions emphasize observation of symptoms and the course of illness.",
+    "significance": "The treatise became an influential example of clinical description in medicine across linguistic and religious boundaries.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abu_Bakr_al-Razi",
+    "zh": {
+      "title": "拉齐区分天花与麻疹",
+      "summary": "医生拉齐撰文细致区分天花与麻疹，通常定于约900年。他强调对症状与病程的观察。",
+      "significance": "这部论著成为跨越语言与宗教界限、具有影响力的临床描述范例。",
+      "locationName": "伊朗雷伊",
+      "dateLabel": "约公元900年"
     }
   },
   {
@@ -2102,6 +2773,27 @@
       "title": "英格兰王国",
       "summary": "927年，埃塞尔斯坦将盎格鲁-撒克逊诸国统一。1066年诺曼征服后，王权逐步与议会分享权力，经历内战和1688年革命。1707年英格兰与苏格兰合为大不列颠。",
       "significance": "普通法与议会制度随后通过大英帝国传播到世界各地。"
+    }
+  },
+  {
+    "id": "cordoba-caliphate-proclaimed",
+    "kind": "moment",
+    "title": "Cordoba claims a caliphate",
+    "start": 929,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Cordoba, Spain", "lat": 37.88, "lng": -4.78 },
+    "partOf": ["al-andalus"],
+    "summary": "Abd al-Rahman III assumes the title of caliph in al-Andalus, asserting independence from rival caliphal claims. Cordoba becomes the center of a powerful western Islamic court.",
+    "significance": "The caliphate fostered urban prosperity and scholarship while reshaping power in Iberia and the western Mediterranean.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba",
+    "zh": {
+      "title": "科尔多瓦宣布建立哈里发国",
+      "summary": "阿卜杜勒·拉赫曼三世在安达卢斯采用哈里发称号，主张独立于其他哈里发权威。科尔多瓦成为强大的西部伊斯兰宫廷中心。",
+      "significance": "哈里发国促进城市繁荣与学术，并改变伊比利亚及西地中海的权力格局。",
+      "locationName": "西班牙科尔多瓦"
     }
   },
   {

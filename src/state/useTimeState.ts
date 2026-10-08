@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { REGIONS, type Region } from '../data/schema';
+import { REGIONS, type Entry, type Region } from '../data/schema';
 import { ENTRIES_BY_ID, FOLDED } from '../data';
 import { clampView, uToYear, visibleURange, yearToU, type View } from '../lib/timeScale';
 import { clampYear } from '../lib/years';
@@ -9,7 +9,7 @@ import { parseUrlState, serializeUrlState } from './urlState';
 
 // Safari throws SecurityError past 100 replaceState calls per 30 s, so writes are debounced.
 const URL_WRITE_DELAY_MS = 250;
-const DEFAULT_REGIONS: Region[] = ['europe', 'mena', 'central-asia', 'south-asia', 'east-asia', 'southeast-asia-oceania'];
+const DEFAULT_REGIONS: Region[] = [...REGIONS];
 
 export interface TerritorySelection {
   name: string;
@@ -20,6 +20,8 @@ export interface TimeStore {
   year: number;
   view: View;
   visibleRegions: Region[];
+  visibleKinds: Entry['kind'][];
+  toggleKind(kind: Entry['kind']): void;
   /** The selected timeline entry: a moment, a period or a state. */
   selectedId: string | null;
   selectedTerritory: TerritorySelection | null;
@@ -45,6 +47,7 @@ export function useTimeState(): TimeStore {
     return linked ? withRegion(DEFAULT_REGIONS, linked.region) : DEFAULT_REGIONS;
   });
   const [view, setViewRaw] = useState(initial.view);
+  const [visibleKinds, setVisibleKinds] = useState<Entry['kind'][]>(['state', 'period', 'moment']);
   const [selectedTerritory, setSelectedTerritory] = useState<TerritorySelection | null>(null);
   const [selectedId, setSelectedId] = useState(initial.selectedId);
   const [hoveredId, hover] = useState<string | null>(null);
@@ -67,6 +70,7 @@ export function useTimeState(): TimeStore {
     setSelectedTerritory(null);
     setYearRaw(entry.start);
     setVisibleRegions((visible) => withRegion(visible, entry.region));
+    setVisibleKinds((visible) => visible.includes(entry.kind) ? visible : [...visible, entry.kind]);
   }, []);
   const selectTerritory = useCallback((territory: TerritorySelection | null) => {
     setPlaying(false);
@@ -78,6 +82,11 @@ export function useTimeState(): TimeStore {
       ? visible.filter((entry) => entry !== region) : [...visible, region]);
   }, []);
   const showAllRegions = useCallback(() => setVisibleRegions([...REGIONS]), []);
+  const toggleKind = useCallback((kind: Entry['kind']) => {
+    setVisibleKinds((visible) => visible.includes(kind)
+      ? visible.filter((entry) => entry !== kind) : [...visible, kind]);
+    hover(null);
+  }, []);
   const setView = useCallback((v: View) => setViewRaw(clampView(v)), []);
   const togglePlaying = useCallback(() => {
     setSelectedId(null);
@@ -120,6 +129,8 @@ export function useTimeState(): TimeStore {
     year,
     view,
     visibleRegions,
+    visibleKinds,
+    toggleKind,
     selectedId,
     selectedTerritory,
     hoveredId,

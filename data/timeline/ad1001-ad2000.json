@@ -21,6 +21,27 @@
     }
   },
   {
+    "id": "chanyuan-treaty",
+    "kind": "moment",
+    "title": "Song and Liao agree to the Chanyuan settlement",
+    "start": 1005,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Chanzhou, China", "lat": 35.77, "lng": 115.03 },
+    "partOf": ["song", "liao"],
+    "summary": "Song and Liao negotiate peace after a Liao invasion reaches the Yellow River region. Song agrees to annual deliveries of silver and silk, and both courts establish a durable diplomatic arrangement.",
+    "significance": "The settlement enabled a long period of relative peace, border trade and negotiated coexistence.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chanyuan_Treaty",
+    "zh": {
+      "title": "宋辽订立澶渊之盟",
+      "summary": "辽军进至黄河地区后，宋辽谈判议和。宋朝同意每年交付银绢，两朝建立较持久的外交安排。",
+      "significance": "盟约促成长期相对和平、边境贸易与协商共存。",
+      "locationName": "中国澶州"
+    }
+  },
+  {
     "id": "tale-of-genji",
     "kind": "moment",
     "title": "The Tale of Genji",
@@ -41,6 +62,29 @@
       "significance": "《源氏物语》常被称为世界最早的小说，是日本文学的核心经典，也细致呈现了平安时代的宫廷生活。",
       "locationName": "平安京（京都）",
       "dateLabel": "约1010年"
+    }
+  },
+  {
+    "id": "ibn-al-haytham-optics",
+    "kind": "moment",
+    "title": "Ibn al-Haytham completes the Book of Optics",
+    "start": 1021,
+    "end": null,
+    "dateLabel": "c. 1021",
+    "region": "mena",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Cairo, Egypt", "lat": 30.04, "lng": 31.24 },
+    "partOf": ["fatimid", "islamic-golden-age"],
+    "summary": "Ibn al-Haytham explains vision through light entering the eye and investigates reflection and refraction. His Book of Optics is generally dated to around 1011-1021.",
+    "significance": "The work joined geometry with experiment and strongly influenced later studies of vision and optics.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Book_of_Optics",
+    "zh": {
+      "title": "伊本·海赛姆完成《光学之书》",
+      "summary": "伊本·海赛姆以光进入眼睛解释视觉，并研究反射与折射。《光学之书》通常定于约1011至1021年。",
+      "significance": "著作将几何与实验结合，深刻影响了后来的视觉与光学研究。",
+      "locationName": "埃及开罗",
+      "dateLabel": "约1021年"
     }
   },
   {
@@ -189,6 +233,27 @@
     }
   },
   {
+    "id": "wang-anshi-reforms",
+    "kind": "moment",
+    "title": "Wang Anshi launches the New Policies",
+    "start": 1069,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Kaifeng, China", "lat": 34.8, "lng": 114.31 },
+    "partOf": ["song"],
+    "summary": "Wang Anshi advances reforms of credit, taxation, administration and military organization under the Song emperor Shenzong. Supporters and opponents contest the role of the state in economic life.",
+    "significance": "The reforms became a lasting reference point in Chinese debates over government intervention and social welfare.",
+    "wikipedia": "https://en.wikipedia.org/wiki/New_Policies_(Song_dynasty)",
+    "zh": {
+      "title": "王安石推行新法",
+      "summary": "王安石在宋神宗支持下推动信贷、税收、行政与军事改革。支持者与反对者围绕国家在经济生活中的角色展开争论。",
+      "significance": "变法成为中国关于政府干预与社会民生讨论的持久参照。",
+      "locationName": "中国开封"
+    }
+  },
+  {
     "id": "battle-of-manzikert",
     "kind": "moment",
     "title": "Battle of Manzikert",
@@ -209,6 +274,48 @@
       "significance": "十年内安纳托利亚大部转入突厥控制，拜占庭求援也推动了第一次十字军东征。",
       "locationName": "安纳托利亚东部曼齐刻尔特（马拉兹吉尔特）",
       "dateLabel": "1071年8月26日"
+    }
+  },
+  {
+    "id": "zizhi-tongjian",
+    "kind": "moment",
+    "title": "Sima Guang completes the Comprehensive Mirror",
+    "start": 1084,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Luoyang, China", "lat": 34.62, "lng": 112.45 },
+    "partOf": ["song"],
+    "summary": "Sima Guang and his collaborators finish a chronological history spanning many earlier dynasties. Written for rulers, it organizes the past around political decisions and their consequences.",
+    "significance": "The work became a central reference for Chinese historical writing and reflection on government.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zizhi_Tongjian",
+    "zh": {
+      "title": "司马光完成《资治通鉴》",
+      "summary": "司马光及其合作者完成编年史巨著，贯通此前多个朝代，以统治者为读者，围绕政治决策及其后果组织历史。",
+      "significance": "著作成为中国史学写作与治国反思的核心参照。",
+      "locationName": "中国洛阳"
+    }
+  },
+  {
+    "id": "quanzhou-maritime-office",
+    "kind": "moment",
+    "title": "Quanzhou gains a maritime trade office",
+    "start": 1087,
+    "end": null,
+    "region": "east-asia",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Quanzhou, China", "lat": 24.87, "lng": 118.68 },
+    "partOf": ["song"],
+    "summary": "The Song government establishes a maritime trade office at Quanzhou to supervise overseas commerce and collect duties. Merchants connect the port with East and Southeast Asia and the wider Indian Ocean.",
+    "significance": "Official support helped Quanzhou become a major commercial and multicultural maritime center.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Quanzhou",
+    "zh": {
+      "title": "泉州设立市舶司",
+      "summary": "宋朝政府在泉州设立市舶司，监管海外贸易并征收税款。商人将港口与东亚、东南亚和更广阔的印度洋连接起来。",
+      "significance": "官方支持推动泉州成为重要的商业与多文化海港中心。",
+      "locationName": "中国泉州"
     }
   },
   {
@@ -255,6 +362,27 @@
       "significance": "它常被称为持续办学最久的大学，其学者自治模式影响了后来欧洲和世界的大学。",
       "locationName": "博洛尼亚",
       "dateLabel": "1088年（传统说法）"
+    }
+  },
+  {
+    "id": "su-song-clock-treatise",
+    "kind": "moment",
+    "title": "Su Song describes his astronomical clock",
+    "start": 1092,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Kaifeng, China", "lat": 34.8, "lng": 114.31 },
+    "partOf": ["song"],
+    "summary": "Su Song writes an illustrated account of his water-powered astronomical clock tower. The mechanism coordinates timekeeping with models and instruments representing the heavens.",
+    "significance": "The treatise preserved remarkable evidence of Song mechanical engineering and astronomical instrumentation.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Su_Song",
+    "zh": {
+      "title": "苏颂撰述天文钟仪",
+      "summary": "苏颂撰写配图著作，说明水力天文钟楼的结构，将计时与表现天象的模型、仪器结合起来。",
+      "significance": "著作保存了宋代机械工程与天文仪器的重要证据。",
+      "locationName": "中国开封"
     }
   },
   {
@@ -308,6 +436,27 @@
       "title": "津巴布韦王国",
       "summary": "大津巴布韦是赞比西河与林波波河之间高原上的绍纳王国都城。统治者居于巨大干砌石墙内，凭牲畜及输往斯瓦希里海岸的黄金、象牙致富。",
       "significance": "这些遗址是撒哈拉以南非洲最大的古代石构建筑，现代津巴布韦以其命名。"
+    }
+  },
+  {
+    "id": "yingzao-fashi",
+    "kind": "moment",
+    "title": "Building Standards published under the Song",
+    "start": 1103,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Kaifeng, China", "lat": 34.8, "lng": 114.31 },
+    "partOf": ["song"],
+    "summary": "Li Jie's official building manual is published, setting out construction methods, material specifications and labor estimates. Detailed illustrations record sophisticated timber-building practices.",
+    "significance": "The manual is a key source for understanding traditional Chinese architecture and state management of construction.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yingzao_Fashi",
+    "zh": {
+      "title": "宋朝刊行《营造法式》",
+      "summary": "李诫编修的官方建筑手册刊行，规定施工方法、材料规格与工料估算，并以详细图示记录成熟的木构建筑技术。",
+      "significance": "它是理解中国传统建筑与国家工程管理的关键资料。",
+      "locationName": "中国开封"
     }
   },
   {
@@ -370,6 +519,27 @@
       "significance": "宋从此未能收复北方，中国的财富与人口重心也决定性地向南方转移。",
       "locationName": "开封",
       "dateLabel": "1127年"
+    }
+  },
+  {
+    "id": "samguk-sagi",
+    "kind": "moment",
+    "title": "Samguk Sagi records Korea's Three Kingdoms",
+    "start": 1145,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Gaegyeong, Korea", "lat": 37.97, "lng": 126.55 },
+    "partOf": ["goryeo"],
+    "summary": "Kim Busik and fellow scholars complete an official history of Goguryeo, Baekje and Silla for the Goryeo court. Written in classical Chinese, it applies a Confucian historical framework.",
+    "significance": "The work became one of the principal surviving sources for early Korean history, shaped by the concerns of its compilers.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Samguk_sagi",
+    "zh": {
+      "title": "《三国史记》编成",
+      "summary": "金富轼及其他学者为高丽朝廷完成高句丽、百济与新罗的官修历史，以汉文书写，并采用儒家史学框架。",
+      "significance": "著作成为研究朝鲜半岛早期历史的主要留存资料之一，同时带有编纂者的时代关切。",
+      "locationName": "朝鲜半岛开京"
     }
   },
   {
@@ -489,6 +659,26 @@
     }
   },
   {
+    "id": "fibonacci-liber-abaci",
+    "kind": "moment",
+    "title": "Fibonacci writes Liber Abaci",
+    "start": 1202,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Pisa, Italy", "lat": 43.72, "lng": 10.4 },
+    "summary": "Leonardo of Pisa presents Hindu-Arabic numerals and methods of calculation to Latin readers, drawing on knowledge acquired around the Mediterranean. Many examples concern merchants and currency exchange.",
+    "significance": "The book helped spread practical decimal arithmetic in Europe, although adoption took centuries.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Liber_Abaci",
+    "zh": {
+      "title": "斐波那契撰写《算盘书》",
+      "summary": "比萨的列奥纳多向拉丁文读者介绍印度-阿拉伯数字与计算方法，吸收了在地中海地区获得的知识。许多例题涉及商业与货币兑换。",
+      "significance": "著作帮助十进制实用算术在欧洲传播，但普及过程持续了数百年。",
+      "locationName": "意大利比萨"
+    }
+  },
+  {
     "id": "delhi-sultanate",
     "kind": "state",
     "title": "Delhi Sultanate",
@@ -580,6 +770,27 @@
       "summary": "成吉思汗将阿姆河至阿尔泰间的中亚土地分给次子察合台。后裔统治撒马尔罕、布哈拉及草原，逐渐采用伊斯兰教与突厥语，14世纪40年代分裂。",
       "significance": "汗国位于丝绸之路中心，帖木儿后来在其西部崛起。",
       "dateLabel": "1226-1347年（作为统一汗国）"
+    }
+  },
+  {
+    "id": "goseibai-shikimoku",
+    "kind": "moment",
+    "title": "Kamakura adopts a warrior legal code",
+    "start": 1232,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 1,
+    "location": { "name": "Kamakura, Japan", "lat": 35.32, "lng": 139.55 },
+    "partOf": ["kamakura-shogunate"],
+    "summary": "Hojo Yasutoki issues a legal code for the Kamakura shogunate, drawing on warrior customs and practical rulings. It addresses questions including landholding, inheritance and official conduct.",
+    "significance": "The code became an enduring foundation of warrior law in medieval Japan.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Goseibai_Shikimoku",
+    "zh": {
+      "title": "镰仓幕府制定《御成败式目》",
+      "summary": "北条泰时依据武家惯例与实际判例，为镰仓幕府制定法典，处理土地占有、继承与官员行为等问题。",
+      "significance": "法典成为日本中世纪武家法律的持久基础。",
+      "locationName": "日本镰仓"
     }
   },
   {
@@ -900,6 +1111,26 @@
     }
   },
   {
+    "id": "ibn-battuta-departs",
+    "kind": "moment",
+    "title": "Ibn Battuta begins his travels",
+    "start": 1325,
+    "end": null,
+    "region": "mena",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Tangier, Morocco", "lat": 35.76, "lng": -5.83 },
+    "summary": "Ibn Battuta leaves Tangier on pilgrimage to Mecca, beginning decades of travel through Africa and Asia. His later travel narrative combines personal experience with material whose details historians debate.",
+    "significance": "His account offers a wide view of connected Islamic societies and long-distance travel in the fourteenth century.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ibn_Battuta",
+    "zh": {
+      "title": "伊本·白图泰开始远行",
+      "summary": "伊本·白图泰离开丹吉尔前往麦加朝圣，开启数十年的亚非旅行。后来的游记结合亲身经历与一些细节仍受史学界讨论的材料。",
+      "significance": "他的记述提供了14世纪伊斯兰社会联系与长途旅行的广阔视野。",
+      "locationName": "摩洛哥丹吉尔"
+    }
+  },
+  {
     "id": "tenochtitlan-founded",
     "kind": "moment",
     "title": "Tenochtitlan founded",
@@ -1168,6 +1399,27 @@
     }
   },
   {
+    "id": "yongle-encyclopedia-completed",
+    "kind": "moment",
+    "title": "Yongle Encyclopedia completed",
+    "start": 1408,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Nanjing, China", "lat": 32.06, "lng": 118.8 },
+    "partOf": ["ming"],
+    "summary": "An imperial team completes an enormous compilation drawing on works of history, philosophy, literature, science and other fields. The manuscript project gathers extensive excerpts from earlier books.",
+    "significance": "Although most volumes were later lost, surviving portions preserve material from books that otherwise disappeared.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yongle_Encyclopedia",
+    "zh": {
+      "title": "《永乐大典》编成",
+      "summary": "皇家编纂团队完成规模庞大的汇编，涵盖历史、哲学、文学、科学等领域，以手抄形式汇集早期典籍的大量内容。",
+      "significance": "尽管大部分卷册后来散失，留存部分仍保存了其他已佚典籍的内容。",
+      "locationName": "中国南京"
+    }
+  },
+  {
     "id": "portuguese-empire",
     "kind": "state",
     "title": "Portuguese Empire",
@@ -1204,6 +1456,29 @@
       "significance": "紫禁城曾是24位皇帝的居所，直到1912年仍为中国政治中心，也是世界现存规模最大的宫殿建筑群。",
       "locationName": "北京市",
       "dateLabel": "1420年"
+    }
+  },
+  {
+    "id": "ulugh-beg-observatory",
+    "kind": "moment",
+    "title": "Ulugh Beg builds a great observatory",
+    "start": 1425,
+    "end": null,
+    "dateLabel": "1420s",
+    "region": "central-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Samarkand, Uzbekistan", "lat": 39.68, "lng": 67.01 },
+    "partOf": ["timurid"],
+    "summary": "Ulugh Beg and his scholars establish a large observatory at Samarkand during the 1420s. Its enormous measuring instrument supports precise observations without a telescope.",
+    "significance": "The observatory produced influential astronomical tables and star positions, extending a long Islamic astronomical tradition.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ulugh_Beg_Observatory",
+    "zh": {
+      "title": "兀鲁伯建造大型天文台",
+      "summary": "兀鲁伯及其学者在1420年代于撒马尔罕建立大型天文台，利用巨型测量仪器开展没有望远镜的精密观测。",
+      "significance": "天文台产生了有影响力的天文表与恒星位置数据，延续了悠久的伊斯兰天文学传统。",
+      "locationName": "乌兹别克斯坦撒马尔罕",
+      "dateLabel": "1420年代"
     }
   },
   {
@@ -1438,6 +1713,27 @@
     }
   },
   {
+    "id": "treaty-tordesillas",
+    "kind": "moment",
+    "title": "Treaty of Tordesillas",
+    "start": 1494,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Tordesillas, Spain", "lat": 41.5, "lng": -5.0 },
+    "partOf": ["spanish-empire", "portuguese-empire"],
+    "summary": "Spain and Portugal agree on a line dividing their claims to lands beyond Europe. The agreement disregards the sovereignty of the peoples living in those lands.",
+    "significance": "The treaty shaped rival colonial projects, including Portugal's later claim to Brazil.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
+    "zh": {
+      "title": "《托尔德西里亚斯条约》",
+      "summary": "西班牙与葡萄牙商定一条界线，划分它们对欧洲以外土地的主张，未顾及当地各民族的主权。",
+      "significance": "条约影响了相互竞争的殖民计划，包括葡萄牙后来对巴西的主张。",
+      "locationName": "西班牙托尔德西里亚斯"
+    }
+  },
+  {
     "id": "da-gama-reaches-india",
     "kind": "moment",
     "title": "Vasco da Gama reaches India",
@@ -1497,6 +1793,27 @@
       "title": "萨法维王朝",
       "summary": "伊斯迈尔一世于1501年统一伊朗，定十二伊玛目派什叶派为国教。继任者对抗奥斯曼和乌兹别克，阿巴斯一世时期伊斯法罕成为繁华都城。",
       "significance": "萨法维重新统一大体接近现代疆域的伊朗，并确立延续至今的什叶派宗教格局。"
+    }
+  },
+  {
+    "id": "wang-yangming-longchang",
+    "kind": "moment",
+    "title": "Wang Yangming develops his philosophy in exile",
+    "start": 1508,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Longchang, Guizhou, China", "lat": 26.84, "lng": 106.59 },
+    "partOf": ["ming"],
+    "summary": "During exile in Longchang, Wang Yangming reaches an intellectual turning point later known as the Longchang awakening. His subsequent teaching emphasizes moral knowledge and the unity of knowing and acting.",
+    "significance": "His philosophy reshaped Confucian debates in China and influenced thinkers elsewhere in East Asia.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wang_Yangming",
+    "zh": {
+      "title": "王阳明在龙场发展心学",
+      "summary": "王阳明在龙场流放期间经历后来称为“龙场悟道”的思想转折，其后学说强调道德认识与知行合一。",
+      "significance": "他的哲学重塑中国儒学争论，并影响东亚其他地区的思想家。",
+      "locationName": "中国贵州龙场"
     }
   },
   {
@@ -1731,7 +2048,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Frombork (where Copernicus lived and worked)", "lat": 54.36, "lng": 19.68 },
-    "partOf": ["renaissance"],
+    "partOf": ["renaissance", "scientific-revolution"],
     "summary": "Nicolaus Copernicus, a Polish astronomer and church canon, publishes On the Revolutions of the Heavenly Spheres shortly before his death. It argues that the Earth and the other planets orbit the Sun, rather than everything circling a fixed Earth as most astronomers since Ptolemy had held.",
     "significance": "His Sun-centered model, later improved by Kepler and defended by Galileo, helped launch the Scientific Revolution and changed how people understood their place in the universe.",
     "wikipedia": "https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium",
@@ -1740,6 +2057,45 @@
       "summary": "波兰天文学家哥白尼临终前发表《天体运行论》，主张地球与其他行星绕太阳运行，反对自托勒密以来占主流的地心体系。",
       "significance": "经开普勒改进、伽利略支持的日心说推动科学革命，改变人类对宇宙中自身位置的认识。",
       "locationName": "弗龙堡（哥白尼生活与工作之地）"
+    }
+  },
+  {
+    "id": "scientific-revolution",
+    "kind": "period",
+    "title": "Scientific Revolution",
+    "start": 1543,
+    "end": 1687,
+    "dateLabel": "c. AD 1543-1687",
+    "region": "europe",
+    "summary": "Astronomy, anatomy, physics and experimental inquiry change through new instruments and mathematical methods. Copernicus and Vesalius in 1543 and Newton in 1687 provide conventional landmarks, not firm boundaries for a single movement.",
+    "significance": "Observation, experiment and mathematical explanation gained new authority in understanding nature.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Scientific_Revolution",
+    "zh": {
+      "title": "科学革命",
+      "summary": "天文学、解剖学、物理学与实验研究通过新仪器和数学方法发生变化。1543年的哥白尼与维萨里著作，以及1687年的牛顿著作，是常用节点，并非单一运动的严格边界。",
+      "significance": "观察、实验与数学解释在认识自然方面获得新的权威。",
+      "dateLabel": "约公元1543至1687年"
+    }
+  },
+  {
+    "id": "vesalius-anatomy",
+    "kind": "moment",
+    "title": "Vesalius publishes a new anatomy",
+    "start": 1543,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Basel, Switzerland", "lat": 47.56, "lng": 7.59 },
+    "partOf": ["scientific-revolution"],
+    "summary": "Andreas Vesalius publishes an illustrated study of the human body based on dissection. It corrects errors inherited from ancient medical authorities, while retaining parts of their framework.",
+    "significance": "Direct observation gained authority in anatomical teaching, changing how physicians studied the body.",
+    "wikipedia": "https://en.wikipedia.org/wiki/De_Humani_Corporis_Fabrica",
+    "zh": {
+      "title": "维萨里出版新解剖学著作",
+      "summary": "安德烈亚斯·维萨里根据解剖出版配图人体研究著作，在保留部分传统框架的同时，纠正了古代医学权威的一些错误。",
+      "significance": "直接观察在解剖教学中获得权威，改变了医生研究人体的方式。",
+      "locationName": "瑞士巴塞尔"
     }
   },
   {
@@ -1831,6 +2187,48 @@
     }
   },
   {
+    "id": "akbar-din-ilahi",
+    "kind": "moment",
+    "title": "Akbar experiments with religious fellowship",
+    "start": 1582,
+    "end": null,
+    "region": "south-asia",
+    "category": "religion",
+    "importance": 1,
+    "location": { "name": "Fatehpur Sikri, India", "lat": 27.09, "lng": 77.66 },
+    "partOf": ["mughal"],
+    "summary": "Akbar develops a small ethical and spiritual fellowship commonly called Din-i Ilahi, amid wider debates among religious traditions at his court. It attracts few adherents and is not a mass conversion program.",
+    "significance": "The experiment illustrates the Mughal court's search for forms of rule beyond rigid religious divisions.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Din-i_Ilahi",
+    "zh": {
+      "title": "阿克巴探索宗教共同体",
+      "summary": "阿克巴在宫廷多种宗教传统的讨论中，发展出通常称为“神圣宗教”的小型伦理与精神共同体。其追随者很少，并非大规模改宗计划。",
+      "significance": "这项尝试体现了莫卧儿宫廷对超越严格宗教分野的统治方式的探索。",
+      "locationName": "印度法泰赫普尔西克里"
+    }
+  },
+  {
+    "id": "ricci-zhaoqing",
+    "kind": "moment",
+    "title": "Matteo Ricci settles in China",
+    "start": 1583,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Zhaoqing, China", "lat": 23.05, "lng": 112.47 },
+    "partOf": ["ming"],
+    "summary": "Matteo Ricci and Michele Ruggieri establish a Jesuit residence at Zhaoqing. Ricci learns Chinese and later exchanges geographical, mathematical and religious ideas with Chinese scholars.",
+    "significance": "These encounters opened an influential channel of intellectual exchange between late Ming China and Europe.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Matteo_Ricci",
+    "zh": {
+      "title": "利玛窦在中国定居传教",
+      "summary": "利玛窦与罗明坚在肇庆建立耶稣会住所。利玛窦学习汉语，后来与中国学者交流地理、数学与宗教观念。",
+      "significance": "这些接触开辟了晚明中国与欧洲之间有影响力的知识交流渠道。",
+      "locationName": "中国肇庆"
+    }
+  },
+  {
     "id": "songhai-falls",
     "kind": "moment",
     "title": "Morocco defeats Songhai",
@@ -1872,6 +2270,48 @@
       "summary": "统一日本后，丰臣秀吉派十五万余人入侵朝鲜，企图以此为进攻明朝的第一步。日军迅速占领半岛大部，但李舜臣水师截断补给，朝鲜义兵不断袭扰，明军也出兵援朝。秀吉1598年去世后，日军撤退。",
       "significance": "战争重创朝鲜，耗费明朝大量财力，并在朝日关系中留下持久创伤。",
       "locationName": "釜山（入侵军登陆地）"
+    }
+  },
+  {
+    "id": "journey-west-publication",
+    "kind": "moment",
+    "title": "Earliest surviving complete Journey to the West published",
+    "start": 1592,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Nanjing, China", "lat": 32.06, "lng": 118.8 },
+    "partOf": ["ming"],
+    "summary": "The earliest surviving complete printed edition of Journey to the West appears. Conventionally attributed to Wu Cheng'en, the novel transforms pilgrimage traditions into an imaginative adventure of demons, gods and the Monkey King.",
+    "significance": "The novel became a defining work of Chinese literature and a continuing source for theater, film and popular culture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Journey_to_the_West",
+    "zh": {
+      "title": "现存最早完整《西游记》刊本问世",
+      "summary": "现存最早的完整《西游记》刊本问世。这部通常归于吴承恩的小说，将取经传统转化为充满妖魔、神佛与孙悟空的奇幻冒险。",
+      "significance": "小说成为中国文学的代表作品，并持续为戏剧、电影与大众文化提供素材。",
+      "locationName": "中国南京"
+    }
+  },
+  {
+    "id": "bencao-gangmu-published",
+    "kind": "moment",
+    "title": "Li Shizhen's Compendium of Materia Medica published",
+    "start": 1596,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Nanjing, China", "lat": 32.06, "lng": 118.8 },
+    "partOf": ["ming"],
+    "summary": "Li Shizhen's extensive compilation of substances and medical traditions is printed after his death. It combines earlier texts, critical comparison and descriptions of plants, animals and minerals.",
+    "significance": "The work became an influential reference in East Asian materia medica and natural history; its historical claims are not all supported by modern science.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Compendium_of_Materia_Medica",
+    "zh": {
+      "title": "李时珍《本草纲目》刊行",
+      "summary": "李时珍广泛整理药物与医学传统的著作在其身后刊行，结合早期文献、考辨以及植物、动物与矿物描述。",
+      "significance": "著作成为东亚本草学与博物学的重要参考，但其历史论断并非都得到现代科学支持。",
+      "locationName": "中国南京"
     }
   },
   {
@@ -1953,6 +2393,48 @@
     }
   },
   {
+    "id": "kepler-planetary-laws",
+    "kind": "moment",
+    "title": "Kepler describes elliptical planetary orbits",
+    "start": 1609,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Prague, Czechia", "lat": 50.08, "lng": 14.42 },
+    "partOf": ["scientific-revolution", "habsburg-monarchy"],
+    "summary": "Using Tycho Brahe's observations of Mars, Johannes Kepler publishes the first two laws of planetary motion. Planets move in ellipses and sweep out equal areas in equal times.",
+    "significance": "The laws replaced ideal circular orbits with a more accurate mathematical account that Newton later explained through gravity.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Astronomia_nova",
+    "zh": {
+      "title": "开普勒提出行星椭圆轨道",
+      "summary": "约翰内斯·开普勒利用第谷·布拉赫的火星观测，发表前两条行星运动定律：行星沿椭圆运行，并在相等时间扫过相等面积。",
+      "significance": "这些定律以更准确的数学描述取代理想圆轨道，后来由牛顿通过引力加以解释。",
+      "locationName": "捷克布拉格"
+    }
+  },
+  {
+    "id": "galileo-starry-messenger",
+    "kind": "moment",
+    "title": "Galileo publishes the Starry Messenger",
+    "start": 1610,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Venice, Italy", "lat": 45.44, "lng": 12.34 },
+    "partOf": ["republic-of-venice", "scientific-revolution"],
+    "summary": "Galileo publishes Sidereus Nuncius, reporting telescope observations of mountains on the Moon, many stars invisible to the naked eye, and four moons orbiting Jupiter. The observations challenge the idea of perfect heavenly bodies all revolving around Earth.",
+    "significance": "The telescope became a tool for testing theories of the cosmos, and Jupiter's moons supplied striking evidence that not every celestial body circles Earth.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sidereus_Nuncius",
+    "zh": {
+      "title": "伽利略出版《星际信使》",
+      "summary": "伽利略出版《星际信使》，报告用望远镜观测到的月球山脉、肉眼看不见的大量恒星，以及环绕木星运行的四颗卫星。这些发现挑战了天体完美无缺且都围绕地球运行的观念。",
+      "significance": "望远镜成为检验宇宙理论的工具，木星卫星提供了并非所有天体都绕地球运行的鲜明证据。",
+      "locationName": "意大利威尼斯"
+    }
+  },
+  {
     "id": "swedish-empire",
     "kind": "state",
     "title": "Swedish Empire",
@@ -1966,6 +2448,27 @@
       "title": "瑞典帝国",
       "summary": "古斯塔夫二世建立强军，介入三十年战争，控制波罗的海大部分沿岸。查理十二世在与俄国的大北方战争中失去优势，战争1721年结束。",
       "significance": "瑞典主导北欧约一百年，其衰落标志俄国取代这一地位。"
+    }
+  },
+  {
+    "id": "donguibogam-published",
+    "kind": "moment",
+    "title": "Donguibogam medical encyclopedia published",
+    "start": 1613,
+    "end": null,
+    "region": "east-asia",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Hanseong, Korea", "lat": 37.57, "lng": 126.98 },
+    "partOf": ["joseon"],
+    "summary": "Heo Jun's medical encyclopedia is published with royal support, organizing medical knowledge drawn from Korean and Chinese traditions. It becomes widely used and reprinted.",
+    "significance": "The book is a major record of East Asian medical exchange; its historical remedies should not be equated with modern clinical evidence.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dongui_Bogam",
+    "zh": {
+      "title": "《东医宝鉴》刊行",
+      "summary": "许浚编纂的医学百科在王室支持下刊行，整理朝鲜半岛与中国医学传统的知识，随后广泛使用并多次重印。",
+      "significance": "著作是东亚医学交流的重要记录，但其中的历史疗法不能等同于现代临床证据。",
+      "locationName": "朝鲜半岛汉城"
     }
   },
   {
@@ -2008,6 +2511,27 @@
       "summary": "荷兰东印度公司的科恩攻占并摧毁爪哇港口雅加达，在废墟上修建设防城市巴达维亚，作为公司亚洲总部。",
       "significance": "它成为荷兰在当地贸易与殖民统治三百余年的中心，后来以雅加达之名成为独立印尼首都。",
       "locationName": "巴达维亚（雅加达）"
+    }
+  },
+  {
+    "id": "harvey-circulation",
+    "kind": "moment",
+    "title": "Harvey explains blood circulation",
+    "start": 1628,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Frankfurt, Germany (publication)", "lat": 50.11, "lng": 8.68 },
+    "partOf": ["scientific-revolution"],
+    "summary": "William Harvey publishes evidence that the heart pumps blood through a circulation. Experiments and estimates of blood volume challenge prevailing accounts of how blood is produced and consumed.",
+    "significance": "The work helped make experimental reasoning central to physiology.",
+    "wikipedia": "https://en.wikipedia.org/wiki/De_Motu_Cordis",
+    "zh": {
+      "title": "哈维阐述血液循环",
+      "summary": "威廉·哈维发表证据，说明心脏推动血液循环。实验与血量估算挑战了当时关于血液生成和消耗的解释。",
+      "significance": "这项研究推动实验推理成为生理学的核心方法。",
+      "locationName": "德国法兰克福（出版地）"
     }
   },
   {
@@ -2067,6 +2591,48 @@
     }
   },
   {
+    "id": "peace-westphalia",
+    "kind": "moment",
+    "title": "Peace of Westphalia",
+    "start": 1648,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 3,
+    "location": { "name": "Munster, Germany", "lat": 51.96, "lng": 7.63 },
+    "partOf": ["thirty-years-war", "holy-roman-empire"],
+    "summary": "Treaties negotiated at Munster and Osnabruck end the Thirty Years' War in the Holy Roman Empire and settle other conflicts. They adjust territorial and religious arrangements after decades of devastation.",
+    "significance": "The settlement became a landmark in European diplomacy, although the modern sovereign-state system did not spring fully formed from it.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+    "zh": {
+      "title": "威斯特伐利亚和约",
+      "summary": "在明斯特和奥斯纳布吕克谈判的条约结束神圣罗马帝国境内的三十年战争，并处理其他冲突，在数十年破坏后调整领土与宗教安排。",
+      "significance": "和约成为欧洲外交的重要节点，但现代主权国家体系并非由此一次性形成。",
+      "locationName": "德国明斯特"
+    }
+  },
+  {
+    "id": "royal-society-founded",
+    "kind": "moment",
+    "title": "Royal Society founded",
+    "start": 1660,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "London, England", "lat": 51.51, "lng": -0.09 },
+    "partOf": ["scientific-revolution", "british-empire"],
+    "summary": "A group of natural philosophers establishes a society for experimental learning in London. Meetings, correspondence and later publications make research a shared institutional activity.",
+    "significance": "The society helped establish practices of reporting, discussing and evaluating scientific findings.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Royal_Society",
+    "zh": {
+      "title": "英国皇家学会成立",
+      "summary": "一群自然哲学家在伦敦建立研究实验知识的学会，通过会议、通信与后来的出版物，使研究成为共同的制度化活动。",
+      "significance": "学会推动了科学发现的报告、讨论与评议实践。",
+      "locationName": "英格兰伦敦"
+    }
+  },
+  {
     "id": "maratha",
     "kind": "state",
     "title": "Maratha Empire",
@@ -2080,6 +2646,27 @@
       "title": "马拉塔帝国",
       "summary": "西印度领袖希瓦吉从莫卧儿与比贾普尔领土中建国，1674年加冕。18世纪，由浦那世袭首相领导的邦联控制印度大部，最终在1818年第三次对英战争后失败。",
       "significance": "马拉塔削弱莫卧儿权力，是抵抗英国扩张的最后几个印度主要国家之一。"
+    }
+  },
+  {
+    "id": "leeuwenhoek-microbes",
+    "kind": "moment",
+    "title": "Leeuwenhoek reports microscopic life",
+    "start": 1676,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Delft, Netherlands", "lat": 52.01, "lng": 4.36 },
+    "partOf": ["scientific-revolution", "dutch-republic"],
+    "summary": "Antonie van Leeuwenhoek reports tiny organisms seen with his powerful single-lens microscopes, including observations of bacteria in water infusions. Their existence reveals a previously unseen living world.",
+    "significance": "Microscopy opened a new field of biological inquiry long before the role of microbes in disease was understood.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek",
+    "zh": {
+      "title": "列文虎克报告微观生命",
+      "summary": "安东尼·范·列文虎克报告用高倍单透镜显微镜看到的微小生物，包括浸液中的细菌，揭示了此前不可见的生命世界。",
+      "significance": "在人们理解微生物致病作用之前，显微观察就开辟了新的生物学研究领域。",
+      "locationName": "荷兰代尔夫特"
     }
   },
   {
@@ -2148,7 +2735,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Cambridge", "lat": 52.21, "lng": 0.12 },
-    "partOf": ["kingdom-of-england", "enlightenment"],
+    "partOf": ["kingdom-of-england", "enlightenment", "scientific-revolution"],
     "summary": "Isaac Newton, a professor at Cambridge, publishes the Philosophiae Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy). In it he sets out three laws of motion and the law of universal gravitation, showing that the same force that makes objects fall to the ground keeps the Moon and planets in their orbits.",
     "significance": "The Principia became the foundation of classical physics and a model for explaining nature through mathematical laws, central to the Scientific Revolution and the Enlightenment.",
     "wikipedia": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
@@ -2157,6 +2744,27 @@
       "summary": "牛顿出版《自然哲学的数学原理》，提出运动三定律与万有引力定律，用同一套数学规律解释地面物体运动及行星轨道。",
       "significance": "此书奠定经典物理学基础，成为以数学定律解释自然的典范，在科学革命与启蒙运动中地位关键。",
       "locationName": "剑桥"
+    }
+  },
+  {
+    "id": "treaty-nerchinsk",
+    "kind": "moment",
+    "title": "Qing and Russia sign the Treaty of Nerchinsk",
+    "start": 1689,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Nerchinsk, Russia", "lat": 51.98, "lng": 116.59 },
+    "partOf": ["qing", "high-qing"],
+    "summary": "Qing and Russian negotiators conclude an agreement regulating their frontier and relations after clashes in the Amur region. Jesuit interpreters help mediate communication.",
+    "significance": "The treaty established a framework for diplomacy and trade between two expanding Eurasian empires.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Nerchinsk",
+    "zh": {
+      "title": "清俄签订《尼布楚条约》",
+      "summary": "清朝与俄国在黑龙江流域冲突后达成协议，规定边界与双方关系，耶稣会译员协助沟通。",
+      "significance": "条约为两个扩张中的欧亚帝国之间的外交与贸易建立框架。",
+      "locationName": "俄罗斯尼布楚"
     }
   },
   {
@@ -2210,6 +2818,68 @@
     }
   },
   {
+    "id": "bach-well-tempered-clavier",
+    "kind": "moment",
+    "title": "Bach compiles The Well-Tempered Clavier",
+    "start": 1722,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Kothen, Germany", "lat": 51.75, "lng": 11.97 },
+    "partOf": ["holy-roman-empire"],
+    "summary": "Johann Sebastian Bach compiles the first book of preludes and fugues in all major and minor keys. A second book follows later.",
+    "significance": "The collection became a foundation of keyboard training and an enduring model of contrapuntal composition.",
+    "wikipedia": "https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier",
+    "zh": {
+      "title": "巴赫编成《平均律键盘曲集》",
+      "summary": "约翰·塞巴斯蒂安·巴赫编成涵盖全部大小调的前奏曲与赋格第一卷，后来又编写第二卷。",
+      "significance": "曲集成为键盘训练的基础，以及经久不衰的复调作曲范例。",
+      "locationName": "德国克滕"
+    }
+  },
+  {
+    "id": "linnaeus-systema-naturae",
+    "kind": "moment",
+    "title": "Linnaeus publishes Systema Naturae",
+    "start": 1735,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Leiden, Netherlands", "lat": 52.16, "lng": 4.5 },
+    "summary": "Carl Linnaeus publishes the first edition of a classification of nature. Later editions and related works develop the naming and classification practices for which he becomes known.",
+    "significance": "His system helped scientists compare and organize organisms through shared categories and names.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Systema_Naturae",
+    "zh": {
+      "title": "林奈出版《自然系统》",
+      "summary": "卡尔·林奈出版自然分类著作初版，后续版本及相关著作逐步发展了其著名的命名与分类方法。",
+      "significance": "他的体系帮助科学家通过共同的类别与名称比较和组织生物知识。",
+      "locationName": "荷兰莱顿"
+    }
+  },
+  {
+    "id": "encyclopedie-first-volume",
+    "kind": "moment",
+    "title": "The Encyclopedie begins publication",
+    "start": 1751,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Paris, France", "lat": 48.86, "lng": 2.35 },
+    "partOf": ["enlightenment", "kingdom-of-france"],
+    "summary": "Denis Diderot and Jean le Rond d'Alembert launch a collaborative encyclopedia of knowledge, arts and crafts. Its contributors face censorship while questioning inherited authorities.",
+    "significance": "The project spread Enlightenment arguments and treated practical skills as worthy of systematic knowledge.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Encyclop%C3%A9die",
+    "zh": {
+      "title": "《百科全书》开始出版",
+      "summary": "德尼·狄德罗与让·勒朗·达朗贝尔发起涵盖知识、艺术与技艺的合作百科全书。撰稿者在质疑传统权威的同时面临审查。",
+      "significance": "这项工程传播了启蒙思想，并将实用技艺视为值得系统研究的知识。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
     "id": "battle-of-plassey",
     "kind": "moment",
     "title": "Battle of Plassey",
@@ -2250,6 +2920,27 @@
       "summary": "英国率先以水力、蒸汽驱动机器，将纺织转为工厂生产，煤矿和冶铁迅速扩张。劳工从乡村涌入曼彻斯特等工业城市，转变的确切年代与速度仍有争论。",
       "significance": "工业化随后传播至欧美、日本和世界各地，带来持续增长，也伴随城市化、污染和社会冲突。",
       "locationName": "曼彻斯特（代表地点）"
+    }
+  },
+  {
+    "id": "beccaria-crimes-punishments",
+    "kind": "moment",
+    "title": "Beccaria challenges torture and capital punishment",
+    "start": 1764,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 1,
+    "location": { "name": "Livorno, Italy (publication)", "lat": 43.55, "lng": 10.31 },
+    "partOf": ["enlightenment"],
+    "summary": "Cesare Beccaria publishes an argument for proportionate punishment and against torture and the death penalty. He asks that criminal law serve public welfare rather than vengeance.",
+    "significance": "The book influenced penal reform and debates over the limits of state punishment.",
+    "wikipedia": "https://en.wikipedia.org/wiki/On_Crimes_and_Punishments",
+    "zh": {
+      "title": "贝卡里亚质疑酷刑与死刑",
+      "summary": "切萨雷·贝卡里亚主张刑罚应当适度，反对酷刑与死刑，并要求刑法服务于公共利益而非报复。",
+      "significance": "著作影响了刑罚改革以及国家惩罚权边界的讨论。",
+      "locationName": "意大利里窝那（出版地）"
     }
   },
   {
@@ -2310,6 +3001,64 @@
       "title": "美国",
       "summary": "十三个英国殖民地1776年宣布独立，以成文宪法建立联邦共和国。国家向西扩张，经历围绕奴隶制的内战与工业化，1945年后成为超级大国。",
       "significance": "其宪法、权利与自治理念影响全球民主制度，20世纪更成为领先经济与军事强国。"
+    }
+  },
+  {
+    "id": "wealth-of-nations",
+    "kind": "moment",
+    "title": "Adam Smith publishes The Wealth of Nations",
+    "start": 1776,
+    "end": null,
+    "region": "europe",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "London, England (publication)", "lat": 51.51, "lng": -0.13 },
+    "partOf": ["enlightenment", "british-empire"],
+    "summary": "Adam Smith analyzes the division of labor, exchange and the sources of national wealth. He criticizes mercantilist restrictions while also examining public institutions and the dangers of monopoly.",
+    "significance": "The work became a central reference in political economy and later debates about markets and government.",
+    "wikipedia": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations",
+    "zh": {
+      "title": "亚当·斯密出版《国富论》",
+      "summary": "亚当·斯密分析劳动分工、交换与国家财富来源，批评重商主义限制，同时讨论公共制度与垄断的危险。",
+      "significance": "著作成为政治经济学及后来市场与政府关系讨论的核心参照。",
+      "locationName": "英格兰伦敦（出版地）"
+    }
+  },
+  {
+    "id": "siku-quanshu-completed",
+    "kind": "moment",
+    "title": "Siku Quanshu collection completed",
+    "start": 1782,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Beijing, China", "lat": 39.92, "lng": 116.4 },
+    "partOf": ["qing", "high-qing"],
+    "summary": "A vast imperial collection of Chinese books reaches completion under the Qianlong emperor. Preservation and scholarly cataloging accompany censorship, alteration and destruction of works considered politically objectionable.",
+    "significance": "The project preserved an immense textual heritage while revealing the power of the state to shape what survived.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Siku_Quanshu",
+    "zh": {
+      "title": "《四库全书》编成",
+      "summary": "乾隆时期的巨型官修丛书完成。文献保存与学术编目同时伴随审查、删改，以及销毁被视为政治不当的作品。",
+      "significance": "工程保存了庞大文献遗产，也显示国家塑造哪些文本能够留存的权力。",
+      "locationName": "中国北京"
+    }
+  },
+  {
+    "id": "atlantic-abolitionism",
+    "kind": "period",
+    "title": "Atlantic abolitionist campaigns",
+    "start": 1787,
+    "end": 1888,
+    "region": "europe",
+    "summary": "Enslaved people, free Black activists and reformers challenge the slave trade and slavery across the Atlantic. This span runs from organized British campaigning in 1787 to abolition in Brazil in 1888, within a longer and wider struggle.",
+    "significance": "Mass political organizing and resistance helped overturn legal slavery, although coercive labor and racial inequality persisted.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Abolitionism",
+    "zh": {
+      "title": "大西洋废奴运动",
+      "summary": "被奴役者、自由黑人活动家与改革者在大西洋两岸反对奴隶贸易和奴隶制。这里从1787年英国有组织的倡议延续到1888年巴西废奴，是更漫长、更广泛斗争的一部分。",
+      "significance": "群众政治组织与反抗推动废除合法奴隶制，但强迫劳动与种族不平等仍然持续。"
     }
   },
   {
@@ -2416,6 +3165,27 @@
     }
   },
   {
+    "id": "wollstonecraft-rights-woman",
+    "kind": "moment",
+    "title": "Wollstonecraft argues for women's education",
+    "start": 1792,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "London, England", "lat": 51.51, "lng": -0.13 },
+    "partOf": ["enlightenment", "british-empire"],
+    "summary": "Mary Wollstonecraft argues that women are rational beings entitled to serious education and civic respect. She challenges a social order that trains women chiefly to please men.",
+    "significance": "Her argument became a foundational text in the history of feminist political thought.",
+    "wikipedia": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Woman",
+    "zh": {
+      "title": "沃斯通克拉夫特倡导女性教育",
+      "summary": "玛丽·沃斯通克拉夫特主张女性是理性的人，应获得严肃教育与公民尊重，并挑战主要将女性培养为取悦男性者的社会秩序。",
+      "significance": "她的论述成为女性主义政治思想史上的基础文本。",
+      "locationName": "英格兰伦敦"
+    }
+  },
+  {
     "id": "macartney-embassy",
     "kind": "moment",
     "title": "Macartney Embassy to China",
@@ -2436,6 +3206,27 @@
       "significance": "失败暴露出两国世界观的差异。英国迫使中国扩大贸易的企图，在不到五十年后引向鸦片战争。",
       "locationName": "承德（皇帝避暑山庄所在地）",
       "dateLabel": "1793年9月"
+    }
+  },
+  {
+    "id": "jenner-smallpox-vaccination",
+    "kind": "moment",
+    "title": "Jenner tests smallpox vaccination",
+    "start": 1796,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Berkeley, England", "lat": 51.69, "lng": -2.46 },
+    "partOf": ["british-empire"],
+    "summary": "Edward Jenner uses material from a cowpox sore to inoculate James Phipps, then tests whether the boy is protected against smallpox. The experiment builds on earlier inoculation practices and knowledge of cowpox protection; Jenner later publishes evidence that helps spread vaccination.",
+    "significance": "Vaccination developed into a major means of preventing infectious disease and ultimately made the worldwide eradication of smallpox possible.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Edward_Jenner",
+    "zh": {
+      "title": "琴纳试验天花疫苗接种",
+      "summary": "爱德华·琴纳用牛痘疮中的材料为詹姆斯·菲普斯接种，随后检验他是否获得对天花的抵抗力。这项试验建立在更早的接种实践和牛痘保护作用的认识之上；琴纳后来发表证据，推动疫苗接种传播。",
+      "significance": "疫苗接种逐渐成为预防传染病的重要手段，并最终使全球消灭天花成为可能。",
+      "locationName": "英格兰伯克利"
     }
   },
   {
@@ -2562,6 +3353,132 @@
     }
   },
   {
+    "id": "champollion-hieroglyphs",
+    "kind": "moment",
+    "title": "Champollion announces a key to hieroglyphs",
+    "start": 1822,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Paris, France", "lat": 48.86, "lng": 2.35 },
+    "summary": "Jean-Francois Champollion presents a breakthrough in reading Egyptian hieroglyphs, building on bilingual inscriptions and earlier work including Thomas Young's. Signs can represent sounds as well as ideas.",
+    "significance": "Decipherment made ancient Egyptian texts readable and transformed the study of that civilization.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion",
+    "zh": {
+      "title": "商博良宣布破解圣书体的关键",
+      "summary": "让-弗朗索瓦·商博良基于双语铭文及托马斯·杨等人的前期工作，提出解读古埃及圣书体的突破：符号既可表音，也可表意。",
+      "significance": "破译使古埃及文本可以被阅读，改变了对这一文明的研究。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
+    "id": "beethoven-ninth",
+    "kind": "moment",
+    "title": "Beethoven's Ninth Symphony premieres",
+    "start": 1824,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Vienna, Austria", "lat": 48.2, "lng": 16.37 },
+    "partOf": ["habsburg-monarchy"],
+    "summary": "Beethoven's Ninth Symphony is performed in Vienna, with soloists and chorus joining its finale on Schiller's Ode to Joy. The composer is profoundly deaf by this time.",
+    "significance": "Its choral finale expanded the ambitions of the symphony and became an enduring musical image of human solidarity.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+    "zh": {
+      "title": "贝多芬第九交响曲首演",
+      "summary": "贝多芬第九交响曲在维也纳上演，独唱与合唱在终章唱出席勒的《欢乐颂》。作曲家此时已严重失聪。",
+      "significance": "合唱终章拓展了交响曲的表现范围，并成为人类团结的持久音乐象征。",
+      "locationName": "奥地利维也纳"
+    }
+  },
+  {
+    "id": "faraday-induction",
+    "kind": "moment",
+    "title": "Faraday demonstrates electromagnetic induction",
+    "start": 1831,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "London, England", "lat": 51.51, "lng": -0.14 },
+    "partOf": ["british-empire", "industrial-revolution"],
+    "summary": "Michael Faraday demonstrates that a changing magnetic field can produce an electric current. His experiments establish a connection between motion, magnetism and electricity.",
+    "significance": "This principle made electrical generators and transformers possible, underpinning modern power systems.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Electromagnetic_induction",
+    "zh": {
+      "title": "法拉第演示电磁感应",
+      "summary": "迈克尔·法拉第演示变化的磁场能够产生电流，实验确立了运动、磁与电之间的联系。",
+      "significance": "这一原理使发电机与变压器成为可能，奠定了现代电力系统的基础。",
+      "locationName": "英格兰伦敦"
+    }
+  },
+  {
+    "id": "hokusai-fuji-prints",
+    "kind": "moment",
+    "title": "Hokusai's Mount Fuji prints reach the public",
+    "start": 1831,
+    "end": null,
+    "dateLabel": "Early 1830s",
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Edo, Japan", "lat": 35.69, "lng": 139.79 },
+    "partOf": ["tokugawa"],
+    "summary": "Hokusai's color woodblock series depicts Mount Fuji from many settings, including the image known as The Great Wave. Publication unfolds in the early 1830s, rather than on a single date.",
+    "significance": "The prints became icons of Japanese visual culture and later influenced artists around the world.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji",
+    "zh": {
+      "title": "北斋《富岳三十六景》问世",
+      "summary": "北斋的彩色木版画系列从不同环境描绘富士山，包括后来广为人知的《神奈川冲浪里》。出版持续于1830年代初，并非发生在单一天。",
+      "significance": "这些版画成为日本视觉文化的代表，并在后来影响世界各地的艺术家。",
+      "locationName": "日本江户",
+      "dateLabel": "1830年代初"
+    }
+  },
+  {
+    "id": "british-slavery-abolition-act",
+    "kind": "moment",
+    "title": "Britain passes the Slavery Abolition Act",
+    "start": 1833,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "London, England", "lat": 51.5, "lng": -0.12 },
+    "partOf": ["atlantic-abolitionism", "british-empire"],
+    "summary": "Parliament passes legislation ending slavery in most British colonies from 1834. Many formerly enslaved people are forced into an apprenticeship system, and compensation goes to slaveholders rather than the enslaved.",
+    "significance": "The act marked a major abolitionist victory while exposing the compromises and inequalities of emancipation.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833",
+    "zh": {
+      "title": "英国通过《废除奴隶制法案》",
+      "summary": "议会通过法律，自1834年起在大多数英国殖民地废除奴隶制。许多获释者仍被迫进入学徒制度，赔偿付给奴隶主而非被奴役者。",
+      "significance": "法案标志着废奴运动的重要胜利，也暴露了解放过程中的妥协与不平等。",
+      "locationName": "英格兰伦敦"
+    }
+  },
+  {
+    "id": "daguerreotype-announced",
+    "kind": "moment",
+    "title": "Photography enters public life",
+    "start": 1839,
+    "end": null,
+    "region": "europe",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Paris, France", "lat": 48.86, "lng": 2.35 },
+    "summary": "The daguerreotype process is publicly announced and its practical details released in France. Other pioneers, including William Henry Fox Talbot, develop different photographic methods.",
+    "significance": "Photography changed portraiture, documentation, scientific observation and the public record of events.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Daguerreotype",
+    "zh": {
+      "title": "摄影术走向公众",
+      "summary": "达盖尔银版摄影法在法国公开宣布并公布实用细节。威廉·亨利·福克斯·塔尔博特等先驱也发展了不同摄影方法。",
+      "significance": "摄影改变了肖像、记录、科学观察与事件的公共档案。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
     "id": "first-opium-war",
     "kind": "period",
     "title": "First Opium War",
@@ -2606,6 +3523,48 @@
     }
   },
   {
+    "id": "treaty-nanjing",
+    "kind": "moment",
+    "title": "Treaty of Nanjing ends the First Opium War",
+    "start": 1842,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Nanjing, China", "lat": 32.06, "lng": 118.8 },
+    "partOf": ["qing", "first-opium-war"],
+    "summary": "Qing China and Britain sign a treaty after British military victory, opening five ports, imposing an indemnity and ceding Hong Kong Island. Further agreements expand foreign privileges.",
+    "significance": "The treaty became a defining starting point of the unequal-treaty system that constrained Qing sovereignty.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Nanking",
+    "zh": {
+      "title": "《南京条约》结束第一次鸦片战争",
+      "summary": "英国军事获胜后，清朝与英国签约，开放五个通商口岸、支付赔款并割让香港岛。后续协定进一步扩大外国特权。",
+      "significance": "条约成为限制清朝主权的不平等条约体系的标志性开端。",
+      "locationName": "中国南京"
+    }
+  },
+  {
+    "id": "semmelweis-handwashing",
+    "kind": "moment",
+    "title": "Semmelweis introduces hospital handwashing",
+    "start": 1847,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Vienna, Austria", "lat": 48.22, "lng": 16.35 },
+    "partOf": ["habsburg-monarchy"],
+    "summary": "Ignaz Semmelweis introduces chlorinated-lime hand cleansing in a Vienna maternity clinic after investigating high mortality. Deaths from puerperal fever fall, but his explanation meets resistance.",
+    "significance": "The episode became a landmark in infection prevention and in the difficulty of changing established medical practice.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+    "zh": {
+      "title": "塞麦尔维斯推行医院洗手制度",
+      "summary": "伊格纳兹·塞麦尔维斯调查维也纳产科诊所的高死亡率后，推行含氯石灰液洗手，产褥热死亡随之下降，但他的解释遭遇阻力。",
+      "significance": "这一事件成为感染预防史的重要节点，也反映了改变既有医疗实践的困难。",
+      "locationName": "奥地利维也纳"
+    }
+  },
+  {
     "id": "revolutions-of-1848",
     "kind": "moment",
     "title": "Revolutions of 1848 and the Communist Manifesto",
@@ -2623,6 +3582,27 @@
       "summary": "革命从西西里、巴黎蔓延至德意志、奥地利和意大利，自由派、民族主义者与劳工要求宪法、统一及改革。同年马克思、恩格斯在伦敦发表《共产党宣言》。",
       "significance": "多数革命很快失败，却终结法国君主制和奥地利农奴制；《宣言》则成为近代最具影响的政治文本之一。",
       "locationName": "巴黎（代表地点）"
+    }
+  },
+  {
+    "id": "seneca-falls-convention",
+    "kind": "moment",
+    "title": "Seneca Falls women's rights convention",
+    "start": 1848,
+    "end": null,
+    "region": "americas",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Seneca Falls, New York", "lat": 42.91, "lng": -76.8 },
+    "partOf": ["united-states"],
+    "summary": "Activists meet to discuss women's social, civil and religious rights and issue a Declaration of Sentiments. A demand for voting rights becomes one of the convention's most consequential claims.",
+    "significance": "The meeting helped organize a sustained women's rights movement in the United States.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Seneca_Falls_Convention",
+    "zh": {
+      "title": "塞尼卡福尔斯妇女权利大会",
+      "summary": "活动家集会讨论女性的社会、公民与宗教权利，并发布《情感宣言》。投票权要求成为大会最具深远影响的主张之一。",
+      "significance": "会议推动了美国持续开展的妇女权利运动。",
+      "locationName": "纽约州塞尼卡福尔斯"
     }
   },
   {
@@ -2767,6 +3747,64 @@
     }
   },
   {
+    "id": "pasteur-spontaneous-generation",
+    "kind": "moment",
+    "title": "Pasteur challenges spontaneous generation",
+    "start": 1861,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Paris, France", "lat": 48.84, "lng": 2.34 },
+    "summary": "Louis Pasteur reports experiments showing that sterilized broth remains free of microbial growth when airborne contamination is excluded. The work challenges the idea that microbes routinely arise from lifeless matter.",
+    "significance": "The experiments strengthened microbiology and the study of contamination, fermentation and disease.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Spontaneous_generation",
+    "zh": {
+      "title": "巴斯德挑战自然发生说",
+      "summary": "路易·巴斯德报告实验：排除空气污染后，灭菌肉汤不会出现微生物生长。这挑战了微生物经常从无生命物质中自行产生的观念。",
+      "significance": "实验推动了微生物学以及污染、发酵和疾病研究。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
+    "id": "self-strengthening-movement",
+    "kind": "period",
+    "title": "Self-Strengthening Movement",
+    "start": 1861,
+    "end": 1895,
+    "region": "east-asia",
+    "partOf": ["qing"],
+    "summary": "Qing officials establish arsenals, shipyards, schools and industrial enterprises to strengthen the state after military defeats and rebellion. They seek foreign technology while largely preserving the existing political order.",
+    "significance": "The movement expanded modern industry and military training in China, while its limits fueled debate about deeper reform.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Self-Strengthening_Movement",
+    "zh": {
+      "title": "洋务运动",
+      "summary": "清朝官员在战败与叛乱后兴办兵工厂、船厂、学校与工业企业以增强国力，试图引进外国技术，同时大体保留原有政治秩序。",
+      "significance": "运动扩大了中国的近代工业与军事训练，其局限也推动了对更深层改革的讨论。"
+    }
+  },
+  {
+    "id": "transatlantic-cable",
+    "kind": "moment",
+    "title": "A lasting telegraph link crosses the Atlantic",
+    "start": 1866,
+    "end": null,
+    "region": "americas",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Heart's Content, Newfoundland", "lat": 47.87, "lng": -53.36 },
+    "partOf": ["british-empire"],
+    "summary": "A submarine telegraph cable links Ireland with Newfoundland, establishing a lasting connection after earlier failures, including the short-lived cable of 1858. Messages can cross the ocean electrically instead of waiting for a ship.",
+    "significance": "Rapid transatlantic communication transformed news, diplomacy and commerce, laying part of the foundation for a connected global economy.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable",
+    "zh": {
+      "title": "跨大西洋电报实现持久连通",
+      "summary": "海底电报电缆连接爱尔兰与纽芬兰，在多次失败后建立持久通信线路，此前1858年的电缆仅短暂运行。消息可以通过电信号跨越大洋，无须等待轮船运送。",
+      "significance": "快速的跨大西洋通信改变了新闻、外交与商业，为相互联系的全球经济奠定了部分基础。",
+      "locationName": "纽芬兰哈茨康滕特"
+    }
+  },
+  {
     "id": "empire-of-japan",
     "kind": "state",
     "title": "Empire of Japan",
@@ -2823,6 +3861,27 @@
     }
   },
   {
+    "id": "mendeleev-periodic-table",
+    "kind": "moment",
+    "title": "Mendeleev publishes the periodic table",
+    "start": 1869,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Saint Petersburg, Russia", "lat": 59.93, "lng": 30.31 },
+    "partOf": ["russian-empire"],
+    "summary": "Dmitri Mendeleev arranges chemical elements by recurring properties and atomic weight, leaving gaps for undiscovered elements. Later discoveries support several of his predictions.",
+    "significance": "The table turned a growing list of substances into a powerful framework for chemical explanation and prediction.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dmitri_Mendeleev",
+    "zh": {
+      "title": "门捷列夫发表元素周期表",
+      "summary": "德米特里·门捷列夫按周期性性质与原子量排列化学元素，为尚未发现的元素留下空位。后来的发现证实了他的若干预测。",
+      "significance": "周期表将不断增长的物质清单转变为解释和预测化学性质的有力框架。",
+      "locationName": "俄罗斯圣彼得堡"
+    }
+  },
+  {
     "id": "suez-canal",
     "kind": "moment",
     "title": "Suez Canal opens",
@@ -2858,6 +3917,27 @@
       "title": "德意志帝国",
       "summary": "普鲁士击败法国后，1871年德意志诸邦在普王与宰相俾斯麦领导下统一，迅速成为欧洲大陆工业军事强国，并获得海外殖民地，一战末期在革命中瓦解。",
       "significance": "统一德国打破欧洲均势，随后强权竞争最终引向第一次世界大战。"
+    }
+  },
+  {
+    "id": "ganghwa-treaty",
+    "kind": "moment",
+    "title": "Japan imposes the Treaty of Ganghwa",
+    "start": 1876,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Ganghwa Island, Korea", "lat": 37.75, "lng": 126.49 },
+    "partOf": ["joseon"],
+    "summary": "Under Japanese military pressure, Joseon signs a treaty opening ports and granting privileges including extraterritorial rights to Japanese residents. The agreement alters Korea's foreign relations.",
+    "significance": "The treaty began a new phase of unequal foreign influence and intensifying competition over the Korean peninsula.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1876",
+    "zh": {
+      "title": "日本迫使朝鲜签订《江华条约》",
+      "summary": "朝鲜王朝在日本军事压力下签约，开放港口，并给予日本居民包括领事裁判权在内的特权，改变了朝鲜的对外关系。",
+      "significance": "条约开启了不平等外国影响的新阶段，加剧了围绕朝鲜半岛的竞争。",
+      "locationName": "朝鲜半岛江华岛"
     }
   },
   {
@@ -2918,6 +3998,48 @@
     }
   },
   {
+    "id": "meiji-constitution",
+    "kind": "moment",
+    "title": "Meiji Constitution promulgated",
+    "start": 1889,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Tokyo, Japan", "lat": 35.68, "lng": 139.75 },
+    "partOf": ["empire-of-japan", "meiji"],
+    "summary": "Japan promulgates a constitution establishing an imperial parliament while locating sovereignty in the emperor. Participation is initially restricted, and military and executive authority remain powerful.",
+    "significance": "The constitution structured Japan's modern state until its replacement after World War II.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Meiji_Constitution",
+    "zh": {
+      "title": "《大日本帝国宪法》颁布",
+      "summary": "日本颁布宪法，设立帝国议会，同时将主权归于天皇。政治参与最初受到限制，军队与行政权力仍然强大。",
+      "significance": "宪法构建了日本近代国家制度，直到第二次世界大战后被取代。",
+      "locationName": "日本东京"
+    }
+  },
+  {
+    "id": "new-zealand-womens-suffrage",
+    "kind": "moment",
+    "title": "New Zealand grants women the vote",
+    "start": 1893,
+    "end": null,
+    "region": "southeast-asia-oceania",
+    "category": "politics",
+    "importance": 3,
+    "location": { "name": "Wellington, New Zealand", "lat": -41.29, "lng": 174.78 },
+    "partOf": ["british-empire"],
+    "summary": "Following years of campaigning and mass petitions, New Zealand passes an Electoral Act giving women the right to vote in parliamentary elections. Women, including Maori women, take part in the general election that November; the right to stand for Parliament comes later.",
+    "significance": "New Zealand became the first self-governing country to grant women parliamentary voting rights, encouraging suffrage movements elsewhere.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+    "zh": {
+      "title": "新西兰赋予女性选举权",
+      "summary": "经过多年倡议和大规模请愿，新西兰通过《选举法》，赋予女性议会选举投票权。包括毛利女性在内的女性参加了当年11月的大选；竞选议员的权利则在后来才获得。",
+      "significance": "新西兰成为首个赋予女性议会选举投票权的自治国家，鼓舞了其他地方争取女性选举权的运动。",
+      "locationName": "新西兰惠灵顿"
+    }
+  },
+  {
     "id": "first-sino-japanese-war",
     "kind": "period",
     "title": "First Sino-Japanese War",
@@ -2936,6 +4058,89 @@
       "summary": "日本与清朝为争夺朝鲜控制权开战。日本近代化陆海军赢得主要战役，并在威海卫消灭北洋舰队。《马关条约》迫使清朝承认朝鲜独立、支付巨额赔款并割让台湾。",
       "significance": "战争表明日本已取代中国成为东亚领先强国，也引发列强争夺在华权益的浪潮。",
       "locationName": "威海卫（中国舰队基地）"
+    }
+  },
+  {
+    "id": "rontgen-x-rays",
+    "kind": "moment",
+    "title": "Rontgen discovers X-rays",
+    "start": 1895,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Wurzburg, Germany", "lat": 49.79, "lng": 9.94 },
+    "partOf": ["german-empire"],
+    "summary": "Wilhelm Rontgen discovers a penetrating form of radiation while experimenting with discharge tubes. Images of objects inside opaque materials quickly attract scientific and public attention.",
+    "significance": "X-rays transformed medical imaging and opened new ways to investigate matter.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+    "zh": {
+      "title": "伦琴发现X射线",
+      "summary": "威廉·伦琴在放电管实验中发现一种穿透性辐射。不透明物体内部结构的图像迅速引起科学界与公众关注。",
+      "significance": "X射线改变了医学成像，并开辟研究物质的新方法。",
+      "locationName": "德国维尔茨堡"
+    }
+  },
+  {
+    "id": "battle-adwa",
+    "kind": "moment",
+    "title": "Ethiopia defeats Italy at Adwa",
+    "start": 1896,
+    "end": null,
+    "region": "sub-saharan-africa",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Adwa, Ethiopia", "lat": 14.16, "lng": 38.9 },
+    "partOf": ["ethiopian-empire"],
+    "summary": "An Ethiopian army under Menelik II defeats invading Italian forces. The victory forces Italy to recognize Ethiopian independence in a subsequent treaty.",
+    "significance": "Adwa became a powerful symbol of African resistance during the age of European colonial conquest.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+    "zh": {
+      "title": "埃塞俄比亚在阿杜瓦击败意大利",
+      "summary": "孟尼利克二世统率的埃塞俄比亚军队击败入侵的意大利军队，迫使意大利在后续条约中承认埃塞俄比亚独立。",
+      "significance": "阿杜瓦成为欧洲殖民征服时代非洲抵抗的有力象征。",
+      "locationName": "埃塞俄比亚阿杜瓦"
+    }
+  },
+  {
+    "id": "becquerel-radioactivity",
+    "kind": "moment",
+    "title": "Becquerel discovers spontaneous radiation",
+    "start": 1896,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Paris, France", "lat": 48.84, "lng": 2.36 },
+    "summary": "Henri Becquerel finds that uranium salts affect photographic plates even without prior exposure to sunlight. His observations reveal a form of radiation originating within the material.",
+    "significance": "The discovery opened the study of radioactivity and helped overturn older ideas of the atom as unchanging.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Henri_Becquerel",
+    "zh": {
+      "title": "贝克勒尔发现自发辐射",
+      "summary": "亨利·贝克勒尔发现，即使未先接受阳光照射，铀盐也会使照相底片感光，揭示了来自物质内部的辐射。",
+      "significance": "这一发现开辟了放射性研究，并推动推翻原子恒定不变的旧观念。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
+    "id": "hundred-days-reform",
+    "kind": "moment",
+    "title": "Hundred Days' Reform attempts institutional change",
+    "start": 1898,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Beijing, China", "lat": 39.92, "lng": 116.4 },
+    "partOf": ["qing"],
+    "summary": "The Guangxu emperor sponsors rapid changes in education, administration and economic policy. A coup led by Empress Dowager Cixi ends the program and brings punishment or exile to prominent reformers.",
+    "significance": "The failure sharpened divisions over constitutional reform, imperial authority and revolution.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hundred_Days%27_Reform",
+    "zh": {
+      "title": "戊戌变法尝试制度改革",
+      "summary": "光绪帝支持教育、行政与经济政策的快速改革。慈禧太后发动政变终止改革，重要改革者遭处决或流亡。",
+      "significance": "失败加深了围绕立宪改革、皇权与革命道路的分歧。",
+      "locationName": "中国北京"
     }
   },
   {
@@ -3024,6 +4229,27 @@
     }
   },
   {
+    "id": "imperial-examinations-abolished",
+    "kind": "moment",
+    "title": "Imperial examinations abolished",
+    "start": 1905,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Beijing, China", "lat": 39.92, "lng": 116.4 },
+    "partOf": ["qing"],
+    "summary": "The Qing court abolishes the traditional civil-service examinations as it promotes new schools and educational credentials. A centuries-old route from classical study to official employment disappears.",
+    "significance": "The decision transformed education and the social position of the scholar-gentry during the empire's final years.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Imperial_examination",
+    "zh": {
+      "title": "科举制度废除",
+      "summary": "清廷在推广新式学校与学历制度时废除传统科举，延续数百年的从经学学习通往仕途的道路由此终结。",
+      "significance": "决定改变了帝国末年的教育制度与士绅社会地位。",
+      "locationName": "中国北京"
+    }
+  },
+  {
     "id": "korea-under-japanese-rule",
     "kind": "period",
     "title": "Korea under Japanese rule",
@@ -3102,6 +4328,27 @@
     }
   },
   {
+    "id": "new-youth-founded",
+    "kind": "moment",
+    "title": "New Youth launches a cultural debate",
+    "start": 1915,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Shanghai, China", "lat": 31.23, "lng": 121.47 },
+    "partOf": ["republic-of-china"],
+    "summary": "Chen Duxiu launches the magazine Youth, renamed New Youth the following year. Its contributors challenge inherited authority and promote new approaches to science, politics, literature and social life.",
+    "significance": "The journal became a major forum of the New Culture Movement and helped shape the intellectual climate around May Fourth.",
+    "wikipedia": "https://en.wikipedia.org/wiki/New_Youth",
+    "zh": {
+      "title": "《青年杂志》创刊推动文化论争",
+      "summary": "陈独秀创办《青年杂志》，次年改名《新青年》。撰稿者挑战传统权威，倡导科学、政治、文学与社会生活的新观念。",
+      "significance": "杂志成为新文化运动的重要论坛，并推动形成五四前后的思想氛围。",
+      "locationName": "中国上海"
+    }
+  },
+  {
     "id": "russian-revolution",
     "kind": "moment",
     "title": "Russian Revolution",
@@ -3120,6 +4367,27 @@
       "summary": "战争压力下，彼得格勒罢工与兵变迫使尼古拉二世在二月革命中退位。十月革命时，列宁领导布尔什维克夺权，并在20世纪20年代初赢得内战。两次革命在公历分别为3月和11月。",
       "significance": "革命建立首个共产党执政国家，后来组成苏联，其意识形态与西方竞争深刻影响20世纪。",
       "locationName": "彼得罗格勒（圣彼得堡）"
+    }
+  },
+  {
+    "id": "lu-xun-diary-madman",
+    "kind": "moment",
+    "title": "Lu Xun publishes A Madman's Diary",
+    "start": 1918,
+    "end": null,
+    "region": "east-asia",
+    "category": "culture",
+    "importance": 2,
+    "location": { "name": "Beijing, China", "lat": 39.92, "lng": 116.4 },
+    "partOf": ["republic-of-china"],
+    "summary": "Lu Xun publishes a short story in New Youth whose narrator sees cannibalism beneath respectable social customs. Its vernacular prose departs from the conventions of classical fiction.",
+    "significance": "The story became a landmark of modern Chinese literature and a powerful critique of oppressive tradition.",
+    "wikipedia": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary",
+    "zh": {
+      "title": "鲁迅发表《狂人日记》",
+      "summary": "鲁迅在《新青年》发表短篇小说，叙述者在体面社会习俗之下看见“吃人”。作品的白话文与古典小说惯例拉开距离。",
+      "significance": "小说成为中国现代文学的里程碑，也是对压迫性传统的有力批判。",
+      "locationName": "中国北京"
     }
   },
   {
@@ -3166,6 +4434,26 @@
       "significance": "抗议与更广泛的思想文化运动相结合，推动科学、民主和白话文，挑战传统儒家秩序，也为中国共产党的兴起创造条件。",
       "locationName": "北京天安门",
       "dateLabel": "1919年5月4日"
+    }
+  },
+  {
+    "id": "treaty-versailles",
+    "kind": "moment",
+    "title": "Treaty of Versailles signed",
+    "start": 1919,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Versailles, France", "lat": 48.8, "lng": 2.12 },
+    "summary": "Germany and the Allied powers sign a peace treaty imposing territorial changes, military restrictions and reparations after World War I. The settlement also establishes the League of Nations framework.",
+    "significance": "The contested peace reshaped Europe and international diplomacy while leaving deep grievances and unresolved conflicts.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+    "zh": {
+      "title": "《凡尔赛条约》签署",
+      "summary": "德国与协约国签署和约，在第一次世界大战后规定领土变更、军事限制与赔款，并确立国际联盟框架。",
+      "significance": "这份备受争议的和约重塑了欧洲与国际外交，也留下深刻怨愤和未解决冲突。",
+      "locationName": "法国凡尔赛"
     }
   },
   {
@@ -3281,6 +4569,27 @@
     }
   },
   {
+    "id": "turkish-alphabet-reform",
+    "kind": "moment",
+    "title": "Turkey adopts a Latin-based alphabet",
+    "start": 1928,
+    "end": null,
+    "region": "mena",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Ankara, Turkey", "lat": 39.93, "lng": 32.86 },
+    "partOf": ["republic-of-turkey"],
+    "summary": "Turkey replaces the Ottoman Turkish Arabic-based script with a Latin-based alphabet as part of republican reforms. A nationwide educational campaign accompanies the change.",
+    "significance": "The reform transformed literacy practices and the relationship between the republic and its Ottoman written heritage.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Turkish_alphabet",
+    "zh": {
+      "title": "土耳其采用拉丁字母",
+      "summary": "土耳其以拉丁字母取代奥斯曼土耳其语的阿拉伯字母书写体系，作为共和国改革的一部分，并开展全国教育运动。",
+      "significance": "改革改变了读写实践，以及共和国与奥斯曼书面遗产之间的关系。",
+      "locationName": "土耳其安卡拉"
+    }
+  },
+  {
     "id": "great-depression",
     "kind": "moment",
     "title": "Great Depression begins",
@@ -3301,6 +4610,27 @@
       "significance": "萧条持续1930年代大部，促使政府加强经济管理，也为德国纳粹等极端运动兴起创造条件。",
       "locationName": "纽约（华尔街）",
       "dateLabel": "1929年10月"
+    }
+  },
+  {
+    "id": "salt-march",
+    "kind": "moment",
+    "title": "Gandhi leads the Salt March",
+    "start": 1930,
+    "end": null,
+    "region": "south-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Dandi, India", "lat": 20.89, "lng": 72.8 },
+    "partOf": ["indian-independence", "british-raj"],
+    "summary": "Mahatma Gandhi and his followers march to the coast and defy the British salt monopoly. The protest becomes a catalyst for widespread civil disobedience.",
+    "significance": "The campaign made everyday economic grievances a powerful vehicle for anticolonial mass politics.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Salt_March",
+    "zh": {
+      "title": "甘地领导食盐进军",
+      "summary": "圣雄甘地与追随者走向海岸，违抗英国食盐专卖制度。这场抗议推动了广泛的公民不服从行动。",
+      "significance": "运动将日常经济不满转化为有力的反殖民群众政治行动。",
+      "locationName": "印度丹迪"
     }
   },
   {
@@ -3380,6 +4710,48 @@
     }
   },
   {
+    "id": "turing-computable-numbers",
+    "kind": "moment",
+    "title": "Turing describes a universal computing machine",
+    "start": 1936,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Cambridge, England", "lat": 52.2, "lng": 0.12 },
+    "partOf": ["british-empire"],
+    "summary": "Alan Turing develops an abstract model of computation in his paper on computable numbers. A universal machine can carry out the operations of other such machines from an encoded description.",
+    "significance": "The model became a foundation of computer science and clarified both the possibilities and limits of computation.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Turing_machine",
+    "zh": {
+      "title": "图灵描述通用计算机器",
+      "summary": "艾伦·图灵在关于可计算数的论文中提出抽象计算模型。通用机器能够根据编码描述执行其他此类机器的操作。",
+      "significance": "这一模型成为计算机科学的基础，并阐明计算的能力与局限。",
+      "locationName": "英格兰剑桥"
+    }
+  },
+  {
+    "id": "xian-incident",
+    "kind": "moment",
+    "title": "Xi'an Incident changes the civil war",
+    "start": 1936,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Xi'an, China", "lat": 34.26, "lng": 108.94 },
+    "partOf": ["republic-of-china", "chinese-civil-war"],
+    "summary": "Zhang Xueliang and Yang Hucheng detain Chiang Kai-shek, demanding a change from fighting the Communists toward resisting Japanese aggression. Negotiations secure Chiang's release.",
+    "significance": "The crisis helped prepare the way for a second Nationalist-Communist united front, despite continuing distrust.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Xi%27an_Incident",
+    "zh": {
+      "title": "西安事变改变内战进程",
+      "summary": "张学良、杨虎城扣留蒋介石，要求由进攻共产党转向抵抗日本侵略。谈判最终促成蒋介石获释。",
+      "significance": "危机为第二次国共合作铺路，尽管双方不信任仍然持续。",
+      "locationName": "中国西安"
+    }
+  },
+  {
     "id": "nanjing-massacre",
     "kind": "moment",
     "title": "Nanjing Massacre",
@@ -3441,6 +4813,27 @@
       "summary": "1939年9月德国入侵波兰，英法宣战；亚洲的中日战争已持续两年。英、苏、美、中等同盟国与德、意、日轴心国全球交战，至1945年德日投降。",
       "significance": "战争造成约七千万至八千五百万人死亡，包括大屠杀中约六百万犹太人，是史上最致命冲突，战后美苏成为对立超级大国。",
       "locationName": "华沙（1939年德国入侵波兰，代表地点）"
+    }
+  },
+  {
+    "id": "bretton-woods",
+    "kind": "moment",
+    "title": "Bretton Woods conference",
+    "start": 1944,
+    "end": null,
+    "region": "americas",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Bretton Woods, New Hampshire", "lat": 44.26, "lng": -71.44 },
+    "partOf": ["united-states"],
+    "summary": "Delegates from 44 Allied nations design a postwar monetary framework and institutions that become the IMF and World Bank. The system links currencies through fixed but adjustable exchange rates.",
+    "significance": "The agreements shaped postwar finance, reconstruction and economic cooperation.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bretton_Woods_Conference",
+    "zh": {
+      "title": "布雷顿森林会议",
+      "summary": "44个同盟国的代表设计战后货币框架，以及后来成为国际货币基金组织和世界银行的机构。该体系以固定但可调整的汇率连接各国货币。",
+      "significance": "这些协议塑造了战后金融、重建与经济合作。",
+      "locationName": "新罕布什尔州布雷顿森林"
     }
   },
   {
@@ -3549,6 +4942,27 @@
     }
   },
   {
+    "id": "first-transistor",
+    "kind": "moment",
+    "title": "The first working transistor",
+    "start": 1947,
+    "end": null,
+    "region": "americas",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Murray Hill, New Jersey", "lat": 40.68, "lng": -74.4 },
+    "partOf": ["united-states"],
+    "summary": "At Bell Labs, John Bardeen and Walter Brattain build a point-contact transistor that amplifies an electrical signal. Working in William Shockley's research group, they demonstrate the device in December; later transistor designs become more practical to manufacture.",
+    "significance": "Transistors made compact, low-power electronics possible and became the basic building blocks of integrated circuits and digital computers.",
+    "wikipedia": "https://en.wikipedia.org/wiki/History_of_the_transistor",
+    "zh": {
+      "title": "首个可工作的晶体管问世",
+      "summary": "贝尔实验室的约翰·巴丁和沃尔特·布拉顿制成能放大电信号的点接触晶体管。他们在威廉·肖克利的研究团队中工作，于12月演示该器件；后续晶体管设计更适合实际制造。",
+      "significance": "晶体管使小型、低功耗电子设备成为可能，并成为集成电路与数字计算机的基本构件。",
+      "locationName": "新泽西州默里希尔"
+    }
+  },
+  {
     "id": "india",
     "kind": "state",
     "title": "Republic of India",
@@ -3585,6 +4999,27 @@
       "significance": "印度成为最大民主国家，但分治留下印巴长期敌对与克什米尔争议。",
       "locationName": "新德里",
       "dateLabel": "1947年8月14-15日"
+    }
+  },
+  {
+    "id": "japan-postwar-constitution",
+    "kind": "moment",
+    "title": "Japan's postwar constitution takes effect",
+    "start": 1947,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Tokyo, Japan", "lat": 35.68, "lng": 139.75 },
+    "partOf": ["postwar-japan"],
+    "summary": "A new constitution takes effect on 3 May during the Allied occupation. It establishes popular sovereignty, extensive civil rights and an emperor whose position is symbolic, while Article 9 renounces war.",
+    "significance": "The constitution became the framework of Japan's postwar democracy and a continuing focus of debate over security and national identity.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Constitution_of_Japan",
+    "zh": {
+      "title": "日本战后宪法施行",
+      "summary": "盟军占领期间，新宪法于5月3日施行，确立国民主权、广泛公民权利及天皇的象征地位，第九条宣布放弃战争。",
+      "significance": "宪法成为日本战后民主制度的框架，并持续引发关于安全与国家认同的讨论。",
+      "locationName": "日本东京"
     }
   },
   {
@@ -3668,6 +5103,26 @@
     }
   },
   {
+    "id": "universal-declaration-human-rights",
+    "kind": "moment",
+    "title": "Universal Declaration of Human Rights",
+    "start": 1948,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 3,
+    "location": { "name": "Paris, France", "lat": 48.86, "lng": 2.29 },
+    "summary": "The United Nations General Assembly adopts the Universal Declaration of Human Rights in Paris on 10 December. Drafted by representatives from different legal and cultural traditions after World War II, it sets out civil, political, economic, social and cultural rights.",
+    "significance": "Though a declaration rather than a binding treaty, it became a reference point for human rights campaigns, constitutions and later international agreements.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights",
+    "zh": {
+      "title": "《世界人权宣言》通过",
+      "summary": "12月10日，联合国大会在巴黎通过《世界人权宣言》。第二次世界大战后，来自不同法律与文化传统的代表参与起草，列出公民、政治、经济、社会与文化权利。",
+      "significance": "它是宣言而非具有约束力的条约，但成为人权运动、宪法及后来国际协定的重要参照。",
+      "locationName": "法国巴黎"
+    }
+  },
+  {
     "id": "peoples-republic-of-china",
     "kind": "moment",
     "title": "People's Republic of China founded",
@@ -3723,6 +5178,27 @@
     }
   },
   {
+    "id": "india-constitution",
+    "kind": "moment",
+    "title": "India's constitution takes effect",
+    "start": 1950,
+    "end": null,
+    "region": "south-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "New Delhi, India", "lat": 28.61, "lng": 77.21 },
+    "partOf": ["india"],
+    "summary": "India becomes a republic under a constitution adopted the previous year. It establishes parliamentary institutions, fundamental rights and universal adult suffrage in a diverse society.",
+    "significance": "The constitution provided a durable framework for one of the world's largest democratic experiments.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Constitution_of_India",
+    "zh": {
+      "title": "印度宪法生效",
+      "summary": "印度依据前一年通过的宪法成为共和国，在多元社会中确立议会制度、基本权利与成年公民普选权。",
+      "significance": "宪法为世界规模最大的民主实践之一提供了持久框架。",
+      "locationName": "印度新德里"
+    }
+  },
+  {
     "id": "korean-war",
     "kind": "period",
     "title": "Korean War",
@@ -3737,6 +5213,27 @@
       "title": "朝鲜战争",
       "summary": "朝鲜半岛南北战争引入美国主导的联合国军与中国。1953年停战协定结束大规模战斗，却没有和平条约，半岛仍分裂。",
       "significance": "战争固定了南北敌对格局，也将冷战扩大为全球军事对抗。"
+    }
+  },
+  {
+    "id": "prc-marriage-law",
+    "kind": "moment",
+    "title": "PRC Marriage Law reforms family rights",
+    "start": 1950,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Beijing, China", "lat": 39.92, "lng": 116.4 },
+    "partOf": ["prc"],
+    "summary": "The new Marriage Law establishes free choice of spouse, monogamy and equal rights for women and men in marriage. Implementation faces resistance and uneven enforcement.",
+    "significance": "The law challenged established family hierarchies and made gender and marriage reform central to the new state's social program.",
+    "wikipedia": "https://en.wikipedia.org/wiki/New_Marriage_Law",
+    "zh": {
+      "title": "中华人民共和国《婚姻法》改革家庭权利",
+      "summary": "新《婚姻法》确立婚姻自由、一夫一妻与男女平等的婚姻权利，实施中遭遇阻力，执行并不均衡。",
+      "significance": "法律挑战既有家庭等级，使性别与婚姻改革成为新国家社会政策的重要组成部分。",
+      "locationName": "中国北京"
     }
   },
   {
@@ -3760,6 +5257,43 @@
     }
   },
   {
+    "id": "us-civil-rights-movement",
+    "kind": "period",
+    "title": "US civil rights movement",
+    "start": 1954,
+    "end": 1968,
+    "region": "americas",
+    "partOf": ["united-states"],
+    "summary": "Black communities and their allies use litigation, boycotts, marches and voter organizing to challenge segregation and disenfranchisement. The conventional span from Brown v. Board of Education to 1968 sits within a much longer struggle.",
+    "significance": "The movement won major federal civil-rights and voting protections and influenced campaigns for equality around the world.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Civil_rights_movement",
+    "zh": {
+      "title": "美国民权运动",
+      "summary": "黑人社区及其盟友通过诉讼、抵制、游行与选民组织反对种族隔离和剥夺选举权。从布朗案到1968年的常用时间范围，只是更漫长斗争的一部分。",
+      "significance": "运动赢得重要的联邦民权与投票权保障，并影响世界各地争取平等的行动。"
+    }
+  },
+  {
+    "id": "bandung-conference",
+    "kind": "moment",
+    "title": "Bandung Conference brings Asia and Africa together",
+    "start": 1955,
+    "end": null,
+    "region": "southeast-asia-oceania",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Bandung, Indonesia", "lat": -6.92, "lng": 107.61 },
+    "summary": "Representatives of 29 Asian and African countries meet in Bandung to discuss cooperation, colonialism and their place in a world divided by the Cold War. Despite differing political alignments, they endorse principles of sovereignty, equality and peaceful coexistence.",
+    "significance": "The conference amplified Asian and African voices in world politics and helped prepare the ground for the later Non-Aligned Movement.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bandung_Conference",
+    "zh": {
+      "title": "万隆会议汇聚亚非国家",
+      "summary": "29个亚洲和非洲国家的代表在万隆讨论合作、殖民主义，以及它们在冷战分裂世界中的地位。尽管政治立场不同，与会者仍赞同主权、平等与和平共处等原则。",
+      "significance": "会议增强了亚非国家在国际政治中的声音，并为后来的不结盟运动铺路。",
+      "locationName": "印度尼西亚万隆"
+    }
+  },
+  {
     "id": "japanese-economic-miracle",
     "kind": "period",
     "title": "Japanese economic miracle",
@@ -3774,6 +5308,27 @@
       "title": "日本经济奇迹",
       "summary": "近二十年间，日本经济年均增长约百分之十。政企合作、高储蓄、新技术和出口推动发展，1968年成为世界第二大经济体，1973年石油危机终结最快增长阶段。",
       "significance": "日本出口导向模式后来为韩国、台湾与中国借鉴。"
+    }
+  },
+  {
+    "id": "salk-polio-vaccine",
+    "kind": "moment",
+    "title": "Salk polio vaccine trial results announced",
+    "start": 1955,
+    "end": null,
+    "region": "americas",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Ann Arbor, Michigan", "lat": 42.28, "lng": -83.74 },
+    "partOf": ["united-states"],
+    "summary": "Results of a large trial show the effectiveness of Jonas Salk's inactivated polio vaccine, leading to licensing and mass immunization. Later vaccines and sustained campaigns further reduce the disease.",
+    "significance": "The vaccine marked a major advance against a disease feared for causing paralysis, especially in children.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Polio_vaccine",
+    "zh": {
+      "title": "索尔克脊髓灰质炎疫苗试验结果公布",
+      "summary": "大规模试验结果显示乔纳斯·索尔克灭活脊髓灰质炎疫苗的有效性，推动许可与大规模免疫。后续疫苗和持续行动进一步减少了这种疾病。",
+      "significance": "疫苗标志着对一种因造成瘫痪、尤其儿童瘫痪而令人恐惧的疾病取得重大进展。",
+      "locationName": "密歇根州安娜堡"
     }
   },
   {
@@ -3821,6 +5376,23 @@
     }
   },
   {
+    "id": "space-race",
+    "kind": "period",
+    "title": "Space Race",
+    "start": 1957,
+    "end": 1975,
+    "region": "europe",
+    "partOf": ["cold-war"],
+    "summary": "The Soviet Union and United States compete in satellites, human spaceflight and lunar exploration. This timeline follows the phase from Sputnik to the joint Apollo-Soyuz mission; rivalry and space research extend beyond these dates.",
+    "significance": "Cold War competition accelerated space technology and scientific exploration while making achievements in orbit symbols of political prestige.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Space_Race",
+    "zh": {
+      "title": "太空竞赛",
+      "summary": "苏联与美国在卫星、载人航天和月球探索方面展开竞争。这里展示从“斯普特尼克”到阿波罗-联盟联合任务的阶段；竞争与航天研究并不限于这些年代。",
+      "significance": "冷战竞争加速了航天技术与科学探索，并使太空成就成为政治声望的象征。"
+    }
+  },
+  {
     "id": "sputnik",
     "kind": "moment",
     "title": "Sputnik, the first satellite",
@@ -3831,7 +5403,7 @@
     "category": "science",
     "importance": 2,
     "location": { "name": "Baikonur Cosmodrome", "lat": 45.92, "lng": 63.34 },
-    "partOf": ["soviet-union", "cold-war"],
+    "partOf": ["soviet-union", "cold-war", "space-race"],
     "summary": "The Soviet Union launches Sputnik 1, a 58-centimeter metal ball with four long antennas, from a launch site in what is now Kazakhstan, putting the first artificial satellite into orbit around the Earth. Its radio beeps can be picked up by listeners around the world.",
     "significance": "Sputnik shocked the United States and started the space race, leading to the creation of NASA, heavy investment in science education and, in 1969, the Moon landing.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sputnik_1",
@@ -3862,6 +5434,27 @@
       "summary": "毛泽东发起运动，试图在数年内赶超工业强国。农民被组织进大型人民公社，数百万人参与土法炼钢；官员虚报粮食产量，国家据此征粮，最终导致有史以来最严重的饥荒。",
       "significance": "死亡人数估计约为一千五百万至四千五百万或更多。灾难削弱了毛泽东的地位，并成为他后来发动文化大革命、重掌权力的背景。",
       "locationName": "北京（代表地点；内陆省份饥荒最为严重）"
+    }
+  },
+  {
+    "id": "gagarin-orbit",
+    "kind": "moment",
+    "title": "Yuri Gagarin becomes the first human in space",
+    "start": 1961,
+    "end": null,
+    "region": "central-asia",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Baikonur, Kazakhstan", "lat": 45.92, "lng": 63.34 },
+    "partOf": ["soviet-union", "space-race"],
+    "summary": "Yuri Gagarin launches aboard Vostok 1 from the Soviet launch site at Baikonur and completes an orbit of Earth. The flight demonstrates that a human can survive launch, orbit and return.",
+    "significance": "The mission opened human spaceflight and intensified the international competition to explore beyond Earth.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vostok_1",
+    "zh": {
+      "title": "尤里·加加林成为首位进入太空的人",
+      "summary": "尤里·加加林乘东方一号从苏联拜科努尔发射场升空，绕地球一周，证明人类能够经历发射、轨道飞行与返回。",
+      "significance": "任务开启了载人航天，并加剧了探索地球之外世界的国际竞争。",
+      "locationName": "哈萨克斯坦拜科努尔"
     }
   },
   {
@@ -3911,6 +5504,27 @@
     }
   },
   {
+    "id": "us-civil-rights-act",
+    "kind": "moment",
+    "title": "US Civil Rights Act becomes law",
+    "start": 1964,
+    "end": null,
+    "region": "americas",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Washington, DC", "lat": 38.9, "lng": -77.04 },
+    "partOf": ["united-states", "us-civil-rights-movement"],
+    "summary": "President Lyndon Johnson signs legislation prohibiting discrimination in public accommodations and employment, among other provisions. Grassroots organizing and years of protest help secure its passage.",
+    "significance": "The act dismantled key legal supports of segregation, though enforcement and substantive equality remained contested.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964",
+    "zh": {
+      "title": "美国《民权法案》成为法律",
+      "summary": "林登·约翰逊总统签署法律，禁止公共场所与就业等领域的歧视。基层组织与多年抗议推动了法案通过。",
+      "significance": "法案拆除了种族隔离的重要法律支撑，但执行与实质平等仍面临争议。",
+      "locationName": "华盛顿哥伦比亚特区"
+    }
+  },
+  {
     "id": "cultural-revolution",
     "kind": "period",
     "title": "Cultural Revolution",
@@ -3942,7 +5556,7 @@
     "category": "science",
     "importance": 3,
     "location": { "name": "Kennedy Space Center", "lat": 28.57, "lng": -80.65 },
-    "partOf": ["united-states", "cold-war"],
+    "partOf": ["united-states", "cold-war", "space-race"],
     "summary": "NASA's Apollo 11 mission lands Neil Armstrong and Buzz Aldrin on the Moon while Michael Collins orbits above. The two astronauts spend about two and a half hours walking on the lunar surface before returning safely to Earth.",
     "significance": "It was the first time humans set foot on another world, and the high point of the Cold War space race between the United States and the Soviet Union.",
     "wikipedia": "https://en.wikipedia.org/wiki/Apollo_11",
@@ -3952,6 +5566,89 @@
       "significance": "这是人类首次踏上地球以外的天体，也是美苏太空竞赛的高潮。",
       "locationName": "肯尼迪航天中心",
       "dateLabel": "1969年7月20日"
+    }
+  },
+  {
+    "id": "arpanet-first-message",
+    "kind": "moment",
+    "title": "ARPANET sends its first message",
+    "start": 1969,
+    "end": null,
+    "region": "americas",
+    "category": "science",
+    "importance": 2,
+    "location": { "name": "Los Angeles, California", "lat": 34.07, "lng": -118.44 },
+    "partOf": ["united-states"],
+    "summary": "A computer at UCLA sends a message to the Stanford Research Institute over ARPANET. The initial attempt to send LOGIN crashes after two letters, but the network soon expands.",
+    "significance": "Packet-switched networking became a crucial step toward the Internet, distinct from the later invention of the World Wide Web.",
+    "wikipedia": "https://en.wikipedia.org/wiki/ARPANET",
+    "zh": {
+      "title": "阿帕网发送首条消息",
+      "summary": "加州大学洛杉矶分校的计算机通过阿帕网向斯坦福研究所发送消息。首次发送LOGIN时只传出两个字母便发生故障，但网络随后不断扩展。",
+      "significance": "分组交换网络成为通向互联网的关键一步，与后来万维网的发明有所不同。",
+      "locationName": "加利福尼亚州洛杉矶"
+    }
+  },
+  {
+    "id": "bangladesh-independence",
+    "kind": "moment",
+    "title": "Bangladesh wins independence",
+    "start": 1971,
+    "end": null,
+    "region": "south-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Dhaka, Bangladesh", "lat": 23.81, "lng": 90.41 },
+    "summary": "After a brutal Pakistani military crackdown, war and mass displacement, Bangladeshi forces and India secure Pakistan's surrender in Dhaka in December. Bangladesh emerges as an independent state.",
+    "significance": "The conflict redrew South Asia's political map and demonstrated the force of Bengali linguistic and national identity.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War",
+    "zh": {
+      "title": "孟加拉国赢得独立",
+      "summary": "在巴基斯坦军方残酷镇压、战争与大规模流离失所之后，孟加拉国军队与印度于12月促成巴军在达卡投降，孟加拉国成为独立国家。",
+      "significance": "冲突重绘了南亚政治地图，并显示孟加拉语言与民族认同的力量。",
+      "locationName": "孟加拉国达卡"
+    }
+  },
+  {
+    "id": "intel-4004",
+    "kind": "moment",
+    "title": "A commercial microprocessor on one chip",
+    "start": 1971,
+    "end": null,
+    "region": "americas",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Santa Clara, California", "lat": 37.35, "lng": -121.96 },
+    "partOf": ["united-states"],
+    "summary": "Intel introduces the 4004, a programmable processor on a single chip developed for a calculator project. Its limited capabilities point toward much more powerful integrated processors.",
+    "significance": "Microprocessors helped move computing from specialized installations into consumer products and personal computers.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Intel_4004",
+    "zh": {
+      "title": "商用单芯片微处理器问世",
+      "summary": "英特尔推出为计算器项目开发的4004，将可编程处理器集成在单一芯片上。其有限能力预示了更强大集成处理器的发展。",
+      "significance": "微处理器推动计算从专门设施进入消费产品与个人计算机。",
+      "locationName": "加利福尼亚州圣克拉拉"
+    }
+  },
+  {
+    "id": "un-china-representation",
+    "kind": "moment",
+    "title": "UN changes China's representation",
+    "start": 1971,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "United Nations, New York", "lat": 40.75, "lng": -73.97 },
+    "partOf": ["prc"],
+    "summary": "The General Assembly adopts Resolution 2758, recognizing the representatives of the People's Republic of China as China's only legitimate representatives at the UN and removing Chiang Kai-shek's representatives.",
+    "significance": "The decision transferred China's UN representation, including its permanent Security Council seat, and transformed the PRC's diplomatic position.",
+    "wikipedia": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758",
+    "zh": {
+      "title": "联合国改变中国代表权安排",
+      "summary": "联合国大会通过第2758号决议，承认中华人民共和国政府的代表是中国在联合国的唯一合法代表，并驱逐蒋介石的代表。",
+      "significance": "决定改变了中国在联合国、包括安理会常任理事席位的代表权安排，并重塑中华人民共和国的外交地位。",
+      "locationName": "纽约联合国总部"
     }
   },
   {
@@ -3975,6 +5672,46 @@
       "significance": "这次接触改变了冷战力量格局，对苏联形成压力，也为中国后来融入世界经济铺路。",
       "locationName": "北京市",
       "dateLabel": "1972年2月21-28日"
+    }
+  },
+  {
+    "id": "stockholm-environment-conference",
+    "kind": "moment",
+    "title": "Stockholm conference puts the environment on the world agenda",
+    "start": 1972,
+    "end": null,
+    "region": "europe",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Stockholm, Sweden", "lat": 59.33, "lng": 18.07 },
+    "summary": "Governments gather for the United Nations Conference on the Human Environment. They debate pollution, development and shared responsibilities, helping lead to the creation of UNEP.",
+    "significance": "The meeting established environmental protection as a major field of international diplomacy.",
+    "wikipedia": "https://en.wikipedia.org/wiki/United_Nations_Conference_on_the_Human_Environment",
+    "zh": {
+      "title": "斯德哥尔摩会议推动全球环境议程",
+      "summary": "各国政府出席联合国人类环境会议，讨论污染、发展与共同责任，并推动联合国环境规划署成立。",
+      "significance": "会议确立了环境保护作为国际外交重要领域的地位。",
+      "locationName": "瑞典斯德哥尔摩"
+    }
+  },
+  {
+    "id": "green-belt-movement",
+    "kind": "moment",
+    "title": "Wangari Maathai starts the Green Belt Movement",
+    "start": 1977,
+    "end": null,
+    "region": "sub-saharan-africa",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Nairobi, Kenya", "lat": -1.29, "lng": 36.82 },
+    "summary": "Wangari Maathai founds the Green Belt Movement under the National Council of Women of Kenya. It supports women in planting trees to address soil erosion, water shortages and difficulties obtaining fuel, linking environmental recovery with livelihoods.",
+    "significance": "The movement connected grassroots conservation with women's participation and democratic rights, offering an influential model of community environmental action.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Green_Belt_Movement",
+    "zh": {
+      "title": "旺加里·马塔伊发起绿带运动",
+      "summary": "旺加里·马塔伊在肯尼亚全国妇女理事会支持下创立绿带运动，帮助女性植树，应对水土流失、缺水与获取燃料的困难，把环境恢复与生计相联系。",
+      "significance": "这项运动将基层环境保护、女性参与和民主权利联系起来，提供了有影响力的社区环保行动模式。",
+      "locationName": "肯尼亚内罗毕"
     }
   },
   {
@@ -4022,6 +5759,68 @@
     }
   },
   {
+    "id": "china-special-economic-zones",
+    "kind": "moment",
+    "title": "China establishes its first special economic zones",
+    "start": 1980,
+    "end": null,
+    "region": "east-asia",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Shenzhen, China", "lat": 22.54, "lng": 114.06 },
+    "partOf": ["prc"],
+    "summary": "Shenzhen, Zhuhai, Shantou and Xiamen become early special economic zones, experimenting with investment, trade and market-oriented practices within China's reform program.",
+    "significance": "The zones helped connect China to global production networks and became testing grounds for wider economic change.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Special_economic_zones_of_China",
+    "zh": {
+      "title": "中国设立首批经济特区",
+      "summary": "深圳、珠海、汕头与厦门成为首批经济特区，在中国改革进程中试验投资、贸易与市场导向的经济做法。",
+      "significance": "特区帮助中国融入全球生产网络，并成为更广泛经济变革的试验场。",
+      "locationName": "中国深圳"
+    }
+  },
+  {
+    "id": "gwangju-uprising",
+    "kind": "moment",
+    "title": "Gwangju uprising demands democracy",
+    "start": 1980,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Gwangju, South Korea", "lat": 35.16, "lng": 126.85 },
+    "partOf": ["south-korea"],
+    "summary": "Citizens resist military rule after troops attack demonstrations in Gwangju. The army retakes the city after days of resistance, killing many civilians; the violence is initially suppressed in official accounts.",
+    "significance": "Gwangju became a central memory and rallying point in South Korea's struggle for democratization.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gwangju_Uprising",
+    "zh": {
+      "title": "光州起义要求民主",
+      "summary": "军队镇压光州示威后，市民反抗军事统治。经过多日抵抗，军队重新控制城市，造成大量平民死亡；官方最初压制相关真相。",
+      "significance": "光州成为韩国争取民主化过程中的核心记忆与动员象征。",
+      "locationName": "韩国光州"
+    }
+  },
+  {
+    "id": "smallpox-eradicated",
+    "kind": "moment",
+    "title": "Smallpox declared eradicated worldwide",
+    "start": 1980,
+    "end": null,
+    "region": "europe",
+    "category": "science",
+    "importance": 3,
+    "location": { "name": "Geneva, Switzerland", "lat": 46.22, "lng": 6.14 },
+    "summary": "On 8 May, the World Health Assembly declares smallpox eradicated following an international effort combining vaccination, surveillance and containment of outbreaks. Health workers across many countries made the achievement possible.",
+    "significance": "Smallpox became the first human disease eradicated worldwide, showing what sustained international public-health cooperation could achieve.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Eradication_of_smallpox",
+    "zh": {
+      "title": "全球宣布消灭天花",
+      "summary": "5月8日，世界卫生大会宣布全球消灭天花。此前，国际行动结合疫苗接种、监测与疫情围堵；许多国家卫生工作者的努力促成了这一成就。",
+      "significance": "天花成为全球首个被消灭的人类疾病，展示了持续开展国际公共卫生合作能够取得的成果。",
+      "locationName": "瑞士日内瓦"
+    }
+  },
+  {
     "id": "june-democratic-struggle",
     "kind": "moment",
     "title": "South Korea's June Democratic Struggle",
@@ -4042,6 +5841,27 @@
       "significance": "抗议终结数十年威权统治，韩国此后进入民主时代。",
       "locationName": "首尔",
       "dateLabel": "1987年6月"
+    }
+  },
+  {
+    "id": "taiwan-martial-law-lifted",
+    "kind": "moment",
+    "title": "Taiwan lifts martial law",
+    "start": 1987,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Taipei, Taiwan", "lat": 25.03, "lng": 121.56 },
+    "partOf": ["taiwan-roc"],
+    "summary": "Chiang Ching-kuo ends martial law on Taiwan and Penghu after nearly four decades. Other restrictions remain, and political liberalization unfolds through further reforms and activism.",
+    "significance": "The decision marked a major step away from authoritarian rule toward multiparty democracy.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan",
+    "zh": {
+      "title": "台湾解除戒严",
+      "summary": "蒋经国结束台湾与澎湖持续近四十年的戒严。其他限制仍然存在，政治开放通过后续改革与社会运动逐步推进。",
+      "significance": "这一决定标志着从威权统治走向多党民主的重要一步。",
+      "locationName": "台湾台北"
     }
   },
   {
@@ -4136,6 +5956,47 @@
     }
   },
   {
+    "id": "deng-southern-tour",
+    "kind": "moment",
+    "title": "Deng Xiaoping's southern tour renews reform",
+    "start": 1992,
+    "end": null,
+    "region": "east-asia",
+    "category": "trade",
+    "importance": 2,
+    "location": { "name": "Shenzhen, China", "lat": 22.54, "lng": 114.06 },
+    "partOf": ["prc"],
+    "summary": "Deng Xiaoping visits southern cities and argues for faster economic reform and opening. His remarks counter hesitation about market-oriented policies after political upheaval and retrenchment.",
+    "significance": "The tour gave renewed political momentum to investment, private enterprise and China's integration into the world economy.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Deng_Xiaoping%27s_southern_tour",
+    "zh": {
+      "title": "邓小平南方谈话推动改革",
+      "summary": "邓小平视察南方城市，主张加快改革开放，其谈话回应政治动荡与调整之后对市场导向政策的迟疑。",
+      "significance": "南方谈话为投资、民营经济以及中国融入世界经济重新注入政治动力。",
+      "locationName": "中国深圳"
+    }
+  },
+  {
+    "id": "mabo-decision",
+    "kind": "moment",
+    "title": "Mabo decision recognizes native title",
+    "start": 1992,
+    "end": null,
+    "region": "southeast-asia-oceania",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Canberra, Australia", "lat": -35.3, "lng": 149.13 },
+    "summary": "Australia's High Court recognizes native title in a case brought by Eddie Mabo and other Meriam people. It rejects the legal assumption that Indigenous land rights did not exist before British sovereignty.",
+    "significance": "The ruling changed Australian land law and became a landmark in Indigenous struggles for recognition.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mabo_v_Queensland_(No_2)",
+    "zh": {
+      "title": "马博案判决承认原住民土地权",
+      "summary": "澳大利亚高等法院在埃迪·马博及其他梅里亚姆人提起的案件中承认原住民土地权，否定英国主权到来前原住民没有土地权利的法律假设。",
+      "significance": "判决改变了澳大利亚土地法，成为原住民争取承认的重要节点。",
+      "locationName": "澳大利亚堪培拉"
+    }
+  },
+  {
     "id": "end-of-apartheid",
     "kind": "moment",
     "title": "End of apartheid in South Africa",
@@ -4180,6 +6041,27 @@
     }
   },
   {
+    "id": "taiwan-direct-presidential-election",
+    "kind": "moment",
+    "title": "Taiwan holds its first direct presidential election",
+    "start": 1996,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Taipei, Taiwan", "lat": 25.03, "lng": 121.56 },
+    "partOf": ["taiwan-roc"],
+    "summary": "Voters in Taiwan directly elect their president for the first time, returning Lee Teng-hui to office. The election takes place amid a serious military crisis across the Taiwan Strait.",
+    "significance": "The vote consolidated a major stage of Taiwan's democratic transition and reshaped cross-strait political dynamics.",
+    "wikipedia": "https://en.wikipedia.org/wiki/1996_Taiwanese_presidential_election",
+    "zh": {
+      "title": "台湾首次总统直选",
+      "summary": "台湾选民首次直接选举总统，李登辉当选。选举在严重的台海军事危机背景下举行。",
+      "significance": "投票巩固了台湾民主转型的重要阶段，并改变了两岸政治互动。",
+      "locationName": "台湾台北"
+    }
+  },
+  {
     "id": "hong-kong-handover",
     "kind": "moment",
     "title": "Hong Kong returns to China",
@@ -4200,6 +6082,27 @@
       "significance": "交接标志着大英帝国在亚洲统治的终结，对中国而言，也象征鸦片战争开启的时代告一段落。",
       "locationName": "香港",
       "dateLabel": "1997年7月1日"
+    }
+  },
+  {
+    "id": "macao-handover",
+    "kind": "moment",
+    "title": "Macao transfers from Portuguese to Chinese administration",
+    "start": 1999,
+    "end": null,
+    "region": "east-asia",
+    "category": "politics",
+    "importance": 2,
+    "location": { "name": "Macao", "lat": 22.2, "lng": 113.54 },
+    "partOf": ["prc"],
+    "summary": "Portugal transfers administration of Macao to the People's Republic of China on 20 December. Macao becomes a special administrative region under the one country, two systems framework.",
+    "significance": "The handover ended Portuguese administration and marked another major change in China's coastal political geography.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau",
+    "zh": {
+      "title": "澳门政权交接",
+      "summary": "12月20日，葡萄牙将澳门管治权移交中华人民共和国，澳门成为“一国两制”框架下的特别行政区。",
+      "significance": "交接结束了葡萄牙管治，成为中国沿海政治地理的又一重大变化。",
+      "locationName": "澳门"
     }
   }
 ]

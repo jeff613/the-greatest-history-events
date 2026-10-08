@@ -78,6 +78,8 @@ export default function App() {
           year={t.year}
           view={t.view}
           visibleRegions={t.visibleRegions}
+          visibleKinds={t.visibleKinds}
+          onToggleKind={t.toggleKind}
           onToggleRegion={t.toggleRegion}
           playing={t.playing}
           selectedId={t.selectedId}

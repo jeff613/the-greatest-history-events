@@ -442,6 +442,28 @@
     }
   },
   {
+    "id": "rhind-papyrus",
+    "kind": "moment",
+    "title": "Rhind mathematical papyrus copied",
+    "start": -1550,
+    "end": null,
+    "dateLabel": "c. 1550 BC",
+    "region": "mena",
+    "category": "science",
+    "importance": 1,
+    "location": { "name": "Thebes, Egypt", "lat": 25.72, "lng": 32.66 },
+    "summary": "The scribe Ahmes copies a collection of mathematical problems from older material. The surviving manuscript is commonly dated to around 1550 BC, though chronologies vary.",
+    "significance": "Its practical problems reveal sophisticated Egyptian work with fractions, areas and volumes.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rhind_Mathematical_Papyrus",
+    "zh": {
+      "title": "莱因德数学纸草书抄成",
+      "summary": "书吏阿赫摩斯依据更早材料抄录数学题集。现存文稿通常定于约公元前1550年，但不同年代体系存在差异。",
+      "significance": "其中的实用题展示了古埃及对分数、面积与体积的熟练处理。",
+      "locationName": "埃及底比斯",
+      "dateLabel": "约公元前1550年"
+    }
+  },
+  {
     "id": "thutmose-conquers-kush",
     "kind": "moment",
     "title": "Egypt conquers Kush",
@@ -638,6 +660,28 @@
       "significance": "这是最早有可靠细节记载的战役，确立了埃及在黎凡特的优势。“米吉多”后来也成为“哈米吉多顿”一词的来源。",
       "locationName": "米吉多",
       "dateLabel": "约公元前1457年"
+    }
+  },
+  {
+    "id": "ugaritic-alphabet",
+    "kind": "moment",
+    "title": "An alphabet written in cuneiform",
+    "start": -1400,
+    "end": null,
+    "dateLabel": "c. 1400-1300 BC",
+    "region": "mena",
+    "category": "culture",
+    "importance": 1,
+    "location": { "name": "Ugarit, Syria", "lat": 35.6, "lng": 35.78 },
+    "summary": "Scribes at Ugarit use a small set of wedge-shaped signs to write their language alphabetically. Its emergence is generally placed around the fourteenth to thirteenth centuries BC.",
+    "significance": "The tablets show that alphabetic writing could be adapted to clay and illuminate early alphabetic ordering.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ugaritic_alphabet",
+    "zh": {
+      "title": "以楔形符号书写的字母",
+      "summary": "乌加里特书吏用一组数量较少的楔形符号，以字母方式书写语言。其出现一般定于公元前14至13世纪前后。",
+      "significance": "泥板说明字母书写能够适用于黏土，并为早期字母排序提供证据。",
+      "locationName": "叙利亚乌加里特",
+      "dateLabel": "约公元前1400至1300年"
     }
   },
   {
