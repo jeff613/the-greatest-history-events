@@ -1,0 +1,6 @@
+Generated with the built-in image generation tool.
+Final artwork: public/icons/pixel-scroll.png
+Browser favicon: public/icons/pixel-favicon-32.png
+iPhone home-screen icon: public/icons/pixel-apple-touch-icon.png
+
+Create a square pixel-art website icon: one cute ancient parchment scroll with chunky rolled ends at top and bottom, two tiny dark pixel eyes and a subtle friendly smile, and a small red-ochre wax seal. Authentic low-resolution 32-by-32-pixel sprite aesthetic, enlarged with crisp nearest-neighbor pixel blocks. Very simple silhouette readable as a tiny favicon. Restricted palette of warm cream, parchment gold, dark brown outline and red ochre. Flat solid warm parchment background #dcc387 filling the square. Centered with a small safe margin. No text, no lettering, no extra objects, no border, no mockup, no smooth curves, no gradients, no painterly texture, no antialiasing. Charming old scroll, clean retro game inventory-item style.

@@ -17,30 +17,22 @@ test('the playhead stays fully on screen at the last year', async ({ page }) => 
   expect(head.x + head.width).toBeLessThanOrEqual(page.viewportSize()!.width);
 });
 
-test('the 500 years button shows 500 years around the playhead', async ({ page }) => {
-  await page.goto('/?year=1945');
-  await page.getByRole('button', { name: 'English', exact: true }).click();
-  await page.getByRole('button', { name: '500 years', exact: true }).click();
-  const labels = page.locator('.strip-axis .tick-label');
-  await expect(labels.first()).toHaveText('1500');
-  await expect(labels.last()).toHaveText('2000');
-  await expect(page.getByTestId('strip-year')).toHaveText('1945');
-  await expect(page.getByTestId('playhead')).toBeVisible();
-});
-
-test('the 100 years preset zooms around the playhead and all years restores the full span', async ({ page }) => {
+test('timeline plus and minus zoom without changing the shared map year', async ({ page }) => {
   await page.goto('/?year=1950');
   await page.getByRole('button', { name: 'English', exact: true }).click();
   const zoom = page.getByRole('group', { name: 'Timeline zoom', exact: true });
-  await expect(zoom).toContainText('Visible span');
-  await zoom.getByRole('button', { name: '100 years', exact: true }).click();
-  const labels = page.locator('.strip-axis .tick-label');
-  await expect(labels.first()).toHaveText('1900');
-  await expect(labels.last()).toHaveText('2000');
+  await expect(zoom.getByRole('button')).toHaveCount(2);
+  await expect(zoom.getByRole('combobox')).toHaveCount(0);
+  await zoom.getByRole('button', { name: 'Zoom in', exact: true }).click();
+  await expect(page).toHaveURL(/zoom=1.5/);
   await expect(page.getByTestId('strip-year')).toHaveText('1950');
-  await zoom.getByRole('button', { name: 'All years', exact: true }).click();
-  await expect(labels.first()).toHaveText('2000 BC');
-  await expect(labels.last()).toHaveText('2000');
+  await zoom.getByRole('button', { name: 'Zoom out', exact: true }).click();
+  await expect(page.locator('.strip-axis .tick-label').first()).toHaveText('2000 BC');
+  const map = page.getByTestId('map');
+  await map.getByRole('button', { name: 'Play', exact: true }).click();
+  await expect(page.getByTestId('strip-year')).not.toHaveText('1950');
+  await map.getByRole('button', { name: 'Pause', exact: true }).click();
+  await expect(map.getByRole('button', { name: 'Play', exact: true })).toBeVisible();
 });
 
 test('clicking an era band jumps to its start', async ({ page }) => {
@@ -171,8 +163,9 @@ test('the Americas and Africa start selected and can be toggled independently', 
 test('zoomed regions pack visible entries without reserving off-screen rows', async ({ page }) => {
   await page.goto('/?year=-300');
   await page.getByRole('button', { name: 'English', exact: true }).click();
-  for (const span of ['500 years', '100 years', 'All years']) {
-    await page.getByRole('button', { name: span, exact: true }).click();
+  for (const steps of [3, 3, -6]) {
+    const zoom = page.getByRole('group', { name: 'Timeline zoom', exact: true });
+    for (let i = 0; i < Math.abs(steps); i++) await zoom.getByRole('button', { name: steps > 0 ? 'Zoom in' : 'Zoom out', exact: true }).click();
     const europe = page.locator('[data-region="europe"]');
     const bars = europe.locator('.era > rect');
     expect(await bars.count()).toBeGreaterThan(0);

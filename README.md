@@ -20,11 +20,13 @@ The collection focuses on Europe and Asia and includes major turning points else
 
 Fresh page loads start in Simplified Chinese with all eight regions and all three entry types selected. Use **English / 中文** to switch language, the region buttons to choose comparisons, and **States / Periods / Moments** to show or hide each type. These choices reset on reload; shared URLs preserve the year, zoom and selected entry.
 
-Use **100 years**, **500 years**, **All years**, or the **+ / -** buttons to change the visible span. The detail indicator explains which event tiers are showing. Zooming in adds events while retaining the higher tiers. A selected event remains visible regardless of tier when its date is in view, subject to region and type filters.
+Use the timeline's **+ / -** buttons to zoom around the current year. Zooming in adds events while retaining the higher tiers. A selected event remains visible regardless of tier when its date is in view, subject to region and type filters. The map's compact year label also contains the play/pause button.
 
 Chinese states and periods occupy adjacent rows within East Asia, followed by Japanese and Korean groups. Rows are packed for the visible time window and selected types. Short periods appear once as labelled markers when their names cannot fit inside a bar. Scroll to browse regions, drag to move through time, and drag the timeline's upper edge to adjust its height.
 
-The shape filters form a compact ink-colored group, separate from the colored region buttons. Dates sit below titles in the reading pane. On phones, the pane's collapse handle stays reachable while scrolling, and collapsing returns to the heading. Entry descriptions use a decorative first character, with separate sizing for English and Chinese.
+The shape filters form a compact ink-colored group, separate from the colored region buttons. Filters and zoom controls share one row on wide screens; narrower layouts put the filters in an expandable menu. Dates sit below titles in the reading pane. On phones, the pane slides in from the right without covering the timeline. Tap or swipe its edge tab to open or close it; selecting an entry opens it automatically. Entry descriptions use a decorative first character, with separate sizing for English and Chinese.
+
+The pixel-art scroll icon is provided in browser-tab and iPhone home-screen sizes in `public/icons/`. Its generation prompt is recorded in [docs/images/scroll-icon.prompt.txt](docs/images/scroll-icon.prompt.txt).
 
 ## Getting started
 
@@ -100,7 +102,7 @@ The entries are short summaries, and every one links to Wikipedia for further re
 
 ## Verification and release status
 
-Local verification on 2026-10-08 passed 128 unit tests, 52 browser tests, data validation, TypeScript checking and the production build. The 140 entries added in this update have checked Wikipedia links and English/Simplified Chinese text. Browser coverage includes zoom tiers, selection retention, region/type filters, Chinese defaults, shared links and phone layouts.
+Local verification on 2026-10-08 passed 128 unit tests, 55 browser tests, data validation, TypeScript checking and the production build. The previous content expansion added 140 entries with checked Wikipedia links and English/Simplified Chinese text. Browser coverage includes zoom tiers, selection retention, region/type filters, Chinese defaults, shared links, the right-side phone drawer, compact tablet controls and map playback.
 
 `main` is the website's release branch. Pushing runs CI but does not publish the site. Deployment is a separate operations step using the latest remote `main`; generated `dist/` files and downloaded map assets are not committed.
 

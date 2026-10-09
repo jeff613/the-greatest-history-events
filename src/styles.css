@@ -40,6 +40,32 @@ body,
   margin: 0;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.timeline-filters-toggle {
+  display: none;
+}
+
+.play-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid currentColor;
+}
+
+.play-icon.is-playing {
+  width: 10px;
+  height: 12px;
+  border: 0;
+  border-left: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+}
+
 .app {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 350px;
@@ -168,6 +194,7 @@ a:focus-visible {
 /* Timeline strip: a scroll unrolled sideways, with a key-pattern border along its top and bottom edges. */
 
 .strip {
+  container-type: inline-size;
   grid-area: strip;
   position: relative;
   display: flex;
@@ -251,8 +278,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 8px;
-  border-bottom: 1px solid var(--line);
+  padding: 6px 0;
 }
 
 .strip-controls button {
@@ -260,64 +286,38 @@ a:focus-visible {
   white-space: nowrap;
 }
 
-.strip-year {
-  font-family: var(--display);
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  min-width: 7ch;
-}
-
-.strip-hint {
-  min-width: 0;
-  margin-left: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 14.5px;
-  font-style: italic;
-  color: var(--muted);
-}
-
-.strip-spacer {
-  flex: 1;
-}
-
-.timeline-detail {
-  flex-shrink: 0;
-  padding: 3px 8px;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 13px;
-}
-
 .timeline-zoom {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-shrink: 0;
-  gap: 6px;
 }
 
 .timeline-zoom-label {
-  margin-right: 4px;
-  font-size: 14px;
+  align-self: center;
+  margin-right: 8px;
+  font-size: 13px;
   color: var(--muted);
   white-space: nowrap;
 }
 
-.strip-controls button[aria-label^='Zoom'] {
-  min-width: 34px;
-  font-size: 20px;
-  line-height: 0.9;
+.strip-controls .timeline-zoom button {
+  min-width: 32px;
+  padding: 4px 8px;
+  border: 1px solid var(--text);
+  background: var(--board);
+  font-size: 18px;
+}
+
+.strip-controls .timeline-zoom button + button {
+  border-left: 0;
 }
 
 .timeline-regions {
   display: flex;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
   gap: 6px;
-  padding: 7px 8px;
-  overflow-x: auto;
+  padding: 0;
 }
 
 /* Each region button carries a swatch of its lane's pigment, and is washed with it while the lane is shown. */
@@ -638,8 +638,7 @@ a:focus-visible {
   line-height: 1.4;
 }
 
-.map-caption,
-.map-context {
+.map-caption {
   position: absolute;
   z-index: 1;
   border: 2px solid var(--text);
@@ -647,51 +646,25 @@ a:focus-visible {
 }
 
 .map-caption {
-  top: 20px;
-  left: 64px;
-  padding: 10px 18px;
-  pointer-events: none;
+  top: 10px;
+  left: 52px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-caption button {
+  width: 34px;
+  height: 34px;
+  padding: 5px;
 }
 
 .map-caption strong {
   display: block;
-  font: 700 30px/1.1 var(--display);
+  font: 700 18px/1.1 var(--display);
   letter-spacing: 0.04em;
-}
-
-.map-caption > span:last-child {
-  display: block;
-  margin-top: 4px;
-  font-size: 14px;
-  font-style: italic;
-  color: var(--muted);
-}
-
-.map-context {
-  bottom: 16px;
-  left: 20px;
-  max-width: calc(100% - 40px);
-  padding: 10px 14px;
-}
-
-.map-context button {
-  font-size: 14px;
-}
-
-.map-context p {
-  margin: 6px 0 0;
-  font-size: 14.5px;
-  line-height: 1.3;
-  color: var(--muted);
-}
-
-.map-context .territory-caption {
-  color: var(--accent);
-}
-
-.territory-caption button {
-  margin-left: 8px;
-  padding: 1px 6px;
+  white-space: nowrap;
 }
 
 .territory-popup {
@@ -738,7 +711,7 @@ a:focus-visible {
   scrollbar-color: var(--line) transparent;
 }
 
-.sheet-handle {
+.drawer-toggle {
   touch-action: none;
   display: none;
 }
@@ -1015,7 +988,7 @@ a:focus-visible {
   text-underline-offset: 3px;
 }
 
-/* Phone: the pane becomes a sheet over the map, and the rolled ends of the timeline thin out. */
+/* Phone: the reading pane slides in from the right above the map. */
 @media (max-width: 720px) {
   :root {
     --roll: 10px;
@@ -1023,6 +996,7 @@ a:focus-visible {
   }
 
   .app {
+    height: 100dvh;
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(0, 1fr) auto;
     grid-template-areas:
@@ -1032,82 +1006,83 @@ a:focus-visible {
   }
 
   .app-header {
-    gap: 10px;
-    padding: 10px 14px 24px;
+    gap: 6px;
+    padding: 8px 10px 22px;
   }
 
   .app-header h1 {
-    font-size: 19px;
+    font-size: 17px;
     letter-spacing: 0.05em;
   }
 
   .brand .eyebrow {
-    font-size: 8px;
-    letter-spacing: 0.08em;
+    display: none;
   }
 
-  .header-focus,
-  .strip-hint {
+  .header-focus {
     display: none;
   }
 
   .panel-area {
     grid-area: map;
     position: relative;
-    align-self: end;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
     z-index: 2;
-    height: 56px;
-    transition: height 200ms ease;
+    pointer-events: none;
   }
 
-  .panel-area:has(.panel.is-open) {
-    height: 60vh;
-  }
-
-  /* The collapsed sheet is 56px tall: the handle, then the "Around ..." heading, uncut. */
   .panel {
-    padding: 0 16px 24px;
-    border-left: none;
-    border-top: 2px solid var(--text);
+    width: min(340px, calc(100% - 44px));
+    margin-left: auto;
+    padding: 18px 16px 24px;
+    border-left: 2px solid var(--text);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 200ms ease, visibility 200ms;
+    pointer-events: auto;
   }
 
-  .panel:not(.is-open) {
-    overflow-y: hidden;
+  .panel.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    box-shadow: -6px 0 16px rgb(40 25 5 / 0.2);
   }
 
   .panel-header h2 {
     font-size: 20px;
   }
 
-  .sheet-handle {
+  .drawer-toggle {
     display: block;
-    width: 100%;
-    height: 22px;
-    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 64px;
+    padding: 0;
+    border: 1px solid var(--text);
     background: var(--panel);
-    position: sticky;
-    top: 0;
+    font: 600 28px/1 var(--body);
     z-index: 1;
+    pointer-events: auto;
+    transition: right 200ms ease;
   }
 
-  .sheet-handle::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 8px;
-    width: 40px;
-    height: 4px;
-    margin-left: -20px;
-    background: var(--muted);
+  .panel-area:has(.panel.is-open) .drawer-toggle {
+    right: min(340px, calc(100% - 44px));
   }
 
   .strip {
-    height: 32vh;
-    min-height: 220px;
+    height: 42dvh;
+    min-height: 260px;
+    max-height: 52dvh;
   }
 
-  /* The sheet rests on the top edge of the strip, so the rolled ends are plain cylinders with no knob. */
+  /* Compact rolled ends leave more space for the map on phones. */
   .strip::before,
   .strip::after {
     top: 0;
@@ -1119,54 +1094,23 @@ a:focus-visible {
 
   .strip-controls {
     gap: 4px;
-    padding: 8px 2px;
+    padding: 4px 2px;
     flex-wrap: wrap;
   }
 
   .timeline-zoom {
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .strip-year {
-    min-width: 0;
-    margin: 0 2px;
-    font-size: 17px;
+    margin-left: auto;
   }
 
   /* A single rule here: the doubled one makes the row too wide for a phone. */
   .strip-controls button {
     min-width: 0;
-    padding: 6px;
+    padding: 7px;
+    min-height: 36px;
     border: 1px solid var(--text);
     font-size: 14px;
   }
 
-  .timeline-regions {
-    padding: 6px 2px;
-  }
-
-  .map-caption {
-    top: 12px;
-    left: 52px;
-    padding: 6px 12px;
-  }
-
-  .map-caption strong {
-    font-size: 22px;
-  }
-
-  .map-context {
-    bottom: 66px;
-    left: 10px;
-    max-width: calc(100% - 20px);
-    padding: 8px 10px;
-  }
-
-  .map-context p {
-    font-size: 13.5px;
-  }
 }
 
 .header-actions,
@@ -1200,5 +1144,41 @@ a:focus-visible {
 
   .header-actions button {
     padding: 5px 7px;
+    min-height: 34px;
+    font-size: 13px;
+  }
+}
+
+@container (max-width: 1100px) {
+  .timeline-zoom {
+    margin-left: auto;
+  }
+
+  .timeline-regions {
+    display: none;
+    position: absolute;
+    bottom: calc(100% - 12px);
+    left: var(--roll-gap);
+    right: var(--roll-gap);
+    z-index: 5;
+    padding: 10px;
+    flex-wrap: wrap;
+    max-height: 40dvh;
+    overflow-y: auto;
+    border: 1px solid var(--text);
+    background: var(--board);
+    box-shadow: 0 -4px 16px rgb(40 25 5 / 0.2);
+  }
+
+  .timeline-regions.is-open {
+    display: flex;
+  }
+
+  .timeline-regions button {
+    min-height: 32px;
+  }
+
+  .timeline-filters-toggle {
+    display: inline-block;
   }
 }

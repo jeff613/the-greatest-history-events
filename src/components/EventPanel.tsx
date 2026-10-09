@@ -38,7 +38,7 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
     paneRef.current!.scrollTop = 0;
   }, [selected?.id, sheetOpen]);
 
-  // On phones, choosing an entry (for example from a map pin) opens the sheet.
+  // On phones, choosing an entry (for example from a map pin) opens the drawer.
   useEffect(() => {
     if (selected) setSheetOpen(true);
   }, [selected]);
@@ -50,14 +50,14 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
   );
 
   return (
-    <aside ref={paneRef} className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
+    <>
       <button
-        className="sheet-handle"
+        className="drawer-toggle"
         aria-expanded={sheetOpen}
         aria-label={sheetOpen ? text('Collapse events', '收起事件') : text('Expand events', '展开事件')}
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture(e.pointerId);
-          swipeStart.current = e.clientY;
+          swipeStart.current = e.clientX;
         }}
         onPointerCancel={() => {
           swipeStart.current = null;
@@ -65,9 +65,9 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
         onPointerUp={(e) => {
           const start = swipeStart.current;
           swipeStart.current = null;
-          if (start !== null && Math.abs(e.clientY - start) > SWIPE_PX) {
+          if (start !== null && Math.abs(e.clientX - start) > SWIPE_PX) {
             swiped.current = true;
-            setSheetOpen(e.clientY < start);
+            setSheetOpen(e.clientX < start);
           }
         }}
         onClick={() => {
@@ -77,7 +77,10 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
           }
           setSheetOpen((open) => !open);
         }}
-      />
+      >
+        <span aria-hidden="true">{sheetOpen ? '›' : '‹'}</span>
+      </button>
+      <aside ref={paneRef} className={`panel${sheetOpen ? ' is-open' : ''}`} data-testid="event-panel">
       {selected ? (
         <EntryCard key={selected.id} entry={selected} hoveredId={hoveredId} onHover={onHover} onSelect={onSelect} />
       ) : (
@@ -115,7 +118,8 @@ export function EventPanel({ year, halfWidth, slice, selected, hoveredId, onHove
           )}
         </div>
       )}
-    </aside>
+      </aside>
+    </>
   );
 }
 

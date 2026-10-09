@@ -228,6 +228,8 @@ function pinsToGeoJson(pins: Placed[]): FeatureCollection<Point> {
 
 interface Props {
   year: number;
+  playing: boolean;
+  onTogglePlay(): void;
   /** The selected state or period; a state has its territory highlighted. */
   selectedBar: Bar | null;
   selectedTerritory: TerritorySelection | null;
@@ -239,14 +241,12 @@ interface Props {
   onSelect(id: string): void;
 }
 
-export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritory, pins, selectedPlaced, hoveredId, onHover, onSelect }: Props) {
+export function MapView({ year, playing, onTogglePlay, selectedBar, selectedTerritory, onSelectTerritory, pins, selectedPlaced, hoveredId, onHover, onSelect }: Props) {
   const { language, text, localize, formatYear } = useLocale();
   const locale = useLatest({ language, localize });
-  const territoryLabel = (name: string) => language === 'zh' ? translateTerritory(name) : name;
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const territoryPopupRef = useRef<Popup | null>(null);
-  const [showBorders, setShowBorders] = useState(true);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [index, setIndex] = useState<Snapshot[]>([]);
@@ -260,7 +260,6 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
   const loader = useRef(createLatestLoader<FeatureCollection>((file) => fetchJson(asset(`borders/${file}`))));
   const activeSlot = useRef<Slot>('a');
   const barSelection = useLatest(selectedBar);
-  const bordersVisible = useLatest(showBorders);
   const shownFile = useRef<string | null>(null);
   /** Bumped for every new border target, so a slower earlier swap never fades in after a newer one. */
   const swapSeq = useRef(0);
@@ -302,7 +301,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     map.on('movestart', () => territoryPopup.remove());
     const inspectTerritory = (event: { point: { x: number; y: number }; lngLat: { lng: number; lat: number } }) => {
       if (!map.isStyleLoaded()) return;
-      const layers = ['pins', ...(bordersVisible.current || barSelection.current ? ['territory-fill'] : []), ...(bordersVisible.current ? [`borders-${activeSlot.current}-fill`] : [])];
+      const layers = ['pins', 'territory-fill', `borders-${activeSlot.current}-fill`];
       const features = map.queryRenderedFeatures([event.point.x, event.point.y], { layers });
       map.getCanvas().style.cursor = features.length ? 'pointer' : '';
       if (!features.length) {
@@ -318,12 +317,11 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     map.on('click', (event) => {
       inspectTerritory(event);
       if (!map.isStyleLoaded()) return;
-      const features = map.queryRenderedFeatures(event.point, { layers: ['pins', 'territory-fill',
-        ...(bordersVisible.current ? [`borders-${activeSlot.current}-fill`] : [])] });
+      const features = map.queryRenderedFeatures(event.point, { layers: ['pins', 'territory-fill', `borders-${activeSlot.current}-fill`] });
       if (features[0]?.layer.id === 'pins') return;
       // Timeline empire selections already have a complete highlighted territory.
       if (features[0]?.layer.id === 'territory-fill' && barSelection.current) return;
-      const feature = bordersVisible.current ? features[0] : undefined;
+      const feature = features[0];
       callbacks.current.onSelectTerritory(feature && shownFile.current
         ? { name: territoryName(feature.properties), snapshotFile: shownFile.current } : null);
     });
@@ -362,18 +360,6 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
   }, [callbacks, locale]);
 
   useEffect(() => {
-    if (ready && mapRef.current) setSlotOpacity(mapRef.current, activeSlot.current, showBorders);
-  }, [ready, showBorders]);
-
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!ready || !map) return;
-    const visible = !selectedTerritory || showBorders;
-    map.setPaintProperty('territory-fill', 'fill-opacity', visible ? 0.55 : 0);
-    map.setPaintProperty('territory-outline', 'line-opacity', visible ? 1 : 0);
-  }, [ready, selectedTerritory, showBorders]);
-
-  useEffect(() => {
     const map = mapRef.current;
     if (!ready || !map) return;
     for (const slot of ['a', 'b']) {
@@ -391,7 +377,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     }
   }, [ready, language, text]);
 
-  useEffect(() => { territoryPopupRef.current?.remove(); }, [year, showBorders, selectedBar, shownSnapshot, language]);
+  useEffect(() => { territoryPopupRef.current?.remove(); }, [year, selectedBar, shownSnapshot, language]);
 
   const snapshotFile = snapshotFor(index, year)?.file ?? null;
 
@@ -417,7 +403,7 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
           })),
         });
         if (swap !== swapSeq.current || mapRef.current !== map) return;
-        setSlotOpacity(map, next, bordersVisible.current);
+        setSlotOpacity(map, next, true);
         setSlotOpacity(map, activeSlot.current, false);
         activeSlot.current = next;
         shownFile.current = snapshotFile;
@@ -527,7 +513,6 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
     return () => { cancelled = true; territoryLoader.current.invalidate(); };
   }, [ready, selectedBar, selectedTerritory, index]);
 
-  const shownYear = index.find((snapshot) => snapshot.file === shownSnapshot)?.year;
 
   return (
     <div className="map" data-testid="map" data-borders={shownSnapshot ?? undefined}
@@ -535,31 +520,11 @@ export function MapView({ year, selectedBar, selectedTerritory, onSelectTerritor
       data-region={highlightedRegion ?? undefined}
       data-territory={territoryStatus?.status === 'shown' ? territoryStatus.eraId : undefined}>
       <div className="map-caption">
-        <span className="eyebrow">{text('THE WORLD AROUND', '世界此时')}</span>
-        <strong>{formatYear(year)}</strong>
-        <span>{text(`${pins.length} events on the map`, `地图上有${pins.length}条记录`)}</span>
-      </div>
-      {!failed && <div className="map-context">
-        <button aria-pressed={showBorders} onClick={() => setShowBorders((shown) => !shown)}>
-          {showBorders ? text('Historical borders', '历史疆界') : text('Geography only', '仅看地理')}
+        <button onClick={onTogglePlay} aria-label={playing ? text('Pause', '暂停') : text('Play', '播放')}>
+          <span aria-hidden="true" className={playing ? 'play-icon is-playing' : 'play-icon'} />
         </button>
-        {selectedTerritory && <p className="territory-caption">
-          <strong>{territoryLabel(selectedTerritory.name)}</strong> · {text('Selected territory', '所选疆域')}
-          <button aria-label={text('Clear territory selection', '清除疆域选择')} onClick={() => onSelectTerritory(null)}>×</button>
-        </p>}
-        {selectedBar && <p className="territory-caption">
-          <strong>{localize(selectedBar).title}</strong>{' · '}
-          {selectedBar.kind === 'period' ? text('Historical period', '历史时期')
-            : territoryStatus?.eraId !== selectedBar.id || territoryStatus.status === 'loading' ? text('Loading territory...', '正在加载疆域……')
-            : territoryStatus.status === 'shown' ? text(`Highlighted territory: ${formatYear(territoryStatus.year!)}`, `高亮疆域：${formatYear(territoryStatus.year!)}`)
-            : territoryStatus.status === 'failed' ? text('Territory could not load. Select the era again to retry.', '无法加载疆域，请重新选择该时期以重试。')
-            : text('No matching territory in the available snapshots.', '可用快照中未找到匹配疆域。')}
-        </p>}
-        <p>{showBorders
-          ? shownYear !== undefined ? text(`Border snapshot: ${formatYear(shownYear)}. Approximate areas of influence.`, `疆界快照：${formatYear(shownYear)}。仅示意大致势力范围。`) : text('Loading historical borders...', '正在加载历史疆界……')
-          : text('Physical geography without political boundaries.', '仅显示自然地理，不显示政治疆界。')}</p>
-        {showBorders && shownYear !== undefined && shownYear !== year && <p>{text('Boundaries between snapshots are not reconstructed.', '未重建各快照年代之间的疆界。')}</p>}
-      </div>}
+        <strong data-testid="strip-year">{formatYear(year)}</strong>
+      </div>
       {failed ? (
         <p className="map-fallback">
           {text('The map needs WebGL, which this browser could not start. The timeline and event list still work.', '地图需要 WebGL，但此浏览器无法启动它。时间轴与事件列表仍可使用。')}

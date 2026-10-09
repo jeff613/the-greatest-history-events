@@ -51,6 +51,8 @@ export default function App() {
         </header>
         <main className='map-area'>
           <MapView
+            playing={t.playing}
+            onTogglePlay={t.togglePlaying}
             year={t.year}
             selectedBar={selected && selected.kind !== 'moment' ? selected : null}
             selectedTerritory={t.selectedTerritory}
@@ -81,14 +83,12 @@ export default function App() {
           visibleKinds={t.visibleKinds}
           onToggleKind={t.toggleKind}
           onToggleRegion={t.toggleRegion}
-          playing={t.playing}
           selectedId={t.selectedId}
           onSelect={t.select}
           hoveredId={t.hoveredId}
           onHover={t.hover}
           onYear={t.setYear}
           onView={t.setView}
-          onTogglePlay={t.togglePlaying}
         />
       </div>
       {aboutOpen && <About onClose={() => setAboutOpen(false)} />}

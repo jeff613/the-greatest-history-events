@@ -3,12 +3,12 @@ import { BARS, ENTRIES_BY_ID, MOMENTS } from '../data';
 import type { Entry, Moment, Period, Region } from '../data/schema';
 import { labelSpan, minImportance, placeLabels, type LabelSide, type Marker } from '../lib/momentLayout';
 import { packEras } from '../lib/packEras';
-import { FULL_VIEW, panBy, pxToYear, ticks, viewSpanning, visibleURange, yearToPx, yearToU, zoomAt, type View } from '../lib/timeScale';
+import { panBy, pxToYear, ticks, visibleURange, yearToPx, yearToU, zoomAt, type View } from '../lib/timeScale';
 import { yearDiff } from '../lib/years';
 import { useLocale } from '../state/LocaleContext';
 import { CATEGORY_COLORS, REGION_COLORS } from '../theme';
 
-const GUTTER = 96;
+const DESKTOP_GUTTER = 96;
 /** Room after the last year, so the playhead and the final tick label are not cut off at AD 2000. */
 const PAD_RIGHT = 32;
 const AXIS_H = 32;
@@ -59,13 +59,11 @@ interface Props {
   visibleKinds: Entry['kind'][];
   onToggleKind(kind: Entry['kind']): void;
   onToggleRegion(region: Region): void;
-  playing: boolean;
   onYear(year: number): void;
   onView(view: View): void;
-  onTogglePlay(): void;
 }
 
-export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, view, visibleRegions, visibleKinds, onToggleKind, onToggleRegion, playing, onYear, onView, onTogglePlay }: Props) {
+export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, view, visibleRegions, visibleKinds, onToggleKind, onToggleRegion, onYear, onView }: Props) {
   const { language, text, localize, formatYear, formatSpan, regionShortLabels } = useLocale();
   const bars = useMemo(() => BARS.map(localize), [localize]);
   const moments = useMemo(() => visibleKinds.includes('moment') ? MOMENTS.map(localize) : [], [localize, visibleKinds]);
@@ -77,6 +75,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
   const drag = useRef<Drag | null>(null);
   const resize = useRef<{ pointerId: number; startY: number; startHeight: number } | null>(null);
   const [width, setWidth] = useState(0);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [height, setHeight] = useState<number | null>(() => Number(sessionStorage.getItem(HEIGHT_KEY)) || null);
   const allLanes = useMemo(() => packEras(bars).sort((a, b) => LANE_ORDER.indexOf(a.region) - LANE_ORDER.indexOf(b.region)), [bars]);
 
@@ -116,9 +115,11 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
     };
   }, []);
 
-  const trackW = Math.max(100, width - GUTTER - PAD_RIGHT);
-  const x = (y: number) => GUTTER + yearToPx(y, view, trackW);
-  const least = minImportance(yearDiff(pxToYear(0, view, trackW), pxToYear(trackW, view, trackW)));
+  const gutter = width < 600 ? 60 : DESKTOP_GUTTER;
+  const trackW = Math.max(100, width - gutter - PAD_RIGHT);
+  const x = (y: number) => gutter + yearToPx(y, view, trackW);
+  const spanYears = yearDiff(pxToYear(0, view, trackW), pxToYear(trackW, view, trackW));
+  const least = minImportance(spanYears);
   const tickYears = ticks(view, trackW, language === 'zh' ? 96 : 72);
 
   // Markers and their labels depend on the view, not on the playhead, so they hold still while it moves.
@@ -166,7 +167,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
   const lanesH = compactLanes.length ? laneTops[compactLanes.length - 1] + compactLanes[compactLanes.length - 1].height + LANE_GAP : 0;
 
   const yearAt = (clientX: number) => {
-    const px = clientX - canvasRef.current!.getBoundingClientRect().left - GUTTER;
+    const px = clientX - canvasRef.current!.getBoundingClientRect().left - gutter;
     return pxToYear(Math.min(trackW, Math.max(0, px)), view, trackW);
   };
   const select = (entry: Entry) => {
@@ -213,7 +214,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
     if (d.kind !== 'pan' || d.moved) return;
     const entry = d.entryId ? ENTRIES_BY_ID.get(d.entryId) : undefined;
     if (entry) select(entry);
-    else if (e.clientX - canvasRef.current!.getBoundingClientRect().left >= GUTTER) onYear(yearAt(e.clientX));
+    else if (e.clientX - canvasRef.current!.getBoundingClientRect().left >= gutter) onYear(yearAt(e.clientX));
   };
   const cancelDrag = () => {
     drag.current = null;
@@ -254,62 +255,41 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
   const stateClass = (entry: Entry) => `${selectedId === entry.id ? ' is-selected' : ''}${hoveredId === entry.id ? ' is-hovered' : ''}`;
 
   const playheadX = x(year);
-  const playheadVisible = width > 0 && playheadX >= GUTTER && playheadX <= GUTTER + trackW;
+  const playheadVisible = width > 0 && playheadX >= gutter && playheadX <= gutter + trackW;
 
   return (
     <section className="strip" aria-label={text('Timeline', '时间轴')} ref={stripRef} style={height ? { height, maxHeight: '80vh' } : undefined}>
       <div className="strip-resize" role="separator" aria-orientation="horizontal" aria-label={text('Resize timeline', '调整时间轴高度')}
         onPointerDown={onResizeDown} onPointerMove={onResizeMove} onPointerUp={onResizeEnd} onPointerCancel={onResizeEnd} />
       <div className="strip-controls">
-        <button onClick={onTogglePlay} aria-label={playing ? text('Pause', '暂停') : text('Play', '播放')}>
-          {playing ? '❚❚' : '▶'}
+        <nav id="timeline-filters" className={`timeline-regions${filtersOpen ? ' is-open' : ''}`} aria-label={text('Timeline regions', '时间轴地区')}>
+          <div className="timeline-legend" role="group" aria-label={text('Timeline types', '时间轴类型')}>
+            {(['state', 'period', 'moment'] as const).map((kind) => (
+              <button key={kind} data-kind={kind}
+                aria-pressed={visibleKinds.includes(kind)}
+                style={{ '--pigment': 'var(--accent)' } as CSSProperties}
+                onClick={() => onToggleKind(kind)}>
+                {kind === 'state' ? text('States', '政权') : kind === 'period' ? text('Periods', '时期') : text('Moments', '事件')}
+              </button>
+            ))}
+          </div>
+          {allLanes.map((lane) => <button key={lane.region}
+            aria-pressed={visibleRegions.includes(lane.region)}
+            style={{ '--pigment': REGION_COLORS[lane.region] } as CSSProperties}
+            onClick={() => onToggleRegion(lane.region)}>
+            {lane.region === 'east-asia' ? text('China & East Asia', '中国与东亚') : regionShortLabels[lane.region]}
+          </button>)}
+        </nav>
+        <button className="timeline-filters-toggle" aria-expanded={filtersOpen} aria-controls="timeline-filters" onClick={() => setFiltersOpen((open) => !open)}>
+          {text('Filters', '筛选')} {filtersOpen ? '▴' : '▾'}
         </button>
-        <span className="strip-year" data-testid="strip-year">
-          {formatYear(year)}
-        </span>
-        <span className="strip-hint">{text('Scroll for regions · Drag through time · + / - to zoom', '滚动查看地区 · 拖动浏览年代 · + / - 缩放')}</span>
-        <span className="strip-spacer" />
         <div className="timeline-zoom" role="group" aria-label={text('Timeline zoom', '时间轴缩放')}>
-          <span className="timeline-zoom-label">{text('Visible span', '显示跨度')}</span>
-          <button onClick={() => zoomAroundPlayhead(ZOOM_STEP)} aria-label={text('Zoom in', '放大')} title={text('Zoom in on the timeline', '放大时间轴')}>
-            +
-          </button>
-          <button onClick={() => zoomAroundPlayhead(1 / ZOOM_STEP)} aria-label={text('Zoom out', '缩小')} title={text('Zoom out on the timeline', '缩小时间轴')}>
-            -
-          </button>
-          {[100, 500].map((span) => (
-            <button key={span} onClick={() => onView(viewSpanning(year, span))}
-              title={text(`Show ${span} years around the selected year`, `显示所选年份前后共${span}年`)}>
-              {text(`${span} years`, `${span}年`)}
-            </button>
-          ))}
-          <button onClick={() => onView(FULL_VIEW)} title={text('Show the full timeline: 2000 BC to AD 2000', '显示完整时间轴：公元前2000年至公元2000年')}>{text('All years', '全部年代')}</button>
+          <span className="timeline-zoom-label">{text('Timeline zoom', '时间轴缩放')}</span>
+          <button onClick={() => zoomAroundPlayhead(1 / ZOOM_STEP)} aria-label={text('Zoom out', '缩小')} title={text('Zoom out on the timeline', '缩小时间轴')}>-</button>
+          <button onClick={() => zoomAroundPlayhead(ZOOM_STEP)} aria-label={text('Zoom in', '放大')} title={text('Zoom in on the timeline', '放大时间轴')}>+</button>
         </div>
       </div>
-      <nav className="timeline-regions" aria-label={text('Timeline regions', '时间轴地区')}>
-        <div className="timeline-legend" role="group" aria-label={text('Timeline types', '时间轴类型')}>
-          {(['state', 'period', 'moment'] as const).map((kind) => (
-            <button key={kind} data-kind={kind}
-              aria-pressed={visibleKinds.includes(kind)}
-              style={{ '--pigment': 'var(--accent)' } as CSSProperties}
-              onClick={() => onToggleKind(kind)}>
-              {kind === 'state' ? text('States', '政权') : kind === 'period' ? text('Periods', '时期') : text('Moments', '事件')}
-            </button>
-          ))}
-        </div>
-        {allLanes.map((lane) => <button key={lane.region}
-          aria-pressed={visibleRegions.includes(lane.region)}
-          style={{ '--pigment': REGION_COLORS[lane.region] } as CSSProperties}
-          onClick={() => onToggleRegion(lane.region)}>
-          {lane.region === 'east-asia' ? text('China & East Asia', '中国与东亚') : regionShortLabels[lane.region]}
-        </button>)}
-      </nav>
-      <div className="timeline-detail" role="status" data-testid="timeline-detail">
-        {!visibleKinds.includes('moment') ? text('Moments hidden', '事件已隐藏')
-          : least === 3 ? text('Moments: Highlights · Zoom in for more', '事件：重要转折 · 放大查看更多')
-          : least === 2 ? text('Moments: Highlights + major events · Zoom in for more', '事件：重要转折与重大事件 · 放大查看更多')
-          : text('Moments: All tiers', '事件：全部层级')}
-      </div>
+
       <div
         className="strip-canvas"
         ref={canvasRef}
@@ -319,7 +299,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
         onPointerCancel={cancelDrag}
       >
         <svg className="strip-axis" width={width} height={AXIS_H}>
-          <rect data-testid="timeline-axis" className="axis-bg" x={GUTTER} y={0} width={trackW} height={AXIS_H} />
+          <rect data-testid="timeline-axis" className="axis-bg" x={gutter} y={0} width={trackW} height={AXIS_H} />
           {tickYears.map((t) => (
             <g key={t}>
               <line className="tick-line" x1={x(t)} x2={x(t)} y1={AXIS_H - 6} y2={AXIS_H} />
@@ -348,7 +328,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                   </text>
                   {lane.rows.map((row, rowIndex) =>
                     row.map((era) => {
-                      const x0 = Math.max(GUTTER, x(era.start));
+                      const x0 = Math.max(gutter, x(era.start));
                       const x1 = Math.min(width, x(era.end));
                       if (x1 <= x0) return null;
                       const y = barsTop + rowIndex * ROW_H;
@@ -377,7 +357,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                     }),
                   )}
                   {laneMarkers[laneIndex].map((m) => {
-                    const cx = GUTTER + m.x;
+                    const cx = gutter + m.x;
                     const cy = top + MARKER_Y;
                     const entry = m.entry;
                     // A period keeps its lane's pigment wherever it is drawn; a moment takes its category's.
@@ -398,7 +378,7 @@ export function TimelineStrip({ year, selectedId, onSelect, hoveredId, onHover, 
                             transform={`rotate(45 ${cx} ${cy})`} />
                         )}
                         {span && (
-                          <text className={`marker-label${m.side ? '' : ' is-forced'}`} x={GUTTER + span[0]}
+                          <text className={`marker-label${m.side ? '' : ' is-forced'}`} x={gutter + span[0]}
                             y={side === 'above' || side === 'top' ? top + LABEL_ROW_Y[side] : cy + 4}>
                             {entry.title}
                           </text>
